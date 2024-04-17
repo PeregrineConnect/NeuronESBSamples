@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>951d6323-ba88-4748-83bf-61c2f703575f</Id>
+  <Version>ae24be27-01bc-4642-89a3-1ed1ed50d43e</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>EmailPublisher</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
+  <SubscriberId>EmailPublisher</SubscriberId>
+  <ClientGroup>General</ClientGroup>
+  <Zone>Enterprise</Zone>
+  <Enabled>true</Enabled>
+  <Subscriptions>
+    <Subscription>
+      <TopicName>Email</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <MatchMessagePatterns />
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+  </Subscriptions>
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
+  <MessagePipelines>
+    <ClientPipelineItem>
+      <Id>9609f024-b0e7-490f-a867-de8242f2084e</Id>
+      <Version>5e94e0e7-b06f-418a-b9d8-1ff9e676579b</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>Process Email</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>a4fa8361-d8cd-4309-9f85-e1504ae9bb48</Id>
+        <Version>1caf6f2d-1116-4b71-aa87-aa64dcb7ef4b</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition />
+      </PipelineConditions>
+    </ClientPipelineItem>
+  </MessagePipelines>
+  <LogActivity>false</LogActivity>
+  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+</ESBSubscriber>

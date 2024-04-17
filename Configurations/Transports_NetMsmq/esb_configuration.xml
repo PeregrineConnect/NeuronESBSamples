@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version>29</Version>
+  <EnvironmentName>Transports_NetMsmq</EnvironmentName>
+  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <ApplicationName>Transports_NetMsmq</ApplicationName>
+  <ApplicationId>e840bfbf-13fd-4d97-8f61-d93e05dfb935</ApplicationId>
+  <ZoneName>Enterprise</ZoneName>
+  <ChangeList>
+    <Additions />
+    <Revisions>
+      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
+      <string>Edit,Enterprise,topic,Inquiries</string>
+      <string>Edit,Enterprise,topic,Notifications</string>
+    </Revisions>
+    <Deletions />
+    <LastModifiedBy />
+    <LastModifiedDate>2023-03-29T14:21:00.6064441Z</LastModifiedDate>
+    <Comments />
+  </ChangeList>
+  <NeuronEnvironmentVariables />
+  <ProcessFolders />
+  <DataMapperPort>8585</DataMapperPort>
+  <InstanceName />
+  <Zones />
+  <Topics />
+  <Subscribers />
+  <Services />
+  <WorkflowDefinitions />
+  <WorkflowHosts />
+  <AvailabilityGroups />
+  <OAuthProviders />
+  <ESBMessagePipelines />
+  <Schemas />
+  <JsonSchemas />
+  <XmlDocs />
+  <TextDocs />
+  <JsonDocs />
+  <SwaggerDocs />
+  <WsdlDocuments />
+  <Xslts />
+  <DataMappers />
+  <BusinessEvents />
+  <Deployments />
+  <MessagePatterns />
+  <Bridges />
+  <Databases />
+  <Keys />
+  <Workflows />
+  <Applications />
+  <BusinessFlows />
+  <Bindings />
+  <ServiceRoutingTables />
+  <Behaviors />
+  <Adapters />
+  <Credentials />
+  <ServicePolicies />
+  <AdapterPolicies />
+  <Endpoints />
+  <AccessControlLists />
+  <Administrators />
+  <IsEncrypted>false</IsEncrypted>
+</ESBConfiguration>
