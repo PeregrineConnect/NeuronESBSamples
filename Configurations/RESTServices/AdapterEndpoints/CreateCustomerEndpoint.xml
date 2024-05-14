@@ -3,6 +3,7 @@
   <Id>f2871e3b-5112-415e-a260-7d4276280345</Id>
   <Version>b1ad6f8c-3a4c-494c-81b5-1a99e60346b7</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>CreateCustomerEndpoint</Name>
   <Group>General</Group>
@@ -19,8 +20,8 @@
   <AdapterMessageDirection>DatagramSender</AdapterMessageDirection>
   <AdapterClass>Neuron.Esb.Adapters.OdbcAdapter</AdapterClass>
   <AdapterMode>Execute</AdapterMode>
-  <ProcessMode>true</ProcessMode>
-  <ClientProcessMode>Messaging</ClientProcessMode>
+  <ProcessMode>false</ProcessMode>
+  <ClientProcessMode>None</ClientProcessMode>
   <ProcessList />
   <ServiceRateEnable>false</ServiceRateEnable>
   <Properties>

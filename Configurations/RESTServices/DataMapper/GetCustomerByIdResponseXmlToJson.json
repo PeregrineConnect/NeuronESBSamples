@@ -1,12 +1,12 @@
 ﻿{
-  "AtlasMapping" : {
-    "jsonType" : "io.atlasmap.v2.AtlasMapping",
+  "dataMapperMapping" : {
+    "$type" : "Peregrine.DataMapper.Model.DataMapperMapping, Peregrine.DataMapper.Model",
     "dataSource" : [ {
-      "jsonType" : "io.atlasmap.xml.v2.XmlDataSource",
+      "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlDataSource, Peregrine.DataMapper.XmlModule",
       "id" : "CustomerServiceSchemas_GetCustomerByIDResponse-XSD",
       "name" : "CustomerServiceSchemas_GetCustomerByIDResponse-XSD",
       "description" : "Source document CustomerServiceSchemas_GetCustomerByIDResponse-XSD type: XSD",
-      "uri" : "atlas:xml:CustomerServiceSchemas_GetCustomerByIDResponse-XSD",
+      "uri" : "datamapper:xml:CustomerServiceSchemas_GetCustomerByIDResponse-XSD",
       "dataSourceType" : "SOURCE",
       "xmlNamespaces" : {
         "xmlNamespace" : [ {
@@ -15,18 +15,18 @@
         } ]
       }
     }, {
-      "jsonType" : "io.atlasmap.json.v2.JsonDataSource",
+      "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonDataSource, Peregrine.DataMapper.JsonModule",
       "id" : "GetCustomerByIdResponseJson-JSON",
       "name" : "GetCustomerByIdResponseJson-JSON",
       "description" : "Target document GetCustomerByIdResponseJson-JSON type: JSON",
-      "uri" : "atlas:json:GetCustomerByIdResponseJson-JSON",
+      "uri" : "datamapper:json:GetCustomerByIdResponseJson-JSON",
       "dataSourceType" : "TARGET"
     } ],
     "mappings" : {
       "mapping" : [ {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "CustomerServiceSchemas_GetCustomerByIDResponse-XSD",
           "path" : "/tns:GetCustomerByIDResponse/tns:GetCustomerByIDResult/tns:Email",
           "fieldType" : "STRING",
@@ -34,7 +34,7 @@
           "attribute" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "GetCustomerByIdResponseJson-JSON",
           "path" : "/email",
           "fieldType" : "STRING",
@@ -44,9 +44,9 @@
         "id" : "mapping.73447",
         "pageNumber" : 0
       }, {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "CustomerServiceSchemas_GetCustomerByIDResponse-XSD",
           "path" : "/tns:GetCustomerByIDResponse/tns:GetCustomerByIDResult/tns:ID",
           "fieldType" : "LONG",
@@ -54,7 +54,7 @@
           "attribute" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "GetCustomerByIdResponseJson-JSON",
           "path" : "/id",
           "fieldType" : "INTEGER",
@@ -64,9 +64,9 @@
         "id" : "mapping.866514",
         "pageNumber" : 0
       }, {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "CustomerServiceSchemas_GetCustomerByIDResponse-XSD",
           "path" : "/tns:GetCustomerByIDResponse/tns:GetCustomerByIDResult/tns:Name",
           "fieldType" : "STRING",
@@ -74,7 +74,7 @@
           "attribute" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "GetCustomerByIdResponseJson-JSON",
           "path" : "/name",
           "fieldType" : "STRING",

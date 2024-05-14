@@ -3,6 +3,7 @@
   <Id>36a436e6-0af8-4937-82bf-7b3ea6667912</Id>
   <Version>183f26e6-ef9a-460d-9ab9-89f60f1bc397</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>DeleteCustomerEndpoint</Name>
   <Group>General</Group>
@@ -19,8 +20,8 @@
   <AdapterMessageDirection>DatagramSender</AdapterMessageDirection>
   <AdapterClass>Neuron.Esb.Adapters.OdbcAdapter</AdapterClass>
   <AdapterMode>Execute</AdapterMode>
-  <ProcessMode>true</ProcessMode>
-  <ClientProcessMode>Messaging</ClientProcessMode>
+  <ProcessMode>false</ProcessMode>
+  <ClientProcessMode>None</ClientProcessMode>
   <ProcessList />
   <ServiceRateEnable>false</ServiceRateEnable>
   <Properties>

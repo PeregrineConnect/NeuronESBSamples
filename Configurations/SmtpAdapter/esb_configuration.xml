@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>60</Version>
+  <Version>62</Version>
   <EnvironmentName>SmtpAdapter</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0.238</DesignerBuildVersion>
   <ApplicationName>SmtpAdapter</ApplicationName>
   <ApplicationId>3e505bb9-c009-4b64-846a-2ad9879e2347</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
-      <string>Edit,Enterprise,topic,Alerts</string>
+      <string>Edit,*,pipeline,Set Dynamic Smtp Properties</string>
+      <string>Edit,Enterprise,publisher,DynamicAlertsPublisher</string>
     </Revisions>
     <Deletions />
     <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:19:41.8794899Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedDate>2024-05-13T13:28:15.8917853Z</LastModifiedDate>
+    <Comments>Edited pipeline named 'Set Dynamic Smtp Properties' in *", Edited publisher named 'DynamicAlertsPublisher' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -42,6 +42,7 @@
           <Id>d8dcd927-9ce6-4ae6-9cba-f9bb35b1769b</Id>
           <Version>2364cc57-2323-4a67-bc65-11dd8973a8bf</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>DynamicSampleXml</Name>
           <Group>General</Group>
@@ -63,6 +64,7 @@
           <Id>d5cf9a71-6121-4351-b641-c42faf2e860a</Id>
           <Version>376bb4bc-1030-44f0-918c-6a1129fb120b</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>StaticSampleXml</Name>
           <Group>General</Group>
@@ -90,6 +92,7 @@
           <Id>c85d614d-c88a-4576-88de-78d53883101c</Id>
           <Version>647bc666-8d38-4d5e-8d6c-907b0b6a462d</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>FailureToHtml</Name>
           <Group>General</Group>
@@ -113,6 +116,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

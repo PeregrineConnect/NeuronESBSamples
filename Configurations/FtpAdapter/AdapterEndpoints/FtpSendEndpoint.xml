@@ -3,6 +3,7 @@
   <Id>3017beb4-ceb8-4170-926e-d594576c99ce</Id>
   <Version>1a9e5e39-96b7-4fcb-aebd-250fb0d93f2b</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>FtpSendEndpoint</Name>
   <Group />

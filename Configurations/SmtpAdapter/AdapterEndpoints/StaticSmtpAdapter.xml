@@ -3,6 +3,7 @@
   <Id>ef78c7f5-5c43-49ff-8209-b66717aacefb</Id>
   <Version>d8f30eab-8248-4890-b056-0a3709f3ebc5</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>StaticSmtpAdapter</Name>
   <Group />

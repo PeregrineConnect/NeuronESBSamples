@@ -3,6 +3,7 @@
   <Id>f2bd0e17-1f92-4ca9-8184-54214976e204</Id>
   <Version>4c419280-427c-4739-a06e-933eef7227b8</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>ImageFileSubscriberEndpoint</Name>
   <Group>General</Group>
@@ -19,8 +20,8 @@
   <AdapterMessageDirection>DatagramSender</AdapterMessageDirection>
   <AdapterClass>Neuron.Esb.Adapters.FileAdapter</AdapterClass>
   <AdapterMode>Subscribe</AdapterMode>
-  <ProcessMode>true</ProcessMode>
-  <ClientProcessMode>Messaging</ClientProcessMode>
+  <ProcessMode>false</ProcessMode>
+  <ClientProcessMode>None</ClientProcessMode>
   <ProcessList />
   <ServiceRateEnable>false</ServiceRateEnable>
   <Properties>

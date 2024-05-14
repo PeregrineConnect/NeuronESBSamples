@@ -3,6 +3,7 @@
   <Id>7838db0f-5f57-4c4f-9575-de3f205212f3</Id>
   <Version>4f2d8507-6086-4c40-8bd1-6d05a76ec396</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>CRM2013SolicitResponseEndpoint</Name>
   <Group />

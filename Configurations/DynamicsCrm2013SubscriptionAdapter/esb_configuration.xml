@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>48</Version>
+  <Version>49</Version>
   <EnvironmentName>DynamicsCrm2013SubscriptionAdapter</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>3.8.0.1476</NeuronBuildVersion>
+  <DesignerBuildVersion>3.8.0.1476</DesignerBuildVersion>
   <ApplicationName>DynamicsCrm2013SubscriptionAdapter</ApplicationName>
   <ApplicationId>6052fc15-c8bb-47c0-8f80-2d80ec31720b</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
-      <string>Edit,Enterprise,topic,CRM</string>
+      <string>Edit,Enterprise,adapter endpoint,CRM2013OneWayEndpoint</string>
+      <string>Edit,Enterprise,adapter endpoint,CRM2013SolicitResponseEndpoint</string>
     </Revisions>
     <Deletions />
     <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:12:31.935539Z</LastModifiedDate>
+    <LastModifiedDate>2024-05-13T13:11:26.6082232Z</LastModifiedDate>
     <Comments />
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -40,6 +40,7 @@
           <Id>7cdf8ea3-92b6-4252-9905-ecd2cc996189</Id>
           <Version>00920f85-cc98-4279-8eb4-1d45102c8c9d</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This Set Entity State schema was imported by the Dynamics CRM adapter.</Description>
           <Name>account_Set Entity State</Name>
           <Group>General</Group>
@@ -66,6 +67,7 @@
           <Id>1aeda344-c771-4a55-8c3b-fa3abaaa069c</Id>
           <Version>226a4354-c966-4332-b12d-218244e1392d</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This Execute Query schema was imported by the Dynamics CRM adapter.</Description>
           <Name>Execute Query</Name>
           <Group>General</Group>
@@ -95,6 +97,7 @@
           <Id>ec91371f-9eb5-4bb2-a9ed-1fdd46031fba</Id>
           <Version>34363566-03ca-4b4f-9501-63f359926034</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This Xml document will save a contact named "John Smith" to Dynamics CRM 2013.</Description>
           <Name>1 - SaveCrmRecord</Name>
           <Group>General</Group>
@@ -116,6 +119,7 @@
           <Id>4f6772b0-a280-4bc7-9930-a38efb0e397c</Id>
           <Version>8d52bf11-0f7b-456d-8489-5e543af55bc4</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This Xml document will save an account called "Sample Account" to Dynamics CRM 2013.  It uses a lookup of the contact "John Smith" to set that contact as the account's primary contact.</Description>
           <Name>2 - SaveCrmRecordWithLookup</Name>
           <Group>General</Group>
@@ -137,6 +141,7 @@
           <Id>e1895ef6-2991-48f9-80db-468aaebfec48</Id>
           <Version>a23d3e0d-ed9a-4030-a3f8-157ab8ea15d9</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This Xml document will create a fax activity in Dynamics CRM 2013.  It uses lookups to find two contact that the fax will be sent to and the account that the fax is from.  These lookups are then added to the party lists "to" and "from", using the multi-valued properties feature of the adapter.  Note - one of the contacts and the account used in this sample is from the sample CRM data.  If you don't have the sample data installed you will need to modify the lookup values to a contact and an account that already exists.</Description>
           <Name>3 - SaveCrmRecordWithMultiValuedProperties</Name>
           <Group>General</Group>
@@ -158,6 +163,7 @@
           <Id>a636de57-de6a-471f-bc90-4852bad35a7e</Id>
           <Version>606a1b88-7abe-4c88-a5ba-5db35b1f399e</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This Xml document will delete the account called "Sample Account" from Dynamics CRM 2013.  It uses a lookup to find the account based on the account name.</Description>
           <Name>6 - DeleteCrmRecordWithLookup</Name>
           <Group>General</Group>
@@ -179,6 +185,7 @@
           <Id>409fbbb0-fa54-4d9a-82b2-a1a016bc69e8</Id>
           <Version>aacd834c-46eb-4fa5-afc7-a4bedfd74692</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This Xml document will modify the state of an account in Dynamics CRM 2013.  It uses a lookup to find the account based on the account name, and then sets the state to inactive.</Description>
           <Name>4 - SetCrmStateInactiveWithLookup</Name>
           <Group>General</Group>
@@ -200,6 +207,7 @@
           <Id>75f4fc6d-9792-44bb-8fbd-81f352f49e41</Id>
           <Version>aacd834c-46eb-4fa5-afc7-a4bedfd74692</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This Xml document will modify the state of an account in Dynamics CRM 2013.  It uses a lookup to find the account based on the account name, and then sets the state to active.</Description>
           <Name>5 - SetCrmStateActiveWithLookup</Name>
           <Group>General</Group>
@@ -221,6 +229,7 @@
           <Id>ee627e91-4d4a-4a63-b48e-d825e3ca7c2c</Id>
           <Version>75d2eb94-6480-4db5-bbae-71a0ac242a67</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This Xml document will retrieve Dynamics CRM 2013 entity data based on a Fetch XML query.  This query will retrieve the account Id's and names for all the accounts.</Description>
           <Name>7 - GetCrmRecord</Name>
           <Group>General</Group>
@@ -242,6 +251,7 @@
           <Id>4d3a2dbf-2e37-4407-b2a3-f467d7f7e321</Id>
           <Version>28e61cd7-97d4-4726-a4fe-c8b30d13f09a</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This is the sample Xml for the account_Set Entity State schema.  Generated by the Dynamics CRM 2013 adapter.</Description>
           <Name>account_Set Entity State_NeuronCrmAdapterMessage</Name>
           <Group>General</Group>
@@ -263,6 +273,7 @@
           <Id>ad7b2146-c4ed-4587-8513-b677314b2a3c</Id>
           <Version>2adb596f-d3f1-4b1f-b9e4-0da61e43a74e</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This is the sample Xml for the account_Set Entity State schema.  Generated by the Dynamics CRM 2013 adapter.</Description>
           <Name>account_Set Entity State_NeuronCrmAdapterMessageResponse</Name>
           <Group>General</Group>
@@ -284,6 +295,7 @@
           <Id>62032859-6776-4d7d-89ad-11dd8b2e45ff</Id>
           <Version>bc742777-4816-486a-a44c-14ee0614fb2b</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This is the sample Xml for the Execute Query schema.  Generated by the Dynamics CRM 2013 adapter.</Description>
           <Name>Execute Query_NeuronCrmAdapterMessage</Name>
           <Group>General</Group>
@@ -305,6 +317,7 @@
           <Id>cf58976c-7b1b-4e7b-bf11-4eac766072ef</Id>
           <Version>eb07ac16-0d12-4316-8904-d77d4e2b1caf</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>This is the sample Xml for the Execute Query schema.  Generated by the Dynamics CRM 2013 adapter.</Description>
           <Name>Execute Query_NeuronCrmAdapterMessageResponse</Name>
           <Group>General</Group>
@@ -333,6 +346,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

@@ -3,6 +3,7 @@
   <Id>c9c61934-1428-426c-ae9d-91291853909e</Id>
   <Version>cef75965-8550-479a-9cd3-ce3667ae79ed</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>ODBCOrderQueries</Name>
   <Group />
@@ -19,8 +20,8 @@
   <AdapterMessageDirection>RequestReplySender</AdapterMessageDirection>
   <AdapterClass>Neuron.Esb.Adapters.OdbcAdapter</AdapterClass>
   <AdapterMode>Query</AdapterMode>
-  <ProcessMode>true</ProcessMode>
-  <ClientProcessMode>Messaging</ClientProcessMode>
+  <ProcessMode>false</ProcessMode>
+  <ClientProcessMode>None</ClientProcessMode>
   <ProcessList />
   <ServiceRateEnable>false</ServiceRateEnable>
   <Properties>

@@ -3,6 +3,7 @@
   <Id>4d7ee0cb-97ed-43d0-a71c-7fd6158ab227</Id>
   <Version>206cf288-f105-43c9-8c94-bac0316010c7</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>POP3Endpoint</Name>
   <Group />

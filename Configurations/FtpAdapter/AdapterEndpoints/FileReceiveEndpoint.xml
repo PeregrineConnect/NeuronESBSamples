@@ -3,6 +3,7 @@
   <Id>e0cd6162-5d3a-4cfa-b42a-9f16ee3cff14</Id>
   <Version>70e7b490-38f9-4e70-b9c2-98558484dba3</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>FileReceiveEndpoint</Name>
   <Group />

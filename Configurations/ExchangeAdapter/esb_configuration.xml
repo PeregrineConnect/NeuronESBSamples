@@ -1,25 +1,26 @@
 <?xml version="1.0"?>
 <ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>73</Version>
+  <Version>74</Version>
   <EnvironmentName>ExchangeAdapter</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>3.8.0.1476</NeuronBuildVersion>
+  <DesignerBuildVersion>3.8.0.1476</DesignerBuildVersion>
   <ApplicationName>ExchangeAdapter</ApplicationName>
   <ApplicationId>433751fc-34b0-42a1-bf1e-f24a5adaafb0</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
-      <string>Edit,Enterprise,topic,Email</string>
+      <string>Edit,Enterprise,adapter endpoint,ExchangeEndpoint</string>
+      <string>Edit,Enterprise,adapter endpoint,FileOutEndpoint</string>
+      <string>Edit,Enterprise,adapter endpoint,POP3Endpoint</string>
     </Revisions>
     <Deletions />
     <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:12:57.8861738Z</LastModifiedDate>
+    <LastModifiedDate>2024-05-13T13:00:14.736639Z</LastModifiedDate>
     <Comments />
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -48,6 +49,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

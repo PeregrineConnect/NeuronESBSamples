@@ -3,6 +3,7 @@
   <Id>86672568-4816-42bf-a792-24d8fc669db3</Id>
   <Version>b5563a50-e7d1-4978-a376-d38302718505</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>FtpReceiveEndpoint</Name>
   <Group />

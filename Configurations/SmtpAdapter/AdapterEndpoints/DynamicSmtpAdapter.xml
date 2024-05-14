@@ -3,6 +3,7 @@
   <Id>b7cf5c3a-3f80-411e-8fbb-e06b71ee9efb</Id>
   <Version>eac1bb50-f1ed-4680-8773-c983fcddbb37</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>DynamicSmtpAdapter</Name>
   <Group />

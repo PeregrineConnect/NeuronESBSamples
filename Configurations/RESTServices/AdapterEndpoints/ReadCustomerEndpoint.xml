@@ -3,6 +3,7 @@
   <Id>0932e1ba-e9f9-4600-b3a4-c05b7c747b9f</Id>
   <Version>dd25d82f-5892-42aa-9ee1-e73741943d2a</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>ReadCustomerEndpoint</Name>
   <Group>General</Group>
@@ -19,8 +20,8 @@
   <AdapterMessageDirection>RequestReplySender</AdapterMessageDirection>
   <AdapterClass>Neuron.Esb.Adapters.OdbcAdapter</AdapterClass>
   <AdapterMode>Query</AdapterMode>
-  <ProcessMode>true</ProcessMode>
-  <ClientProcessMode>Messaging</ClientProcessMode>
+  <ProcessMode>false</ProcessMode>
+  <ClientProcessMode>None</ClientProcessMode>
   <ProcessList />
   <ServiceRateEnable>false</ServiceRateEnable>
   <Properties>

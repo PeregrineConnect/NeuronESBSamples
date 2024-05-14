@@ -1,19 +1,19 @@
 ﻿{
-  "AtlasMapping" : {
-    "jsonType" : "io.atlasmap.v2.AtlasMapping",
+  "dataMapperMapping" : {
+    "$type" : "Peregrine.DataMapper.Model.DataMapperMapping, Peregrine.DataMapper.Model",
     "dataSource" : [ {
-      "jsonType" : "io.atlasmap.json.v2.JsonDataSource",
+      "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonDataSource, Peregrine.DataMapper.JsonModule",
       "id" : "CustomerResultJson-JSON",
       "name" : "CustomerResultJson-JSON",
       "description" : "Source document CustomerResultJson-JSON type: JSON",
-      "uri" : "atlas:json:CustomerResultJson-JSON",
+      "uri" : "datamapper:json:CustomerResultJson-JSON",
       "dataSourceType" : "SOURCE"
     }, {
-      "jsonType" : "io.atlasmap.xml.v2.XmlDataSource",
+      "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlDataSource, Peregrine.DataMapper.XmlModule",
       "id" : "CustomerServiceSchemas_AddCustomerResponse-XSD",
       "name" : "CustomerServiceSchemas_AddCustomerResponse-XSD",
       "description" : "Target document CustomerServiceSchemas_AddCustomerResponse-XSD type: XSD",
-      "uri" : "atlas:xml:CustomerServiceSchemas_AddCustomerResponse-XSD",
+      "uri" : "datamapper:xml:CustomerServiceSchemas_AddCustomerResponse-XSD",
       "dataSourceType" : "TARGET",
       "xmlNamespaces" : {
         "xmlNamespace" : [ {
@@ -24,9 +24,9 @@
     } ],
     "mappings" : {
       "mapping" : [ {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "CustomerResultJson-JSON",
           "path" : "/errorMsg",
           "fieldType" : "STRING",
@@ -34,7 +34,7 @@
           "userCreated" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "CustomerServiceSchemas_AddCustomerResponse-XSD",
           "path" : "/tns:AddCustomerResponse/tns:AddCustomerResult/tns:errorMsg",
           "fieldType" : "STRING",
@@ -44,9 +44,9 @@
         "id" : "mapping.42383",
         "pageNumber" : 0
       }, {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "CustomerResultJson-JSON",
           "path" : "/success",
           "fieldType" : "BOOLEAN",
@@ -54,7 +54,7 @@
           "userCreated" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "CustomerServiceSchemas_AddCustomerResponse-XSD",
           "path" : "/tns:AddCustomerResponse/tns:AddCustomerResult/tns:success",
           "fieldType" : "BOOLEAN",

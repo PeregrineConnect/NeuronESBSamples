@@ -3,6 +3,7 @@
   <Id>586dde56-7c97-45e9-a413-9ecb28b22721</Id>
   <Version>8380b77f-691d-4d53-912a-f6a28a2b0665</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>FileSendEndpoint</Name>
   <Group />

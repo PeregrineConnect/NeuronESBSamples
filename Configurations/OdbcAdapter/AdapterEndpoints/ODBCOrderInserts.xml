@@ -3,6 +3,7 @@
   <Id>683529b7-1c90-49b8-9eca-758aefb03376</Id>
   <Version>e72e6092-bdc8-4003-a0d1-32eaf5eea691</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>ODBCOrderInserts</Name>
   <Group />
@@ -19,8 +20,8 @@
   <AdapterMessageDirection>DatagramSender</AdapterMessageDirection>
   <AdapterClass>Neuron.Esb.Adapters.OdbcAdapter</AdapterClass>
   <AdapterMode>Execute</AdapterMode>
-  <ProcessMode>true</ProcessMode>
-  <ClientProcessMode>Messaging</ClientProcessMode>
+  <ProcessMode>false</ProcessMode>
+  <ClientProcessMode>None</ClientProcessMode>
   <ProcessList />
   <ServiceRateEnable>false</ServiceRateEnable>
   <Properties>

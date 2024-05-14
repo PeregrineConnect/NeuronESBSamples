@@ -3,6 +3,7 @@
   <Id>11ae183d-12c2-4e13-9651-d9cecb35b1ff</Id>
   <Version>b5970a3f-cff1-4be0-a8c4-c364937960cb</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>FileOutEndpoint</Name>
   <Group />

@@ -3,6 +3,7 @@
   <Id>8c87a6a6-841f-4589-8c64-2d50a369c802</Id>
   <Version>b84bae3d-1440-4639-b5dc-a754f1ceb94a</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>ImageFilePublisherEndpoint</Name>
   <Group>General</Group>
@@ -26,6 +27,7 @@
       <Id>968c2850-bc89-4aa5-854c-c58aefda8ffc</Id>
       <Version>0738921a-7136-431b-9ea4-f4b73c5cd1d8</Version>
       <BusinessFlows />
+      <ProcessFlows />
       <Description />
       <Name>Send Image to REST API</Name>
       <IsSystemObject>false</IsSystemObject>
@@ -36,6 +38,7 @@
         <Id>00b68dc2-e2fe-4182-b994-c9be767d1de0</Id>
         <Version>4a8149d2-3151-4160-bf76-8c9646b588a8</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>

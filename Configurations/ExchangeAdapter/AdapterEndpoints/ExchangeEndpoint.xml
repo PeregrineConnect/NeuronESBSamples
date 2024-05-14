@@ -3,6 +3,7 @@
   <Id>820a66a6-912b-4fa4-9584-b662053c9848</Id>
   <Version>f7cbe8fb-1c94-4d71-a100-71ad90d03f59</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>ExchangeEndpoint</Name>
   <Group />
