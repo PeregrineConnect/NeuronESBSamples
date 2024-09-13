@@ -1,16 +1,23 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ServiceModel;
 using System.Threading;
 using System.Runtime.Serialization;
+using Microsoft.AspNetCore.Builder;
+using CoreWCF.Configuration;
+using Microsoft.Extensions.Hosting;
+using CoreWCF;
+using CoreWCF.Description;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Hosting;
 
 //This sample service is intended to be run in conjunction with
 //the Neuron Process sample: Retry Service that can be found in the 
 //Neuron sample configuration file RetryWebSerivceCall.esb
 
-namespace Neuron.Esb.Samples.Processes
+namespace Neuron.NetX.Samples.Processes
 {
-    [ServiceContract(Namespace="http://neuron.esb.samples.processes/")]
+    [ServiceContract(Namespace="http://neuron.netx.samples.processes/")]
     public interface IServiceProcessService
     {
         [OperationContract]
@@ -30,13 +37,37 @@ namespace Neuron.Esb.Samples.Processes
     {
         static void Main(string[] args)
         {
-            using (ServiceHost host = new ServiceHost(typeof(ServiceProcessService)))
+            var builder = WebApplication.CreateBuilder();
+
+            builder.Services.AddServiceModelServices().AddServiceModelMetadata();
+            builder.WebHost.UseUrls("http://localhost:8003");
+            var app = builder.Build();
+
+            app.UseServiceModel(serviceBuilder =>
             {
-                host.Open();
+                 serviceBuilder.AddService<ServiceProcessService>
+                 (serviceOptions => 
+                     {
+                           serviceOptions.DebugBehavior.IncludeExceptionDetailInFaults = true; 
+                           serviceOptions.BaseAddresses.Add(new Uri("http://localhost:8003"));
+                     }
+                );
+
+                var basicHttpBinding = new BasicHttpBinding();
+
+                serviceBuilder.AddServiceEndpoint<ServiceProcessService, IServiceProcessService>
+                (basicHttpBinding, "/samples/processes/serviceprocess");
+             });
+
+			// Enable getting metadata/wsdl
+			var serviceMetadataBehavior = app.Services.GetRequiredService<ServiceMetadataBehavior>();
+            serviceMetadataBehavior.HttpGetEnabled = true;
+            serviceMetadataBehavior.HttpGetUrl = new Uri("http://localhost:8003/ServiceProcess/metadata");
+			app.Start();
                 Console.WriteLine("The service is ready.");
                 Console.WriteLine("Press <ENTER> to terminate service.");
                 Console.ReadLine();
-            }
+            app.StopAsync().Wait();
         }
 
 

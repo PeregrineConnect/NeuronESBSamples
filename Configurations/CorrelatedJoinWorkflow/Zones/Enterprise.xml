@@ -3,6 +3,7 @@
   <Id>c2549902-18ec-40c3-8aa8-02b190477fcf</Id>
   <Version>998d9ea2-7c02-4a95-ab18-54700a50ff75</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description>Sample zone</Description>
   <Name>Enterprise</Name>
   <IsSystemObject>false</IsSystemObject>

@@ -1,11 +1,9 @@
-﻿using System.ComponentModel;
-using System.Reflection;
-using System.Resources;
+﻿using Neuron.NetX;
+using Neuron.NetX.Pipelines;
+using Neuron.Pipeline.Activities;
+using Neuron.Pipeline.Activities2;
+using System.ComponentModel;
 using System.Runtime.Serialization;
-using Neuron.Esb;
-using Neuron.Esb.Pipelines;
-using Neuron.Pipelines;
-using Neuron.Pipelines.Design;
 
 namespace ComplexProcessStep
 {
@@ -33,20 +31,36 @@ namespace ComplexProcessStep
     [DataContract]
     [Description("Sample process step with a custom UI")]
     [DisplayName(Globals.StepName)]
-    [ProcessStep(typeof(MyComplexProcessStep), typeof(Resource1), "name", "description", "ComplexProcessStep_MyComplexProcessStep", typeof(MyComplexProcessStepUIElement),
+    [ProcessStep(typeof(MyComplexProcessStep), typeof(Resource1), "name", "description", "ComplexProcessStep_MyComplexProcessStep", "",
     Path = "Custom Process Steps")]
     public class MyComplexProcessStep : CustomPipelineStep
     {
-        
-        /// <summary>
-        /// If these properties are required for design time configuration then they must be replicated in the Wrapper class of the UI Element class
-        /// </summary>
+        [Category("Default")]
+        [PropertyOrder(3)]
+        [DisplayName("Description")]
+        [Description("This is a description of what the step will do.")]
         [DataMember]
         public string Description { get; set; }
+
+        [Category("Default")]
+        [DisplayName("Message")]
+        [PropertyOrder(2)]
+        [Description("Test Desc.")]
         [DataMember]
         public string CustomMessage { get; set; }
+
+        [PropertyOrder(1)]
+        [Category("Default")]
+        [DisplayName("IsEnabled")]
+        [Description("To test the functionality of PropertyAttributesProvider.")]
         [DataMember]
         public bool IsEnabled { get; set; }
+
+        [Category("Default")]
+        [DisplayName("ShowMe")]
+        [PropertyOrder(0)]
+        [Description("Should be visible only when IsEnabled is set to true.")]
+        [PropertyVisibility(0, ELeftParenthesis.None, nameof(IsEnabled), ERelationalOperator.Equals, "true", ELogicalOperator.None, ERightParenthesis.None)]
         [DataMember]
         public string ShowMe { get; set; }
 
@@ -63,10 +77,10 @@ namespace ComplexProcessStep
         /// This is where the magic should happen....all code to manipulate change or process the incoming ESB Message
         /// </summary>
         /// <param name="context"></param>
-        protected override void OnExecute(PipelineContext<ESBMessage> context)
+        protected async override Task OnExecute(PipelineContext<ESBMessage> context)
         {
-            System.IO.File.WriteAllText(@"C:\complexprocessstep.txt", ("MyComplexProcessStep called. Value of MyProperty1 = " + CustomMessage));
-            context.Instance.TraceInformation("MyCustomProcessStep called. Value of MyProperty1 = " + CustomMessage);
+            System.IO.File.WriteAllText(@"C:\complexprocessstep.txt", ("MyComplexProcessStep called. Value of CustomMessage = " + CustomMessage));
+            context.Instance.TraceInformation("MyCustomProcessStep called. Value of CustomMessage = " + CustomMessage);
         }
     }
 }

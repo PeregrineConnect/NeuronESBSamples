@@ -1,18 +1,15 @@
-﻿using Neuron.Esb.Administration;
-using Neuron.Esb.Internal;
+﻿using log4net;
+using Neuron.Internal;
+using Neuron.NetX.Administration;
 using Peregrine.Scheduler.Interfaces.Core;
 using Quartz;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
-using Neuron.Esb;
-using log4net;
-using System.Threading;
 
 namespace CustomLogMonitorJob
 {
@@ -44,7 +41,7 @@ namespace CustomLogMonitorJob
         {
            
             //arguments in JobDataMap.  Create a free test SMTP account using MailTrap.io for Smtp testing
-            var rootLogFolder = context.MergedJobDataMap.GetString("RootLogFolder"); // @"C:\Program Files\Neudesic\Neuron ESB v3\logs\DEFAULT"
+            var rootLogFolder = context.MergedJobDataMap.GetString("RootLogFolder"); // @"C:\Program Files\Peregrine\Neuron ESB v3\logs\DEFAULT"
             var searchPattern = context.MergedJobDataMap.GetString("SearchPattern"); //"*INTERNAL_ManagementService*.log"
             var searchTerm = context.MergedJobDataMap.GetString("SearchTerm"); //"DEBUG"
             var lineLengthOffset = context.MergedJobDataMap.GetIntValue("LineLengthOffset"); // Gets number of characters before and after search term must be int
@@ -112,7 +109,7 @@ namespace CustomLogMonitorJob
                 return Task.CompletedTask;
                 //Return this if you want to show the job as failed when it is cancelled.
                 //return Task.FromException(new Neuron.Esb.ScheduledJobCancellationException("Job was cancelled by scheduler"));
-            }
+            }            
         }
 
         static string ReadTail(string filename, int tailBytes)

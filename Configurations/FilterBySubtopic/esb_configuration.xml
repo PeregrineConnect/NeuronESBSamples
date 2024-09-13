@@ -1,25 +1,26 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>24</Version>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>25</Version>
   <EnvironmentName>FilterBySubtopic</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
   <ApplicationName>FilterBySubtopic</ApplicationName>
   <ApplicationId>40fcacd5-e9cf-42a1-8dcb-14e049ed4479</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+    </Additions>
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
       <string>Edit,Enterprise,topic,Contacts</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:13:33.9391178Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-07-03T07:37:12.8079354Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Neuron ESB Default Topic Host' to *", Edited topic named 'Contacts' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -47,6 +48,7 @@
           <Id>60ca66d4-277d-4712-bb23-ef0524253c91</Id>
           <Version>a7b11e79-b42a-4ce0-b568-0fe78ca6e87b</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>TransformContactXsl</Name>
           <Group>General</Group>
@@ -70,6 +72,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

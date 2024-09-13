@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Neuron.Internal;
+using Neuron.NetX.Administration;
+using Neuron.NetX.Internal;
 using System.ComponentModel;
-using Neuron.Esb.Internal;
-using System.Windows.Forms;
-using Neuron.Esb.Administration;
-using Neuron.Explorer;
 using System.Globalization;
 
-namespace Neuron.Esb.Adapters
+namespace Neuron.NetX.Adapters
 {
     /// <summary>
     /// Sample type converter demonstrates how to access the Neuron ESB Configuration at design time to show a list of 
@@ -28,7 +25,7 @@ namespace Neuron.Esb.Adapters
             try
             {
                 // This obtains a reference to some of the variables from the Neuron Explorer via injection
-                var formMain = ServiceLocator.Get<IFormMain>();
+                var formMain = ServiceLocator.Get<IApplicationContext>();
 
                 // get creds
                 SerializableDictionary<string, ESBCredential> idList = formMain.Configuration.Credentials;
@@ -39,7 +36,7 @@ namespace Neuron.Esb.Adapters
                     foreach (KeyValuePair<string, ESBCredential> kvp in idList)
                     {
                         // add to new string array
-                        if (!kvp.Value.IsSystemObject && kvp.Value.Type == CredentialType.ServerCert)
+                        if (!kvp.Value.IsSystemObject && kvp.Value.Type ==  NetX.Internal.CredentialType.ServerCert)
                         {
                             list.Add(kvp.Value.Name);
                             
@@ -53,12 +50,16 @@ namespace Neuron.Esb.Adapters
             }
             catch (System.ServiceModel.EndpointNotFoundException)
             {
-                    MessageBox.Show( string.Format(CultureInfo.InvariantCulture,"Exception occurred while retrieveing the list of Server Certificates from the \r\nNeuron ESB Server. Please confirm that the Neuron ESB service \r\nis started."), string.Format(CultureInfo.InvariantCulture,"Adapter Property Configuration Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show( string.Format(CultureInfo.InvariantCulture,"Exception occurred while retrieveing the list of Server Certificates from the \r\nNeuron ESB Server. Please confirm that the Neuron ESB service \r\nis started."), string.Format(CultureInfo.InvariantCulture,"Adapter Property Configuration Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                AdapterErrorComponent.AddToErrorComponent(context.Container, string.Format(CultureInfo.InvariantCulture, "Exception occurred while retrieveing the list of Server Certificates from the \r\nNeuron ESB Server. Please confirm that the Neuron ESB service \r\nis started."), string.Format(CultureInfo.InvariantCulture, "Adapter Property Configuration Error"));
 
             }
             catch (Exception ex)
             {
-                    MessageBox.Show(ex.Message, string.Format(CultureInfo.InvariantCulture,"Adapter Property Configuration Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show(ex.Message, string.Format(CultureInfo.InvariantCulture,"Adapter Property Configuration Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                AdapterErrorComponent.AddToErrorComponent(context.Container, string.Format(CultureInfo.InvariantCulture, "{0}", ex.Message), string.Format(CultureInfo.InvariantCulture, "Adapter Property Configuration Error"));
             }
 
             return new StandardValuesCollection(list);

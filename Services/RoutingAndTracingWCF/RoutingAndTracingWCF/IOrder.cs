@@ -27,7 +27,7 @@ namespace RoutingAndTracingWCF
         public string CustomerName { get; set; }
 
         [DataMember]
-        DateTime OrderDate { get; set; }
+        public DateTime OrderDate { get; set; }
 
         [DataMember]
         public string Product { get; set; }

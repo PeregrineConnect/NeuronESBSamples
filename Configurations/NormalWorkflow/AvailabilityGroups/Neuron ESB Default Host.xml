@@ -6,9 +6,13 @@
   <Description>Neuron ESB Default Host for Endpoints</Description>
   <Name>Neuron ESB Default Host</Name>
   <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <IsScheduler>false</IsScheduler>
   <Category />
   <RunAs />
   <IsEnabled>true</IsEnabled>
+  <IsLegacyHost>false</IsLegacyHost>
+  <IsTopicHost>false</IsTopicHost>
   <DeploymentGroups>
     <EsbAvailabilityGroupDeploymentGroupMapping>
       <DeploymentGroup>Dev</DeploymentGroup>

@@ -1,22 +1,25 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Version>74</Version>
   <EnvironmentName>ExchangeAdapter</EnvironmentName>
-  <NeuronBuildVersion>3.8.0.1476</NeuronBuildVersion>
-  <DesignerBuildVersion>3.8.0.1476</DesignerBuildVersion>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
   <ApplicationName>ExchangeAdapter</ApplicationName>
   <ApplicationId>433751fc-34b0-42a1-bf1e-f24a5adaafb0</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+    </Additions>
     <Revisions>
-      <string>Edit,Enterprise,adapter endpoint,ExchangeEndpoint</string>
-      <string>Edit,Enterprise,adapter endpoint,FileOutEndpoint</string>
-      <string>Edit,Enterprise,adapter endpoint,POP3Endpoint</string>
+      <string>Edit,Enterprise,topic,Email</string>
+      <string>Edit,*,pipeline,Exception Handling</string>
+      <string>Edit,*,pipeline,Process Email</string>
+      <string>Edit,Enterprise,publisher,EmailPublisher</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2024-05-13T13:00:14.736639Z</LastModifiedDate>
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-07-25T12:16:06.7171739Z</LastModifiedDate>
     <Comments />
   </ChangeList>
   <NeuronEnvironmentVariables />

@@ -1,7 +1,7 @@
 using System;
-using Neuron.Esb;
+using Neuron.NetX;
 
-namespace Neudesic.EnterpriseServiceBus.Samples
+namespace Neuron.EnterpriseServiceBus.Samples
 {
     public class Sender
     {
@@ -13,7 +13,14 @@ namespace Neudesic.EnterpriseServiceBus.Samples
 
                 using (Publisher publisher = new Publisher())
                 {
-                    publisher.Connect();
+                    var retValue = publisher.Connect();
+                    if (retValue != null && retValue.Count > 0)
+                    {
+                        foreach (var error in retValue.GetResults())
+                        {
+                            Console.WriteLine(error.Exception.ToString());
+                        }
+                    }
 
                     Console.WriteLine("Press <ENTER> to start sending");
                     Console.ReadLine();

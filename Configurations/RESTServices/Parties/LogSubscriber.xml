@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>1a55205c-7df7-49a7-8a4f-f816673b8839</Id>
   <Version>a6a1b41c-61dc-4f0c-bf34-bd017384498d</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>LogSubscriber</Name>
   <Group>General</Group>
@@ -16,6 +17,7 @@
   <Subscriptions>
     <Subscription>
       <TopicName>Log</TopicName>
+      <TopicId />
       <CanRead>true</CanRead>
       <CanWrite>false</CanWrite>
       <SubscriptionType>Topic</SubscriptionType>

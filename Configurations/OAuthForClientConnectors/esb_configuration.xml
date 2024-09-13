@@ -1,25 +1,29 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>41</Version>
-  <EnvironmentName>OAuthForClientConnectors</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>44</Version>
+  <EnvironmentName>OAuthForClientConnectors_Converted</EnvironmentName>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
   <ApplicationName>OAuthForClientConnectors</ApplicationName>
   <ApplicationId>3161653d-bab2-4aea-b96a-4d6f4179e418</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+    </Additions>
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
       <string>Edit,Enterprise,topic,Playa</string>
+      <string>Edit,*,pipeline,OAuthSecuredProcess</string>
+      <string>Edit,Enterprise,service endpoint,ClientConnectorOAuth</string>
+      <string>Edit,Enterprise,service endpoint,ClientConnectorOAuthAzure</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:15:32.3537916Z</LastModifiedDate>
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-07-25T10:02:52.442604Z</LastModifiedDate>
     <Comments />
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -48,6 +52,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

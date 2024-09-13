@@ -58,7 +58,7 @@ namespace NeuronOAuthConsumerSample.Controllers
 
         private string GetToken()
         {
-            string ConnString = ConfigurationManager.ConnectionStrings[1].ToString();
+            string ConnString = ConfigurationManager.ConnectionStrings["PeregrineConnect"].ConnectionString;
             var ClientId = ConnString.Split(';')[0].Split('=')[1];
             var ClientSecret = ConnString.Split(';')[1].Split('=')[1];
             var GrantType = "client_credentials";  //Grant type matches the grant type specified in Peregrine Management setup for your application's Client Id

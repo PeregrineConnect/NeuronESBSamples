@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>e431cec6-5e84-4c15-9ed2-3ad4e755ab1f</Id>
-  <Version>f22cf635-f3fb-4078-b16f-5c4565eb3355</Version>
+  <Version>72a5f706-b067-4a1a-a5ac-32533ddccbaa</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>ClientConnectorOAuthAzure</Name>
   <Group>General</Group>
@@ -21,6 +22,7 @@
     <Port>0</Port>
     <BypassLocalAddress>false</BypassLocalAddress>
   </ProxySettings>
+  <DebugInfo />
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
   <ServiceName>ClientConnectorOAuthAzure</ServiceName>
@@ -30,6 +32,7 @@
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <ProcessMultipartMessages>false</ProcessMultipartMessages>
   <TransactionType>None</TransactionType>
   <MaxMessageSize>1000000</MaxMessageSize>
   <ReliableMessaging>false</ReliableMessaging>
@@ -85,6 +88,7 @@
       <Id>c0c23086-2c96-4367-9979-b4ad33362a8f</Id>
       <Version>ca2bb084-174a-49d2-89e9-a2d791ce0d40</Version>
       <BusinessFlows />
+      <ProcessFlows />
       <Description />
       <Name>OAuthSecuredProcess</Name>
       <IsSystemObject>false</IsSystemObject>
@@ -95,6 +99,7 @@
         <Id>c57eaf66-f65d-4a48-8de9-d3c83aed2c47</Id>
         <Version>aa355e0b-a4db-4be1-994b-51b68bc3e10c</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>

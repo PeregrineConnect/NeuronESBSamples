@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBTopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>48d8cd2c-579b-4043-a9a1-60c3edbfdbd7</Id>
   <Version>ef7d6d34-27d1-4dd9-9105-97d6723c66d6</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>NorthStar</Name>
   <Group>General</Group>
@@ -13,14 +14,17 @@
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
+      <Id>3576ee17-ba0d-4856-8135-54ba07873899</Id>
       <Name>NorthStar.HR</Name>
       <Description />
     </Subtopic>
     <Subtopic>
+      <Id>19a62e05-ac27-430c-b6fa-33256b40cbbd</Id>
       <Name>NorthStar.HR.V1</Name>
       <Description />
     </Subtopic>
     <Subtopic>
+      <Id>0962cb5a-e4cc-4846-8b6e-58b4d775f663</Id>
       <Name>NorthStar.HR.V2</Name>
       <Description />
     </Subtopic>
@@ -128,4 +132,5 @@
   <Encrypted>false</Encrypted>
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
+  <AvailabilityGroupId>Neuron ESB Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

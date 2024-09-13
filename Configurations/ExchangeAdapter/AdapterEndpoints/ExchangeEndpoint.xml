@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBEndpoint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>820a66a6-912b-4fa4-9584-b662053c9848</Id>
   <Version>f7cbe8fb-1c94-4d71-a100-71ad90d03f59</Version>
   <BusinessFlows />
@@ -16,9 +16,9 @@
   <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
   <IncludeMetadata>true</IncludeMetadata>
   <AdapterName>Microsoft Exchange</AdapterName>
-  <AdapterAssembly>Neuron.Esb.Adapters.MsExchangeAdapter.dll</AdapterAssembly>
+  <AdapterAssembly>Neuron.NetX.Adapters.MsExchangeAdapter.dll</AdapterAssembly>
   <AdapterMessageDirection>DatagramReceiver</AdapterMessageDirection>
-  <AdapterClass>Neuron.Esb.MsExchange.Adapters.ExchangeAdapter</AdapterClass>
+  <AdapterClass>Neuron.NetX.MsExchange.Adapters.ExchangeAdapter</AdapterClass>
   <AdapterMode>Publish</AdapterMode>
   <ProcessMode>false</ProcessMode>
   <ClientProcessMode>Messaging</ClientProcessMode>

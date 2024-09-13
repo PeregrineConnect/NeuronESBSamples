@@ -1,9 +1,9 @@
 ﻿// Chat - multi person chat program.
 // Can be used with any channel type, but specifically coded for PeerChannel where the network can go offline/online at any time.
 
+using Neuron.NetX;
 using System;
 using System.Threading;
-using Neuron.Esb;
 
 namespace Neudesic.EnterpriseServiceBus.Samples
 {

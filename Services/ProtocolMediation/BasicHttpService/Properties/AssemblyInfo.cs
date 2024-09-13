@@ -17,7 +17,7 @@ using System.Security.Permissions;
 [assembly: AssemblyTitle("service")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Peregrine Connect")]
+[assembly: AssemblyCompany("Peregrine Connect, LLC")]
 [assembly: AssemblyProduct("service")]
 [assembly: AssemblyCopyright("Copyright @ Peregrine Connect 2008")]
 [assembly: AssemblyTrademark("")]

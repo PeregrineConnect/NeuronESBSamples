@@ -1,4 +1,11 @@
-﻿using System;
+﻿using CoreWCF;
+using CoreWCF.Configuration;
+using CoreWCF.Description;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System;
 using System.ServiceModel;
 using System.Xml;
 using System.Xml.Serialization;
@@ -73,7 +80,7 @@ namespace Neuron.Esb.Samples.ScatterGather
     }
 
 
-    [ServiceBehavior(ValidateMustUnderstand = false, AddressFilterMode = AddressFilterMode.Any)]
+    [ServiceBehavior(AddressFilterMode = AddressFilterMode.Any)]
     public class BidService : IBid
     {
 
@@ -110,12 +117,37 @@ namespace Neuron.Esb.Samples.ScatterGather
     {
         static void Main(string[] args)
         {
-            ServiceHost shost = new ServiceHost(typeof(BidService));
+           /* ServiceHost shost = new ServiceHost(typeof(BidService));
 
-            shost.Open();
+            shost.Open(); */
+           var builder = WebApplication.CreateBuilder();
+
+           builder.Services.AddServiceModelServices().AddServiceModelMetadata();;
+            builder.WebHost.ConfigureKestrel(options =>
+            {
+                options.ListenAnyIP(8732);
+            });
+           var app = builder.Build();
+
+           app.UseServiceModel(serviceBuilder =>
+           {
+                serviceBuilder.AddService<BidService>
+                (serviceOptions => 
+                    {
+                          serviceOptions.DebugBehavior.IncludeExceptionDetailInFaults = true; 
+                          serviceOptions.BaseAddresses.Add(new Uri("http://localhost:8732"));
+                    }
+               );            
+            });
+            var serviceMetadataBehavior = app.Services.GetRequiredService<ServiceMetadataBehavior>();
+             serviceMetadataBehavior.HttpGetEnabled = true;
+             serviceMetadataBehavior.HttpGetUrl = new Uri("http://localhost:8732/metadata");
+             app.Start();
+           app.Start();
 
             Console.WriteLine("New Mart Host listening");
             Console.ReadLine();
+            app.StopAsync().Wait();
         }
     }
 }

@@ -1,25 +1,25 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>28</Version>
-  <EnvironmentName>DynamicRoutingContent</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>32</Version>
+  <EnvironmentName>DynamicRoutingContent_Converted</EnvironmentName>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
   <ApplicationName>DynamicRoutingContent</ApplicationName>
   <ApplicationId>7a2f686c-15df-40be-9d10-7b4f89697306</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
-      <string>Edit,Enterprise,topic,Contacts</string>
+      <string>Edit,*,pipeline,Dynamic Topic Routing - Content</string>
+      <string>Edit,Enterprise,publisher,ContactsPublisher</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:12:06.7190579Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-07-30T09:44:22.5516234Z</LastModifiedDate>
+    <Comments>Edited pipeline named 'Dynamic Topic Routing - Content' in *", Edited publisher named 'ContactsPublisher' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -42,6 +42,7 @@
           <Id>de85a4e6-eacb-42aa-aa7e-65ee12fee0b5</Id>
           <Version>5e01a5c4-b609-49f3-930b-b94a6f2ffb6e</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>SalesContactTestMessage</Name>
           <Group>General</Group>
@@ -63,6 +64,7 @@
           <Id>de812a9c-1587-4cbf-b69a-2fafffa37740</Id>
           <Version>e83a0fbb-0911-4c29-a188-78d2faf33d80</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>VendorContactTestMessageCopy</Name>
           <Group>General</Group>
@@ -91,6 +93,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

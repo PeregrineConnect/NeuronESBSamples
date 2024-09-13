@@ -1,11 +1,11 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoClientRequest", "ContosoClientRequest\ContosoClientRequest.csproj", "{F271DD28-A668-4C86-BC53-67B71BEE210C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoClientRequest", "ContosoClientRequest\ContosoClientRequest.csproj", "{F271DD28-A668-4C86-BC53-67B71BEE210C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewMartQuoteService", "NewMartQuoteService\NewMartQuoteService.csproj", "{26E46D5F-30E2-4F45-ADB5-EA52CF1D2284}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewMartQuoteService", "NewMartQuoteService\NewMartQuoteService.csproj", "{26E46D5F-30E2-4F45-ADB5-EA52CF1D2284}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldMartQuoteService", "OldMartQuoteService\OldMartQuoteService.csproj", "{96483460-45BC-40B3-8D60-0C4A06173704}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OldMartQuoteService", "OldMartQuoteService\OldMartQuoteService.csproj", "{96483460-45BC-40B3-8D60-0C4A06173704}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

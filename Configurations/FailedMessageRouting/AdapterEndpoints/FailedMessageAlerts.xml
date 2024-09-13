@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBEndpoint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>0e4aa186-d0c8-42dd-9355-0ef5c757d3c5</Id>
   <Version>6add8daa-15c4-4477-9e22-ab0f8a1ffb34</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description>Sends alerts that contain original exception message as body and message that caused exception as attachment. Uses environmental variable: SmtpAlertToFromAddress</Description>
   <Name>FailedMessageAlerts</Name>
   <Group />
@@ -15,9 +16,9 @@
   <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
   <IncludeMetadata>true</IncludeMetadata>
   <AdapterName>SMTP</AdapterName>
-  <AdapterAssembly>Neuron.Esb.Adapters.SmtpAdapter.dll</AdapterAssembly>
+  <AdapterAssembly>Neuron.NetX.Adapters.SmtpAdapter.dll</AdapterAssembly>
   <AdapterMessageDirection>Duplex</AdapterMessageDirection>
-  <AdapterClass>Neuron.Esb.Adapters.SmtpAdapter</AdapterClass>
+  <AdapterClass>Neuron.NetX.Adapters.SmtpAdapter</AdapterClass>
   <AdapterMode>Subscribe</AdapterMode>
   <ProcessMode>false</ProcessMode>
   <ClientProcessMode>Messaging</ClientProcessMode>

@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBTopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>876d0f62-8b4d-4346-8c65-82ffdf9b6ee2</Id>
   <Version>b2c18002-8d03-4e8a-b1ca-ff816d818412</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>Tax</Name>
   <Group>General</Group>

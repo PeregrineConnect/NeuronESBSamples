@@ -1,25 +1,24 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>45</Version>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>47</Version>
   <EnvironmentName>WsdlClientConnector</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
   <ApplicationName>WsdlClientConnector</ApplicationName>
   <ApplicationId>e60b4306-f124-4a1c-b9e4-7a49a6ce5a34</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
-      <string>Edit,Enterprise,topic,Payments</string>
+      <string>Edit,Enterprise,service endpoint,PaymentClientConnector</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:21:50.4243016Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-07-25T13:53:04.2175815Z</LastModifiedDate>
+    <Comments>Edited service endpoint named 'PaymentClientConnector' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -46,6 +45,7 @@
           <Id>678e0fa5-0c78-40c2-9e41-5f6c9c8e8608</Id>
           <Version>daa1adf2-517d-4881-b580-6310dfa44928</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>PaymentServiceFullWSDL</Name>
           <Group>General</Group>
@@ -70,6 +70,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

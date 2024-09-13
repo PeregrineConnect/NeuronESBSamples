@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Neuron.NetX;
+using Neuron.NetX.Adapters;
+using Neuron.NetX.Administration;
 using System.ComponentModel;
-using System.Text;
-using System.Threading;
 using System.Transactions;
-using System.Globalization;
-using Neuron.Esb.Adapters;
-using Neuron.Esb.Administration;
 
-namespace Neuron.Esb.Sample.Adapters
+namespace Neuron.NetX.Sample.Adapters
 {
     /// <summary>
     /// This is part of the Custom adapter class. Generally the developer would only edit the Class name.
@@ -43,7 +39,7 @@ namespace Neuron.Esb.Sample.Adapters
             [Description(AdapterModeStringConstants.Publish)]
             Publish = 0,
             [Description(AdapterModeStringConstants.Subscribe)]
-            Subscriber = 1,
+            Subscribe = 1,
             [Description(AdapterModeStringConstants.SolicitResponse)]
             SolicitResponse= 2,
             [Description(AdapterModeStringConstants.RequestReply)]
@@ -65,7 +61,7 @@ namespace Neuron.Esb.Sample.Adapters
         /// <remarks>
         /// ESB framework will have already set the properties.  The requested
         /// adapter mode is checked against supported modes for validity.
-        public override void Connect(string adapterMode)
+        public override async Task Connect(string adapterMode)
         {
             this._adapterMode = null;
 
@@ -91,16 +87,18 @@ namespace Neuron.Esb.Sample.Adapters
             // call user defined method
             ConnectAdapter();
         }
-
-        public override void SendToEndpoint(ESBMessage message, CommittableTransaction tx)
+        
+        
+        public override Task SendToEndpoint(ESBMessage message, CommittableTransaction tx, CancellationTokenSource cancellation = null)             
         {
             // call user defined method subscribing to message received from the bus and sending out to some system
             SendToDataSource(message, tx);
+            return Task.CompletedTask;
         }
         /// <summary>
         /// This routine if fired by the ESB framework when the adapter is shutdown
         /// </summary>
-        public override void Disconnect()
+        public override Task Disconnect()
         {
             try
             {
@@ -126,6 +124,7 @@ namespace Neuron.Esb.Sample.Adapters
                 string msg = string.Format("An error occurred while disconnecting from the data source during the shutdown of the adapter,'{0}'. Exception: {1}", AdapterName, ex.ToString());
                 RaiseAdapterInfo(ErrorLevel.Warning, msg);
             }
+            return Task.CompletedTask;
         }
         #endregion
     }

@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBAdapterPolicy xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBAdapterPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>e792dc93-9c5e-456e-b678-d83b33a69f3a</Id>
   <Version>889f4682-6619-4f56-8af9-5a7967004959</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description>Default adapter policy</Description>
   <Name>Default</Name>
   <Group>General</Group>

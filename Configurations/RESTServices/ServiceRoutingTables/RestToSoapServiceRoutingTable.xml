@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ServiceRoutingTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceRoutingTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>7c62b149-65a9-4a43-9acc-61e364df7a81</Id>
   <Version>cab36a33-3a31-4a9c-8d7e-3c5537b2d4fe</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>RestToSoapServiceRoutingTable</Name>
   <Group>General</Group>
@@ -18,10 +19,12 @@
         <URI>/</URI>
         <Body />
         <BodyType>Raw</BodyType>
+        <BodyFormat>XML</BodyFormat>
         <DeleteMessageBody>false</DeleteMessageBody>
         <DeleteResponseBody>false</DeleteResponseBody>
         <Parameters />
         <Headers />
+        <AdapterEndpointProperties />
         <BodyProperties />
         <TestBody />
         <TestEnabled>FALSE</TestEnabled>
@@ -39,6 +42,7 @@
         <Id>004e68b4-2148-42dc-80d5-0f6828b841d7</Id>
         <Version>cd0ac624-a303-42ef-9723-e90759a16a2d</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
@@ -68,10 +72,12 @@
 	&lt;id&gt;{#HTTPLocalPath[0]}&lt;/id&gt;
 &lt;/GetCustomerByID&gt;</Body>
         <BodyType>Raw</BodyType>
+        <BodyFormat>XML</BodyFormat>
         <DeleteMessageBody>false</DeleteMessageBody>
         <DeleteResponseBody>false</DeleteResponseBody>
         <Parameters />
         <Headers />
+        <AdapterEndpointProperties />
         <BodyProperties />
         <TestBody />
         <TestEnabled>FALSE</TestEnabled>
@@ -89,6 +95,7 @@
         <Id>004e68b4-2148-42dc-80d5-0f6828b841d7</Id>
         <Version>cd0ac624-a303-42ef-9723-e90759a16a2d</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
@@ -127,10 +134,12 @@
 	&lt;name&gt;{#HTTPQuery.Name}&lt;/name&gt;
 &lt;/GetCustomerByName&gt;</Body>
         <BodyType>Raw</BodyType>
+        <BodyFormat>XML</BodyFormat>
         <DeleteMessageBody>false</DeleteMessageBody>
         <DeleteResponseBody>false</DeleteResponseBody>
         <Parameters />
         <Headers />
+        <AdapterEndpointProperties />
         <BodyProperties />
         <TestBody />
         <TestEnabled>FALSE</TestEnabled>
@@ -148,6 +157,7 @@
         <Id>004e68b4-2148-42dc-80d5-0f6828b841d7</Id>
         <Version>cd0ac624-a303-42ef-9723-e90759a16a2d</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
@@ -184,6 +194,7 @@
         <URI>/</URI>
         <Body>&lt;GetAllCustomers xmlns="http://Neuron.Samples" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/&gt;</Body>
         <BodyType>Raw</BodyType>
+        <BodyFormat>XML</BodyFormat>
         <DeleteMessageBody>false</DeleteMessageBody>
         <DeleteResponseBody>false</DeleteResponseBody>
         <Parameters />
@@ -193,6 +204,7 @@
             <Value>application/xml</Value>
           </HeaderDataElement>
         </Headers>
+        <AdapterEndpointProperties />
         <BodyProperties />
         <TestBody />
         <TestEnabled>FALSE</TestEnabled>
@@ -210,6 +222,7 @@
         <Id>004e68b4-2148-42dc-80d5-0f6828b841d7</Id>
         <Version>cd0ac624-a303-42ef-9723-e90759a16a2d</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>

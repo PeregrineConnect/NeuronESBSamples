@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBZone xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBZone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>b5fd685e-f924-402a-9747-24c456e609dd</Id>
   <Version>8824b50a-c233-4f4c-b1a5-2583d6711977</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>Enterprise</Name>
   <IsSystemObject>false</IsSystemObject>
@@ -439,10 +440,10 @@
       <ChannelName>amqp/rabbitmq</ChannelName>
     </ESBChannelDescription>
   </Channels>
-  <BootstrapServicePort>61000</BootstrapServicePort>
+  <BootstrapServicePort>50000</BootstrapServicePort>
   <ManagementServicePort>50002</ManagementServicePort>
   <ControlServicePort>50004</ControlServicePort>
-  <CacheServiceBasePort>50200</CacheServiceBasePort>
+  <CacheServiceBasePort>53200</CacheServiceBasePort>
   <EndpointHostServicePort>51004</EndpointHostServicePort>
   <SwaggerSelfHostBasePort>51003</SwaggerSelfHostBasePort>
   <TcpPublishingStartPort>50010</TcpPublishingStartPort>
@@ -460,7 +461,8 @@
   <EnableWMINeuronEndpointCounters>true</EnableWMINeuronEndpointCounters>
   <BindingSettings>
     <ListenBacklog>256</ListenBacklog>
+    <MaxConcurrentCalls>2000</MaxConcurrentCalls>
   </BindingSettings>
   <ZoneName>Enterprise</ZoneName>
-  <EnablePortSharing>true</EnablePortSharing>
+  <EnablePortSharing>false</EnablePortSharing>
 </ESBZone>

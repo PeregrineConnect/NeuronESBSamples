@@ -1,5 +1,5 @@
 ﻿<xsl:stylesheet version="1.0" xmlns:user="urn:my-scripts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-09-16T21:40:36" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:xdExtension="http://schemas.microsoft.com/office/infopath/2003/xslt/extension" xmlns:xdXDocument="http://schemas.microsoft.com/office/infopath/2003/xslt/xDocument" xmlns:xdSolution="http://schemas.microsoft.com/office/infopath/2003/xslt/solution" xmlns:xdFormatting="http://schemas.microsoft.com/office/infopath/2003/xslt/formatting" xmlns:xdImage="http://schemas.microsoft.com/office/infopath/2003/xslt/xImage" xmlns:xdUtil="http://schemas.microsoft.com/office/infopath/2003/xslt/Util" xmlns:xdMath="http://schemas.microsoft.com/office/infopath/2003/xslt/Math" xmlns:xdDate="http://schemas.microsoft.com/office/infopath/2003/xslt/Date" xmlns:sig="http://www.w3.org/2000/09/xmldsig#" xmlns:xdSignatureProperties="http://schemas.microsoft.com/office/infopath/2003/SignatureProperties" xmlns:ipApp="http://schemas.microsoft.com/office/infopath/2006/XPathExtension/ipApp" xmlns:xdEnvironment="http://schemas.microsoft.com/office/infopath/2006/xslt/environment" xmlns:xdUser="http://schemas.microsoft.com/office/infopath/2006/xslt/User" xmlns:xdServerInfo="http://schemas.microsoft.com/office/infopath/2009/xslt/ServerInfo">
- <msxsl:script language="C#" implements-prefix="user">
+<!--  <msxsl:script language="C#" implements-prefix="user">
 <![CDATA[
       
 	
@@ -9,7 +9,7 @@
            	return System.Convert.ToDateTime(data).ToString("MM/dd/yyyy HH:mm:ss");
         }
   ]]>
-	</msxsl:script>
+	</msxsl:script>  -->
 	<xsl:output method="html" indent="no" />
 	<xsl:template match="FAILURE">
 		<html>
@@ -280,8 +280,8 @@ BODY {
 								</td>
 								<td vAlign="top" class="xdTableCellComponent">
 									<span class="xdlabel"></span><span hideFocus="1" class="xdTextBox" title="" xd:disableEditing="yes" xd:CtrlId="CTRL2" xd:xctname="PlainText" xd:binding="@created" style="WIDTH: 100%; WHITE-SPACE: nowrap">
-										<xsl:value-of select="user:ConvertXmlDateTimeToNormalized(@created)" />
-										<!--xsl:value-of select="@created"/-->
+										<!-- <xsl:value-of select="user:ConvertXmlDateTimeToNormalized(@created)" /> -->
+										<xsl:value-of select="@created"/>
 									</span>
 								</td>
 							</tr>
@@ -390,8 +390,8 @@ BODY {
 								<td vAlign="top" class="xdTableCellComponent">
 									<div>
 										<span class="xdlabel"></span><span hideFocus="1" class="xdTextBox" title="" xd:disableEditing="yes" xd:CtrlId="CTRL4" xd:xctname="PlainText" xd:binding="FailureDatetime" style="WIDTH: 100%; WHITE-SPACE: nowrap">
-											<xsl:value-of select="user:ConvertXmlDateTimeToNormalized(FailureDatetime)" />
-											<!--xsl:value-of select="FailureDatetime"/-->
+											<!--  <xsl:value-of select="user:ConvertXmlDateTimeToNormalized(FailureDatetime)" /> -->
+											<xsl:value-of select="FailureDatetime"/>
 										</span>
 									</div>
 								</td>

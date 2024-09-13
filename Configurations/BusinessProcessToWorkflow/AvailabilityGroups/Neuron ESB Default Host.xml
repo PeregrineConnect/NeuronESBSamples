@@ -12,6 +12,8 @@
   <RunAs />
   <IsEnabled>true</IsEnabled>
   <RunInDocker>false</RunInDocker>
+  <IsLegacyHost>false</IsLegacyHost>
+  <IsTopicHost>false</IsTopicHost>
   <DeploymentGroups>
     <EsbAvailabilityGroupDeploymentGroupMapping>
       <DeploymentGroup>Development</DeploymentGroup>

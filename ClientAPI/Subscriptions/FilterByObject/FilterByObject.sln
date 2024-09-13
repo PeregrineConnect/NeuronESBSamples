@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "Sender\Sender.csproj", "{33352D01-4988-430B-8BFD-1348A36E5F8C}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sender", "Sender\Sender.csproj", "{33352D01-4988-430B-8BFD-1348A36E5F8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receiver", "Receiver\Receiver.csproj", "{88B4524E-28B2-4577-9AD7-6C3A8B39C7DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Receiver", "Receiver\Receiver.csproj", "{88B4524E-28B2-4577-9AD7-6C3A8B39C7DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receiver2", "Receiver2\Receiver2.csproj", "{FE5F24EB-91E9-4431-9CD6-C6357833004F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Receiver2", "Receiver2\Receiver2.csproj", "{FE5F24EB-91E9-4431-9CD6-C6357833004F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receiver3", "Receiver3\Receiver3.csproj", "{65D5140A-45B0-4F57-A2B2-F00C75108DCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Receiver3", "Receiver3\Receiver3.csproj", "{65D5140A-45B0-4F57-A2B2-F00C75108DCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

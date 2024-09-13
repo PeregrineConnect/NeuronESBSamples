@@ -1,28 +1,31 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>cbf845b6-fb4d-46a2-a76a-67125aed9776</Id>
   <Version>ea3a83ef-1456-4d33-a7db-7558603b7a43</Version>
-  <Name>EmailSubscriber</Name>
+  <BusinessFlows />
+  <ProcessFlows />
   <Description />
+  <Name>EmailSubscriber</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
-  <AllowMultipleInstances>true</AllowMultipleInstances>
-  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
   <SubscriberId>EmailSubscriber</SubscriberId>
   <ClientGroup>General</ClientGroup>
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
-  <Anonymous>true</Anonymous>
   <Subscriptions>
     <Subscription>
       <TopicName>Email</TopicName>
+      <TopicId />
       <CanRead>true</CanRead>
       <CanWrite>false</CanWrite>
       <MatchMessagePatterns />
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
   </Subscriptions>
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
   <LogActivity>false</LogActivity>
-  <LogFile />
-  <LogSession>true</LogSession>
+  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
 </ESBSubscriber>

@@ -1,27 +1,30 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>b338956b-70ec-425b-acd8-5ffb4c1e13db</Id>
   <Version>89b263b6-f16f-42c1-91e5-433d6bbfb07b</Version>
-  <Name>FailedMessageSubscriber</Name>
+  <BusinessFlows />
+  <ProcessFlows />
   <Description />
+  <Name>FailedMessageSubscriber</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
-  <AllowMultipleInstances>true</AllowMultipleInstances>
-  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
   <SubscriberId>FailedMessageSubscriber</SubscriberId>
   <ClientGroup>General</ClientGroup>
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
-  <Anonymous>true</Anonymous>
   <Subscriptions>
     <Subscription>
       <TopicName>FailedMessages</TopicName>
+      <TopicId />
       <CanRead>true</CanRead>
       <CanWrite>false</CanWrite>
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
   </Subscriptions>
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
   <LogActivity>false</LogActivity>
-  <LogFile />
-  <LogSession>true</LogSession>
+  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
 </ESBSubscriber>

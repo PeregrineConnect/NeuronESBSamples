@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("OrderEntryService")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Peregrine Connect")]
+[assembly: AssemblyCompany("Peregrine Connect, LLC")]
 [assembly: AssemblyProduct("OrderEntryService")]
 [assembly: AssemblyCopyright("Copyright © Peregrine Connect 2006")]
 [assembly: AssemblyTrademark("")]
@@ -30,4 +30,4 @@ using System.Runtime.InteropServices;
 //      Revision
 //
 [assembly: AssemblyVersion("3.0.0.0")]
-[assembly: AssemblyFileVersion("3.7.5.738")]
+[assembly: AssemblyFileVersion("3.6.0.814")]

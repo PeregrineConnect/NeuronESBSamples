@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBEndpoint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>f2bd0e17-1f92-4ca9-8184-54214976e204</Id>
   <Version>4c419280-427c-4739-a06e-933eef7227b8</Version>
   <BusinessFlows />
@@ -16,9 +16,9 @@
   <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
   <IncludeMetadata>true</IncludeMetadata>
   <AdapterName>File</AdapterName>
-  <AdapterAssembly>Neuron.Esb.Adapters.FileAdapter.dll</AdapterAssembly>
+  <AdapterAssembly>Neuron.NetX.Adapters.FileAdapter.dll</AdapterAssembly>
   <AdapterMessageDirection>DatagramSender</AdapterMessageDirection>
-  <AdapterClass>Neuron.Esb.Adapters.FileAdapter</AdapterClass>
+  <AdapterClass>Neuron.NetX.Adapters.FileAdapter</AdapterClass>
   <AdapterMode>Subscribe</AdapterMode>
   <ProcessMode>false</ProcessMode>
   <ClientProcessMode>None</ClientProcessMode>

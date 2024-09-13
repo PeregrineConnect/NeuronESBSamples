@@ -1,24 +1,27 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>40</Version>
-  <EnvironmentName>ScatterGatherProcessSample</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>58</Version>
+  <EnvironmentName>ScatterGatherProcessSample_Converted</EnvironmentName>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
   <ApplicationName>ScatterGatherProcessSample</ApplicationName>
   <ApplicationId>20abd4f4-9893-4f36-9424-041414908c37</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+    </Additions>
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
+      <string>Edit,*,pipeline,Scatter Gather</string>
+      <string>Edit,Enterprise,service endpoint,ContosoQuoteService</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:19:10.5803579Z</LastModifiedDate>
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-07-10T07:13:12.9012551Z</LastModifiedDate>
     <Comments />
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -41,6 +44,7 @@
           <Id>16c7d6e6-ad1f-4358-838e-bd0978f1939e</Id>
           <Version>08f43334-9901-48a3-b9cf-8d0144fc2d4e</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>Sample purchase request submitted by distributors to the Contoso web service</Description>
           <Name>ClientPurchaseRequest</Name>
           <Group>General</Group>
@@ -62,6 +66,7 @@
           <Id>c415722f-53d0-4fcb-a680-a175e23801c1</Id>
           <Version>e5ed04c8-c6d9-4782-b7ce-8a5395ed234e</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>Sample Quote request message expected by the New Mart Quote Service</Description>
           <Name>NewMartQuoteRequest</Name>
           <Group>General</Group>
@@ -83,6 +88,7 @@
           <Id>6a69b20c-7023-49b2-b65b-fb082c20e7b8</Id>
           <Version>5d09b534-7132-47ef-abb1-85afd0886f00</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>Sample Quote request message expected by the Old Mart Quote Service</Description>
           <Name>OldMartQuoteRequest</Name>
           <Group>General</Group>
@@ -104,6 +110,7 @@
           <Id>b8e4e0d2-43d9-49cb-910c-3e5b1759db25</Id>
           <Version>bbd3d4c9-fc3d-4eed-9f9a-d50cda9aa258</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>Sample Quote result message returned by both Old Mart and New Mart Quote Services</Description>
           <Name>QuoteResult</Name>
           <Group>General</Group>
@@ -131,6 +138,7 @@
           <Id>ad448f99-2e18-4e2f-81ee-f477c0d985eb</Id>
           <Version>ae1e198f-c476-4669-9ffd-26dc1c92fdb8</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>QuoteRequest_To_NewMartQuote</Name>
           <Group>General</Group>
@@ -152,6 +160,7 @@
           <Id>4c4588c2-0e7b-42d0-a540-fd1babe82f31</Id>
           <Version>6d19e330-c1db-45e9-afa8-27215efc4fdc</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>QuoteRequest_To_OldMartQuote</Name>
           <Group>General</Group>
@@ -175,6 +184,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

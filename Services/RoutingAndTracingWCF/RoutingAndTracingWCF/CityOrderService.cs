@@ -11,11 +11,11 @@ namespace RoutingAndTracingWCF
         {
             if (!string.IsNullOrEmpty(City))
             {
-                return new RoutingAndTracingWCF.Order() { City = City, Amount=100.6, CustomerName="Edward Jones", OrderNumber = OrderNumber, Price = 50.3M, Quantity = 2, Product="New Bike" };      
+                return new RoutingAndTracingWCF.Order() { City = City, Amount=100.6, CustomerName="Edward Jones", OrderNumber = OrderNumber, Price = 50.3M, Quantity = 2, Product="New Bike", OrderDate = DateTime.Now };      
             }
             else
             {
-                return new RoutingAndTracingWCF.Order() { City = "Local", Amount = 80.6, CustomerName = "Joe Schmoe", OrderNumber = OrderNumber, Price = 40.3M, Quantity = 2, Product = "New Segway" };
+                return new RoutingAndTracingWCF.Order() { City = "Local", Amount = 80.6, CustomerName = "Joe Schmoe", OrderNumber = OrderNumber, Price = 40.3M, Quantity = 2, Product = "New Segway", OrderDate = DateTime.Now };
             }
         }
 

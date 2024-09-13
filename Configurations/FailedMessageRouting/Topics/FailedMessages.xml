@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBTopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>1e9a4a36-6ea8-42e9-ab8d-da885497eaf7</Id>
   <Version>42102b85-6dec-4d3f-969d-1fed0bf2ceee</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>FailedMessages</Name>
   <Group>General</Group>
@@ -114,4 +115,5 @@
   <Encrypted>false</Encrypted>
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
+  <AvailabilityGroupId>Neuron ESB Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

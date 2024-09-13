@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>95ba2efb-ad0e-4d1a-9652-361c2d9271a6</Id>
-  <Version>3c737425-21a6-4822-98cd-8b0db96ec082</Version>
+  <Version>19a6b4ad-951f-40ae-8d6f-24b51ac785f3</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>OrderPublisher</Name>
   <Group>General</Group>
@@ -16,18 +17,21 @@
   <Subscriptions>
     <Subscription>
       <TopicName>Orders</TopicName>
+      <TopicId />
       <CanRead>false</CanRead>
       <CanWrite>true</CanWrite>
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
     <Subscription>
       <TopicName>Orders.Processing</TopicName>
+      <TopicId />
       <CanRead>false</CanRead>
       <CanWrite>true</CanWrite>
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
     <Subscription>
       <TopicName>Orders.Query</TopicName>
+      <TopicId />
       <CanRead>false</CanRead>
       <CanWrite>true</CanWrite>
       <SubscriptionType>Topic</SubscriptionType>
@@ -41,6 +45,7 @@
       <Id>9ac2f785-e276-4978-b13c-5c249841794b</Id>
       <Version>1920fc4b-eb22-459b-85f1-4719102d83f1</Version>
       <BusinessFlows />
+      <ProcessFlows />
       <Description />
       <Name>Query - Text</Name>
       <IsSystemObject>false</IsSystemObject>
@@ -51,6 +56,7 @@
         <Id>786c014e-5b6e-4f25-89ca-1b29f4f21e04</Id>
         <Version>a4d2d43f-1ecc-411d-b504-0648aa58677a</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>

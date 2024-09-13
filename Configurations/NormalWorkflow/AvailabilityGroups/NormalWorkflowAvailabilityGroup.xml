@@ -5,9 +5,13 @@
   <Name>NormalWorkflowAvailabilityGroup</Name>
   <Description />
   <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <IsScheduler>false</IsScheduler>
   <Category>General</Category>
   <RunAs />
   <IsEnabled>true</IsEnabled>
+  <IsLegacyHost>false</IsLegacyHost>
+  <IsTopicHost>false</IsTopicHost>
   <DeploymentGroups>
     <EsbAvailabilityGroupDeploymentGroupMapping>
       <DeploymentGroup>Dev</DeploymentGroup>

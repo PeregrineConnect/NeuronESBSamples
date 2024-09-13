@@ -1,21 +1,27 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>52</Version>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>53</Version>
   <EnvironmentName>OdbcAdapter</EnvironmentName>
-  <NeuronBuildVersion>3.8.0.1476</NeuronBuildVersion>
-  <DesignerBuildVersion>3.8.0.1476</DesignerBuildVersion>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
   <ApplicationName>OdbcAdapter</ApplicationName>
   <ApplicationId>ddc6ea94-ee62-4289-bb9b-b723b2e186dc</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+    </Additions>
     <Revisions>
-      <string>Edit,Enterprise,adapter endpoint,ODBCOrderInserts</string>
-      <string>Edit,Enterprise,adapter endpoint,ODBCOrderQueries</string>
+      <string>Edit,Enterprise,topic,Orders</string>
+      <string>Edit,*,pipeline,Exception Handling</string>
+      <string>Edit,*,pipeline,Insert Orders</string>
+      <string>Edit,*,pipeline,Query - Stored Proc</string>
+      <string>Edit,*,pipeline,Query - Text</string>
+      <string>Edit,Enterprise,publisher,OrderPublisher</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2024-05-13T13:12:37.8493341Z</LastModifiedDate>
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-07-25T12:42:53.1204366Z</LastModifiedDate>
     <Comments />
   </ChangeList>
   <NeuronEnvironmentVariables />

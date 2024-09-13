@@ -1,7 +1,7 @@
 using System;
-using Neuron.Esb;
+using Neuron.NetX;
 
-namespace Neudesic.EnterpriseServiceBus.Samples
+namespace Neuron.EnterpriseServiceBus.Samples
 {
     public class Sender
     {
@@ -13,7 +13,14 @@ namespace Neudesic.EnterpriseServiceBus.Samples
 
                 using (Publisher publisher = new Publisher())
                 {
-                    publisher.Connect();
+                    var retValue = publisher.Connect();
+                    if (retValue != null && retValue.Count > 0)
+                    {
+                        foreach (var error in retValue.GetResults())
+                        {
+                            Console.WriteLine(error.Exception.ToString());
+                        }
+                    }
 
                     Console.WriteLine("Press <ENTER> to start sending");
                     Console.ReadLine();
@@ -24,11 +31,11 @@ namespace Neudesic.EnterpriseServiceBus.Samples
                     {
                         Console.WriteLine("Sending Contact message");
                         xml = CreateContactXml();
-                        publisher.SendXml("Contacts.New", xml, "http://tempuri.org/schema-not-declared");
+                        publisher.SendXml("Contacts.New", xml, "http://tempuri.org/schema-not-declared",SendOptions.None);
 
                         Console.WriteLine("Sending Customer message");
                         xml = CreateCustomerXml();
-                        publisher.SendXml("Contacts.New", xml, "http://tempuri.org/schema-not-declared");
+                        publisher.SendXml("Contacts.New", xml, "http://tempuri.org/schema-not-declared",SendOptions.None);
                     }
                 }
             }

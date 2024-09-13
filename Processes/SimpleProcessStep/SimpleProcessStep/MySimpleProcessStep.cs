@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using Neuron.Esb;
-using Neuron.Esb.Pipelines;
-using Neuron.Pipelines;
+﻿using Neuron.Pipeline.Activities2;
+using Neuron.Pipeline.Activities;
 using System.Runtime.Serialization;
-using System.ComponentModel;
-using System.Resources;
 using System.Transactions;
+using System.ComponentModel;
+using Neuron.NetX.Pipelines;
+using Neuron.NetX;
 
 namespace SimpleProcessStep
 {
@@ -53,7 +51,7 @@ namespace SimpleProcessStep
         [TypeConverter(typeof(MyProperty8TypeConverter))]
         public String MyProperty8 { get; set; }
 
-        [Editor(typeof(System.Windows.Forms.Design.FileNameEditor), typeof(System.Drawing.Design.UITypeEditor))]
+      //  [Editor(typeof(System.Windows.Forms.Design.FileNameEditor), typeof(System.Drawing.Design.UITypeEditor))]
         public String MyProperty9 { get; set; }
 
         /// <summary>
@@ -65,7 +63,7 @@ namespace SimpleProcessStep
             this.Name = "My Simple Process Step";
         }
 
-        protected override void OnExecute(PipelineContext<ESBMessage> context)
+        protected override async Task OnExecute(PipelineContext<ESBMessage> context)
         {
             System.IO.File.WriteAllText(@"C:\simpleprocessstep.txt", ("MySimpleProcessStep called. Value of MyProperty1 = " + MyProperty1));
             context.Instance.TraceInformation("MyCustomProcessStep called. Value of MyProperty1 = " + MyProperty1);

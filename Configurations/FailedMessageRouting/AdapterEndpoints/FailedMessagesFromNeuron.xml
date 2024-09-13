@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBEndpoint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>c1217a06-6aea-43d1-bfbf-373a7c824060</Id>
   <Version>06adb4ac-1f2b-46b2-afdb-8d48dc247668</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description>Publishes failed messages from Neuron Audit database. Uses environmental variable: NeuronAuditDatabaseConnectionString</Description>
   <Name>FailedMessagesFromNeuron</Name>
   <Group />
@@ -15,9 +16,9 @@
   <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
   <IncludeMetadata>true</IncludeMetadata>
   <AdapterName>ODBC</AdapterName>
-  <AdapterAssembly>Neuron.Esb.Adapters.OdbcAdapter.dll</AdapterAssembly>
+  <AdapterAssembly>Neuron.NetX.Adapters.OdbcAdapter.dll</AdapterAssembly>
   <AdapterMessageDirection>Duplex</AdapterMessageDirection>
-  <AdapterClass>Neuron.Esb.Adapters.OdbcAdapter</AdapterClass>
+  <AdapterClass>Neuron.NetX.Adapters.OdbcAdapter</AdapterClass>
   <AdapterMode>Publish</AdapterMode>
   <ProcessMode>false</ProcessMode>
   <ClientProcessMode>Messaging</ClientProcessMode>

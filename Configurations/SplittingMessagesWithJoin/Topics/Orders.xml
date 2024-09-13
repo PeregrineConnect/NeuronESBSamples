@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ESBTopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>c129c9a3-2172-4c0a-b491-5aa91dc2ee45</Id>
-  <Version>b6eb032c-3455-4e56-879d-ea563457a26c</Version>
+  <Version>dba3f8ac-435c-4712-982f-50399c63a8f4</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>Orders</Name>
   <Group>General</Group>
@@ -13,6 +14,7 @@
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
+      <Id>79af4a4f-2902-45aa-aecd-6e5e7a088553</Id>
       <Name>Orders.Processing</Name>
       <Description />
     </Subtopic>
@@ -42,7 +44,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>ServicePort</Name>
-      <Value>50013</Value>
+      <Value>50014</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>AllowOutputBatching</Name>
@@ -120,4 +122,5 @@
   <Encrypted>false</Encrypted>
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
+  <AvailabilityGroupId>Neuron ESB Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

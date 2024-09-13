@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBTopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>c83e5ee5-13d2-4a73-ba87-ddd9f8b73843</Id>
   <Version>1abb17e2-7bb8-4302-ac47-d5599a5f044a</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>Contacts</Name>
   <Group>General</Group>
@@ -13,22 +14,27 @@
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
+      <Id>4172f3d4-9569-446a-8ecc-eefeb1116475</Id>
       <Name>Contacts.New</Name>
       <Description>New Contacts</Description>
     </Subtopic>
     <Subtopic>
+      <Id>a8de880c-0149-4399-92da-a990624d5194</Id>
       <Name>Contacts.Updated</Name>
       <Description>Updated Contacts</Description>
     </Subtopic>
     <Subtopic>
+      <Id>aa8c8c72-cdc5-4629-98f2-68a44c488b13</Id>
       <Name>Contacts.Customer</Name>
       <Description>Customer contacts</Description>
     </Subtopic>
     <Subtopic>
+      <Id>82d9e67f-38e3-40f2-8e3f-914364618cf3</Id>
       <Name>Contacts.Personal</Name>
       <Description>Personal contacts</Description>
     </Subtopic>
     <Subtopic>
+      <Id>8e28f4ed-5b70-4539-8976-c89477b1cc37</Id>
       <Name>Contacts.Vendor</Name>
       <Description>Vendor contacts</Description>
     </Subtopic>
@@ -138,4 +144,5 @@
   <Encrypted>false</Encrypted>
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
+  <AvailabilityGroupId>Neuron ESB Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

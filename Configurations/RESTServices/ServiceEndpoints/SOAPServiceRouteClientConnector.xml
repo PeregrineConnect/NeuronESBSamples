@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>9fb7457d-1fe3-4000-bcd3-274a46efa80d</Id>
   <Version>4281ba77-8f86-468b-9d8a-62f81a799ba1</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>SOAPServiceRouteClientConnector</Name>
   <Group />
@@ -54,6 +55,7 @@
     <Port>0</Port>
     <BypassLocalAddress>false</BypassLocalAddress>
   </ProxySettings>
+  <DebugInfo />
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
   <ServiceName>SOAPServiceRouteClientConnector</ServiceName>
@@ -63,6 +65,7 @@
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <ProcessMultipartMessages>false</ProcessMultipartMessages>
   <TransactionType>None</TransactionType>
   <MaxMessageSize>1000000</MaxMessageSize>
   <ReliableMessaging>false</ReliableMessaging>

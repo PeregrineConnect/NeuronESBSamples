@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBTopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>b75a3360-5462-421c-b6c1-7ca46b861080</Id>
   <Version>d5f524ba-c1fa-4a1a-acd2-84b7515e6835</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>TestTopic</Name>
   <Group>General</Group>
@@ -114,4 +115,5 @@
   <Encrypted>false</Encrypted>
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
+  <AvailabilityGroupId>Neuron ESB Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

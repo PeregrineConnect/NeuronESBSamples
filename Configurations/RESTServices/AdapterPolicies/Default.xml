@@ -1,11 +1,14 @@
-<?xml version="1.0"?>
-<ESBAdapterPolicy xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBAdapterPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>a83186ce-62da-4e35-a79f-14d39a3fa7a4</Id>
   <Version>2f6c915c-fdf9-4484-8050-23732837129c</Version>
-  <Name>Default</Name>
+  <BusinessFlows />
+  <ProcessFlows />
   <Description>Default adapter policy</Description>
+  <Name>Default</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
   <RetryCount>1</RetryCount>
   <RetryInterval>1</RetryInterval>
   <OnErrorAuditToDatabase>true</OnErrorAuditToDatabase>

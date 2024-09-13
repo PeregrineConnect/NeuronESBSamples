@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>91b3be8b-678f-4c08-834c-fcd8dddf49a1</Id>
-  <Version>7c685359-6546-4a71-9ae2-8552180d542b</Version>
+  <Version>8f22d35a-41bb-4ef1-88aa-3e7e2a40b2f4</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>ImageClientConnector</Name>
   <Group>General</Group>
@@ -21,6 +22,7 @@
     <Port>0</Port>
     <BypassLocalAddress>false</BypassLocalAddress>
   </ProxySettings>
+  <DebugInfo />
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
   <ServiceName>ImageClientConnector</ServiceName>
@@ -30,6 +32,7 @@
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <ProcessMultipartMessages>false</ProcessMultipartMessages>
   <TransactionType>None</TransactionType>
   <MaxMessageSize>1000000</MaxMessageSize>
   <ReliableMessaging>false</ReliableMessaging>
@@ -86,6 +89,7 @@
       <Id>aa5479aa-9c01-43a4-b31c-ce3acb625207</Id>
       <Version>3cf10f1a-c74c-4b1c-b9b9-9833abb8cb16</Version>
       <BusinessFlows />
+      <ProcessFlows />
       <Description />
       <Name>Save Received Image</Name>
       <IsSystemObject>false</IsSystemObject>
@@ -96,6 +100,7 @@
         <Id>88dc7be5-143a-4788-b0b6-8452a9820a7f</Id>
         <Version>7bba8438-73bc-4cf4-9a86-651c90eb7865</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>

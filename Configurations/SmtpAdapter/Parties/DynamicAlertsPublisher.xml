@@ -1,7 +1,7 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>f2383113-0434-43bb-93a2-ee4d62650bc6</Id>
-  <Version>ffa77ce4-1b1e-41b7-a7c7-78e5cfb3c292</Version>
+  <Version>226108c0-cd0b-4a1a-a301-b39f6ef7dbf4</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -45,7 +45,10 @@
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
-        <Condition />
+        <Condition>
+          <SelectedTagList />
+          <AvailableForOther>false</AvailableForOther>
+        </Condition>
       </PipelineConditions>
     </ClientPipelineItem>
   </MessagePipelines>

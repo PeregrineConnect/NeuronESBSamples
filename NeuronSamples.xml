@@ -687,80 +687,80 @@
           />
 
   <!-- Workflows -->
-  <!-- <Sample tree     = "Workflows" -->
-          <!-- name     = "Normal Workflow" -->
-          <!-- desc     = "This sample shows a simple Normal workflow that logs the text of the incoming ESBMessage as well as the Workflow Instance ID. A Normal workflow is executed once for each message sent to the topic associated with the Workflow Endpoint." -->
-          <!-- config   = "NormalWorkflow" -->
-          <!-- folder   = "Workflows" -->
-          <!-- solution = "" -->
-          <!-- help     = "https://www.peregrineconnect.com/documentation-kb/normal-workflow/" -->
-          <!-- setup    = "0" -->
-          <!-- clients  = "1" -->
-          <!-- /> -->
+  <Sample tree     = "Workflows"
+          name     = "Normal Workflow"
+          desc     = "This sample shows a simple Normal workflow that logs the text of the incoming ESBMessage as well as the Workflow Instance ID. A Normal workflow is executed once for each message sent to the topic associated with the Workflow Endpoint."
+          config   = "NormalWorkflow"
+          folder   = "Workflows"
+          solution = ""
+          help     = "https://www.peregrineconnect.com/documentation-kb/normal-workflow/"
+          setup    = "0"
+          clients  = "1"
+          />
 
-  <!-- <Sample tree     = "Workflows" -->
-          <!-- name     = "Request-Reply Workflow" -->
-          <!-- desc     = "This sample shows a Request-Reply workflow that accepts a promotion code on the text property of the incoming ESBMessage and replies with a new ESBMessage where the text property contains the discount corresponding to the promotion code. A Request-Reply workflow is executed once for each message sent to the topic associated with the Workflow Endpoint." -->
-          <!-- config   = "RequestDiscountWorkflow" -->
-          <!-- folder   = "Workflows" -->
-          <!-- solution = "" -->
-          <!-- help     = "https://www.peregrineconnect.com/documentation-kb/request-reply-workflow/" -->
-          <!-- setup    = "0" -->
-          <!-- clients  = "1" -->
-          <!-- /> -->
+  <Sample tree     = "Workflows"
+          name     = "Request-Reply Workflow"
+          desc     = "This sample shows a Request-Reply workflow that accepts a promotion code on the text property of the incoming ESBMessage and replies with a new ESBMessage where the text property contains the discount corresponding to the promotion code. A Request-Reply workflow is executed once for each message sent to the topic associated with the Workflow Endpoint."
+          config   = "RequestDiscountWorkflow"
+          folder   = "Workflows"
+          solution = ""
+          help     = "https://www.peregrineconnect.com/documentation-kb/request-reply-workflow/"
+          setup    = "0"
+          clients  = "1"
+          />
 
-  <!-- <Sample tree     = "Workflows" -->
-          <!-- name     = "Correlated Workflow" -->
-          <!-- desc     = "This sample shows a Correlated Workflow that joins order records after a Process has split them into separate messages. A Correlated-type workflow is executed once for a unique set of messages determined by the correlation set properties configured on the Workflow Endpoint. In this sample, orders are assigned to batches and the batch ID is used to initialize the correlation set. All orders in batch 'B001' are handled by one instance of the workflow while all orders in batch 'B002' are handled by another workflow instance." -->
-          <!-- config   = "CorrelatedJoinWorkflow" -->
-          <!-- folder   = "Workflows\OrderProcessor" -->
-          <!-- solution = "OrderProcessor.sln" -->
-          <!-- help     = "https://www.peregrineconnect.com/documentation-kb/correlated-workflow/" -->
-          <!-- setup    = "0" -->
-          <!-- clients  = "2" -->
-          <!-- /> -->
+  <Sample tree     = "Workflows"
+          name     = "Correlated Workflow"
+          desc     = "This sample shows a Correlated Workflow that joins order records after a Process has split them into separate messages. A Correlated-type workflow is executed once for a unique set of messages determined by the correlation set properties configured on the Workflow Endpoint. In this sample, orders are assigned to batches and the batch ID is used to initialize the correlation set. All orders in batch 'B001' are handled by one instance of the workflow while all orders in batch 'B002' are handled by another workflow instance."
+          config   = "CorrelatedJoinWorkflow"
+          folder   = "Workflows\OrderProcessor"
+          solution = "OrderProcessor.sln"
+          help     = "https://www.peregrineconnect.com/documentation-kb/correlated-workflow/"
+          setup    = "0"
+          clients  = "2"
+          />
 
-  <!-- <Sample tree     = "Workflows" -->
-          <!-- name     = "Correlated Send and Receive" -->
-          <!-- desc     = "This sample shows an order message sent to a normal-type workflow that then publishes it to another topic for further processsing. When that processing completes the order is sent back to the existing instance of the workflow that published it. Routing to the original workflow is done by setting the correlation set on the publish to the order ID." -->
-          <!-- config   = "CorrelatedSendReceiveWorkflow" -->
-          <!-- folder   = "Workflows" -->
-          <!-- solution = "" -->
-          <!-- help     = "https://www.peregrineconnect.com/documentation-kb/correlated-send-receive-workflow/" -->
-          <!-- setup    = "0" -->
-          <!-- clients  = "3" -->
-          <!-- /> -->
+  <Sample tree     = "Workflows"
+          name     = "Correlated Send and Receive"
+          desc     = "This sample shows an order message sent to a normal-type workflow that then publishes it to another topic for further processsing. When that processing completes the order is sent back to the existing instance of the workflow that published it. Routing to the original workflow is done by setting the correlation set on the publish to the order ID."
+          config   = "CorrelatedSendReceiveWorkflow"
+          folder   = "Workflows"
+          solution = ""
+          help     = "https://www.peregrineconnect.com/documentation-kb/correlated-send-receive-workflow/"
+          setup    = "0"
+          clients  = "3"
+          />
   
-  <!-- <Sample tree     = "Workflows/Custom Activities" -->
-          <!-- name     = "Developing a Custom Workflow Activity" -->
-          <!-- desc     = "This sample demonstrates how to create a custom workflow activity that generates lorem ipsum text.  To test, compile the solution, copy the assembly to the \Program Files\Neuron ESB v3\DEFAULT\Workflows folder and restart the Neuron Explorer." -->
-          <!-- config   = "" -->
-          <!-- folder   = "Workflows\SampleDataActivityLibrary" -->
-          <!-- solution = "SampleDataActivityLibrary.sln" -->
-          <!-- help     = "https://www.peregrineconnect.com/documentation-kb/developing-a-custom-workflow-activity/" -->
-          <!-- setup    = "0" -->
-          <!-- clients  = "0" -->
-          <!-- /> -->
+  <Sample tree     = "Workflows/Custom Activities"
+          name     = "Developing a Custom Workflow Activity"
+          desc     = "This sample demonstrates how to create a custom workflow activity that generates lorem ipsum text.  To test, compile the solution, copy the assembly to the \Program Files\Neuron ESB v3\DEFAULT\Workflows folder and restart the Neuron Explorer."
+          config   = ""
+          folder   = "Workflows\SampleDataActivityLibrary"
+          solution = "SampleDataActivityLibrary.sln"
+          help     = "https://www.peregrineconnect.com/documentation-kb/developing-a-custom-workflow-activity/"
+          setup    = "0"
+          clients  = "0"
+          />
 
-  <!-- <Sample tree     = "Workflows/Microsoft WF Samples" -->
-          <!-- name     = "Importing a Microsoft Workflow Sample" -->
-          <!-- desc     = "This sample demonstrates how to import the Switch activity that ships with the Microsoft samples into Neuron ESB Explorer.  This sample contains only documentation and requires that you install the Windows Workflow (WF) Samples from the Microsoft site." -->
-          <!-- config   = "" -->
-          <!-- folder   = "Workflows" -->
-          <!-- solution = "" -->
-          <!-- help     = "https://www.peregrineconnect.com/documentation-kb/importing-a-microsoft-workflow-sample/" -->
-          <!-- setup    = "0" -->
-          <!-- clients  = "0" -->
-          <!-- /> -->
+  <Sample tree     = "Workflows/Microsoft WF Samples"
+          name     = "Importing a Microsoft Workflow Sample"
+          desc     = "This sample demonstrates how to import the Switch activity that ships with the Microsoft samples into Neuron ESB Explorer.  This sample contains only documentation and requires that you install the Windows Workflow (WF) Samples from the Microsoft site."
+          config   = ""
+          folder   = "Workflows"
+          solution = ""
+          help     = "https://www.peregrineconnect.com/documentation-kb/importing-a-microsoft-workflow-sample/"
+          setup    = "0"
+          clients  = "0"
+          />
 
-  <!-- <Sample tree     = "Workflows/Microsoft WF Samples" -->
-          <!-- name     = "Using a Microsoft Workflow Sample as a Custom Workflow Activity" -->
-          <!-- desc     = "This sample demonstrates how to use the FlowChartWithFaultHandling activity that ships with the Microsoft samples into Neuron ESB Explorer.  This sample contains only documentation and requires that you install the Windows Workflow (WF) Samples from the Microsoft site." -->
-          <!-- config   = "" -->
-          <!-- folder   = "Workflows" -->
-          <!-- solution = "" -->
-          <!-- help     = "https://www.peregrineconnect.com/documentation-kb/using-a-microsoft-workflow-sample-as-a-custom-workflow-activity/" -->
-          <!-- setup    = "0" -->
-          <!-- clients  = "0" -->
-          <!-- /> -->
+  <Sample tree     = "Workflows/Microsoft WF Samples"
+          name     = "Using a Microsoft Workflow Sample as a Custom Workflow Activity"
+          desc     = "This sample demonstrates how to use the FlowChartWithFaultHandling activity that ships with the Microsoft samples into Neuron ESB Explorer.  This sample contains only documentation and requires that you install the Windows Workflow (WF) Samples from the Microsoft site."
+          config   = ""
+          folder   = "Workflows"
+          solution = ""
+          help     = "https://www.peregrineconnect.com/documentation-kb/using-a-microsoft-workflow-sample-as-a-custom-workflow-activity/"
+          setup    = "0"
+          clients  = "0"
+          />
 </NeuronSamples>

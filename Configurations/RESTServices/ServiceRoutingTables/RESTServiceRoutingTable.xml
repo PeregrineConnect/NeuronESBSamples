@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ServiceRoutingTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceRoutingTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>605a50db-a277-4dcf-954b-75c0e3b9920d</Id>
   <Version>a006528f-843a-417b-ac6d-a5a634b59814</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>RESTServiceRoutingTable</Name>
   <Group>General</Group>
@@ -16,10 +17,12 @@
         <Method>GET</Method>
         <Body />
         <BodyType>Raw</BodyType>
+        <BodyFormat>XML</BodyFormat>
         <DeleteMessageBody>false</DeleteMessageBody>
         <DeleteResponseBody>false</DeleteResponseBody>
         <Parameters />
         <Headers />
+        <AdapterEndpointProperties />
         <BodyProperties />
         <TestBody />
         <TestEnabled>FALSE</TestEnabled>
@@ -37,6 +40,7 @@
         <Id>ef999a8d-4017-4780-b77f-e29430563c65</Id>
         <Version>0e7da127-0163-49e1-af90-941dce37350e</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
@@ -62,10 +66,12 @@
         <Method>POST</Method>
         <Body />
         <BodyType>Raw</BodyType>
+        <BodyFormat>XML</BodyFormat>
         <DeleteMessageBody>false</DeleteMessageBody>
         <DeleteResponseBody>false</DeleteResponseBody>
         <Parameters />
         <Headers />
+        <AdapterEndpointProperties />
         <BodyProperties />
         <TestBody />
         <TestEnabled>FALSE</TestEnabled>
@@ -83,6 +89,7 @@
         <Id>ef999a8d-4017-4780-b77f-e29430563c65</Id>
         <Version>0e7da127-0163-49e1-af90-941dce37350e</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>

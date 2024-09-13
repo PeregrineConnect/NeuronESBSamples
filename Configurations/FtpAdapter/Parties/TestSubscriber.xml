@@ -1,43 +1,54 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>5b2f6870-f409-4643-86d4-21c408f69e61</Id>
-  <Version>95bfb5a3-5d35-4e39-88f8-6020d04b0404</Version>
-  <Name>TestSubscriber</Name>
+  <Version>e9f6e9b2-4577-48f0-9d33-16110bdbf2cc</Version>
+  <BusinessFlows />
+  <ProcessFlows />
   <Description />
+  <Name>TestSubscriber</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
-  <AllowMultipleInstances>true</AllowMultipleInstances>
-  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
   <SubscriberId>TestSubscriber</SubscriberId>
   <ClientGroup>General</ClientGroup>
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
-  <Anonymous>true</Anonymous>
   <Subscriptions>
     <Subscription>
       <TopicName>FtpTopic.In</TopicName>
+      <TopicId />
       <CanRead>true</CanRead>
       <CanWrite>false</CanWrite>
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
   </Subscriptions>
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
   <MessagePipelines>
     <ClientPipelineItem>
       <Id>fc583529-a0ef-45d2-8040-9648cf1e5920</Id>
       <Version>b92cd270-df6b-4d96-9718-3bda3968a16c</Version>
+      <BusinessFlows />
+      <ProcessFlows />
+      <Description />
       <Name>Set File Filename</Name>
       <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
       <ApplyOnPublish>false</ApplyOnPublish>
       <ApplyOnReceive>true</ApplyOnReceive>
       <PipelineConditions>
         <Id>33a7ae9a-53a0-440a-9c73-2a2cad04b84b</Id>
         <Version>ebd49f04-9829-48c9-8dee-7fd3d43d5e84</Version>
+        <BusinessFlows />
+        <ProcessFlows />
+        <Description />
         <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
         <Condition />
       </PipelineConditions>
     </ClientPipelineItem>
   </MessagePipelines>
   <LogActivity>false</LogActivity>
-  <LogFile />
-  <LogSession>true</LogSession>
+  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
 </ESBSubscriber>

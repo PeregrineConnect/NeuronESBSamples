@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Web;
 using System.Web.Helpers;
 using System.Web.Mvc;
@@ -46,7 +45,7 @@ namespace NeuronOAuthConsumerSample.Controllers
       
         private string GetToken()
         {
-            string ConnString = ConfigurationManager.ConnectionStrings[2].ToString();
+            string ConnString = ConfigurationManager.ConnectionStrings["Azure"].ConnectionString;
             var ClientId = ConnString.Split(';')[0].Split('=')[1];
             var ClientSecret = ConnString.Split(';')[1].Split('=')[1];
             var GrantType = "client_credentials";  //Grant type matches the grant type specified in Peregrine Management setup for your application's Client Id
@@ -55,16 +54,16 @@ namespace NeuronOAuthConsumerSample.Controllers
             {
                 new KeyValuePair<string, string>("client_id", ClientId),
                 new KeyValuePair<string, string>("client_secret", ClientSecret ),
-                 new KeyValuePair<string, string>("scope", "api://"  + ClientId + "/.default") ,// this is how Azure's default scope for a client is specified
+                 new KeyValuePair<string, string>("scope", "https://"  + ClientId + "/.default") ,// this is how Azure's default scope for a client is specified
                 new KeyValuePair<string, string>("grant_type", GrantType )
             
              });
+
             string AzureAdTenantId = ConfigurationManager.AppSettings["AzureADTenantId"];
             using (HttpClient client = new HttpClient())
             {
                 var response = client.PostAsync(string.Format("https://login.microsoftonline.com/{0}/oauth2/v2.0/token", AzureAdTenantId), formContent).GetAwaiter().GetResult();
-
-               return JValue.Parse(response.Content.ReadAsStringAsync().GetAwaiter().GetResult()).ToString(Formatting.Indented);
+                return JValue.Parse(response.Content.ReadAsStringAsync().GetAwaiter().GetResult()).ToString(Formatting.Indented);
             }
         }
     }

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-16"?>
-<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://neuron.esb.samples.processes/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ServiceProcessService" targetNamespace="http://neuron.esb.samples.processes/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://neuron.netx.samples.processes/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ServiceProcessService" targetNamespace="http://neuron.netx.samples.processes/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
-    <xsd:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://neuron.esb.samples.processes/">
-      <xs:import namespace="http://schemas.datacontract.org/2004/07/Neuron.Esb.Samples.Processes" />
+    <xsd:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://neuron.netx.samples.processes/">
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/Neuron.NetX.Samples.Processes" />
       <xs:element name="GetPerson">
         <xs:complexType>
           <xs:sequence>
@@ -13,7 +13,7 @@
       <xs:element name="GetPersonResponse">
         <xs:complexType>
           <xs:sequence>
-            <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Neuron.Esb.Samples.Processes" minOccurs="0" name="GetPersonResult" nillable="true" type="q1:Person" />
+            <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Neuron.NetX.Samples.Processes" minOccurs="0" name="GetPersonResult" nillable="true" type="q1:Person" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
@@ -59,7 +59,7 @@
       <xs:attribute name="Id" type="xs:ID" />
       <xs:attribute name="Ref" type="xs:IDREF" />
     </xsd:schema>
-    <xsd:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Neuron.Esb.Samples.Processes" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Neuron.Esb.Samples.Processes">
+    <xsd:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Neuron.NetX.Samples.Processes" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Neuron.NetX.Samples.Processes">
       <xs:complexType name="Person">
         <xs:sequence>
           <xs:element minOccurs="0" name="age" type="xs:int" />
@@ -77,14 +77,14 @@
   </wsdl:message>
   <wsdl:portType name="IServiceProcessService">
     <wsdl:operation name="GetPerson">
-      <wsdl:input wsaw:Action="http://neuron.esb.samples.processes/IServiceProcessService/GetPerson" message="tns:IServiceProcessService_GetPerson_InputMessage" />
-      <wsdl:output wsaw:Action="http://neuron.esb.samples.processes/IServiceProcessService/GetPersonResponse" message="tns:IServiceProcessService_GetPerson_OutputMessage" />
+      <wsdl:input wsaw:Action="http://neuron.netx.samples.processes/IServiceProcessService/GetPerson" message="tns:IServiceProcessService_GetPerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://neuron.netx.samples.processes/IServiceProcessService/GetPersonResponse" message="tns:IServiceProcessService_GetPerson_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="ServiceProcess" type="tns:IServiceProcessService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetPerson">
-      <soap:operation soapAction="http://neuron.esb.samples.processes/IServiceProcessService/GetPerson" style="document" />
+      <soap:operation soapAction="http://neuron.netx.samples.processes/IServiceProcessService/GetPerson" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

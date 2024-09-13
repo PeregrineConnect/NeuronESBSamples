@@ -1,8 +1,8 @@
 using System;
-using Neuron.Esb;
+using Neuron.NetX;
 
 
-namespace Neudesic.EnterpriseServiceBus.Samples
+namespace Neuron.EnterpriseServiceBus.Samples
 {
     public class Sender
     {

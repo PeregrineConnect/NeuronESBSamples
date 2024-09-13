@@ -1,25 +1,25 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>25</Version>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>27</Version>
   <EnvironmentName>MessageValidationTransformation</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
   <ApplicationName>MessageValidationTransformation</ApplicationName>
   <ApplicationId>0a60a8d1-d217-404d-90f1-e5f4f0532a9e</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
-      <string>Edit,Enterprise,topic,Books</string>
+      <string>Edit,*,pipeline,Validate Book Message - Code</string>
+      <string>Edit,*,pipeline,Validate Book Message</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:14:38.8928073Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-07-30T11:32:24.8334546Z</LastModifiedDate>
+    <Comments>Edited pipeline named 'Validate Book Message - Code' in *", Edited pipeline named 'Validate Book Message' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -40,6 +40,7 @@
           <Id>b7ba52f4-1a33-422b-819a-de15c3f4f36d</Id>
           <Version />
           <BusinessFlows />
+          <ProcessFlows />
           <Description>Schema used in Validate Message pipeline sample</Description>
           <Name>BookSchema</Name>
           <Group>General</Group>
@@ -68,6 +69,7 @@
           <Id>0dd7bdc5-ea69-4990-af8d-f49868738c19</Id>
           <Version>42a63f03-c26c-4c3d-8879-88db7fabcacd</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>SchemaValidationSampleMessage</Name>
           <Group>General</Group>
@@ -95,6 +97,7 @@
           <Id>c0d39dc6-876c-48a1-ac4e-ec816c24ead9</Id>
           <Version>ee6092f2-025c-4090-9818-a9f1e0e47b82</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>BookToHtmlXslt</Name>
           <Group>General</Group>
@@ -118,6 +121,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

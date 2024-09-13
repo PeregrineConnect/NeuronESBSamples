@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>64147d04-762f-4928-83c9-dd07f07520cb</Id>
   <Version>37dcc28a-d421-4890-9063-e5dee70a433a</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>localhost.NeuronESBSampleDB</Name>
   <IsSystemObject>false</IsSystemObject>
@@ -12,6 +13,7 @@
     <Id>ded7919e-4b4a-4029-8886-901f27c97083</Id>
     <Version>9c3e1b40-d368-4ad5-8015-26f1f9e9075b</Version>
     <BusinessFlows />
+    <ProcessFlows />
     <Description />
     <IsSystemObject>false</IsSystemObject>
     <IsPrivate>false</IsPrivate>
@@ -25,6 +27,7 @@
           <Id>025bf956-4751-4858-8d0a-cb19720f9344</Id>
           <Version>f3639f57-7d7b-42d2-891e-38cefb78a618</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>

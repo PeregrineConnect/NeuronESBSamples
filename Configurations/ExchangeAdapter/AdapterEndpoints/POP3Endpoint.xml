@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBEndpoint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>4d7ee0cb-97ed-43d0-a71c-7fd6158ab227</Id>
   <Version>206cf288-f105-43c9-8c94-bac0316010c7</Version>
   <BusinessFlows />
@@ -16,9 +16,9 @@
   <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
   <IncludeMetadata>true</IncludeMetadata>
   <AdapterName>POP3</AdapterName>
-  <AdapterAssembly>Neuron.Esb.Adapters.POP3Adapter.dll</AdapterAssembly>
+  <AdapterAssembly>Neuron.NetX.Adapters.POP3Adapter.dll</AdapterAssembly>
   <AdapterMessageDirection>Duplex</AdapterMessageDirection>
-  <AdapterClass>Neuron.Esb.POP3.Adapters.POP3Adapter</AdapterClass>
+  <AdapterClass>Neuron.NetX.POP3.Adapters.POP3Adapter</AdapterClass>
   <AdapterMode>Publish</AdapterMode>
   <ProcessMode>false</ProcessMode>
   <ClientProcessMode>Messaging</ClientProcessMode>

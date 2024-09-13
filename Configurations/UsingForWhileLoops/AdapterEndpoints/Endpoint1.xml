@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBEndpoint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>a7a215e7-bbc4-407e-ad7d-5b3c170f2de4</Id>
   <Version>69f50dc2-de1e-403e-ac1a-d75ec61a11a1</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>Endpoint1</Name>
   <Group />
@@ -15,9 +16,9 @@
   <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
   <IncludeMetadata>false</IncludeMetadata>
   <AdapterName>Microsoft SharePoint</AdapterName>
-  <AdapterAssembly>Neuron.Esb.Adapters.SharePoint.dll</AdapterAssembly>
+  <AdapterAssembly>Neuron.NetX.Adapters.SharePoint.dll</AdapterAssembly>
   <AdapterMessageDirection>Duplex</AdapterMessageDirection>
-  <AdapterClass>Neuron.Esb.Adapters.SharePoint.Adapter</AdapterClass>
+  <AdapterClass>Neuron.NetX.Adapters.SharepointAdapter</AdapterClass>
   <AdapterMode>Subscribe</AdapterMode>
   <ProcessMode>false</ProcessMode>
   <ClientProcessMode>Messaging</ClientProcessMode>

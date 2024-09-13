@@ -1,79 +1,108 @@
 ﻿{
-  "dataMapperMapping" : {
-    "$type" : "Peregrine.DataMapper.Model.DataMapperMapping, Peregrine.DataMapper.Model",
-    "dataSource" : [ {
-      "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonDataSource, Peregrine.DataMapper.JsonModule",
-      "id" : "CustomerResultJson-JSON",
-      "name" : "CustomerResultJson-JSON",
-      "description" : "Source document CustomerResultJson-JSON type: JSON",
-      "uri" : "datamapper:json:CustomerResultJson-JSON",
-      "dataSourceType" : "SOURCE"
-    }, {
-      "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlDataSource, Peregrine.DataMapper.XmlModule",
-      "id" : "CustomerServiceSchemas_AddCustomerResponse-XSD",
-      "name" : "CustomerServiceSchemas_AddCustomerResponse-XSD",
-      "description" : "Target document CustomerServiceSchemas_AddCustomerResponse-XSD type: XSD",
-      "uri" : "datamapper:xml:CustomerServiceSchemas_AddCustomerResponse-XSD",
-      "dataSourceType" : "TARGET",
-      "xmlNamespaces" : {
-        "xmlNamespace" : [ {
-          "alias" : "tns",
-          "uri" : "http://Neuron.Samples"
-        } ]
+  "dataSource": [
+    {
+      "$type": "Peregrine.DataMapper.JsonModule.Model.JsonDataSource, Peregrine.DataMapper.JsonModule",
+      "templateType": 0,
+      "id": "For SOAPtoREST - CustomerResultJson-JSON",
+      "name": "For SOAPtoREST - CustomerResultJson-JSON",
+      "description": "Source document For SOAPtoREST - CustomerResultJson-JSON type: JSON",
+      "uri": "datamapper:json:For SOAPtoREST - CustomerResultJson-JSON",
+      "dataSourceType": "SOURCE"
+    },
+    {
+      "$type": "Peregrine.DataMapper.XmlModule.Model.XmlDataSource, Peregrine.DataMapper.XmlModule",
+      "xmlNamespaces": {
+        "xmlNamespace": [
+          {
+            "alias": "tns",
+            "uri": "http://Neuron.Samples"
+          }
+        ]
+      },
+      "templateType": 0,
+      "id": "For SOAPtoREST - CustomerServiceSchemas_AddCustomerResponse-XSD",
+      "name": "For SOAPtoREST - CustomerServiceSchemas_AddCustomerResponse-XSD",
+      "description": "Target document For SOAPtoREST - CustomerServiceSchemas_AddCustomerResponse-XSD type: XSD",
+      "uri": "datamapper:xml:For SOAPtoREST - CustomerServiceSchemas_AddCustomerResponse-XSD",
+      "dataSourceType": "TARGET"
+    }
+  ],
+  "mappings": {
+    "mapping": [
+      {
+        "$type": "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
+        "inputField": [
+          {
+            "$type": "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
+            "userCreated": false,
+            "docId": "For SOAPtoREST - CustomerResultJson-JSON",
+            "path": "/errorMsg",
+            "fieldType": "STRING",
+            "name": "errorMsg",
+            "defaultValueSetting": 0
+          }
+        ],
+        "outputField": [
+          {
+            "$type": "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
+            "attribute": false,
+            "docId": "For SOAPtoREST - CustomerServiceSchemas_AddCustomerResponse-XSD",
+            "path": "/tns:AddCustomerResponse/tns:AddCustomerResult/tns:errorMsg",
+            "fieldType": "STRING",
+            "name": "errorMsg",
+            "defaultValueSetting": 0
+          }
+        ],
+        "id": "mapping.914970",
+        "pageNumber": 0,
+        "targetCollectionOffset": 0,
+        "boxOffsetY": 0
+      },
+      {
+        "$type": "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
+        "inputField": [
+          {
+            "$type": "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
+            "userCreated": false,
+            "docId": "For SOAPtoREST - CustomerResultJson-JSON",
+            "path": "/success",
+            "fieldType": "LONG",
+            "name": "success",
+            "default": 1,
+            "defaultValueSetting": 0
+          }
+        ],
+        "outputField": [
+          {
+            "$type": "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
+            "attribute": false,
+            "docId": "For SOAPtoREST - CustomerServiceSchemas_AddCustomerResponse-XSD",
+            "path": "/tns:AddCustomerResponse/tns:AddCustomerResult/tns:success",
+            "fieldType": "INTEGER",
+            "name": "success",
+            "defaultValueSetting": 0
+          }
+        ],
+        "id": "mapping.675879",
+        "pageNumber": 0,
+        "targetCollectionOffset": 0,
+        "boxOffsetY": 0
       }
-    } ],
-    "mappings" : {
-      "mapping" : [ {
-        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
-        "inputField" : [ {
-          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
-          "docId" : "CustomerResultJson-JSON",
-          "path" : "/errorMsg",
-          "fieldType" : "STRING",
-          "name" : "errorMsg",
-          "userCreated" : false
-        } ],
-        "outputField" : [ {
-          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
-          "docId" : "CustomerServiceSchemas_AddCustomerResponse-XSD",
-          "path" : "/tns:AddCustomerResponse/tns:AddCustomerResult/tns:errorMsg",
-          "fieldType" : "STRING",
-          "name" : "errorMsg",
-          "attribute" : false
-        } ],
-        "id" : "mapping.42383",
-        "pageNumber" : 0
-      }, {
-        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
-        "inputField" : [ {
-          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
-          "docId" : "CustomerResultJson-JSON",
-          "path" : "/success",
-          "fieldType" : "BOOLEAN",
-          "name" : "success",
-          "userCreated" : false
-        } ],
-        "outputField" : [ {
-          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
-          "docId" : "CustomerServiceSchemas_AddCustomerResponse-XSD",
-          "path" : "/tns:AddCustomerResponse/tns:AddCustomerResult/tns:success",
-          "fieldType" : "BOOLEAN",
-          "name" : "success",
-          "attribute" : false
-        } ],
-        "id" : "mapping.283940",
-        "pageNumber" : 0
-      } ]
-    },
-    "lookupTables" : {
-      "lookupTable" : [ ]
-    },
-    "constants" : {
-      "constant" : [ ]
-    },
-    "properties" : {
-      "property" : [ ]
-    },
-    "name" : "UI.0"
-  }
+    ]
+  },
+  "lookupTables": {
+    "lookupTable": []
+  },
+  "constants": {
+    "constant": []
+  },
+  "properties": {
+    "property": []
+  },
+  "name": "UI.0",
+  "settings": {
+    "defaultValueSetting": 0,
+    "errorSetting": 0
+  },
+  "customScripts": []
 }

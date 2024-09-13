@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBTopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>c129c9a3-2172-4c0a-b491-5aa91dc2ee45</Id>
   <Version>6b4847bc-f6d5-4e5b-8537-c43ebe88448d</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>Orders</Name>
   <Group>General</Group>
@@ -13,14 +14,17 @@
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
+      <Id>822fd3fd-8698-4c08-a2f9-4909c97b4994</Id>
       <Name>Orders.Processing</Name>
       <Description />
     </Subtopic>
     <Subtopic>
+      <Id>8058f5c5-b911-4b7a-b697-0103c0c622c4</Id>
       <Name>Orders.Notify</Name>
       <Description />
     </Subtopic>
     <Subtopic>
+      <Id>5debd1e9-63b6-45ec-a1ed-fc6bdb354534</Id>
       <Name>Orders.Logging</Name>
       <Description />
     </Subtopic>
@@ -128,4 +132,5 @@
   <Encrypted>false</Encrypted>
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
+  <AvailabilityGroupId>Neuron ESB Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

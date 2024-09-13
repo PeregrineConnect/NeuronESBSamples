@@ -1,25 +1,24 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>27</Version>
-  <EnvironmentName>SplittingMessagesWithJoin</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>29</Version>
+  <EnvironmentName>SplittingMessagesWithJoin_Converted</EnvironmentName>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
   <ApplicationName>SplittingMessagesWithJoin</ApplicationName>
   <ApplicationId>cea0f4a0-c575-43af-9cae-e8f904896e8e</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
-      <string>Edit,Enterprise,topic,Orders</string>
+      <string>Edit,*,pipeline,Split Orders - Code</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:20:08.9769268Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-08-05T07:41:35.219944Z</LastModifiedDate>
+    <Comments>Edited pipeline named 'Split Orders - Code' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -42,6 +41,7 @@
           <Id>5a05741a-c66e-4047-93db-98a6b8b97cc3</Id>
           <Version>04f14bd8-fe59-483d-ba38-63c0727ec786</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>OrdersTestMessage</Name>
           <Group>General</Group>
@@ -70,6 +70,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

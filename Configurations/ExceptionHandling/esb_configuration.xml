@@ -1,25 +1,25 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>44</Version>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>47</Version>
   <EnvironmentName>ExceptionHandling</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
   <ApplicationName>ExceptionHandling</ApplicationName>
   <ApplicationId>1e821afb-1ea0-48a7-ad72-2a0cdc8bad96</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
-      <string>Edit,Enterprise,topic,Test</string>
+      <string>Edit,*,pipeline,Try Set Custom Property</string>
+      <string>Edit,Enterprise,publisher,TestMessagePublisher</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:12:44.8042084Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-07-30T10:59:56.9322545Z</LastModifiedDate>
+    <Comments>Edited pipeline named 'Try Set Custom Property' in *", Edited publisher named 'TestMessagePublisher' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -48,6 +48,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

@@ -1,38 +1,50 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>7769be2c-fac9-4fd2-8b3b-018a4afa4302</Id>
-  <Version>3685a0d7-eac8-48f0-82cf-cc97b8ab14c7</Version>
-  <Name>TestMessagePublisher</Name>
+  <Version>a1cef1b2-5df1-4149-b1ec-42822ab29e17</Version>
+  <BusinessFlows />
+  <ProcessFlows />
   <Description />
+  <Name>TestMessagePublisher</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
-  <AllowMultipleInstances>true</AllowMultipleInstances>
-  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
   <SubscriberId>TestMessagePublisher</SubscriberId>
   <ClientGroup>General</ClientGroup>
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
-  <Anonymous>true</Anonymous>
   <Subscriptions>
     <Subscription>
       <TopicName>Test</TopicName>
+      <TopicId />
       <CanRead>false</CanRead>
       <CanWrite>true</CanWrite>
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
   </Subscriptions>
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
   <MessagePipelines>
     <ClientPipelineItem>
       <Id>02691abc-0fa7-49c3-9d08-3c2e47f20f9f</Id>
       <Version>d97d1152-a98f-481a-ad43-a6dc0ab942b7</Version>
+      <BusinessFlows />
+      <ProcessFlows />
+      <Description />
       <Name>Try Set Custom Property</Name>
       <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
       <ApplyOnPublish>true</ApplyOnPublish>
       <ApplyOnReceive>false</ApplyOnReceive>
       <PipelineConditions>
         <Id>3c6a536d-48b5-40ba-88f6-54d0fba7c6c3</Id>
         <Version>7190b730-662d-41a7-a76e-3e1c72c09b18</Version>
+        <BusinessFlows />
+        <ProcessFlows />
+        <Description />
         <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
         <Condition>
           <Conditions>
             <ConditionElement>
@@ -45,11 +57,12 @@
               <LogicalOperator>End</LogicalOperator>
             </ConditionElement>
           </Conditions>
+          <SelectedTagList />
+          <AvailableForOther>false</AvailableForOther>
         </Condition>
       </PipelineConditions>
     </ClientPipelineItem>
   </MessagePipelines>
   <LogActivity>false</LogActivity>
-  <LogFile />
-  <LogSession>true</LogSession>
+  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
 </ESBSubscriber>

@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>951d6323-ba88-4748-83bf-61c2f703575f</Id>
-  <Version>ae24be27-01bc-4642-89a3-1ed1ed50d43e</Version>
+  <Version>ed844314-71da-4b80-9d7b-05bcf086e492</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>EmailPublisher</Name>
   <Group>General</Group>
@@ -16,6 +17,7 @@
   <Subscriptions>
     <Subscription>
       <TopicName>Email</TopicName>
+      <TopicId />
       <CanRead>false</CanRead>
       <CanWrite>true</CanWrite>
       <MatchMessagePatterns />
@@ -29,6 +31,7 @@
       <Id>9609f024-b0e7-490f-a867-de8242f2084e</Id>
       <Version>5e94e0e7-b06f-418a-b9d8-1ff9e676579b</Version>
       <BusinessFlows />
+      <ProcessFlows />
       <Description />
       <Name>Process Email</Name>
       <IsSystemObject>false</IsSystemObject>
@@ -39,6 +42,7 @@
         <Id>a4fa8361-d8cd-4309-9f85-e1504ae9bb48</Id>
         <Version>1caf6f2d-1116-4b71-aa87-aa64dcb7ef4b</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>

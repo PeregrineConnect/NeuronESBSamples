@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBDeployment xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBDeployment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>73854fe4-cf0e-4d04-a157-56b1024e9a47</Id>
   <Version>939d70d9-8d44-4724-b6fc-73072da0fef2</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description>Run everything on local machine</Description>
   <Name>Dev</Name>
   <Group>General</Group>
@@ -30,6 +31,7 @@
     <UseGmsa>false</UseGmsa>
     <GmsaAccount>LocalService</GmsaAccount>
     <SwarmDeployment>false</SwarmDeployment>
+    <K8SDeployment>true</K8SDeployment>
   </DockerSettings>
   <DockerEnvironmentConfig>
     <esbInstanceName>Default</esbInstanceName>
@@ -83,7 +85,6 @@
     <SwaggerSelfHostingUrl />
     <SchedulerRemotingPort>49153</SchedulerRemotingPort>
     <SchedulerEnableLogging>false</SchedulerEnableLogging>
-    <DataMapperServicePort>8585</DataMapperServicePort>
     <MSAppPoolServiceAccount>NT AUTHORITY\NETWORK SERVICE</MSAppPoolServiceAccount>
     <IsDirty>false</IsDirty>
   </DockerEnvironmentConfig>
@@ -116,4 +117,25 @@
   </Units>
   <Addresses />
   <Queues />
+  <AksSettings>
+    <RabbitTLS>false</RabbitTLS>
+    <IsClusterCreated xsi:nil="true" />
+    <CloudProvider>Local</CloudProvider>
+    <ResourceGroup>K8S-Neuron</ResourceGroup>
+    <CapacityGB>50</CapacityGB>
+    <LoadBalancerRange>192.168.52.0/28</LoadBalancerRange>
+    <IsBGP>false</IsBGP>
+    <ExtIngressPeregrineMS>false</ExtIngressPeregrineMS>
+    <IntIngressPeregrineMS>false</IntIngressPeregrineMS>
+    <TLSPeregrineMS>false</TLSPeregrineMS>
+    <LEPeregrineMS>false</LEPeregrineMS>
+    <LBPeregrineMS>false</LBPeregrineMS>
+    <LBPeregrineMSExternal>false</LBPeregrineMSExternal>
+    <ExtIngressElastic>false</ExtIngressElastic>
+    <IntIngressElastic>false</IntIngressElastic>
+    <TLSElastic>false</TLSElastic>
+    <LEElastic>false</LEElastic>
+    <LBElastic>false</LBElastic>
+    <LBElasticExternal>false</LBElasticExternal>
+  </AksSettings>
 </ESBDeployment>

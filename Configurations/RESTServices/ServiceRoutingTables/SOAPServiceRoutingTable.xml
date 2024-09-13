@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ServiceRoutingTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceRoutingTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>eb4abc9c-2252-4e0e-80bb-a063476da168</Id>
   <Version>a56f8f3e-c8c5-4b70-8c56-eb114bddc6ee</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>SOAPServiceRoutingTable</Name>
   <Group>General</Group>
@@ -16,10 +17,12 @@
         <Method />
         <Body />
         <BodyType>Raw</BodyType>
+        <BodyFormat>XML</BodyFormat>
         <DeleteMessageBody>false</DeleteMessageBody>
         <DeleteResponseBody>false</DeleteResponseBody>
         <Parameters />
         <Headers />
+        <AdapterEndpointProperties />
         <BodyProperties />
         <TestBody />
         <TestEnabled>FALSE</TestEnabled>
@@ -37,6 +40,7 @@
         <Id>f7572410-b66a-4f0a-b520-d57cfa28cca2</Id>
         <Version>a5e20450-6113-4297-b094-b4108493fcd1</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>

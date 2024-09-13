@@ -1,7 +1,7 @@
 using System;
 using System.ServiceModel;
 
-namespace Neudesic.EnterpriseServiceBus.Samples
+namespace Neuron.EnterpriseServiceBus.Samples
 {
     //The service contract is defined in generatedClient.cs, generated from the service by the svcutil tool.
     
@@ -16,7 +16,7 @@ namespace Neudesic.EnterpriseServiceBus.Samples
             Console.WriteLine("Initializing client");
 
             // Create a client with requestreply endpoint configuration
-            CalculatorClient client = new CalculatorClient("requestreply");
+            CalculatorClient client = new CalculatorClient(new NetTcpBinding() { MaxReceivedMessageSize = 100000000,ReaderQuotas = new System.Xml.XmlDictionaryReaderQuotas() { MaxStringContentLength = 100000000}, Security = new NetTcpSecurity() { Mode = SecurityMode.None } }, new EndpointAddress("net.tcp://localhost:8002/esb/patterns/oneway"));
 
             try
             {

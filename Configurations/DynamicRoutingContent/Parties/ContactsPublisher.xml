@@ -1,44 +1,58 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>5a0bf701-a44e-4349-81a0-e57cd32923a6</Id>
-  <Version>5c34887f-e6b0-4993-8da3-048f0c8a2718</Version>
-  <Name>ContactsPublisher</Name>
+  <Version>fee8ab90-29d0-4462-9f4c-f81388d71471</Version>
+  <BusinessFlows />
+  <ProcessFlows />
   <Description />
+  <Name>ContactsPublisher</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
-  <AllowMultipleInstances>true</AllowMultipleInstances>
-  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
   <SubscriberId>ContactsPublisher</SubscriberId>
   <ClientGroup>General</ClientGroup>
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
-  <Anonymous>true</Anonymous>
   <Subscriptions>
     <Subscription>
       <TopicName>Contacts.*</TopicName>
+      <TopicId />
       <CanRead>false</CanRead>
       <CanWrite>true</CanWrite>
       <MatchMessagePatterns />
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
   </Subscriptions>
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
   <MessagePipelines>
     <ClientPipelineItem>
       <Id>eba4e57f-39c7-4635-96e4-fe34879fc956</Id>
       <Version>5993a538-2b20-403e-87d0-2028f6daeeb3</Version>
+      <BusinessFlows />
+      <ProcessFlows />
+      <Description />
       <Name>Dynamic Topic Routing - Content</Name>
       <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
       <ApplyOnPublish>true</ApplyOnPublish>
       <ApplyOnReceive>false</ApplyOnReceive>
       <PipelineConditions>
         <Id>739fe978-3aa4-4abd-a6a5-b8493b144044</Id>
         <Version>395bef81-7fde-4ce5-938f-9ef5ca626bba</Version>
+        <BusinessFlows />
+        <ProcessFlows />
+        <Description />
         <IsSystemObject>false</IsSystemObject>
-        <Condition />
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <SelectedTagList />
+          <AvailableForOther>false</AvailableForOther>
+        </Condition>
       </PipelineConditions>
     </ClientPipelineItem>
   </MessagePipelines>
   <LogActivity>false</LogActivity>
-  <LogFile />
-  <LogSession>true</LogSession>
+  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
 </ESBSubscriber>

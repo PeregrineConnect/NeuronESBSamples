@@ -71,17 +71,17 @@ namespace Neuron.Samples.CustomerREST
                 // this code is reached if the customer doesn't exist, so add it
                 Console.WriteLine(String.Format("   Customer with Id {0} not found. Adding now", customer.ID));
                 _customers.Add(customer);
-                return new Result(true);
+                return new Result(1);
             }
             catch (Exception ex)
             {
-                var exResult = new Result(false, "An unknown error occurred");
+                var exResult = new Result(0, "An unknown error occurred");
                 throw new WebFaultException<Result>(exResult, System.Net.HttpStatusCode.InternalServerError);
             }
 
             // The customer exists, so return an ErrorResult
             Console.WriteLine(String.Format("   Customer with Id {0} already exists", customer.ID));
-            return new Result(false, String.Format("Customer with Id {0} already exists", customer.ID));
+            return new Result(1, String.Format("Customer with Id {0} already exists", customer.ID));
         }
 
         #endregion

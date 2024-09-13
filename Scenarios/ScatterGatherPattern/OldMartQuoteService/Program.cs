@@ -1,5 +1,12 @@
-﻿using System;
-using System.ServiceModel;
+﻿using CoreWCF;
+using CoreWCF.Configuration;
+using CoreWCF.Description;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System;
+
 using System.Xml;
 using System.Xml.Serialization;
 
@@ -79,7 +86,7 @@ namespace Neuron.Esb.Samples.ScatterGather
     }
 
 
-    [ServiceBehavior(ValidateMustUnderstand = false, AddressFilterMode = AddressFilterMode.Any)]
+    [ServiceBehavior( AddressFilterMode = AddressFilterMode.Any)]
     public class QuoteService : IQuote
     {
         public QuoteService()
@@ -115,12 +122,42 @@ namespace Neuron.Esb.Samples.ScatterGather
     {
         static void Main(string[] args)
         {
-            ServiceHost shost = new ServiceHost(typeof(QuoteService));
 
-            shost.Open();
+         /*   ServiceHost shost = new ServiceHost(typeof(QuoteService));
+
+            shost.Open(); */
             
+                    	var builder = WebApplication.CreateBuilder();
+
+            builder.Services.AddServiceModelServices().AddServiceModelMetadata();;
+           
+            builder.WebHost.ConfigureKestrel(options =>
+            {
+                options.ListenAnyIP(8731);
+            });
+            var app = builder.Build();
+           
+            app.UseServiceModel(serviceBuilder =>
+            {
+                 serviceBuilder.AddService<QuoteService>
+                 (serviceOptions => 
+                     {
+                           serviceOptions.DebugBehavior.IncludeExceptionDetailInFaults = true; 
+                           serviceOptions.BaseAddresses.Add(new Uri("http://localhost:8731"));
+                     }
+                );            
+             });
+
+            var serviceMetadataBehavior = app.Services.GetRequiredService<ServiceMetadataBehavior>();
+             serviceMetadataBehavior.HttpGetEnabled = true;
+             serviceMetadataBehavior.HttpGetUrl = new Uri("http://localhost:8731/metadata");
+             app.Start();
+            
+            app.Start();
+
             Console.WriteLine("Old Mart Host listening");
             Console.ReadLine();
+            app.StopAsync().Wait();
         }
     }
 }

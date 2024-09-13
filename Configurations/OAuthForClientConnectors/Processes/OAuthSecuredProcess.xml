@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBMessagePipelineStorage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>c0c23086-2c96-4367-9979-b4ad33362a8f</Id>
-  <Version>67a3b128-1433-4703-bc4b-77cc346f2617</Version>
+  <Version>f7d49850-2cdb-4b9d-b912-280bc6ebeb4f</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>OAuthSecuredProcess</Name>
   <IsSystemObject>false</IsSystemObject>
@@ -10,47 +11,52 @@
   <Category>General</Category>
   <IsEncrypted>true</IsEncrypted>
   <Path />
-  <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description i:nil="true" /&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Name&gt;OAuthSecuredProcess&lt;/Name&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageCSharpCustomPipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;5f8d9f89-5e8d-439d-8a80-d2108be92600&lt;/Id&gt;&lt;Name&gt;CSharpCustom&lt;/Name&gt;&lt;Uniquename&gt;2cf4fdd9-048b-4dd8-9bdc-0e92452928ad&lt;/Uniquename&gt;&lt;d3p1:BreakPointLines xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;d3p1:BreakPoints xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;d3p1:Code&gt;
-#define DEBUG
+  <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;AuditStepAdded&gt;StepNotAdded&lt;/AuditStepAdded&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description i:nil="true" /&gt;&lt;DisplayAudit&gt;false&lt;/DisplayAudit&gt;&lt;ExceptionStepAdded&gt;StepAdded&lt;/ExceptionStepAdded&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Name&gt;OAuthSecuredProcess&lt;/Name&gt;&lt;ProcessType&gt;ProcessFlow&lt;/ProcessType&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep i:type="ExceptionPipelineStepOfESBMessagexAPWb1W4"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;be09279f-9683-4d73-8b49-2fec34a16a80&lt;/Id&gt;&lt;Name&gt;Exception&lt;/Name&gt;&lt;Uniquename /&gt;&lt;_x003C_TurnOffAddSegmentExecution_x003E_k__BackingField&gt;false&lt;/_x003C_TurnOffAddSegmentExecution_x003E_k__BackingField&gt;&lt;Catch&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;cd565194-8a6b-4cfa-9096-db1adc0124bb&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;_x003C_TurnOffAddSegmentExecution_x003E_k__BackingField&gt;false&lt;/_x003C_TurnOffAddSegmentExecution_x003E_k__BackingField&gt;&lt;Children /&gt;&lt;/Catch&gt;&lt;Finally&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;55632ef8-0aea-46ba-b3ba-9beb8ddcac50&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;_x003C_TurnOffAddSegmentExecution_x003E_k__BackingField&gt;false&lt;/_x003C_TurnOffAddSegmentExecution_x003E_k__BackingField&gt;&lt;Children /&gt;&lt;/Finally&gt;&lt;Try&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;d7e875c1-67c6-4608-99c1-0df3d7978616&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;_x003C_TurnOffAddSegmentExecution_x003E_k__BackingField&gt;false&lt;/_x003C_TurnOffAddSegmentExecution_x003E_k__BackingField&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCustomPipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;5f8d9f89-5e8d-439d-8a80-d2108be92600&lt;/Id&gt;&lt;Name&gt;CSharpCustom&lt;/Name&gt;&lt;Uniquename&gt;2cf4fdd9-048b-4dd8-9bdc-0e92452928ad&lt;/Uniquename&gt;&lt;_x003C_TurnOffAddSegmentExecution_x003E_k__BackingField&gt;false&lt;/_x003C_TurnOffAddSegmentExecution_x003E_k__BackingField&gt;&lt;d6p1:BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;d6p1:BreakPoints xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;d6p1:Code&gt;#define DEBUG
 #define TRACE
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Data.DataSetExtensions;
+using System.Data;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml;
 using Neuron.ServiceModel;
-using Neuron.Pipelines;
-using Neuron.Esb;
+using Neuron.NetX.Pipelines;
+using Neuron.NetX;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Neuron.Pipeline.Activities;
+using Neuron.Pipeline.Activities2;
+using System.Threading.Tasks;
 
 namespace __DynamicCode
 {
-    public class __PipelineStep__ : Neuron.Pipelines.PipelineStep&amp;lt;Neuron.Esb.ESBMessage&amp;gt;
+    public class __PipelineStep__ : Neuron.NetX.Pipelines.PipelineStep&amp;lt;Neuron.NetX.ESBMessage&amp;gt;
     {
-        public override ProcessType StepType { get { return ProcessType.CSharpClass; } }
+        public override ProcessType StepType
+        {
+            get
+            {
+                return ProcessType.CSharpClass;
+            }
+        }
 
-        protected override void OnExecute(PipelineContext&amp;lt;Neuron.Esb.ESBMessage&amp;gt; context)
-        {	
-			//This is an example of Azure AD token
-			//string aztoken= "{"aud":"d09016f6-6f83-4ea2-8015-14f552eaeb83","iss":"https://login.microsoftonline.com/687f51c3-0c5d-4905-84f8-97c683a5b9d1/v2.0","iat":1597077506,"nbf":1597077506,"exp":1597081406,"aio":"E2BgYMjwz2zaztYv+v5FRM6hF411AA==","azp":"d09016f6-6f83-4ea2-8015-14f552eaeb83","azpacr":"1","oid":"68b2cb13-948e-4deb-b201-c03a954ab498","sub":"68b2cb13-948e-4deb-b201-c03a954ab498","tid":"687f51c3-0c5d-4905-84f8-97c683a5b9d1","uti":"ACMh9PK7W0K1haV6lwR4AA","ver":"2.0"}";           
-			
-			//token can include the signature algorithm part as the first part then parse it out
-			if (context.Data.Http.Headers["Token"].Contains("}.{"))   // Azure token comes with the signature id prepended so take the second part of the token after the first .
-				context.Data.Http.Headers["Token"] = context.Data.Http.Headers["Token"].Substring(context.Data.Http.Headers["Token"].IndexOf(".") + 1);						
+        protected async override Task OnExecute(PipelineContext&amp;lt;Neuron.NetX.ESBMessage&amp;gt; context)
+        {
+            //This is an example of Azure AD token
+            //string aztoken= "{"aud":"d09016f6-6f83-4ea2-8015-14f552eaeb83","iss":"https://login.microsoftonline.com/687f51c3-0c5d-4905-84f8-97c683a5b9d1/v2.0","iat":1597077506,"nbf":1597077506,"exp":1597081406,"aio":"E2BgYMjwz2zaztYv+v5FRM6hF411AA==","azp":"d09016f6-6f83-4ea2-8015-14f552eaeb83","azpacr":"1","oid":"68b2cb13-948e-4deb-b201-c03a954ab498","sub":"68b2cb13-948e-4deb-b201-c03a954ab498","tid":"687f51c3-0c5d-4905-84f8-97c683a5b9d1","uti":"ACMh9PK7W0K1haV6lwR4AA","ver":"2.0"}";           
+            //token can include the signature algorithm part as the first part then parse it out
+            if (context.Data.Http.Headers["Token"].Contains("}.{")) // Azure token comes with the signature id prepended so take the second part of the token after the first .
+                context.Data.Http.Headers["Token"] = context.Data.Http.Headers["Token"].Substring(context.Data.Http.Headers["Token"].IndexOf(".") + 1);
             string rawtoken = context.Data.Http.Headers["Token"];
-			//when parsing json to dynamic object, the value of repeating elements can be string or array
-			dynamic token = JValue.Parse(rawtoken);			
-			string scopes = string.Empty;
-           
+            //when parsing json to dynamic object, the value of repeating elements can be string or array
+            dynamic token = JValue.Parse(rawtoken);
+            string scopes = string.Empty;
             if (token.scope != null &amp;amp;&amp;amp; token.scope.GetType() == typeof(Newtonsoft.Json.Linq.JArray)) // multiple scopes
-            {            
+            {
                 scopes = string.Join(",", token.scope);
-            }  
+            }
             else //single scope
             {
                 scopes = token.scope;
@@ -64,14 +70,13 @@ namespace __DynamicCode
                 audiences = string.Join(",", token.aud);
             else //single audience
                 audiences = token.aud;
-
-						//If the token is identity token from Peregrine MS then it is expected to contain name and email claim
-			if (token.email != null &amp;amp;&amp;amp; token.name != null)
-		 		context.Data.Body = "You sent a token with scope(s) - "  + scopes + " and audience(s) " + audiences + ". If you had sent a token with Open Sesame scope you would have unearthed a treasure :-)" + "\nYour user name is " + token.name + " and your email is " + token.email; 					
-			else
-				context.Data.Body = "You sent a token with scope(s) - "  + scopes + " and audience(s) " + audiences + ". If you had sent a token with Open Sesame scope you would have unearthed a treasure :-)"	;
+            //If the token is identity token from Peregrine MS then it is expected to contain name and email claim
+            if (token.email != null &amp;amp;&amp;amp; token.name != null)
+                context.Data.Body = "You sent a token with scope(s) - " + scopes + " and audience(s) " + audiences + ". If you had sent a token with Open Sesame scope you would have unearthed a treasure :-)" + "\nYour user name is " + token.name + " and your email is " + token.email;
+            else
+                context.Data.Body = "You sent a token with scope(s) - " + scopes + " and audience(s) " + audiences + ". If you had sent a token with Open Sesame scope you would have unearthed a treasure :-)";
         }
     }
-}&lt;/d3p1:Code&gt;&lt;d3p1:FullyQualifiedTypeName&gt;__DynamicCode.__PipelineStep__&lt;/d3p1:FullyQualifiedTypeName&gt;&lt;d3p1:ReferencedAssemblies xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d4p1:string&gt;Neuron&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Pipelines&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Esb&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d4p1:string&gt;&lt;/d3p1:ReferencedAssemblies&gt;&lt;d3p1:TypeName&gt;Type6d9451c658449528e4c0a5bb5b6214&lt;/d3p1:TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageTraceMessagePipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;f9117f07-6383-4ddd-a3a2-7080f0a41ae8&lt;/Id&gt;&lt;Name&gt;TraceMessage&lt;/Name&gt;&lt;Uniquename&gt;2303df25-2c5b-4083-b8cb-613cf82843f8&lt;/Uniquename&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Steps&gt;&lt;/ESBMessagePipeline&gt;</PipelineBlob>
-  <IsProcessFlow>false</IsProcessFlow>
+}&lt;/d6p1:Code&gt;&lt;d6p1:FullyQualifiedTypeName&gt;__DynamicCode.__PipelineStep__&lt;/d6p1:FullyQualifiedTypeName&gt;&lt;d6p1:ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.NetX&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ed764b6eccb2f6cc&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines.Activities2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ed764b6eccb2f6cc&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Log4netProviderStandard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ed764b6eccb2f6cc&lt;/d7p1:string&gt;&lt;d7p1:string&gt;mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Collections, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Threading, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;/d6p1:ReferencedAssemblies&gt;&lt;d6p1:TypeName&gt;Type6d9451c658449528e4c0a5bb5b6214&lt;/d6p1:TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageTraceMessagePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;f9117f07-6383-4ddd-a3a2-7080f0a41ae8&lt;/Id&gt;&lt;Name&gt;TraceMessage&lt;/Name&gt;&lt;Uniquename&gt;2303df25-2c5b-4083-b8cb-613cf82843f8&lt;/Uniquename&gt;&lt;_x003C_TurnOffAddSegmentExecution_x003E_k__BackingField&gt;false&lt;/_x003C_TurnOffAddSegmentExecution_x003E_k__BackingField&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/Try&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Steps&gt;&lt;/ESBMessagePipeline&gt;</PipelineBlob>
+  <IsProcessFlow>true</IsProcessFlow>
 </ESBMessagePipelineStorage>

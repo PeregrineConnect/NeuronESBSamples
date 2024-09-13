@@ -1,9 +1,9 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>62</Version>
-  <EnvironmentName>SmtpAdapter</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0.238</DesignerBuildVersion>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>63</Version>
+  <EnvironmentName>SmtpAdapter_Converted</EnvironmentName>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
   <ApplicationName>SmtpAdapter</ApplicationName>
   <ApplicationId>3e505bb9-c009-4b64-846a-2ad9879e2347</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
@@ -14,8 +14,8 @@
       <string>Edit,Enterprise,publisher,DynamicAlertsPublisher</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2024-05-13T13:28:15.8917853Z</LastModifiedDate>
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-07-18T09:27:13.1946065Z</LastModifiedDate>
     <Comments>Edited pipeline named 'Set Dynamic Smtp Properties' in *", Edited publisher named 'DynamicAlertsPublisher' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />

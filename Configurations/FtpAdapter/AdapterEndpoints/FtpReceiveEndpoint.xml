@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBEndpoint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>86672568-4816-42bf-a792-24d8fc669db3</Id>
   <Version>b5563a50-e7d1-4978-a376-d38302718505</Version>
   <BusinessFlows />
@@ -16,9 +16,9 @@
   <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
   <IncludeMetadata>true</IncludeMetadata>
   <AdapterName>FTP/FTPS</AdapterName>
-  <AdapterAssembly>Neuron.Esb.Adapters.FtpAdapter.dll</AdapterAssembly>
+  <AdapterAssembly>Neuron.NetX.Adapters.FtpAdapter.dll</AdapterAssembly>
   <AdapterMessageDirection>Duplex</AdapterMessageDirection>
-  <AdapterClass>Neuron.Esb.Adapters.FtpAdapter</AdapterClass>
+  <AdapterClass>Neuron.NetX.Adapters.FtpAdapter</AdapterClass>
   <AdapterMode>Publish</AdapterMode>
   <ProcessMode>false</ProcessMode>
   <ClientProcessMode>Messaging</ClientProcessMode>

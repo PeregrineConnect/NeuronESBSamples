@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Neuron.NetX;
+using Neuron.NetX.Administration;
+using Neuron.NetX.Internal;
+using Neuron.NetX.Pipelines;
+using Neuron.Pipeline.Activities;
+using Neuron.Pipeline.Activities2;
+using System;
 using System.IO;
-using System.Xml.Schema;
-using Neuron.Esb.Pipelines;
-using Neuron.Esb.Administration;
-using Neuron.Pipelines;
 using System.Net;
-using Neuron.Esb.Internal;
-using Neuron.Esb;
+using System.Xml.Schema;
 
 namespace UnitTestProcessSteps
 {
@@ -14,7 +15,7 @@ namespace UnitTestProcessSteps
     {
         #region Constants
         private const string _CORRELATIONID = @"220b1f11-23b6-460c-a83b-70907e9dff45\3940494";
-        private const string _ESBSOLUTION_FILE = @"\..\..\..\..\..\Configurations\MessageValidationTransformation";
+        private const string _ESBSOLUTION_FILE = @"\..\..\..\..\..\..\Configurations\MessageValidationTransformation";
         private const string _SERVICEIDENTITY = "";
         private const string _BOOTSTRAP_ADDR = "net.tcp://localhost:50000";
         private static NetworkCredential _clientCredentials = System.Net.CredentialCache.DefaultNetworkCredentials;
@@ -210,110 +211,7 @@ namespace UnitTestProcessSteps
             Console.WriteLine();
         }
 
-        static void TestMsmqStepSend()
-        {
-            Console.WriteLine("Test Msmq (send) Step");
-
-            // create the esb message
-            ESBMessage outMsg = null;
-            ESBMessage msg = new ESBMessage();
-
-            // Set the message-specific properties
-            msg.Header.Topic = "Services";
-            msg.Header.Semantic = Semantic.Multicast;
-            msg.Header.Action = "";
-            msg.FromXml("<xml>Unit test MSMQ message...</xml>");
-
-            // set the correlation id of the message
-            msg.SetProperty("msmq", "CorrelationId", _CORRELATIONID);
-
-            PipelineRuntime runtime = new PipelineRuntime { DesignMode = true };
-            Pipeline<ESBMessage> process = new Pipeline<ESBMessage>();
-
-            // Create the Msmq step
-            EsbMessageMsmqPipelineStep step = new EsbMessageMsmqPipelineStep();
-
-            // Set the step-specific properties
-            step.Direction = EsbMessageMsmqPipelineStep.DirectionEnum.Send;
-            step.Name = "My Custom Queue Step";
-            step.Transactional = EsbMessageMsmqPipelineStep.TransactionEnum.Required;
-            step.UseActiveXMessageFormatter = true;
-            step.QueuePath = @".\private$\unit_test_msmq";
-            step.ClearConnectionCache = false;
-
-            // These properties are specific for Sending messages with the Msmq step
-            step.Label = "Unit test label";
-            step.AppSpecific = 8;
-            step.Priority = System.Messaging.MessagePriority.VeryHigh;
-
-            // Add the Msmq step to the process
-            process.Steps.Add(step);
-
-            // Create the process instance
-            PipelineInstance<ESBMessage> instance = runtime.CreateInstance(process);
-
-            // Create the Aborted event handler
-            instance.Aborted -= new EventHandler(instance_Aborted);
-            instance.Aborted += new EventHandler(instance_Aborted);
-
-            // Execute the process
-            outMsg = instance.Execute(msg);
-
-            // Get the correlation ID from the message properties
-            string msgId = outMsg.GetProperty("msmq", "CorrelationId");
-            Console.WriteLine("Msmq Message Sent: Correlation ID = " + msgId + System.Environment.NewLine + "   " + outMsg.Text);
-
-            Console.WriteLine();
-        }
-
-        static void TestMsmqStepReceive()
-        {
-            Console.WriteLine("Test Msmq (receive) Step");
-
-            // create the esb message
-            ESBMessage outMsg = null;
-            ESBMessage msg = new ESBMessage();
-
-            PipelineRuntime runtime = new PipelineRuntime { DesignMode = true };
-            Pipeline<ESBMessage> process = new Pipeline<ESBMessage>();
-
-            // Create the Msmq step
-            EsbMessageMsmqPipelineStep processStep = new EsbMessageMsmqPipelineStep();
-
-            // Set the step-specific properties
-            processStep.Direction = EsbMessageMsmqPipelineStep.DirectionEnum.Receive;
-            processStep.Name = "My Custom Queue Step";
-            processStep.Transactional = EsbMessageMsmqPipelineStep.TransactionEnum.Required;
-            processStep.UseActiveXMessageFormatter = true;
-            processStep.QueuePath = @".\private$\unit_test_msmq";
-
-            // These properties are specific for Receiving messages with the Msmq step
-            processStep.TimeoutReceive = new TimeSpan(0, 2, 0);
-            processStep.Correlate = true;
-
-            // Set the value of correlation id to look up in the queue
-            msg.SetProperty("msmq", "CorrelationId", _CORRELATIONID);
-
-            // Add the Msmq step to the process
-            process.Steps.Add(processStep);
-
-            // Create the process instance
-            PipelineInstance<ESBMessage> instance = runtime.CreateInstance(process);
-
-            // Create the Aborted event handler
-            instance.Aborted -= new EventHandler(instance_Aborted);
-            instance.Aborted += new EventHandler(instance_Aborted);
-
-            // Execute the process
-            outMsg = instance.Execute(msg);
-
-            // Get the correlation ID from the message properties
-            string msgId = outMsg.GetProperty("msmq", "CorrelationId");
-            Console.WriteLine("Msmq Message Received: Correlation ID = " + msgId + System.Environment.NewLine + "   " + outMsg.Text);
-
-            Console.WriteLine();
-        }
-
+        
         /// <summary>
         /// To use this the ESB Configuration (represented by the CONSTANT, _ESBSOLUTION_FILE) must be opened in the Neuron ESB Explorer. 
         /// Then open the "Validate Book Message - Code" Process and disable the "set schema & xslt" Process Step.
@@ -369,7 +267,7 @@ namespace UnitTestProcessSteps
                 instance.Aborted += new EventHandler(instance_Aborted);
 
                 // Execute the process
-                Neuron.Esb.ESBMessage outMsg = instance.Execute(msg);
+                Neuron.NetX.ESBMessage outMsg = instance.Execute(msg);
 
                 // Test the state and retrieve exception
                 if (instance.UnhandledException == null && instance.State != PipelineState.Aborted)
@@ -386,7 +284,7 @@ namespace UnitTestProcessSteps
         
         static void instance_Aborted(object sender, EventArgs e)
         {
-            PipelineInstance<Neuron.Esb.ESBMessage> obj = (PipelineInstance<ESBMessage>)sender;
+            PipelineInstance<Neuron.NetX.ESBMessage> obj = (PipelineInstance<ESBMessage>)sender;
            
             if(obj.UnhandledException != null && obj.UnhandledException.Message != null)
                 Console.WriteLine("Exception: " + obj.UnhandledException.Message);

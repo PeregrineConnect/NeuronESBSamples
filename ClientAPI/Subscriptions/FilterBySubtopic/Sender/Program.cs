@@ -1,7 +1,7 @@
 using System;
-using Neuron.Esb;
+using Neuron.NetX;
 
-namespace Neudesic.EnterpriseServiceBus.Samples
+namespace Neuron.EnterpriseServiceBus.Samples
 {
     public class Sender
     {
@@ -15,7 +15,14 @@ namespace Neudesic.EnterpriseServiceBus.Samples
 
                 using (Publisher publisher = new Publisher())
                 {
-                    publisher.Connect();
+                    var retValue = publisher.Connect();
+                    if (retValue != null && retValue.Count > 0)
+                    {
+                        foreach (var error in retValue.GetResults())
+                        {
+                            Console.WriteLine(error.Exception.ToString());
+                        }
+                    }
 
                     Console.WriteLine("Press <ENTER> to start sending");
                     Console.ReadLine();
@@ -26,15 +33,15 @@ namespace Neudesic.EnterpriseServiceBus.Samples
                     {
                         Console.WriteLine("Sending Customer contact on topic Contacts.Customer");
                         xml = CreateCustomerContactXml();
-                        publisher.SendXml("Contacts.Customer", xml, "http://tempuri.org/Contact");
+                        publisher.SendXml("Contacts.Customer", xml, "http://tempuri.org/Contact", SendOptions.None);
 
-                        Console.WriteLine("Sending Vendor contact on topic Contacts.Vendor");
+                        Console.WriteLine("Sending Vendor contact on topic Contacts.Vendor",SendOptions.None);
                         xml = CreateVendorContactXml();
-                        publisher.SendXml("Contacts.Vendor", xml, "http://tempuri.org/Contact");
+                        publisher.SendXml("Contacts.Vendor", xml, "http://tempuri.org/Contact",SendOptions.None);
 
                         Console.WriteLine("Sending Personal contact on topic Contacts.Personal");
                         xml = CreatePersonalContactXml();
-                        publisher.SendXml("Contacts.Personal", xml, "http://tempuri.org/Contact");
+                        publisher.SendXml("Contacts.Personal", xml, "http://tempuri.org/Contact",SendOptions.None);
                     }
                 }
             }

@@ -1,21 +1,23 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>15b1d311-2926-48f7-b5f2-12e65ac797d8</Id>
-  <Version>12a85262-25dd-45e5-895f-3170ff76578a</Version>
-  <Name>OrderSplitter</Name>
+  <Version>f699937a-f125-4dbe-ab33-2e350f1406c6</Version>
+  <BusinessFlows />
+  <ProcessFlows />
   <Description />
+  <Name>OrderSplitter</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
-  <AllowMultipleInstances>true</AllowMultipleInstances>
-  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
   <SubscriberId>OrderSplitter</SubscriberId>
   <ClientGroup>General</ClientGroup>
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
-  <Anonymous>true</Anonymous>
   <Subscriptions>
     <Subscription>
       <TopicName>Orders</TopicName>
+      <TopicId />
       <CanRead>false</CanRead>
       <CanWrite>true</CanWrite>
       <MatchMessagePatterns />
@@ -23,29 +25,39 @@
     </Subscription>
     <Subscription>
       <TopicName>Orders.Processing</TopicName>
+      <TopicId />
       <CanRead>false</CanRead>
       <CanWrite>true</CanWrite>
       <MatchMessagePatterns />
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
   </Subscriptions>
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
   <MessagePipelines>
     <ClientPipelineItem>
       <Id>0ee4adc6-32ae-4eb5-b129-dbb474fdf615</Id>
       <Version>92ede607-8116-48d0-8a06-0c65a4d7e3db</Version>
+      <BusinessFlows />
+      <ProcessFlows />
+      <Description />
       <Name>Split Orders - Null Join</Name>
       <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
       <ApplyOnPublish>true</ApplyOnPublish>
       <ApplyOnReceive>false</ApplyOnReceive>
       <PipelineConditions>
         <Id>4baff861-4371-459b-a5d8-bfc28ecdb13c</Id>
         <Version>6620d3c0-7602-46ea-8e7a-c2070d2c01ea</Version>
+        <BusinessFlows />
+        <ProcessFlows />
+        <Description />
         <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
         <Condition />
       </PipelineConditions>
     </ClientPipelineItem>
   </MessagePipelines>
   <LogActivity>false</LogActivity>
-  <LogFile />
-  <LogSession>true</LogSession>
+  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
 </ESBSubscriber>

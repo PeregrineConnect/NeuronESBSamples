@@ -9,34 +9,34 @@
 //------------------------------------------------------------------------------
 
 
-namespace Neudesic.EnterpriseServiceBus.Samples
+namespace Neuron.EnterpriseServiceBus.Samples
 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://Neudesic.EnterpriseServiceBus.Samples", ConfigurationName="Neudesic.EnterpriseServiceBus.Samples.ICalculator")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://Neuron.EnterpriseServiceBus.Samples", ConfigurationName="Neuron.EnterpriseServiceBus.Samples.ICalculator")]
     public interface ICalculator
     {
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://Neudesic.EnterpriseServiceBus.Samples/ICalculator/Notify")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://Neuron.EnterpriseServiceBus.Samples/ICalculator/Notify")]
         void Notify(string text);
     }
 
  
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
-    public interface ICalculatorChannel : Neudesic.EnterpriseServiceBus.Samples.ICalculator, System.ServiceModel.IClientChannel
+    public interface ICalculatorChannel : Neuron.EnterpriseServiceBus.Samples.ICalculator, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
-    public partial class CalculatorClient : System.ServiceModel.ClientBase<Neudesic.EnterpriseServiceBus.Samples.ICalculator>, Neudesic.EnterpriseServiceBus.Samples.ICalculator
+    public partial class CalculatorClient : System.ServiceModel.ClientBase<Neuron.EnterpriseServiceBus.Samples.ICalculator>, Neuron.EnterpriseServiceBus.Samples.ICalculator
     {
         
         public CalculatorClient()
         {
         }
         
-        public CalculatorClient(string endpointConfigurationName) : 
+     /*   public CalculatorClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName)
         {
         }
@@ -49,7 +49,7 @@ namespace Neudesic.EnterpriseServiceBus.Samples
         public CalculatorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress)
         {
-        }
+        } */
         
         public CalculatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress)

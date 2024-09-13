@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>eff90a35-d63b-48ca-992c-79ba4f884dbb</Id>
-  <Version>d219141b-35d1-42ea-a662-52df7ebc30a7</Version>
+  <Version>9dd75e7b-12db-4596-99d9-a2a9dfd2ac46</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>ContosoQuoteService</Name>
   <Group>General</Group>
@@ -21,6 +22,7 @@
     <Port>0</Port>
     <BypassLocalAddress>false</BypassLocalAddress>
   </ProxySettings>
+  <DebugInfo />
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
   <ServiceName>ContosoQuoteService</ServiceName>
@@ -30,6 +32,7 @@
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <ProcessMultipartMessages>false</ProcessMultipartMessages>
   <TransactionType>None</TransactionType>
   <MaxMessageSize>1000000</MaxMessageSize>
   <ReliableMessaging>false</ReliableMessaging>
@@ -85,6 +88,7 @@
       <Id>c1e7d61e-257e-42b4-b1d5-4ed9430d3d89</Id>
       <Version>6e0ab06c-5430-41df-8fc3-0c51218f8ea0</Version>
       <BusinessFlows />
+      <ProcessFlows />
       <Description />
       <Name>Scatter Gather</Name>
       <IsSystemObject>false</IsSystemObject>
@@ -95,6 +99,7 @@
         <Id>0eae6b71-d909-42e8-b890-4a4281f4959b</Id>
         <Version>abea756d-7e44-489e-ab3d-0260be318105</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>

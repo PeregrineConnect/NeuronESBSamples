@@ -1,24 +1,25 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>26</Version>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>28</Version>
   <EnvironmentName>RetryWebServiceCall</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
   <ApplicationName>RetryWebServiceCall</ApplicationName>
   <ApplicationId>ffbc7d45-40de-41ae-9764-acade639540f</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
+      <string>Edit,*,pipeline,Retry Service</string>
+      <string>Edit,*,wsdl document,Process Service</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:18:58.0949986Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-08-01T12:45:10.4703089Z</LastModifiedDate>
+    <Comments>Edited pipeline named 'Retry Service' in *", Edited wsdl document named 'Process Service' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -45,6 +46,7 @@
           <Id>08d422c3-dfe0-4cf2-8050-b3bcbdab0fb4</Id>
           <Version>12c49071-264a-4ee0-aa06-bc4c772ef460</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>Process Service</Name>
           <Group />
@@ -67,6 +69,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

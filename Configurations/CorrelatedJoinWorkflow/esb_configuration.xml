@@ -1,25 +1,34 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>21</Version>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>30</Version>
   <EnvironmentName>CorrelatedJoinWorkflow</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
   <ApplicationName>CorrelatedJoinWorkflow</ApplicationName>
   <ApplicationId>db3bfde5-5be3-4009-ae7f-784b4b039839</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+    </Additions>
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
       <string>Edit,Enterprise,topic,Orders</string>
+      <string>Edit,*,Policy,Default_Service</string>
+      <string>Edit,*,Policy,Default_Adapter</string>
+      <string>Edit,*,pipeline,Split Orders</string>
+      <string>Edit,Enterprise,publisher,OrderSplitter</string>
+      <string>Edit,*,workflow definition,Join Orders</string>
     </Revisions>
-    <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:11:27.3534447Z</LastModifiedDate>
-    <Comments />
+    <Deletions>
+      <string>Delete,*,Adapter Policy,Default.xml</string>
+      <string>Delete,*,Service Policy,Default.xml</string>
+    </Deletions>
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-08-22T13:43:15.7870713Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Neuron ESB Default Topic Host' to *", Deleted the Adapter Policy named 'Default.xml' from *", Deleted the Service Policy named 'Default.xml' from *", Edited topic named 'Orders' in Enterprise", Edited Policy named 'Default_Service' in *", Edited Policy named 'Default_Adapter' in *", Edited pipeline named 'Split Orders' in *", Edited publisher named 'OrderSplitter' in Enterprise", Edited workflow definition named 'Join Orders' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -42,6 +51,7 @@
           <Id>863a445f-181c-48d4-b126-f5c03bd31cbc</Id>
           <Version>9ffa429a-baff-4886-a583-b5bf161a36b1</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>OrdersBatch001</Name>
           <Group>General</Group>
@@ -63,6 +73,7 @@
           <Id>f66d4540-5ef4-4077-96c9-176c13f30815</Id>
           <Version>756aa6e7-3ba5-4b36-84bf-25cd13f78108</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>OrdersBatch002</Name>
           <Group>General</Group>
@@ -84,6 +95,7 @@
           <Id>d9455888-14e1-46f1-bdca-3caa77ae8f99</Id>
           <Version>cac5f9bc-8899-4847-958f-c7e810394636</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>OrdersBatch003</Name>
           <Group>General</Group>
@@ -112,13 +124,13 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

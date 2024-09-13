@@ -1,11 +1,13 @@
-<?xml version="1.0"?>
-<ESBDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>3a579f7b-bafb-486c-ba95-2ad5ceb4ae52</Id>
   <Version>3dae3ac6-8688-4314-b51a-e0d8cdf02152</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description>The Neuron Audit database. Uses environmental variable: NeuronAuditDatabaseConnectionString</Description>
   <Name>localhost.NeuronAuditDB</Name>
   <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
   <Bindings>
     <ExpressionBoundProperty>
       <PropertyName>ConnectionString</PropertyName>
@@ -16,8 +18,10 @@
     <Id>8b49c0bb-9578-4625-8b77-98a19eebd271</Id>
     <Version>2924b677-0886-4c07-8658-b8c7478657e6</Version>
     <BusinessFlows />
+    <ProcessFlows />
     <Description />
     <IsSystemObject>false</IsSystemObject>
+    <IsPrivate>false</IsPrivate>
     <AccessCheckType>Unknown</AccessCheckType>
     <AccessCheckItems>
       <ESBAccessCheckItem>
@@ -28,8 +32,10 @@
           <Id>948f7953-4169-4f5b-865a-fa196770040a</Id>
           <Version>edaedeb9-af26-4040-9030-8ebedca581e1</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
           <Type>None</Type>
           <AccessCheckType>Unknown</AccessCheckType>
           <SID>S-1-5-18</SID>
@@ -41,6 +47,11 @@
       </ESBAccessCheckItem>
     </AccessCheckItems>
   </Accounts>
+  <UseNeuronDbImage>false</UseNeuronDbImage>
+  <BypassChecks>false</BypassChecks>
+  <UseAlternateSettings>false</UseAlternateSettings>
+  <DbContainerHostPort>1433</DbContainerHostPort>
+  <DbContainerHostname />
   <CatalogName>NeuronAuditDB</CatalogName>
   <ConnectionString>10dc3vgWBmJ+wt1TDJcaGWyA1gwTbkZAarpoEBdPhGQJ2Ls9wnl2djoc/eqBBiW21iO3M9L0+pHR2EBydkhMqFKCHBOZrtDC2Z+39zAMLW8=</ConnectionString>
   <Zone>(All Zones)</Zone>

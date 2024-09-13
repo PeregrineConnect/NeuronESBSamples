@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBServicePolicy xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBServicePolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>c7f56854-da8c-41f1-9254-f4d57e2653ae</Id>
   <Version>9cfba97f-bb0d-4dfc-9442-203d4e8c3f9e</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description>Default service policy</Description>
   <Name>Default</Name>
   <Group>General</Group>

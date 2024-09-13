@@ -1,11 +1,14 @@
-<?xml version="1.0"?>
-<ESBAdapterPolicy xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBAdapterPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>89d5d118-57d6-41e7-b14e-3820c354a6fb</Id>
   <Version>2ec6ae71-3418-4445-b09b-6f883aa407c6</Version>
-  <Name>FailedSMTPAlertAdapterPolicy</Name>
+  <BusinessFlows />
+  <ProcessFlows />
   <Description />
+  <Name>FailedSMTPAlertAdapterPolicy</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
   <RetryCount>1</RetryCount>
   <RetryInterval>1</RetryInterval>
   <OnErrorAuditToDatabase>false</OnErrorAuditToDatabase>

@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBEndpoint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>7c3b8da6-f426-443c-86d0-e4cb8273972b</Id>
   <Version>603beb03-68d5-4b26-b7ab-4e20531cfa8d</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>ExcelFileEndpoint</Name>
   <Group />
@@ -15,9 +16,9 @@
   <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
   <IncludeMetadata>false</IncludeMetadata>
   <AdapterName>File</AdapterName>
-  <AdapterAssembly>Neuron.Esb.Adapters.FileAdapter.dll</AdapterAssembly>
+  <AdapterAssembly>Neuron.NetX.Adapters.FileAdapter.dll</AdapterAssembly>
   <AdapterMessageDirection>Duplex</AdapterMessageDirection>
-  <AdapterClass>Neuron.Esb.Adapters.FileAdapter</AdapterClass>
+  <AdapterClass>Neuron.NetX.Adapters.FileAdapter</AdapterClass>
   <AdapterMode>Publish</AdapterMode>
   <ProcessMode>false</ProcessMode>
   <ClientProcessMode>Messaging</ClientProcessMode>

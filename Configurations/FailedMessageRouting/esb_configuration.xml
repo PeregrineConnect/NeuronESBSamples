@@ -1,26 +1,31 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>51</Version>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>54</Version>
   <EnvironmentName>FailedMessageRouting</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
   <ApplicationName>FailedMessageRouting</ApplicationName>
   <ApplicationId>34290250-7469-4a1d-a1d6-f93297c73c0c</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+    </Additions>
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
       <string>Edit,Enterprise,topic,FailedMessages</string>
       <string>Edit,Enterprise,topic,TestTopic</string>
+      <string>Edit,*,pipeline,Force Message Failure</string>
+      <string>Edit,Enterprise,publisher,TestTopicPublisher</string>
+      <string>Edit,*,pipeline,InboundFailuresSplitBatch</string>
+      <string>Edit,Enterprise,publisher,FailedMessagePublisher</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:13:09.8977919Z</LastModifiedDate>
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-07-25T12:55:36.8136221Z</LastModifiedDate>
     <Comments />
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -48,6 +53,7 @@
           <Id>1f97c9f6-1417-4bb7-83f4-404979700403</Id>
           <Version>ef0b09fa-3d35-477b-bdde-0c0cee57955e</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description>Xsl produced by InfoPath to convert exception information to HTML</Description>
           <Name>FailureMessageToEmailBody</Name>
           <Group>General</Group>
@@ -71,6 +77,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

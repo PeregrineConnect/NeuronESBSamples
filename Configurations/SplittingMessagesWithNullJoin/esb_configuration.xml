@@ -1,25 +1,28 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>26</Version>
-  <EnvironmentName>SplittingMessagesWithNullJoin</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>27</Version>
+  <EnvironmentName>SplittingMessagesWithNullJoin_Converted</EnvironmentName>
+  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
   <ApplicationName>SplittingMessagesWithNullJoin</ApplicationName>
   <ApplicationId>1d436c8f-2198-40dc-8014-615442d61a28</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+    </Additions>
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
       <string>Edit,Enterprise,topic,Orders</string>
+      <string>Edit,*,pipeline,Split Orders - Null Join</string>
+      <string>Edit,Enterprise,publisher,OrderSplitter</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:20:21.4891579Z</LastModifiedDate>
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-08-05T09:02:12.7717083Z</LastModifiedDate>
     <Comments />
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
   <InstanceName />
   <Zones />
   <Topics />
@@ -42,6 +45,7 @@
           <Id>863a445f-181c-48d4-b126-f5c03bd31cbc</Id>
           <Version>9ffa429a-baff-4886-a583-b5bf161a36b1</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>OrdersTestMessage</Name>
           <Group>General</Group>
@@ -70,6 +74,7 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />

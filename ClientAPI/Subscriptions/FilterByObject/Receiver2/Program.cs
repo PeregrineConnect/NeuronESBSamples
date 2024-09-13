@@ -1,7 +1,7 @@
+using Neuron.NetX;
 using System;
-using Neuron.Esb;
 
-namespace Neudesic.EnterpriseServiceBus.Samples
+namespace Neuron.EnterpriseServiceBus.Samples
 {
     public class Receiver
     {
@@ -16,7 +16,14 @@ namespace Neudesic.EnterpriseServiceBus.Samples
                 using (Subscriber subscriber = new Subscriber())
                 {
                     subscriber.OnReceive += OnReceive;
-                    subscriber.Connect();
+                    var retValue = subscriber.Connect();
+                    if (retValue != null && retValue.Count > 0)
+                    {
+                        foreach (var error in retValue.GetResults())
+                        {
+                            Console.WriteLine(error.Exception.ToString());
+                        }
+                    }
 
                     Console.WriteLine("Ready to receive");
                     Console.ReadLine();

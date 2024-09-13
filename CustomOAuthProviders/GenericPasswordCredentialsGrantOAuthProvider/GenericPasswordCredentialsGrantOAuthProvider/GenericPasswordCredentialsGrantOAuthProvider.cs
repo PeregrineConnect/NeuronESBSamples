@@ -1,13 +1,12 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Collections.Specialized;
-using System.Windows.Forms;
 using Nemiro.OAuth;
-using Neuron.Esb.OAuth;
+using Neuron.NetX.OAuth;
 
-namespace Neuron.Esb.Samples
+namespace Neuron.NetX.Samples
 {
-    [DisplayName("Generic Password Credentials Grant OAuth Provider")]
+    [DisplayName("Sample Generic Password Credentials Grant OAuth Provider")]
     public class GenericPasswordCredentialsGrantOAuthProvider : OAuthProvider
     {
         private string tokenUrl;
@@ -32,6 +31,7 @@ namespace Neuron.Esb.Samples
         [DisplayName("Client Id")]
         [Description("The Client Id assigned to your app.")]
         [PropertyOrder(3)]
+        [OAuthCacheKey]
         public string ClientId
         {
             get { return this.clientId; }
@@ -46,6 +46,7 @@ namespace Neuron.Esb.Samples
         [Description("The Client Secret assigned to your app.")]
         [PropertyOrder(4)]
         [EncryptValue]
+        [OAuthCacheKey]
         public string ClientSecret
         {
             get { return this.clientSecret; }
@@ -58,6 +59,7 @@ namespace Neuron.Esb.Samples
         [DisplayName("Username")]
         [Description("The user account.")]
         [PropertyOrder(5)]
+        [OAuthCacheKey]
         public string Username
         {
             get { return this.username; }
@@ -73,6 +75,7 @@ namespace Neuron.Esb.Samples
         [Description("The password of the user account.")]
         [PropertyOrder(6)]
         [EncryptValue]
+        [OAuthCacheKey]
         public string Password
         {
             get { return this.password; }
@@ -86,6 +89,7 @@ namespace Neuron.Esb.Samples
         [DisplayName("Scope")]
         [Description("A list of scope values, separated by spaces. For more information about scopes, please refer to the OAuth provider's documentation.")]
         [PropertyOrder(7)]
+        [OAuthCacheKey]
         public string Scope
         {
             get { return this.scope; }
@@ -100,42 +104,53 @@ namespace Neuron.Esb.Samples
             return new GenericPasswordCredentialsGrantOAuth2Client(tokenUrl, this.clientId, this.clientSecret, this.username, this.password, this.scope);
         }
 
-        public override AccessToken ClientLogin(System.Windows.Forms.Form mainForm)
-        {
-            bool success = false;
+        // In .net 8, we are not using win forms.
+        //public override AccessToken ClientLogin(System.Windows.Forms.Form mainForm)
+        //{
+        //    bool success = false;
 
-            try
-            {
-                var client = this.GetClient();
-                var token = client.AccessTokenValue;
-                if (!String.IsNullOrEmpty(token))
-                    success = true;
+        //    try
+        //    {
+        //        var client = this.GetClient();
+        //        var token = client.AccessTokenValue;
+        //        if (!String.IsNullOrEmpty(token))
+        //            success = true;
 
-                if (success)
-                {
-                    MessageBox.Show(mainForm, "Azure Resource Owner Password Credentials OAuth Test Successful", "Success");
-                    return client.AccessToken;
-                }
-                else
-                {
-                    MessageBox.Show(mainForm, "Unable to obtain an access token - unknown error", "Test Failed");
-                    return null;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(mainForm, String.Format("Unable to obtain an access token - {0}", ex.Message), "Test Failed");
-            }
+        //        if (success)
+        //        {
+        //            MessageBox.Show(mainForm, "Generic Resource Owner Password Credentials OAuth Test Successful", "Success");
+        //            return client.AccessToken;
+        //        }
+        //        else
+        //        {
+        //            if (client.AccessToken.ContainsKey("error"))
+        //            {
+        //                string error = client.AccessToken["error"].ToString();
+        //                string errorDesc = client.AccessToken.ContainsKey("error_description") ? client.AccessToken["error_description"].ToString() : "No error description provided";
+        //                string errorUri = client.AccessToken.ContainsKey("error_uri") ? client.AccessToken["error_uri"].ToString() : "No error URI provided";
 
-            return null;
-        }
+        //                MessageBox.Show(mainForm, String.Format("Unable to obtain an access token from the OAuth provider:{0}  Error: {1}{0}  Error Description: {2}{0}  Error URI: {3}", Environment.NewLine, error, errorDesc, errorUri), "Test Failed");
+        //            }
+        //            else
+        //                MessageBox.Show(mainForm, "Unable to obtain an access token - unknown error", "Test Failed");
+
+        //            return null;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(mainForm, String.Format("Unable to obtain an access token - {0}", ex.Message), "Test Failed");
+        //    }
+
+        //    return null;
+        //}
     }
 
     public class GenericPasswordCredentialsGrantOAuth2Client : OAuth2Client
     {
         public override string ProviderName
         {
-            get { return "Generic Password Credentials Grant OAuth Provider"; }
+            get { return "Sample Generic Password Credentials Grant OAuth Provider"; }
         }
 
         public GenericPasswordCredentialsGrantOAuth2Client(string accessTokenUrl, string clientId, string clientSecret, string username, string password, string scope)

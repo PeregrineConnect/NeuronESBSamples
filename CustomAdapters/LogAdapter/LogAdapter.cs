@@ -6,12 +6,10 @@
 // This is a sample .NET adapter for Neuron.
 // It supports writing the contents of a message to the Neuron log files.
 
+using Neuron.NetX;
+using Neuron.NetX.Adapters;
 using System.ComponentModel;
 using System.Transactions;
-using System;
-using System.Globalization;
-using Neuron.Esb.Pipelines;
-using Neuron.Esb.Adapters;
 
 /// <summary>
 /// Namespace for adapter assembly. 
@@ -24,7 +22,7 @@ using Neuron.Esb.Adapters;
 /// "SalesForceAdapter". Hence, in project property's application tab the user would also change the assembly name so that the last
 /// segment of the name would be identical to the class name adopted. The full assembly name would be namespace + "." + class name.
 /// </remarks>
-namespace Neuron.Esb.Sample.Adapters
+namespace Neuron.NetX.Sample.Adapters
 {
     /// <summary>
     /// Generally the developer would change the name of the class to reflect the nature of the adapter. The class name in the 
@@ -99,7 +97,7 @@ namespace Neuron.Esb.Sample.Adapters
             { 
                 /// To control what is displayed and supporte in the neuron explorer UI, comment out the modes
                 /// that you do not wish to support
-                new AdapterMode(AdapterModeStringsEnum.Subscriber.Description(), MessageDirection.DatagramSender)      // subscribe mode - send messages to an FTP server
+                new AdapterMode(AdapterModeStringsEnum.Subscribe.ToString(), MessageDirection.DatagramSender)      // subscribe mode - send messages to an FTP server
             };
 
             ESBAdapterCapabilities caps = new ESBAdapterCapabilities();
@@ -219,6 +217,7 @@ namespace Neuron.Esb.Sample.Adapters
             }
         }
 
+     
         #endregion
     }
 }

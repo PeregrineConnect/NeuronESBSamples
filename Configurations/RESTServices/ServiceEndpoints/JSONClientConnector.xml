@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>6c57a3c0-395b-41ad-a8e2-95d99b1b8548</Id>
-  <Version>1803587a-12ec-42d7-b8de-d3335b64d3d5</Version>
+  <Version>d712446d-835e-46f7-a676-8b6790087022</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>JSONClientConnector</Name>
   <Group>General</Group>
@@ -21,6 +22,7 @@
     <Port>0</Port>
     <BypassLocalAddress>false</BypassLocalAddress>
   </ProxySettings>
+  <DebugInfo />
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
   <ServiceName>JSONClientConnector</ServiceName>
@@ -30,6 +32,7 @@
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <ProcessMultipartMessages>false</ProcessMultipartMessages>
   <TransactionType>None</TransactionType>
   <MaxMessageSize>1000000</MaxMessageSize>
   <ReliableMessaging>false</ReliableMessaging>
@@ -86,6 +89,7 @@
       <Id>93fcaf51-83ac-4c68-b5fb-54bd5818bddf</Id>
       <Version>e9bc7b57-7033-46b3-8b26-85870860f2e3</Version>
       <BusinessFlows />
+      <ProcessFlows />
       <Description />
       <Name>JSON Converter</Name>
       <IsSystemObject>false</IsSystemObject>
@@ -96,6 +100,7 @@
         <Id>258cb997-27cd-4a11-8e90-493cc153fe97</Id>
         <Version>a76397ea-4501-4e16-98d2-d2695073ed54</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>

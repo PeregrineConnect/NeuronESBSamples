@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "NewMartQuoteService": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:60291;http://localhost:60293"
+    }
+  }
+}

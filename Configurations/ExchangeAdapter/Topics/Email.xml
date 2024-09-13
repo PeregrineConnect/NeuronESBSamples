@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBTopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>36ba51ca-ddcc-4f39-8a9a-b0916cb5dd93</Id>
   <Version>37ab3a82-e696-46c8-8d58-3e5cddac3938</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>Email</Name>
   <Group>General</Group>
@@ -114,4 +115,5 @@
   <Encrypted>false</Encrypted>
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
+  <AvailabilityGroupId>Neuron ESB Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

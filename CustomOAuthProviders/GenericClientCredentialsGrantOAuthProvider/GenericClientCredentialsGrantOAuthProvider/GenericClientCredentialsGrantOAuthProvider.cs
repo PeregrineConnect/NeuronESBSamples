@@ -1,147 +1,160 @@
-﻿using System;
-using System.ComponentModel;
+﻿using Nemiro.OAuth;
+using Neuron.NetX.OAuth;
+using Neuron.NetX;
+using System;
 using System.Collections.Specialized;
-using System.Windows.Forms;
-using Nemiro.OAuth;
-using Neuron.Esb.OAuth;
+using System.ComponentModel;
 
-namespace Neuron.Esb.Samples
+namespace Neuron.NetX.Samples
 {
-    [DisplayName("Generic Client Credentials Grant OAuth Provider")]
-    public class GenericClientCredentialsOAuthProvider : OAuthProvider
-    {
-        private string clientId;
-        private string clientSecret;
-        private string tokenUrl;
-        private string scope;
+	[DisplayName("Sample Generic Client Credentials Grant OAuth Provider")]
+	public class GenericClientCredentialsOAuthProvider : OAuthProvider
+	{
+		private string clientId;
+		private string clientSecret;
+		private string tokenUrl;
+		private string scope;
 
-        [DisplayName("Client ID")]
-        [Description("The Application Id assigned to your app.")]
-        [PropertyOrder(2)]
-        public string ClientId
-        {
-            get { return this.clientId; }
-            set
-            {
-                this.clientId = value;
-            }
-        }
+		[DisplayName("Client ID")]
+		[Description("The Application Id assigned to your app.")]
+		[PropertyOrder(2)]
+		[OAuthCacheKey]
+		public string ClientId
+		{
+			get { return this.clientId; }
+			set
+			{
+				this.clientId = value;
+			}
+		}
 
-        [DisplayName("Client Secret")]
-        [PasswordPropertyText(true)]
-        [Description("The application secret assigned to your app.")]
-        [PropertyOrder(3)]
-        [EncryptValue]
-        public string ClientSecret
-        {
-            get { return this.clientSecret; }
-            set
-            {
-                this.clientSecret = value;
-            }
-        }
+		[DisplayName("Client Secret")]
+		[PasswordPropertyText(true)]
+		[Description("The application secret assigned to your app.")]
+		[PropertyOrder(3)]
+		[EncryptValue]
+		[OAuthCacheKey]
+		public string ClientSecret
+		{
+			get { return this.clientSecret; }
+			set
+			{
+				this.clientSecret = value;
+			}
+		}
 
-        [DisplayName("Token Url")]
-        [Description("The Url used to retrieve an access token.")]
-        [PropertyOrder(4)]
-        public string TokenUrl
-        {
-            get { return this.tokenUrl; }
-            set
-            {
-                this.tokenUrl = value;
-            }
-        }
+		[DisplayName("Token Url")]
+		[Description("The Url used to retrieve an access token.")]
+		[PropertyOrder(4)]
+		public string TokenUrl
+		{
+			get { return this.tokenUrl; }
+			set
+			{
+				this.tokenUrl = value;
+			}
+		}
 
-        [DisplayName("Scope")]
-        [Description("A list of scope values, separated by spaces. For more information about scopes, please refer to the OAuth provider's documentation.")]
-        [PropertyOrder(5)]
-        public string Scope
-        {
-            get { return this.scope; }
-            set
-            {
-                this.scope = value;
-            }
-        }
+		[DisplayName("Scope")]
+		[Description("A list of scope values, separated by spaces. For more information about scopes, please refer to the OAuth provider's documentation.")]
+		[PropertyOrder(5)]
+		[OAuthCacheKey]
+		public string Scope
+		{
+			get { return this.scope; }
+			set
+			{
+				this.scope = value;
+			}
+		}
 
-        public override OAuthBase GetClient()
-        {
-            return new GenericClientCredentialsGrantOAuth2Client(tokenUrl, this.clientId, this.clientSecret, this.scope);
-        }
+		public override OAuthBase GetClient()
+		{
+			return new GenericClientCredentialsGrantOAuth2Client(tokenUrl, this.clientId, this.clientSecret, this.scope);
+		}
 
-        public override AccessToken ClientLogin(System.Windows.Forms.Form mainForm)
-        {
-            bool success = false;
+		//public override AccessToken ClientLogin(System.Windows.Forms.Form mainForm)
+		//{
+		//	bool success = false;
 
-            try
-            {
-                var client = this.GetClient();
-                var token = client.AccessTokenValue;
-                if (!String.IsNullOrEmpty(token))
-                    success = true;
+		//	try
+		//	{
+		//		var client = this.GetClient();
+		//		var token = client.AccessTokenValue;
+		//		if (!String.IsNullOrEmpty(token))
+		//			success = true;
 
-                if (success)
-                {
-                    MessageBox.Show(mainForm, "Generic Client Credentials OAuth Test Successful", "Success");
-                    return client.AccessToken;
-                }
-                else
-                {
-                    MessageBox.Show(mainForm, "Unable to obtain an access token - unknown error", "Test Failed");
-                    return null;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(mainForm, String.Format("Unable to obtain an access token - {0}", ex.Message), "Test Failed");
-            }
+		//		if (success)
+		//		{
+		//			MessageBox.Show(mainForm, "Generic Client Credentials OAuth Test Successful", "Success");
+		//			return client.AccessToken;
+		//		}
+		//		else
+		//		{
+		//			if (client.AccessToken.ContainsKey("error"))
+		//			{
+		//				string error = client.AccessToken["error"].ToString();
+		//				string errorDesc = client.AccessToken.ContainsKey("error_description") ? client.AccessToken["error_description"].ToString() : "No error description provided";
+		//				string errorUri = client.AccessToken.ContainsKey("error_uri") ? client.AccessToken["error_uri"].ToString() : "No error URI provided";
 
-            return null;
-        }
-    }
+		//				MessageBox.Show(mainForm, String.Format("Unable to obtain an access token from the OAuth Provider:{0}  Error: {1}{0}  Error Description: {2}{0}  Error URI: {3}", Environment.NewLine, error, errorDesc, errorUri), "Test Failed");
+		//			}
+		//			else
+		//				MessageBox.Show(mainForm, "Unable to obtain an access token - unknown error", "Test Failed");
 
-    public class GenericClientCredentialsGrantOAuth2Client : OAuth2Client
-    {
-        public override string ProviderName
-        {
-            get { return "Generic Client Credentials Grant OAuth Provider"; }
-        }
+		//			return null;
+		//		}
+		//	}
+		//	catch (Exception ex)
+		//	{
+		//		MessageBox.Show(mainForm, String.Format("Unable to obtain an access token - {0}", ex.Message), "Test Failed");
+		//	}
 
-        public GenericClientCredentialsGrantOAuth2Client(string tokenUrl, string clientId, string clientSecret, string scope)
-            : base(tokenUrl, tokenUrl, clientId, clientSecret)
-        {
-            base.Scope = scope;
-            base.SupportRefreshToken = false;
-        }
+		//	return null;
+		//}
+	}
 
-        protected override void GetAccessToken()
-        {
-            var parameters = new NameValueCollection
-            {
-                { "grant_type", GrantType.ClientCredentials },
-                { "client_id", this.ApplicationId },
-                { "client_secret", this.ApplicationSecret }
-            };
+	public class GenericClientCredentialsGrantOAuth2Client : OAuth2Client
+	{
+		public override string ProviderName
+		{
+			get { return "Sample Generic Client Credentials Grant OAuth Provider"; }
+		}
 
-            if (base.Scope != null)
-                parameters.Add("scope", base.Scope);
+		public GenericClientCredentialsGrantOAuth2Client(string tokenUrl, string clientId, string clientSecret, string scope)
+			: base(tokenUrl, tokenUrl, clientId, clientSecret)
+		{
+			base.Scope = scope;
+			base.SupportRefreshToken = false;
+		}
 
-            var result = OAuthUtility.Post
-            (
-              endpoint: this.AccessTokenUrl,
-              parameters: parameters,
-              authorization: new HttpAuthorization(AuthorizationType.Basic, OAuthUtility.ToBase64String("{0}:{1}", this.ApplicationId, this.ApplicationSecret))
-            );
+		protected override void GetAccessToken()
+		{
+			var parameters = new NameValueCollection
+			{
+				{ "grant_type", GrantType.ClientCredentials },
+				{ "client_id", this.ApplicationId },
+				{ "client_secret", this.ApplicationSecret }
+			};
 
-            if (result.ContainsKey("error"))
-            {
-                this.AccessToken = new OAuth2AccessToken(new ErrorResult(result));
-            }
-            else
-            {
-                this.AccessToken = new OAuth2AccessToken(result);
-            }
-        }
-    }
+			if (base.Scope != null)
+				parameters.Add("scope", base.Scope);
+
+			var result = OAuthUtility.Post
+			(
+			  endpoint: this.AccessTokenUrl,
+			  parameters: parameters,
+			  authorization: new HttpAuthorization(AuthorizationType.Basic, OAuthUtility.ToBase64String("{0}:{1}", this.ApplicationId, this.ApplicationSecret))
+			);
+
+			if (result.ContainsKey("error"))
+			{
+				this.AccessToken = new OAuth2AccessToken(new ErrorResult(result));
+			}
+			else
+			{
+				this.AccessToken = new OAuth2AccessToken(result);
+			}
+		}
+	}
 }

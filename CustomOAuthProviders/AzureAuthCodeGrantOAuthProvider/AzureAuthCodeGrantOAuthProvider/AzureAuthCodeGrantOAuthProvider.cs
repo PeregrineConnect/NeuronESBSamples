@@ -1,15 +1,12 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using System.ComponentModel;
 using System.Collections.Specialized;
-using System.Windows.Forms;
+using Neuron.NetX.OAuth;
 using Nemiro.OAuth;
-using Nemiro.OAuth.LoginForms;
-using Neuron.Esb.OAuth;
 
-namespace Neuron.Esb.Samples
+namespace Neuron.NetX.Samples
 {
-    [DisplayName("Azure Authorization Code Grant OAuth Provider")]
+    [DisplayName("Sample Azure Authorization Code Grant OAuth Provider")]
     public class AzureAuthCodeGrantOAuthProvider : OAuthProvider
     {
         private string clientId;
@@ -21,6 +18,7 @@ namespace Neuron.Esb.Samples
         [DisplayName("Client ID")]
         [Description("The Application Id assigned to your app when you registered it with Azure AD.")]
         [PropertyOrder(2)]
+        [OAuthCacheKey]
         public string ClientId
         {
             get { return this.clientId; }
@@ -35,6 +33,7 @@ namespace Neuron.Esb.Samples
         [Description("The application secret that you created in the app registration portal for your app.")]
         [PropertyOrder(3)]
         [EncryptValue]
+        [OAuthCacheKey]
         public string ClientSecret
         {
             get { return this.clientSecret; }
@@ -47,6 +46,7 @@ namespace Neuron.Esb.Samples
         [DisplayName("Tenant")]
         [Description("The {tenant} value in the path of the request can be used to control who can sign into the application.  The Tenant can be found by logging into the Azure Active Directory Portal as an administrator, click on Active Directory, click the directory you want to authenticate with, and the tenant will be displayed as part of the URL: https://manage.windowsazure.com/tenantname#Workspaces/ActiveDirectoryExtension/Directory/<TenantID>/directoryQuickStart")]
         [PropertyOrder(4)]
+        [OAuthCacheKey]
         public string Tenant
         {
             get { return this.tenant; }
@@ -60,6 +60,7 @@ namespace Neuron.Esb.Samples
         [DisplayName("Redirect Uri")]
         [Description("The redirect_uri of your app, where authentication responses can be sent and received by your app. It must exactly match one of the redirect_uris you registered in the portal.")]
         [PropertyOrder(5)]
+        [OAuthCacheKey]
         public string RedirectUri
         {
             get { return this.redirectUri; }
@@ -73,6 +74,7 @@ namespace Neuron.Esb.Samples
         [DisplayName("Resource")]
         [Description("The URL of the resource you want to access.")]
         [PropertyOrder(6)]
+        [OAuthCacheKey]
         public string Resource
         {
             get { return this.resource; }
@@ -90,44 +92,55 @@ namespace Neuron.Esb.Samples
             return new AzureAuthCodeGrantOAuth2Client(authorizeUrl, accessTokenUrl, this.clientId, this.clientSecret, this.resource, this.redirectUri);
         }
 
-        public override AccessToken ClientLogin(System.Windows.Forms.Form mainForm)
-        {
-            bool success = false;
-            AzureAuthCodeGrantLogin login = null;
+        // In .net 8, we are not using win forms.
+        //public override AccessToken ClientLogin(System.Windows.Forms.Form mainForm)
+        //{
+        //    bool success = false;
+        //    AzureAuthCodeGrantLogin login = null;
 
-            try
-            {
-                var client = this.GetClient();
+        //    try
+        //    {
+        //        var client = this.GetClient();
 
-                login = new AzureAuthCodeGrantLogin(client);
+        //        login = new AzureAuthCodeGrantLogin(client);
 
-                using (login)
-                {
-                    login.ShowDialog(mainForm);
-                    var token = client.AccessTokenValue;
+        //        using (login)
+        //        {
+        //            login.ShowDialog(mainForm);
+        //            var token = client.AccessTokenValue;
 
-                    if (!String.IsNullOrEmpty(token))
-                        success = true;
-                }
+        //            if (!String.IsNullOrEmpty(token))
+        //                success = true;
+        //        }
 
-                if (success)
-                {
-                    MessageBox.Show(mainForm, "Azure Authorization Code Grant OAuth Test Successfull", "Success");
-                    return client.AccessToken;
-                }
-                else
-                {
-                    MessageBox.Show(mainForm, "Unable to obtain an access token - unknown error", "Test Failed");
-                    return null;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(mainForm, String.Format("Unable to obtain an access token - {0}", ex.Message), "Test Failed");
-            }
+        //        if (success)
+        //        {
+        //            MessageBox.Show(mainForm, "Azure Authorization Code Grant OAuth Test Successfull", "Success");
+        //            return client.AccessToken;
+        //        }
+        //        else
+        //        {
+        //            if (client.AccessToken.ContainsKey("error"))
+        //            {
+        //                string error = client.AccessToken["error"].ToString();
+        //                string errorDesc = client.AccessToken.ContainsKey("error_description") ? client.AccessToken["error_description"].ToString() : "No error description provided";
+        //                string errorUri = client.AccessToken.ContainsKey("error_uri") ? client.AccessToken["error_uri"].ToString() : "No error URI provided";
 
-            return null;
-        }
+        //                MessageBox.Show(mainForm, String.Format("Unable to obtain an access token from Azure:{0}  Error: {1}{0}  Error Description: {2}{0}  Error URI: {3}", Environment.NewLine, error, errorDesc, errorUri), "Test Failed");
+        //            }
+        //            else
+        //                MessageBox.Show(mainForm, "Unable to obtain an access token - unknown error", "Test Failed");
+
+        //            return null;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(mainForm, String.Format("Unable to obtain an access token - {0}", ex.Message), "Test Failed");
+        //    }
+
+        //    return null;
+        //}
     }
 
     public class AzureAuthCodeGrantOAuth2Client : OAuth2Client
@@ -139,7 +152,7 @@ namespace Neuron.Esb.Samples
 
         public override string ProviderName
         {
-            get { return "Azure Authorization Code Grant OAuth Provider"; }
+            get { return "Sample Azure Authorization Code Grant OAuth Provider"; }
         }
 
         public AzureAuthCodeGrantOAuth2Client(string authorizeUrl, string accessTokenUrl, string clientId, string clientSecret, string resource, string redirectUri)
@@ -227,11 +240,11 @@ namespace Neuron.Esb.Samples
         }
     }
 
-    public class AzureAuthCodeGrantLogin : Login
-    {
-        public AzureAuthCodeGrantLogin(OAuthBase client) :
-            base(client, responseType: "code")
-        {
-        }
-    }
+    //public class AzureAuthCodeGrantLogin : LoginForm
+    //{
+    //    public AzureAuthCodeGrantLogin(OAuthBase client) :
+    //        base(client, responseType: "code")
+    //    {
+    //    }
+    //}
 }

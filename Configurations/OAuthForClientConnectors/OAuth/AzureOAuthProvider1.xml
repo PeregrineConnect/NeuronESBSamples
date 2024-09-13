@@ -1,16 +1,17 @@
-<?xml version="1.0"?>
-<ESBOAuthProvider xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBOAuthProvider xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>52bb88c1-7f66-4db3-bfc1-45146f0f9b5d</Id>
   <Version>0e526643-9084-49d8-9022-df3c7a3a7cb5</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>AzureOAuthProvider1</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
   <Bindings />
-  <ProviderAssembly>Neuron.Esb.OAuth.dll</ProviderAssembly>
-  <ProviderClass>Neuron.Esb.OAuth.ActiveDirectoryOAuthProvider</ProviderClass>
+  <ProviderAssembly>Neuron.NetX.OAuth.dll</ProviderAssembly>
+  <ProviderClass>Neuron.NetX.OAuth.ActiveDirectoryOAuthProvider</ProviderClass>
   <ProviderName>Azure Active Directory/ADFS</ProviderName>
   <Properties>
     <NameValuePair>

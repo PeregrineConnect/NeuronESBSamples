@@ -50,20 +50,20 @@ namespace Neuron.Samples.CustomerREST
     [DataContract(Namespace = "http://Neuron.Samples", Name = "result")]
     public class Result
     {
-        public Result(bool result)
+        public Result(int result)
         {
             Success = result;
             ErrorMsg = string.Empty;
         }
 
-        public Result(bool result, string error)
+        public Result(int result, string error)
         {
             Success = result;
             ErrorMsg = error;
         }
 
         [DataMember(Name = "success")]
-        public bool Success;
+        public int Success;
 
         [DataMember(Name = "errorMsg")]
         public string ErrorMsg;
