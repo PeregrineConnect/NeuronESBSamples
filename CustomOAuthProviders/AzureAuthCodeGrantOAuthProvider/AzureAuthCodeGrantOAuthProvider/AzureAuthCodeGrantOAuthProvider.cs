@@ -3,6 +3,8 @@ using System.ComponentModel;
 using System.Collections.Specialized;
 using Neuron.NetX.OAuth;
 using Nemiro.OAuth;
+using System;
+using System.Collections.Generic;
 
 namespace Neuron.NetX.Samples
 {
@@ -85,7 +87,12 @@ namespace Neuron.NetX.Samples
             }
         }
 
-        public override OAuthBase GetClient()
+		public override AccessToken GetAndValidateAccessToken(OAuthBase client, ref List<NameValuePair> nameValuePairs)
+		{
+			throw new NotImplementedException();
+		}
+
+		public override OAuthBase GetClient()
         {
             var authorizeUrl = string.Format("https://login.windows.net/{0}/oauth2/authorize", this.tenant);
             var accessTokenUrl = string.Format("https://login.windows.net/{0}/oauth2/token", this.tenant);

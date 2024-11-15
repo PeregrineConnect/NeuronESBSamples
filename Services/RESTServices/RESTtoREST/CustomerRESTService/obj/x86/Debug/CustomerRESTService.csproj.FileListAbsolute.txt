@@ -1,0 +1,7 @@
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoREST\CustomerRESTService\bin\Debug\CustomerRESTService.exe.config
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoREST\CustomerRESTService\bin\Debug\CustomerRESTService.exe
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoREST\CustomerRESTService\bin\Debug\CustomerRESTService.pdb
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoREST\CustomerRESTService\obj\x86\Debug\CustomerRESTService.csproj.AssemblyReference.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoREST\CustomerRESTService\obj\x86\Debug\CustomerRESTService.csproj.CoreCompileInputs.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoREST\CustomerRESTService\obj\x86\Debug\CustomerRESTService.exe
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoREST\CustomerRESTService\obj\x86\Debug\CustomerRESTService.pdb

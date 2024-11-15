@@ -1,0 +1,6 @@
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\JSON\Customer\bin\Debug\Neuron.Samples.JSON.Customer.dll
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\JSON\Customer\bin\Debug\Neuron.Samples.JSON.Customer.pdb
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\JSON\Customer\obj\Debug\Customer.csproj.AssemblyReference.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\JSON\Customer\obj\Debug\Customer.csproj.CoreCompileInputs.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\JSON\Customer\obj\Debug\Neuron.Samples.JSON.Customer.dll
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\JSON\Customer\obj\Debug\Neuron.Samples.JSON.Customer.pdb

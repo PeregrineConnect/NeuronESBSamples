@@ -1,0 +1,7 @@
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerSOAPService\bin\Debug\CustomerSOAPService.exe.config
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerSOAPService\bin\Debug\CustomerSOAPService.exe
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerSOAPService\bin\Debug\CustomerSOAPService.pdb
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerSOAPService\obj\x86\Debug\CustomerSOAPService.csproj.AssemblyReference.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerSOAPService\obj\x86\Debug\CustomerSOAPService.csproj.CoreCompileInputs.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerSOAPService\obj\x86\Debug\CustomerSOAPService.exe
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerSOAPService\obj\x86\Debug\CustomerSOAPService.pdb

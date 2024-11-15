@@ -15,13 +15,13 @@
 
 	<ItemGroup>
 		<Reference Include="Neuron.NetX">
-			<HintPath>..\..\..\..\..\sdk\NeuronEsbSdk\bin\Debug\net8.0\Neuron.NetX.dll</HintPath>
+			<HintPath>..\..\..\..\..\Neuron.NetX.dll</HintPath>
 		</Reference>
 		<Reference Include="Neuron.Pipelines.Activities">
-			<HintPath>..\..\..\..\..\sdk\Neuron.Pipelines.Activities\bin\Debug\net8.0\Neuron.Pipelines.Activities.dll</HintPath>
+			<HintPath>..\..\..\..\..\Neuron.Pipelines.Activities.dll</HintPath>
 		</Reference>
 		<Reference Include="Neuron.Pipelines.Activities2">
-			<HintPath>..\..\..\..\..\sdk\Neuron.Pipelines.Activities2\bin\Debug\net8.0\Neuron.Pipelines.Activities2.dll</HintPath>
+			<HintPath>..\..\..\..\..\Neuron.Pipelines.Activities2.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 

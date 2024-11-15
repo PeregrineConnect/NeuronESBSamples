@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Receiver2.props" />
+</Project>

@@ -1,0 +1,7 @@
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Processes\MSMQMessageProcessor\MSMQMessageProcessor\bin\Debug\MSMQMessageProcessor.exe.config
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Processes\MSMQMessageProcessor\MSMQMessageProcessor\bin\Debug\MSMQMessageProcessor.exe
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Processes\MSMQMessageProcessor\MSMQMessageProcessor\bin\Debug\MSMQMessageProcessor.pdb
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Processes\MSMQMessageProcessor\MSMQMessageProcessor\obj\x86\Debug\MSMQMessageProcessor.csproj.AssemblyReference.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Processes\MSMQMessageProcessor\MSMQMessageProcessor\obj\x86\Debug\MSMQMessageProcessor.csproj.CoreCompileInputs.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Processes\MSMQMessageProcessor\MSMQMessageProcessor\obj\x86\Debug\MSMQMessageProcessor.exe
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Processes\MSMQMessageProcessor\MSMQMessageProcessor\obj\x86\Debug\MSMQMessageProcessor.pdb

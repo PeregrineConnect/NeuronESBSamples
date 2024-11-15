@@ -9,13 +9,13 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Reference Include="Neuron.NetX">
-	    <HintPath>..\..\..\..\..\DEFAULT\Neuron.NetX.dll</HintPath>
+	    <HintPath>..\..\..\..\..\..\Neuron.NetX.dll</HintPath>
 	  </Reference>
 		<Reference Include="Neuron.NetX.Channels.Tcp">
-			<HintPath>..\..\..\..\..\DEFAULT\Neuron.NetX.Channels.Tcp.dll</HintPath>
+			<HintPath>..\..\..\..\..\..\Neuron.NetX.Channels.Tcp.dll</HintPath>
 		</Reference>
 		<Reference Include="Microsoft.Bcl.AsyncInterfaces">
-			<HintPath>..\..\..\..\..\DEFAULT\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+			<HintPath>..\..\..\..\..\..\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>

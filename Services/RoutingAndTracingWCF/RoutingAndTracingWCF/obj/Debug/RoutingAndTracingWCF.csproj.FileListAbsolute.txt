@@ -1,0 +1,6 @@
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RoutingAndTracingWCF\RoutingAndTracingWCF\bin\RoutingAndTracingWCF.dll
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RoutingAndTracingWCF\RoutingAndTracingWCF\bin\RoutingAndTracingWCF.pdb
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RoutingAndTracingWCF\RoutingAndTracingWCF\obj\Debug\RoutingAndTracingWCF.csproj.AssemblyReference.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RoutingAndTracingWCF\RoutingAndTracingWCF\obj\Debug\RoutingAndTracingWCF.csproj.CoreCompileInputs.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RoutingAndTracingWCF\RoutingAndTracingWCF\obj\Debug\RoutingAndTracingWCF.dll
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RoutingAndTracingWCF\RoutingAndTracingWCF\obj\Debug\RoutingAndTracingWCF.pdb

@@ -1,0 +1,11 @@
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\OneWayServicePassThrough\OrderEntryClient\obj\Debug\OrderEntryClient.csproj.AssemblyReference.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\OneWayServicePassThrough\OrderEntryClient\obj\Debug\OrderEntryClient.csproj.CoreCompileInputs.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\OneWayServicePassThrough\OrderEntryClient\bin\Debug\OrderEntryClient.exe.config
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\OneWayServicePassThrough\OrderEntryClient\bin\Debug\OrderEntryClient.exe
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\OneWayServicePassThrough\OrderEntryClient\bin\Debug\OrderEntryClient.pdb
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\OneWayServicePassThrough\OrderEntryClient\bin\Debug\OrderEntryService.exe
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\OneWayServicePassThrough\OrderEntryClient\bin\Debug\OrderEntryService.pdb
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\OneWayServicePassThrough\OrderEntryClient\bin\Debug\OrderEntryService.exe.config
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\OneWayServicePassThrough\OrderEntryClient\obj\Debug\OrderEnt.006B7040.Up2Date
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\OneWayServicePassThrough\OrderEntryClient\obj\Debug\OrderEntryClient.exe
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\OneWayServicePassThrough\OrderEntryClient\obj\Debug\OrderEntryClient.pdb

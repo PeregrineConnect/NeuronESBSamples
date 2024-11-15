@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "p+vUr1+LXUw=",
+  "success": true,
+  "projectFilePath": "D:\\DS\\DesignStudioNetX\\PeregrineDesignStudioNetX\\DesignStudio\\DesignStudioWinHost\\bin\\Debug\\net8.0-windows\\Samples\\v1.0.0.0\\Scenarios\\Chat\\Chat.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

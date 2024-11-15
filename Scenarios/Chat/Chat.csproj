@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Neuron.NetX">
-      <HintPath>..\..\..\..\server\lib\neuronesbnetxsdk\debug\net8.0\Neuron.NetX.dll</HintPath>
+      <HintPath>..\..\..\..\Neuron.NetX.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

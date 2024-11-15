@@ -1,0 +1,10 @@
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerRESTClient\bin\Debug\CustomerRESTClient.exe.config
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerRESTClient\bin\Debug\CustomerRESTClient.exe
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerRESTClient\bin\Debug\CustomerRESTClient.pdb
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerRESTClient\bin\Debug\Newtonsoft.Json.dll
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerRESTClient\bin\Debug\Newtonsoft.Json.xml
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerRESTClient\obj\x86\Debug\CustomerRESTClient.csproj.AssemblyReference.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerRESTClient\obj\x86\Debug\CustomerRESTClient.csproj.CoreCompileInputs.cache
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerRESTClient\obj\x86\Debug\Customer.ED43E4CB.Up2Date
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerRESTClient\obj\x86\Debug\CustomerRESTClient.exe
+D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSOAP\CustomerRESTClient\obj\x86\Debug\CustomerRESTClient.pdb

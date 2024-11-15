@@ -45,34 +45,34 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Neuron.Metabase.Admin">
-      <HintPath>..\..\..\..\DEFAULT\Neuron.Metabase.Admin.dll</HintPath>
+      <HintPath>..\..\..\..\..\Neuron.Metabase.Admin.dll</HintPath>
     </Reference>
     <Reference Include="Neuron.NetX">
-      <HintPath>..\..\..\..\DEFAULT\Neuron.NetX.dll</HintPath>
+      <HintPath>..\..\..\..\..\Neuron.NetX.dll</HintPath>
     </Reference>
     <Reference Include="Neuron.Pipelines.Activities">
-      <HintPath>..\..\..\..\DEFAULT\Neuron.Pipelines.Activities.dll</HintPath>
+      <HintPath>..\..\..\..\..\Neuron.Pipelines.Activities.dll</HintPath>
     </Reference>
     <Reference Include="Neuron.Pipelines.Activities2">
-      <HintPath>..\..\..\..\DEFAULT\Neuron.Pipelines.Activities2.dll</HintPath>
+      <HintPath>..\..\..\..\..\Neuron.Pipelines.Activities2.dll</HintPath>
     </Reference>
     <Reference Include="Apache.NMS.ActiveMQ">
-      <HintPath>..\..\..\..\DEFAULT\Apache.NMS.ActiveMQ.dll</HintPath>
+      <HintPath>..\..\..\..\..\Apache.NMS.ActiveMQ.dll</HintPath>
     </Reference>
     <Reference Include="CoreWCF.ConfigurationManager">
-      <HintPath>..\..\..\..\DEFAULT\CoreWCF.ConfigurationManager.dll</HintPath>
+      <HintPath>..\..\..\..\..\CoreWCF.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Options">
-      <HintPath>..\..\..\..\DEFAULT\Microsoft.Extensions.Options.dll</HintPath>
+      <HintPath>..\..\..\..\..\Microsoft.Extensions.Options.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces">
-      <HintPath>..\..\..\..\DEFAULT\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <HintPath>..\..\..\..\..\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="CoreWCF.Http">
-      <HintPath>..\..\..\..\DEFAULT\CoreWCF.Http.dll</HintPath>
+      <HintPath>..\..\..\..\..\CoreWCF.Http.dll</HintPath>
     </Reference>
     <Reference Include="Neuron.NetX.Channels.Amqp">
-      <HintPath>..\..\..\..\DEFAULT\Neuron.NetX.Channels.Amqp.dll</HintPath>
+      <HintPath>..\..\..\..\..\Neuron.NetX.Channels.Amqp.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

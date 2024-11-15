@@ -89,7 +89,7 @@ namespace Neuron.NetX.Sample.Adapters
         }
         
         
-        public override Task SendToEndpoint(ESBMessage message, CommittableTransaction tx, CancellationTokenSource cancellation = null)             
+        public override Task SendToEndpoint(ESBMessage message, CommittableTransaction tx, CancellationToken cancellationToken)             
         {
             // call user defined method subscribing to message received from the bus and sending out to some system
             SendToDataSource(message, tx);

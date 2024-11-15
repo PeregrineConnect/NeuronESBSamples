@@ -14,13 +14,13 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Neuron">
-      <HintPath>..\..\..\..\server\lib\neuronesbsdk\Neuron.dll</HintPath>
+      <HintPath>..\..\..\..\Neuron.dll</HintPath>
     </Reference>
     <Reference Include="Neuron.NetX">
-      <HintPath>..\..\..\..\server\lib\neuronesbnetxsdk\debug\net8.0\Neuron.NetX.dll</HintPath>
+      <HintPath>..\..\..\..\Neuron.NetX.dll</HintPath>
     </Reference>
     <Reference Include="Peregrine.Scheduler.Interfaces.Core">
-      <HintPath>..\..\..\..\Scheduler\PeregrineSchedulerNetx\JobInterface.Core\bin\Debug\net8.0\Peregrine.Scheduler.Interfaces.Core.dll</HintPath>
+      <HintPath>..\..\..\..\Peregrine.Scheduler.Interfaces.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
