@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DS\\DesignStudioNetX\\NeuronESBNetX\\installers\\Samples\\Scenarios\\NeuronCOM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5F5762-CA94-41CF-8555-50AC73153656}|Neuron.NetX.Excel.Interop.csproj|d:\\ds\\designstudionetx\\neuronesbnetx\\installers\\samples\\scenarios\\neuroncom\\regcom.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3C5F5762-CA94-41CF-8555-50AC73153656}|Neuron.NetX.Excel.Interop.csproj|solutionrelative:regcom.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "regcom.bat",
+              "DocumentMoniker": "D:\\DS\\DesignStudioNetX\\NeuronESBNetX\\installers\\Samples\\Scenarios\\NeuronCOM\\regcom.bat",
+              "RelativeDocumentMoniker": "regcom.bat",
+              "ToolTip": "D:\\DS\\DesignStudioNetX\\NeuronESBNetX\\installers\\Samples\\Scenarios\\NeuronCOM\\regcom.bat",
+              "RelativeToolTip": "regcom.bat",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2024-11-28T10:33:55.7Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,16 +6,16 @@ Connect()
 
 Sub Connect()
 
-    'Create an instance of a subscriber and connect to ESB.
+    'Create an instance of a subscriber and connect to NetX.
     'This uses WScript.CreateObject to connect to the events. Alternatively, 
-    '    CreateObject("Neuron.ESB.Excel.Interop.Party")
+    '    CreateObject("Neuron.NetX.Excel.Interop.Party")
     ' can be used, instead of the WScript.CreateObject from WScript
 
     
     Dim o
-    'Set o = CreateObject("Neuron.ESB.Excel.Interop.Party")
+    'Set o = CreateObject("Neuron.NetX.Excel.Interop.Party")
     'WScript.ConnectObject o,"Neuron_"
-    Set o = WScript.CreateObject("Neuron.ESB.Excel.Interop.Party","Neuron_")
+    Set o = WScript.CreateObject("Neuron.NetX.Excel.Interop.Party","Neuron_")
     
     ' Connect to the bus
     o.Connect "FinancePublisher", "Enterprise", "localhost", "50000"

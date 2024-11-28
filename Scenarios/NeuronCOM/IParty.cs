@@ -2,14 +2,14 @@
 using System.Runtime.InteropServices;
 using System.ComponentModel;
 
-namespace Neuron.ESB.Excel.Interop
+namespace Neuron.NetX.Excel.Interop
 {
     [Guid(Party.InterfaceId)]
     [InterfaceType(ComInterfaceType.InterfaceIsDual)]
     public interface IParty
     {
         [DispId(1)]
-        [DescriptionAttribute("Connects the Party to the Neuron ESB server")]
+        [DescriptionAttribute("Connects the Party to the Neuron NetX server")]
         void Connect(string partyId, string zone, string server, string port);
 
         [DispId(2)]
@@ -21,7 +21,7 @@ namespace Neuron.ESB.Excel.Interop
         string SendRequest(string topic, string message);
 
         [DispId(4)]
-        [DescriptionAttribute("Disconnects the Party from the Neuron ESB server")]
+        [DescriptionAttribute("Disconnects the Party from the Neuron NetX server")]
         void Disconnect();
 
         [DispId(5)]

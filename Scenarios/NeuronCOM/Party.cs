@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using Neuron.Esb;
+using Neuron.NetX;
 using System.Globalization;
 
-namespace Neuron.ESB.Excel.Interop
+namespace Neuron.NetX.Excel.Interop
 {
     [ComVisible(true)]
     [Guid(Party.EnumId)]
@@ -33,7 +33,7 @@ namespace Neuron.ESB.Excel.Interop
         internal const string InterfaceId = "559A3835-4768-2ad5-82BE-7D708C2B86AB";
         internal const string EnumId = "259A6635-4768-2bd5-82BE-7D008C2B86AB";
 
-        private Neuron.Esb.Party _party = null;
+        private Neuron.NetX.Party _party = null;
         private string _partyName;
 
         [ComVisible(false)]
@@ -61,7 +61,7 @@ namespace Neuron.ESB.Excel.Interop
             if (!int.TryParse(port, out portInt)) throw new ArgumentOutOfRangeException("port", "port must be a valid port number.");
             bootstrapAddress = string.Format(CultureInfo.CurrentCulture, "net.tcp://{0}:{1}/", server, port);
 
-            _party = new Neuron.Esb.Party(new SubscriberConfiguration(partyId, zone, bootstrapAddress, null), SubscriberOptions.None);
+            _party = new Neuron.NetX.Party(new SubscriberConfiguration(partyId, zone, bootstrapAddress, null), SubscriberOptions.None);
             _partyName = partyId;
 
             // connect and raise event
@@ -76,7 +76,7 @@ namespace Neuron.ESB.Excel.Interop
             if (String.IsNullOrEmpty(topic)) throw new ArgumentNullException("topic", "A Topic to publish the message to must be entered.");
             if (String.IsNullOrEmpty(message)) throw new ArgumentNullException("message", "The message to publish must be entered.");
 
-            ESBMessage msg = _party.Send(topic, message, Neuron.Esb.SendOptions.Request);
+            ESBMessage msg = _party.Send(topic, message, Neuron.NetX.SendOptions.Request);
 
             return msg.Text;
         }
@@ -88,7 +88,7 @@ namespace Neuron.ESB.Excel.Interop
             if (String.IsNullOrEmpty(message)) throw new ArgumentNullException("message", "The message to publish must be entered.");
 
             // defaults to multi cast
-            _party.Send(topic, message, Neuron.Esb.SendOptions.Multicast);
+            _party.Send(topic, message, Neuron.NetX.SendOptions.Multicast);
         }
 
         [ComVisible(true)]
