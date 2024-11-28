@@ -3,6 +3,8 @@ using System.ComponentModel;
 using System.Collections.Specialized;
 using Nemiro.OAuth;
 using Neuron.NetX.OAuth;
+using System.Collections.Generic;
+using Neuron.NetX.Adapters;
 
 namespace Neuron.NetX.Samples
 {
@@ -104,46 +106,45 @@ namespace Neuron.NetX.Samples
             return new GenericPasswordCredentialsGrantOAuth2Client(tokenUrl, this.clientId, this.clientSecret, this.username, this.password, this.scope);
         }
 
-        // In .net 8, we are not using win forms.
-        //public override AccessToken ClientLogin(System.Windows.Forms.Form mainForm)
-        //{
-        //    bool success = false;
+		public override AccessToken GetAndValidateAccessToken(OAuthBase client, ref List<NameValuePair> nameValuePairs)
+		{
+			bool success = false;
 
-        //    try
-        //    {
-        //        var client = this.GetClient();
-        //        var token = client.AccessTokenValue;
-        //        if (!String.IsNullOrEmpty(token))
-        //            success = true;
+            try
+            {
+                var token = client.AccessTokenValue;
+                if (!String.IsNullOrEmpty(token))
+                    success = true;
 
-        //        if (success)
-        //        {
-        //            MessageBox.Show(mainForm, "Generic Resource Owner Password Credentials OAuth Test Successful", "Success");
-        //            return client.AccessToken;
-        //        }
-        //        else
-        //        {
-        //            if (client.AccessToken.ContainsKey("error"))
-        //            {
-        //                string error = client.AccessToken["error"].ToString();
-        //                string errorDesc = client.AccessToken.ContainsKey("error_description") ? client.AccessToken["error_description"].ToString() : "No error description provided";
-        //                string errorUri = client.AccessToken.ContainsKey("error_uri") ? client.AccessToken["error_uri"].ToString() : "No error URI provided";
+                if (success)
+                {
+					AdapterErrorComponent.AddToErrorComponent(null, "Generic Resource Owner Password Credentials OAuth Test Successful", "Success");
+                    return client.AccessToken;
+                }
+                else
+                {
+                    if (client.AccessToken.ContainsKey("error"))
+                    {
+                        string error = client.AccessToken["error"].ToString();
+                        string errorDesc = client.AccessToken.ContainsKey("error_description") ? client.AccessToken["error_description"].ToString() : "No error description provided";
+                        string errorUri = client.AccessToken.ContainsKey("error_uri") ? client.AccessToken["error_uri"].ToString() : "No error URI provided";
+						AdapterErrorComponent.AddToErrorComponent(null, String.Format("Unable to obtain an access token from the OAuth provider:{0}  Error: {1}{0}  Error Description: {2}{0}  Error URI: {3}", Environment.NewLine, error, errorDesc, errorUri), "Test Failed");
+                    }
+                    else
+                    {
+						AdapterErrorComponent.AddToErrorComponent(null, "Unable to obtain an access token - unknown error", "Test Failed");
+					}
 
-        //                MessageBox.Show(mainForm, String.Format("Unable to obtain an access token from the OAuth provider:{0}  Error: {1}{0}  Error Description: {2}{0}  Error URI: {3}", Environment.NewLine, error, errorDesc, errorUri), "Test Failed");
-        //            }
-        //            else
-        //                MessageBox.Show(mainForm, "Unable to obtain an access token - unknown error", "Test Failed");
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+				AdapterErrorComponent.AddToErrorComponent(null, String.Format("Unable to obtain an access token - {0}", ex.Message), "Test Failed");
+            }
 
-        //            return null;
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(mainForm, String.Format("Unable to obtain an access token - {0}", ex.Message), "Test Failed");
-        //    }
-
-        //    return null;
-        //}
+            return null;
+        }
     }
 
     public class GenericPasswordCredentialsGrantOAuth2Client : OAuth2Client
