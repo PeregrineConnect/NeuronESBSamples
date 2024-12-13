@@ -1,15 +1,21 @@
 ﻿using System;
 using System.Activities;
+using System.Activities.PeregrineAttributes;
 using System.Activities.Validation;
+using System.ComponentModel;
 using System.Globalization;
 using System.Text;
 
 namespace SampleDataActivityLibrary
 {
-    /// <summary>
-    ///     Activity that generates lorem ipsum text.
-    /// </summary>
-    public sealed class LoremIpsum : CodeActivity<string>
+	/// <summary>
+	///     Activity that generates lorem ipsum text.
+	/// </summary>
+	[DisplayName("Lorem Ipsum")]
+    [CustomIcon("Image1")]
+    [ResourceTypeName(typeof(Resource1))]
+	[Description("Generates Lorem Ipsum text based on the specified criteria.")]
+	public sealed class LoremIpsum : CodeActivity<string>
     {
         public LoremIpsum()
         {
@@ -20,23 +26,52 @@ namespace SampleDataActivityLibrary
             Paragraphs = 1;
         }
 
-        // Design-time properties
-        public int MaxSentences { get; set; }
-        public int MaxWords { get; set; }
-        public int MinSentences { get; set; }
-        public int MinWords { get; set; }
-        public int Paragraphs { get; set; }
+		// Design-time properties
+		[Category("General")]
+		[Description("Specifies the maximum number of sentences in a paragraph.")]
+		public int MaxSentences { get; set; }
+		
+        [Category("General")]
+		[Description("Specifies the maximum number of words in a sentence.")]
+		public int MaxWords { get; set; }
+		
+        [Category("General")]
+		[Description("Specifies the minimum number of sentences in a paragraph.")]
+		public int MinSentences { get; set; }
+		
+        [Category("General")]
+		[Description("Specifies the minimum number of words in a sentence.")]
+		public int MinWords { get; set; }
+		
+        [Category("General")]
+		[Description("Specifies the number of paragraphs to generate.")]
+		public int Paragraphs { get; set; }
+
+		[Category("General")]
+		[Editor("ExpressionEditor", "UITypeEditor")]
+		[Description("The output text containing the generated Lorem Ipsum content.")]
+		public new OutArgument<string> Result
+		{
+			get
+			{
+				return base.Result;
+			}
+			set
+			{
+				base.Result = value;
+			}
+		}
 
 
-        /// <summary>
-        ///     Creates and validates a description of the activity’s arguments, variables, child activities, and activity
-        ///     delegates.
-        /// </summary>
-        /// <param name="metadata">
-        ///     The activity’s metadata that encapsulates the activity’s arguments, variables, child activities,
-        ///     and activity delegates.
-        /// </param>
-        protected override void CacheMetadata(CodeActivityMetadata metadata)
+		/// <summary>
+		///     Creates and validates a description of the activity’s arguments, variables, child activities, and activity
+		///     delegates.
+		/// </summary>
+		/// <param name="metadata">
+		///     The activity’s metadata that encapsulates the activity’s arguments, variables, child activities,
+		///     and activity delegates.
+		/// </param>
+		protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
             base.CacheMetadata(metadata);
 
