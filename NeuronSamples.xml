@@ -14,16 +14,16 @@
           clients  = "0"
          />
 
-  <Sample tree     = "Adapters"
-        name       = "Dynamics CRM XRM Adapter"
-        desc       = "This sample demonstrates using the Dynamics CRM XRM Adapter to perform operations on CRM entities, such as create, delete, change the state of an entity and perform a Fetch XML query."
-        config     = "DynamicsCrm2013SubscriptionAdapter"
-        folder     = ""
-        solution   = ""
-        help       = "https://www.peregrineconnect.com/documentation-kb/integrating-with-microsoft-crm/"
-        setup      = "0"
-        clients    = "1"
-         />
+  <!-- <Sample tree     = "Adapters" -->
+        <!-- name       = "Dynamics CRM XRM Adapter" -->
+        <!-- desc       = "This sample demonstrates using the Dynamics CRM XRM Adapter to perform operations on CRM entities, such as create, delete, change the state of an entity and perform a Fetch XML query." -->
+        <!-- config     = "DynamicsCrm2013SubscriptionAdapter" -->
+        <!-- folder     = "" -->
+        <!-- solution   = "" -->
+        <!-- help       = "https://www.peregrineconnect.com/documentation-kb/integrating-with-microsoft-crm/" -->
+        <!-- setup      = "0" -->
+        <!-- clients    = "1" -->
+         <!-- /> -->
 
   <Sample tree     = "Adapters"
           name     = "FTP Adapter"
@@ -57,11 +57,11 @@
          />
 
   <Sample tree     = "Adapters/Custom Adapters"
-          name     = "Neuron ESB Adapter Framework"
-          desc     = "This sample is a Visual Studio Solution that contains the Neuron ESB Adapter Framework. The Neuron ESB Adapter Framework contains all the base functions and libraries that enable custom Neuron ESB Adapter development. Developers using this framework can create rich Neuron ESB Adapters that support the message exchange patterns exposed by many of the native Neuron ESB Adapters, such as Publish, Subscribe, Request/Response and Solicit/Response mode adapters. A rich set of custom properties and meta data can be included for design time configuration within the Neuron ESB Explorer when configuring an Adapter Endpoint."
+          name     = "Neuron ESB Adapter"
+          desc     = "This sample is a Visual Studio Solution that contains the Neuron ESB Adapter. The Neuron ESB Adapter contains all the base functions and libraries that enable custom Neuron ESB Adapter development. Developers using this can create rich Neuron ESB Adapters that support the message exchange patterns exposed by many of the native Neuron ESB Adapters, such as Publish, Subscribe, Request/Response and Solicit/Response mode adapters. A rich set of custom properties and meta data can be included for design time configuration within the Neuron ESB Explorer when configuring an Adapter Endpoint."
           config   = ""
-          folder   = "CustomAdapters\AdapterFramework"
-          solution = "Esb-Name-Adapter.sln"
+          folder   = "CustomAdapters\Neuron-Name-Adapter"
+          solution = "Neuron-Name-Adapter.sln"
           help     = "https://www.peregrineconnect.com/documentation-kb/adapter-framework/"
           setup    = "0"
           clients  = "0"
@@ -316,16 +316,16 @@
           clients  = "0"
           />
 
-  <Sample tree     = "Processes"
-          name     = "Correlated Messaging with the MSMQ Process Step"
-          desc     = "Sometimes it is necessary to correlate one-way messages with another system.  Your process may need to send a one-way message to that system, and then receive one or more one-way messages as a response.  Neuron provides an MSMQ Process Step that can be used for this particular scenario.  The MSMQ Process Step can be configured to send or receive messages, either transactionally or non-transactionally.  When receiving messages, the MSMQ Process Step can be configured to retrieve any message from the queue or only receive messages matching a correlation ID."
-          config   = "MsmqProcessStep"
-          folder   = "Processes\MSMQMessageProcessor"
-          solution = "MSMQMessageProcessor.sln"
-          help     = "https://www.peregrineconnect.com/documentation-kb/correlated-messaging-with-the-msmq-process-step/"
-          setup    = "0"
-          clients  = "0"
-          />
+  <!-- <Sample tree     = "Processes" -->
+          <!-- name     = "Correlated Messaging with the MSMQ Process Step" -->
+          <!-- desc     = "Sometimes it is necessary to correlate one-way messages with another system.  Your process may need to send a one-way message to that system, and then receive one or more one-way messages as a response.  Neuron provides an MSMQ Process Step that can be used for this particular scenario.  The MSMQ Process Step can be configured to send or receive messages, either transactionally or non-transactionally.  When receiving messages, the MSMQ Process Step can be configured to retrieve any message from the queue or only receive messages matching a correlation ID." -->
+          <!-- config   = "MsmqProcessStep" -->
+          <!-- folder   = "Processes\MSMQMessageProcessor" -->
+          <!-- solution = "MSMQMessageProcessor.sln" -->
+          <!-- help     = "https://www.peregrineconnect.com/documentation-kb/correlated-messaging-with-the-msmq-process-step/" -->
+          <!-- setup    = "0" -->
+          <!-- clients  = "0" -->
+          <!-- /> -->
 
   <Sample tree     = "Processes"
           name     = "ODBC Process Step"

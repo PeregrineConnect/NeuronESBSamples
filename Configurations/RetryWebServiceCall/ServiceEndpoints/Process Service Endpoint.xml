@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>d1fb1e83-8597-49a5-bff5-1f7085060d4f</Id>
   <Version>70b6290f-6172-4f1d-9672-4a2d8e2b9387</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>Process Service Endpoint</Name>
   <Group />
@@ -30,15 +31,17 @@
     <Port>0</Port>
     <BypassLocalAddress>false</BypassLocalAddress>
   </ProxySettings>
+  <DebugInfo />
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
   <ServiceName>Process Service Endpoint</ServiceName>
   <ServiceGroup />
   <Binding>BasicHttp</Binding>
-  <AvailabilityGroupId />
+  <AvailabilityGroupId>Backbone Default Host</AvailabilityGroupId>
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <ProcessMultipartMessages>false</ProcessMultipartMessages>
   <TransactionType>None</TransactionType>
   <MaxMessageSize>1000000</MaxMessageSize>
   <ReliableMessaging>false</ReliableMessaging>

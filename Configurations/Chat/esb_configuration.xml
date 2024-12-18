@@ -1,25 +1,36 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>28</Version>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>29</Version>
   <EnvironmentName>Chat</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>Chat</ApplicationName>
   <ApplicationId>11c1e252-0abf-4723-b791-ae7454abc00a</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,*,endpoint host,Backbone Default Topic Host</string>
+      <string>Add,*,endpoint host,Backbone Default Host</string>
+    </Additions>
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
-      <string>Edit,Enterprise,topic,Chat</string>
+      <string>Edit,*,Policy,Default_Service</string>
+      <string>Edit,*,Policy,Default_Adapter</string>
     </Revisions>
-    <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:11:03.5976855Z</LastModifiedDate>
-    <Comments />
+    <Deletions>
+      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+      <string>Delete,*,Adapter Policy,Default.xml</string>
+      <string>Delete,*,Service Policy,Default.xml</string>
+    </Deletions>
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2024-12-17T13:20:00.4184388Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Backbone Default Topic Host' to *", Added a endpoint host named 'Backbone Default Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Deleted the Adapter Policy named 'Default.xml' from *", Deleted the Service Policy named 'Default.xml' from *", Edited Policy named 'Default_Service' in *", Edited Policy named 'Default_Adapter' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -48,13 +59,13 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

@@ -1,62 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
-      "System.Data.DataSetExtensions/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Data.DataSetExtensions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Data.DataSetExtensions.dll": {}
-        }
-      }
-    }
+    "net8.0": {}
   },
-  "libraries": {
-    "System.Data.DataSetExtensions/4.5.0": {
-      "sha512": "221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
-      "type": "package",
-      "path": "system.data.datasetextensions/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net45/_._",
-        "lib/netstandard2.0/System.Data.DataSetExtensions.dll",
-        "ref/net45/_._",
-        "ref/netstandard2.0/System.Data.DataSetExtensions.dll",
-        "system.data.datasetextensions.4.5.0.nupkg.sha512",
-        "system.data.datasetextensions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net8.0": [
-      "System.Data.DataSetExtensions >= 4.5.0"
-    ]
+    "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "4.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DS\\DesignStudioNetX\\PeregrineDesignStudioNetX\\DesignStudio\\DesignStudioWinHost\\bin\\Debug\\net8.0-windows\\Samples\\v1.0.0.0\\Scenarios\\Chat\\Chat.csproj",
+      "projectUniqueName": "C:\\Ronak\\DS\\DesignStudioNetX\\PeregrineDesignStudioNetX\\DesignStudio\\DesignStudioWinHost\\bin\\Debug\\net8.0-windows\\Samples\\v1.0.0.0\\Scenarios\\Chat\\Chat.csproj",
       "projectName": "Chat",
-      "projectPath": "D:\\DS\\DesignStudioNetX\\PeregrineDesignStudioNetX\\DesignStudio\\DesignStudioWinHost\\bin\\Debug\\net8.0-windows\\Samples\\v1.0.0.0\\Scenarios\\Chat\\Chat.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\DS\\DesignStudioNetX\\PeregrineDesignStudioNetX\\DesignStudio\\DesignStudioWinHost\\bin\\Debug\\net8.0-windows\\Samples\\v1.0.0.0\\Scenarios\\Chat\\obj\\",
+      "projectPath": "C:\\Ronak\\DS\\DesignStudioNetX\\PeregrineDesignStudioNetX\\DesignStudio\\DesignStudioWinHost\\bin\\Debug\\net8.0-windows\\Samples\\v1.0.0.0\\Scenarios\\Chat\\Chat.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Ronak\\DS\\DesignStudioNetX\\PeregrineDesignStudioNetX\\DesignStudio\\DesignStudioWinHost\\bin\\Debug\\net8.0-windows\\Samples\\v1.0.0.0\\Scenarios\\Chat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -65,7 +33,9 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/dotnet/CoreWCF/_packaging/CoreWCF/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
@@ -81,19 +51,12 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+        "auditMode": "direct"
+      }
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
-        "dependencies": {
-          "System.Data.DataSetExtensions": {
-            "target": "Package",
-            "version": "[4.5.0, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -106,11 +69,14 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.2.24474.11/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

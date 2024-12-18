@@ -1,6 +1,7 @@
 ﻿using Neuron.NetX;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -83,7 +84,11 @@ namespace OrderProcessor
 			using (var publisher = new Publisher())
 			{
 				publisher.Connect();
-				publisher.SendMessage(message);
+				//publisher.SendMessage(message);
+
+				// Run publisher on a separate thread so that it does block the main thread
+				Task.Run(() => { message = publisher.SendMessage(message); }).GetAwaiter().GetResult();
+
 			}
 
 			orders.Remove(selectedOrder);
