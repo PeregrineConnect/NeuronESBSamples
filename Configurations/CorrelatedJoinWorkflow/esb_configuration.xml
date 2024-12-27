@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>30</Version>
+  <Version>31</Version>
   <EnvironmentName>CorrelatedJoinWorkflow</EnvironmentName>
-  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>CorrelatedJoinWorkflow</ApplicationName>
   <ApplicationId>db3bfde5-5be3-4009-ae7f-784b4b039839</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
     <Additions>
-      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>Add,*,endpoint host,Backbone Default Topic Host</string>
+      <string>Add,*,endpoint host,Backbone Default Host</string>
     </Additions>
     <Revisions>
       <string>Edit,Enterprise,topic,Orders</string>
-      <string>Edit,*,Policy,Default_Service</string>
-      <string>Edit,*,Policy,Default_Adapter</string>
-      <string>Edit,*,pipeline,Split Orders</string>
-      <string>Edit,Enterprise,publisher,OrderSplitter</string>
       <string>Edit,*,workflow definition,Join Orders</string>
+      <string>Edit,*,workflow endpoint,OrdersEndpoint</string>
+      <string>Edit,Enterprise,deployment group,Dev</string>
     </Revisions>
     <Deletions>
-      <string>Delete,*,Adapter Policy,Default.xml</string>
-      <string>Delete,*,Service Policy,Default.xml</string>
+      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
     </Deletions>
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-08-22T13:43:15.7870713Z</LastModifiedDate>
-    <Comments>Added a endpoint host named 'Neuron ESB Default Topic Host' to *", Deleted the Adapter Policy named 'Default.xml' from *", Deleted the Service Policy named 'Default.xml' from *", Edited topic named 'Orders' in Enterprise", Edited Policy named 'Default_Service' in *", Edited Policy named 'Default_Adapter' in *", Edited pipeline named 'Split Orders' in *", Edited publisher named 'OrderSplitter' in Enterprise", Edited workflow definition named 'Join Orders' in *"</Comments>
+    <LastModifiedDate>2024-12-27T13:36:25.689888Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Backbone Default Topic Host' to *", Added a endpoint host named 'Backbone Default Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Orders' in Enterprise", Edited workflow definition named 'Join Orders' in *", Edited workflow endpoint named 'OrdersEndpoint' in *", Edited deployment group named 'Dev' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EsbWorkflowDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>169c4a05-bddf-4f9c-be33-be07104298d8</Id>
-  <Version>e501a24d-512f-484c-9d0e-3e3ae5b9aadc</Version>
+  <Version>4c7a1390-1f00-4921-a779-6fbab0082139</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
   <Name>Join Orders</Name>
+  <Group />
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
   <Category>General</Category>
@@ -13,27 +14,26 @@
   <ReferencedAssemblies />
   <WorkflowType>CorrelatedMessageWorkflow</WorkflowType>
   <WorkflowXaml>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;Activity x:Class="Join_Orders" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:nn="clr-namespace:Neuron.NetX;assembly=Neuron.NetX" xmlns:nna="clr-namespace:Neuron.NetX.Administration;assembly=Neuron.NetX" xmlns:nna1="clr-namespace:Neuron.NetX.Activities;assembly=Neuron.NetX.Activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+&lt;Activity x:Class="Join_Orders" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:nn="clr-namespace:Neuron.NetX;assembly=Neuron.NetX" xmlns:nna="clr-namespace:Neuron.NetX.Administration;assembly=Neuron.NetX" xmlns:nna1="clr-namespace:Neuron.NetX.Activities;assembly=Neuron.NetX.Activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
   &lt;x:Members&gt;
     &lt;x:Property Name="configuration" Type="InArgument(nna:ESBConfiguration)" /&gt;
     &lt;x:Property Name="environmentVariables" Type="InArgument(scg:IReadOnlyDictionary(x:String, x:String))" /&gt;
     &lt;x:Property Name="message" Type="InArgument(nn:ESBMessage)" /&gt;
   &lt;/x:Members&gt;
   &lt;VisualBasic.Settings&gt;Assembly references and imported namespaces for internal implementation&lt;/VisualBasic.Settings&gt;
-  &lt;Sequence AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="Join steps"&gt;
+  &lt;Sequence AnnotationText="" BreakPointEnabled="False" Disable="False" DisplayName="Join steps"&gt;
     &lt;Sequence.Variables&gt;
       &lt;Variable x:TypeArguments="x:String" Name="batchID" /&gt;
       &lt;Variable x:TypeArguments="x:Int32" Name="ordersInBatch" /&gt;
       &lt;Variable x:TypeArguments="scg:List(nn:ESBMessage)" Default="[New System.Collections.Generic.List(Of Neuron.NetX.ESBMessage)]" Name="orders" /&gt;
       &lt;Variable x:TypeArguments="nn:ESBMessage" Name="joinedOrder" /&gt;
     &lt;/Sequence.Variables&gt;
-    &lt;nna1:CSharpCodeActivity AnnotationText="{x:Null}" ReferencedAssemblies="{x:Array Type=x:String}" BreakPointEnabled="False" Disable="False" DisplayName="Start" SourceCode="Log.Warning(&amp;quot;Ronak - Start&amp;quot;);" /&gt;
-    &lt;DoWhile AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="Gather orders" Condition="[orders.Count &amp;lt; ordersInBatch]"&gt;
-      &lt;Sequence AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="Gather steps"&gt;
-        &lt;If AnnotationText="{x:Null}" BreakPointEnabled="False" Condition="[String.IsNullOrEmpty(batchID)]" Disable="False" DisplayName="If initial values not set"&gt;
+    &lt;DoWhile AnnotationText="" BreakPointEnabled="False" Disable="False" DisplayName="Gather orders" Condition="[orders.Count &amp;lt; ordersInBatch]"&gt;
+      &lt;Sequence AnnotationText="" BreakPointEnabled="False" Disable="False" DisplayName="Gather steps"&gt;
+        &lt;If AnnotationText="" BreakPointEnabled="False" Condition="[String.IsNullOrEmpty(batchID)]" Disable="False" DisplayName="If initial values not set"&gt;
           &lt;If.Then&gt;
-            &lt;Sequence AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="Set values from first message"&gt;
-              &lt;Assign AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False"&gt;
+            &lt;Sequence AnnotationText="" BreakPointEnabled="False" Disable="False" DisplayName="Set values from first message"&gt;
+              &lt;Assign AnnotationText="" BreakPointEnabled="False" Disable="False" DisplayName="Assign"&gt;
                 &lt;Assign.To&gt;
                   &lt;OutArgument x:TypeArguments="x:String"&gt;[batchID]&lt;/OutArgument&gt;
                 &lt;/Assign.To&gt;
@@ -41,7 +41,7 @@
                   &lt;InArgument x:TypeArguments="x:String"&gt;[message.GetProperty("orders", "batchID")]&lt;/InArgument&gt;
                 &lt;/Assign.Value&gt;
               &lt;/Assign&gt;
-              &lt;Assign AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False"&gt;
+              &lt;Assign AnnotationText="" BreakPointEnabled="False" Disable="False" DisplayName="Assign"&gt;
                 &lt;Assign.To&gt;
                   &lt;OutArgument x:TypeArguments="x:Int32"&gt;[ordersInBatch]&lt;/OutArgument&gt;
                 &lt;/Assign.To&gt;
@@ -52,16 +52,16 @@
             &lt;/Sequence&gt;
           &lt;/If.Then&gt;
           &lt;If.Else&gt;
-            &lt;nna1:ReceiveMessage AnnotationText="{x:Null}" BreakPointEnabled="False" CorrelationID="{x:Null}" Disable="False" Result="[message]" Timeout="00:01:00" /&gt;
+            &lt;nna1:ReceiveMessage CorrelationID="{x:Null}" AnnotationText="" BreakPointEnabled="False" Disable="False" DisplayName="ReceiveMessage" Result="[message]" Timeout="00:01:00" /&gt;
           &lt;/If.Else&gt;
         &lt;/If&gt;
-        &lt;AddToCollection x:TypeArguments="nn:ESBMessage" AnnotationText="{x:Null}" BreakPointEnabled="False" Collection="[orders]" Disable="False" DisplayName="Add order to collection" Item="[message]" /&gt;
+        &lt;AddToCollection x:TypeArguments="nn:ESBMessage" AnnotationText="" BreakPointEnabled="False" Collection="[orders]" Disable="False" DisplayName="Add order to collection" Item="[message]" /&gt;
       &lt;/Sequence&gt;
     &lt;/DoWhile&gt;
-    &lt;nna1:JoinMessages AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="Join orders" Messages="[orders]" Result="[joinedOrder]" WrapperElementName="ProcessedOrders" WrapperElementNamespace="http://neuronesb/order" /&gt;
-    &lt;nna1:CSharpCodeActivity AnnotationText="{x:Null}" ReferencedAssemblies="{x:Array Type=x:String}" BreakPointEnabled="False" Disable="False" DisplayName="Add batchID attribute" SourceCode="var xml = joinedOrder.ToXDocument();&amp;#xD;&amp;#xA;var batchIDAttribute = new XAttribute(&amp;quot;batchID&amp;quot;, batchID);&amp;#xD;&amp;#xA;xml.Root.Add(batchIDAttribute);&amp;#xD;&amp;#xA;joinedOrder.FromXml(xml.ToString());" /&gt;
-    &lt;nna1:PublishMessage AnnotationText="{x:Null}" CorrelationSet="{x:Null}" BreakPointEnabled="False" CorrelationID="{x:Null}" Disable="False" DisplayName="Publish order" Message="[joinedOrder]" Semantic="Multicast" Topic="Orders.Completed" /&gt;
-    &lt;nna1:CSharpCodeActivity AnnotationText="{x:Null}" ReferencedAssemblies="{x:Array Type=x:String}" BreakPointEnabled="False" Disable="False" DisplayName="End" SourceCode="Log.Warning(&amp;quot;Ronak - End&amp;quot;);" /&gt;
+    &lt;nna1:JoinMessages AnnotationText="" BreakPointEnabled="False" Disable="False" DisplayName="Join orders" Messages="[orders]" Result="[joinedOrder]" WrapperElementName="&amp;quot;ProcessedOrders&amp;quot;" WrapperElementNamespace="&amp;quot;http://neuronesb/order&amp;quot;" /&gt;
+    &lt;nna1:CSharpCodeActivity ReferencedAssemblies="{x:Array Type=x:String}" AnnotationText="" BreakPointEnabled="False" Disable="False" DisplayName="Add batchID attribute" SourceCode="var xml = joinedOrder.ToXDocument();&amp;#xA;var batchIDAttribute = new XAttribute(&amp;quot;batchID&amp;quot;, batchID);&amp;#xA;xml.Root.Add(batchIDAttribute);&amp;#xA;joinedOrder.FromXml(xml.ToString());" /&gt;
+    &lt;nna1:PublishMessage CorrelationID="{x:Null}" CorrelationSet="{x:Null}" AnnotationText="" BreakPointEnabled="False" Disable="False" DisplayName="Publish order" Message="[joinedOrder]" Semantic="Multicast" Topic="Orders.Completed" /&gt;
   &lt;/Sequence&gt;
 &lt;/Activity&gt;</WorkflowXaml>
+  <ActivityBreakpoint />
 </EsbWorkflowDefinition>

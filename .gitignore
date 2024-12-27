@@ -1,0 +1,4 @@
+# Ignore Visual Studio and other common build artifacts
+**/.vs/
+**/bin/
+**/obj/

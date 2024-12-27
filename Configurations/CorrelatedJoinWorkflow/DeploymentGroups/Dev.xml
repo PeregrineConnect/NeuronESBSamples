@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<ESBDeployment xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBDeployment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>d722c0d6-f79a-400a-a38d-121606138e90</Id>
   <Version>61a0e00a-f4eb-41ad-a889-fdbf95328211</Version>
   <BusinessFlows />
@@ -30,6 +30,7 @@
     <UseGmsa>false</UseGmsa>
     <GmsaAccount>LocalService</GmsaAccount>
     <SwarmDeployment>false</SwarmDeployment>
+    <K8SDeployment>true</K8SDeployment>
   </DockerSettings>
   <DockerEnvironmentConfig>
     <esbInstanceName>Default</esbInstanceName>
@@ -99,7 +100,7 @@
   <DevelopmentDefault>false</DevelopmentDefault>
   <EncryptUnicode>true</EncryptUnicode>
   <ServerTopology>0</ServerTopology>
-  <StateDatabase>DESKTOP-L8TFEBQ.NeuronESB_TestDB</StateDatabase>
+  <StateDatabase>localhost.NeuronESB</StateDatabase>
   <Units>
     <ESBDeploymentUnit>
       <MachineName>localhost</MachineName>
@@ -109,4 +110,25 @@
   </Units>
   <Addresses />
   <Queues />
+  <AksSettings>
+    <RabbitTLS>false</RabbitTLS>
+    <IsClusterCreated xsi:nil="true" />
+    <CloudProvider>Local</CloudProvider>
+    <ResourceGroup>K8S-Neuron</ResourceGroup>
+    <CapacityGB>50</CapacityGB>
+    <LoadBalancerRange>192.168.52.0/28</LoadBalancerRange>
+    <IsBGP>false</IsBGP>
+    <ExtIngressPeregrineMS>false</ExtIngressPeregrineMS>
+    <IntIngressPeregrineMS>false</IntIngressPeregrineMS>
+    <TLSPeregrineMS>false</TLSPeregrineMS>
+    <LEPeregrineMS>false</LEPeregrineMS>
+    <LBPeregrineMS>false</LBPeregrineMS>
+    <LBPeregrineMSExternal>false</LBPeregrineMSExternal>
+    <ExtIngressElastic>false</ExtIngressElastic>
+    <IntIngressElastic>false</IntIngressElastic>
+    <TLSElastic>false</TLSElastic>
+    <LEElastic>false</LEElastic>
+    <LBElastic>false</LBElastic>
+    <LBElasticExternal>false</LBElasticExternal>
+  </AksSettings>
 </ESBDeployment>
