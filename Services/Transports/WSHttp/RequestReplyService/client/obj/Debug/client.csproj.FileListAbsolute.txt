@@ -1,9 +1,0 @@
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\Transports\WSHttp\RequestReplyService\client\bin\client.exe.config
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\Transports\WSHttp\RequestReplyService\client\bin\client.exe
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\Transports\WSHttp\RequestReplyService\client\bin\client.pdb
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\Transports\WSHttp\RequestReplyService\client\obj\Debug\client.csproj.AssemblyReference.cache
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\Transports\WSHttp\RequestReplyService\client\obj\Debug\Properties.Resources.resources
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\Transports\WSHttp\RequestReplyService\client\obj\Debug\client.csproj.GenerateResource.cache
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\Transports\WSHttp\RequestReplyService\client\obj\Debug\client.csproj.CoreCompileInputs.cache
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\Transports\WSHttp\RequestReplyService\client\obj\Debug\client.exe
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\Transports\WSHttp\RequestReplyService\client\obj\Debug\client.pdb

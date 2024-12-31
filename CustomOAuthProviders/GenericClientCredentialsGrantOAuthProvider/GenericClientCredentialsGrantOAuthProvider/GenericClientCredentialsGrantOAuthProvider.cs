@@ -16,6 +16,15 @@ namespace Neuron.NetX.Samples
 		private string clientSecret;
 		private string tokenUrl;
 		private string scope;
+		private string grantType = Nemiro.OAuth.GrantType.ClientCredentials;
+
+		[Browsable(false)]
+		[Bindable(false)]
+		public string GrantType
+		{
+			get { return this.grantType; }
+			set { this.grantType = value; }
+		}
 
 		[DisplayName("Client ID")]
 		[Description("The Application Id assigned to your app.")]
@@ -72,7 +81,7 @@ namespace Neuron.NetX.Samples
 
 		public override OAuthBase GetClient()
 		{
-			return new GenericClientCredentialsGrantOAuth2Client(tokenUrl, this.clientId, this.clientSecret, this.scope);
+			return new GenericClientCredentialsGrantOAuth2Client(tokenUrl, this.clientId, this.clientSecret, this.scope, this.GrantType);
 		}
 
 		public override AccessToken GetAndValidateAccessToken(OAuthBase client, ref List<NameValuePair> nameValuePairs)
@@ -87,7 +96,6 @@ namespace Neuron.NetX.Samples
 
 				if (success)
 				{
-					AdapterErrorComponent.AddToErrorComponent(null, "Generic Client Credentials OAuth Test Successful", "Success");
 					return client.AccessToken;
 				}
 				else
@@ -97,11 +105,11 @@ namespace Neuron.NetX.Samples
 						string error = client.AccessToken["error"].ToString();
 						string errorDesc = client.AccessToken.ContainsKey("error_description") ? client.AccessToken["error_description"].ToString() : "No error description provided";
 						string errorUri = client.AccessToken.ContainsKey("error_uri") ? client.AccessToken["error_uri"].ToString() : "No error URI provided";
-						AdapterErrorComponent.AddToErrorComponent(null, String.Format("Unable to obtain an access token from the OAuth provider:{0}  Error: {1}{0}  Error Description: {2}{0}  Error URI: {3}", Environment.NewLine, error, errorDesc, errorUri), "Test Failed");
+						throw new Exception(String.Format("Unable to obtain an access token from the OAuth provider:{0}  Error: {1}{0}  Error Description: {2}{0}  Error URI: {3}", Environment.NewLine, error, errorDesc, errorUri));
 					}
 					else
 					{
-						AdapterErrorComponent.AddToErrorComponent(null, "Unable to obtain an access token - unknown error", "Test Failed");
+						throw new Exception("Unable to obtain an access token - unknown error");
 					}
 
 					return null;
@@ -109,7 +117,7 @@ namespace Neuron.NetX.Samples
 			}
 			catch (Exception ex)
 			{
-				AdapterErrorComponent.AddToErrorComponent(null, String.Format("Unable to obtain an access token - {0}", ex.Message), "Test Failed");
+				throw new Exception($"Unable to obtain an access token - {ex.Message}", ex);
 			}
 
 			return null;
@@ -123,18 +131,19 @@ namespace Neuron.NetX.Samples
 			get { return "Sample Generic Client Credentials Grant OAuth Provider"; }
 		}
 
-		public GenericClientCredentialsGrantOAuth2Client(string tokenUrl, string clientId, string clientSecret, string scope)
+		public GenericClientCredentialsGrantOAuth2Client(string tokenUrl, string clientId, string clientSecret, string scope, string grantType)
 			: base(tokenUrl, tokenUrl, clientId, clientSecret)
 		{
 			base.Scope = scope;
 			base.SupportRefreshToken = false;
+			this.GrantType = grantType;
 		}
 
 		protected override void GetAccessToken()
 		{
 			var parameters = new NameValueCollection
 			{
-				{ "grant_type", GrantType.ClientCredentials },
+				{ "grant_type", this.GrantType },
 				{ "client_id", this.ApplicationId },
 				{ "client_secret", this.ApplicationSecret }
 			};

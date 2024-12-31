@@ -1,9 +1,0 @@
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\ProtocolMediation\NetTcpClient\bin\NetTcpClient.exe.config
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\ProtocolMediation\NetTcpClient\bin\NetTcpClient.exe
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\ProtocolMediation\NetTcpClient\bin\NetTcpClient.pdb
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\ProtocolMediation\NetTcpClient\obj\Debug\NetTcpClient.csproj.AssemblyReference.cache
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\ProtocolMediation\NetTcpClient\obj\Debug\Properties.Resources.resources
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\ProtocolMediation\NetTcpClient\obj\Debug\NetTcpClient.csproj.GenerateResource.cache
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\ProtocolMediation\NetTcpClient\obj\Debug\NetTcpClient.csproj.CoreCompileInputs.cache
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\ProtocolMediation\NetTcpClient\obj\Debug\NetTcpClient.exe
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\ProtocolMediation\NetTcpClient\obj\Debug\NetTcpClient.pdb

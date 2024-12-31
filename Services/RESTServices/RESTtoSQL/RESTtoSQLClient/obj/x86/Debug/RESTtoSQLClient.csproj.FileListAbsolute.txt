@@ -1,7 +1,0 @@
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSQL\RESTtoSQLClient\bin\Debug\CustomerRESTClient.exe.config
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSQL\RESTtoSQLClient\bin\Debug\CustomerRESTClient.exe
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSQL\RESTtoSQLClient\bin\Debug\CustomerRESTClient.pdb
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSQL\RESTtoSQLClient\obj\x86\Debug\RESTtoSQLClient.csproj.AssemblyReference.cache
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSQL\RESTtoSQLClient\obj\x86\Debug\RESTtoSQLClient.csproj.CoreCompileInputs.cache
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSQL\RESTtoSQLClient\obj\x86\Debug\CustomerRESTClient.exe
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\RESTtoSQL\RESTtoSQLClient\obj\x86\Debug\CustomerRESTClient.pdb

@@ -1,4 +1,0 @@
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Scenarios\CustomLogMonitorJob\obj\Debug\net8.0\CustomLogMonitor.csproj.AssemblyReference.cache
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Scenarios\CustomLogMonitorJob\obj\Debug\net8.0\CustomLogMonitor.GeneratedMSBuildEditorConfig.editorconfig
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Scenarios\CustomLogMonitorJob\obj\Debug\net8.0\CustomLogMonitor.csproj.CoreCompileInputs.cache
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Scenarios\CustomLogMonitorJob\obj\Debug\net8.0\CustomLogMonitor.sourcelink.json

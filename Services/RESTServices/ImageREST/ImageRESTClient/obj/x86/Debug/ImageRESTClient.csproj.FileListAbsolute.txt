@@ -1,7 +1,0 @@
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\ImageREST\ImageRESTClient\bin\Debug\ImageRESTClient.exe.config
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\ImageREST\ImageRESTClient\bin\Debug\ImageRESTClient.exe
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\ImageREST\ImageRESTClient\bin\Debug\ImageRESTClient.pdb
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\ImageREST\ImageRESTClient\obj\x86\Debug\ImageRESTClient.csproj.AssemblyReference.cache
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\ImageREST\ImageRESTClient\obj\x86\Debug\ImageRESTClient.csproj.CoreCompileInputs.cache
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\ImageREST\ImageRESTClient\obj\x86\Debug\ImageRESTClient.exe
-D:\DS\DesignStudioNetX\PeregrineDesignStudioNetX\DesignStudio\DesignStudioWinHost\bin\Debug\net8.0-windows\Samples\v1.0.0.0\Services\RESTServices\ImageREST\ImageRESTClient\obj\x86\Debug\ImageRESTClient.pdb

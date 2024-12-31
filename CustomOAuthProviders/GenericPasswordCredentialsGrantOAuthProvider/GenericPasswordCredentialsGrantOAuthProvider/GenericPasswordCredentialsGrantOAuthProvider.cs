@@ -17,8 +17,17 @@ namespace Neuron.NetX.Samples
         private string username;
         private string password;
         private string scope;
+		private string grantType = Nemiro.OAuth.GrantType.Password;
 
-        [DisplayName("Token Url")]
+		[Browsable(false)]
+		[Bindable(false)]
+		public string GrantType
+		{
+			get { return this.grantType; }
+			set { this.grantType = value; }
+		}
+
+		[DisplayName("Token Url")]
         [Description("The Url used to retrieve an access token.")]
         [PropertyOrder(2)]
         public string TokenUrl
@@ -100,10 +109,10 @@ namespace Neuron.NetX.Samples
                 this.scope = value;
             }
         }
-
+		
         public override OAuthBase GetClient()
         {
-            return new GenericPasswordCredentialsGrantOAuth2Client(tokenUrl, this.clientId, this.clientSecret, this.username, this.password, this.scope);
+            return new GenericPasswordCredentialsGrantOAuth2Client(tokenUrl, this.clientId, this.clientSecret, this.username, this.password, this.scope, this.GrantType);
         }
 
 		public override AccessToken GetAndValidateAccessToken(OAuthBase client, ref List<NameValuePair> nameValuePairs)
@@ -118,7 +127,6 @@ namespace Neuron.NetX.Samples
 
                 if (success)
                 {
-					AdapterErrorComponent.AddToErrorComponent(null, "Generic Resource Owner Password Credentials OAuth Test Successful", "Success");
                     return client.AccessToken;
                 }
                 else
@@ -128,11 +136,11 @@ namespace Neuron.NetX.Samples
                         string error = client.AccessToken["error"].ToString();
                         string errorDesc = client.AccessToken.ContainsKey("error_description") ? client.AccessToken["error_description"].ToString() : "No error description provided";
                         string errorUri = client.AccessToken.ContainsKey("error_uri") ? client.AccessToken["error_uri"].ToString() : "No error URI provided";
-						AdapterErrorComponent.AddToErrorComponent(null, String.Format("Unable to obtain an access token from the OAuth provider:{0}  Error: {1}{0}  Error Description: {2}{0}  Error URI: {3}", Environment.NewLine, error, errorDesc, errorUri), "Test Failed");
+                        throw new Exception(String.Format("Unable to obtain an access token from the OAuth provider:{0}  Error: {1}{0}  Error Description: {2}{0}  Error URI: {3}", Environment.NewLine, error, errorDesc, errorUri));
                     }
                     else
                     {
-						AdapterErrorComponent.AddToErrorComponent(null, "Unable to obtain an access token - unknown error", "Test Failed");
+                        throw new Exception("Unable to obtain an access token - unknown error");
 					}
 
                     return null;
@@ -140,7 +148,7 @@ namespace Neuron.NetX.Samples
             }
             catch (Exception ex)
             {
-				AdapterErrorComponent.AddToErrorComponent(null, String.Format("Unable to obtain an access token - {0}", ex.Message), "Test Failed");
+				throw new Exception($"Unable to obtain an access token - {ex.Message}", ex);
             }
 
             return null;
@@ -149,28 +157,29 @@ namespace Neuron.NetX.Samples
 
     public class GenericPasswordCredentialsGrantOAuth2Client : OAuth2Client
     {
-        public override string ProviderName
+		public override string ProviderName
         {
             get { return "Sample Generic Password Credentials Grant OAuth Provider"; }
         }
 
-        public GenericPasswordCredentialsGrantOAuth2Client(string accessTokenUrl, string clientId, string clientSecret, string username, string password, string scope)
+        public GenericPasswordCredentialsGrantOAuth2Client(string accessTokenUrl, string clientId, string clientSecret, string username, string password, string scope, string grantType)
             : base(accessTokenUrl, accessTokenUrl, clientId, clientSecret)
         {
             base.Username = username;
             base.Password = password;
             base.Scope = scope;
             base.SupportRefreshToken = false;
+            this.GrantType = grantType;
         }
 
         protected override void GetAccessToken()
         {
             var parameters = new NameValueCollection
             {
-                { "grant_type", GrantType.Password },
+                { "grant_type", this.GrantType },
                 { "client_id", base.ApplicationId },
                 { "username", base.Username },
-                { "password", base.Password }
+                { "password", base.Password },
             };
 
             if (!String.IsNullOrEmpty(base.ApplicationSecret))
