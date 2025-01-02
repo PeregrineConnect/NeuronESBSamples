@@ -1,36 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>258</Version>
-  <EnvironmentName>RESTServices_Converted</EnvironmentName>
-  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
+  <Version>261</Version>
+  <EnvironmentName>RESTServices</EnvironmentName>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>RESTServices</ApplicationName>
   <ApplicationId>5961f73d-745d-44cf-9cb6-0d774d3936f4</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
-    <Additions>
-      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
-      <string>Add,Enterprise,adapter endpoint,ImageFilePublisherEndpoint</string>
-    </Additions>
+    <Additions />
     <Revisions>
-      <string>Edit,Enterprise,topic,Log</string>
-      <string>Edit,*,process,Save Received Image</string>
-      <string>Edit,*,process,Send Image to REST API</string>
-      <string>Edit,*,pipeline,JSON Converter</string>
-      <string>Edit,Enterprise,service endpoint,JSONClientConnector</string>
-      <string>Edit,*,pipeline,REST to SQL</string>
-      <string>Edit,Enterprise,service endpoint,RESTtoSQLClientConnector</string>
-      <string>Edit,*,pipeline,Save Received Image</string>
-      <string>Edit,Enterprise,service endpoint,ImageClientConnector</string>
-      <string>Edit,*,pipeline,Send Image to REST API</string>
+      <string>Edit,Enterprise,adapter endpoint,ImageFileSubscriberEndpoint</string>
     </Revisions>
     <Deletions />
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-07-10T08:45:20.8792644Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedDate>2025-01-01T13:07:31.6571758Z</LastModifiedDate>
+    <Comments>Edited adapter endpoint named 'ImageFileSubscriberEndpoint' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -642,8 +633,7 @@
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

@@ -28,7 +28,7 @@
   <ServiceName>RESTServiceRouteServiceConnector</ServiceName>
   <ServiceGroup>General</ServiceGroup>
   <Binding>REST</Binding>
-  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Backbone Default Host</AvailabilityGroupId>
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>

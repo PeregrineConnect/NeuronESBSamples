@@ -28,7 +28,7 @@
   <ServiceName>RESTtoSQLClientConnector</ServiceName>
   <ServiceGroup>General</ServiceGroup>
   <Binding>REST</Binding>
-  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Backbone Default Host</AvailabilityGroupId>
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
@@ -104,7 +104,10 @@
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
-        <Condition />
+        <Condition>
+          <SelectedTagList />
+          <AvailableForOther>false</AvailableForOther>
+        </Condition>
       </PipelineConditions>
     </ClientPipelineItem>
   </ProcessList>

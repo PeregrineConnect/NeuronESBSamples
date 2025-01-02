@@ -115,5 +115,5 @@
   <Encrypted>false</Encrypted>
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
-  <AvailabilityGroupId>Neuron ESB Default Topic Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Backbone Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

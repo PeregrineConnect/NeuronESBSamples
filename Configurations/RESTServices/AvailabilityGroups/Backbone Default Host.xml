@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EsbAvailabilityGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>e3e5923d-2e16-4b4e-91bf-d12ef08cf731</Id>
-  <Version>4ad22dbf-22fc-4a20-b5a2-9a17ecd2fff7</Version>
+  <Id>e140a39f-34be-44a6-968a-698cf4818433</Id>
+  <Version>b0e5db04-608e-4718-b583-3cffb7b22eba</Version>
   <BusinessFlows />
   <ProcessFlows />
-  <Description>Neuron ESB Default Host for Endpoints</Description>
-  <Name>Neuron ESB Default Host</Name>
+  <Description>Backbone Default Host for Endpoints</Description>
+  <Name>Backbone Default Host</Name>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
   <IsScheduler>false</IsScheduler>
-  <Category>General</Category>
+  <Category />
   <RunAs />
   <IsEnabled>true</IsEnabled>
   <IsLegacyHost>false</IsLegacyHost>

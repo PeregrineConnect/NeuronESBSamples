@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBEndpoint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>f2bd0e17-1f92-4ca9-8184-54214976e204</Id>
-  <Version>4c419280-427c-4739-a06e-933eef7227b8</Version>
+  <Version>f78ee15a-c9fc-4e8b-b57b-5df3b15586a3</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -13,7 +13,7 @@
   <FarmSingleInstance>false</FarmSingleInstance>
   <Enabled>true</Enabled>
   <Zone>Enterprise</Zone>
-  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId />
   <IncludeMetadata>true</IncludeMetadata>
   <AdapterName>File</AdapterName>
   <AdapterAssembly>Neuron.NetX.Adapters.FileAdapter.dll</AdapterAssembly>
@@ -27,7 +27,7 @@
   <Properties>
     <NameValuePair>
       <Name>Folder</Name>
-      <Value>C:\Program Files\Neudesic\Neuron ESB v3\Samples\Services\RESTServices\ImageREST\Out</Value>
+      <Value>C:\Program Files\Peregrine\Backbone\Samples\Services\RESTServices\ImageREST\Out</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>FileType</Name>
@@ -115,7 +115,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>CreateFolderPath</Name>
-      <Value>True</Value>
+      <Value>true</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>FileEncoding</Name>
@@ -127,7 +127,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>DisableWriteThruCache</Name>
-      <Value>False</Value>
+      <Value>false</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>QueryFileRetrievalMethod</Name>
@@ -188,6 +188,14 @@
     <NameValuePair>
       <Name>QueryOverrideEncoding</Name>
       <Value>Default</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>ShowAdvance</Name>
+      <Value>false</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>DynamicFileName</Name>
+      <Value />
     </NameValuePair>
   </Properties>
   <AdapterBindings />
