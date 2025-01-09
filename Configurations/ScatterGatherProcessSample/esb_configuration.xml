@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>58</Version>
-  <EnvironmentName>ScatterGatherProcessSample_Converted</EnvironmentName>
-  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
+  <Version>62</Version>
+  <EnvironmentName>ScatterGatherProcessSample</EnvironmentName>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>ScatterGatherProcessSample</ApplicationName>
   <ApplicationId>20abd4f4-9893-4f36-9424-041414908c37</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
-    <Additions>
-      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
-    </Additions>
+    <Additions />
     <Revisions>
       <string>Edit,*,pipeline,Scatter Gather</string>
       <string>Edit,Enterprise,service endpoint,ContosoQuoteService</string>
     </Revisions>
     <Deletions />
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-07-10T07:13:12.9012551Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedDate>2025-01-08T11:16:18.8054854Z</LastModifiedDate>
+    <Comments>Edited pipeline named 'Scatter Gather' in *", Edited service endpoint named 'ContosoQuoteService' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -190,8 +191,7 @@
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />
