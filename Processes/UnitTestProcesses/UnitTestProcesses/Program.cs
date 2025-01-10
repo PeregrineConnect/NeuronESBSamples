@@ -5,8 +5,10 @@ using Neuron.NetX.Pipelines;
 using Neuron.Pipeline.Activities;
 using Neuron.Pipeline.Activities2;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Threading;
 using System.Xml.Schema;
 
 namespace UnitTestProcessSteps
@@ -260,17 +262,19 @@ namespace UnitTestProcessSteps
             {
                 ClientPipelineItem clientProcess = CreateProcessItemFromStorage(processStorage);
 
-                // Create a Pipeline Runtime instance and execute
-                var instance = runtime.CreateInstance(clientProcess.ThePipeline);
+				runtime.Extensions.Add(new PipelineTestBehavior<ESBMessage>());
+
+				// Create a Pipeline Runtime instance and execute
+				var instance = runtime.CreateInstance(clientProcess.ThePipeline);
 
                 // Create the Aborted event handler
                 instance.Aborted += new EventHandler(instance_Aborted);
+                
+				// Execute the process
+				Neuron.NetX.ESBMessage outMsg = instance.Execute(msg);
 
-                // Execute the process
-                Neuron.NetX.ESBMessage outMsg = instance.Execute(msg);
-
-                // Test the state and retrieve exception
-                if (instance.UnhandledException == null && instance.State != PipelineState.Aborted)
+				// Test the state and retrieve exception
+				if (instance.UnhandledException == null && instance.State != PipelineState.Aborted)
                     Console.WriteLine("Execution Succeeded: " + outMsg.Text);
                 else
                     Console.WriteLine(String.Format("Execution Failed: {0}", instance.UnhandledException != null ? instance.UnhandledException.Message : "No exception details provided"));
@@ -341,17 +345,17 @@ namespace UnitTestProcessSteps
         /// <param name="config"></param>
         private static void InitializeProcessStepDesignTimeConfig(ESBConfiguration config)
         {
-            // if setting dynamic properties, we have to supply a pointer to the esb config to all the steps that are using
-            // dynamic properties or reference the configuration for other work. Once we do that. 
-            EsbMessageSchemaValidationPipelineStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
-            EsbMessageBodyXslTransformPipelineStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
-            EsbMessagePipelineExecutionPipelineStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
-            DetectDuplicatesStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
-            EsbMessageAuditPipelineStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
-            EsbMessagePublishPipelineStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
-            EsbMessageServiceEndpointPipelineStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
+			// if setting dynamic properties, we have to supply a pointer to the esb config to all the steps that are using
+			// dynamic properties or reference the configuration for other work. Once we do that. 
+			EsbMessageSchemaValidationPipelineStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
+			EsbMessageBodyXslTransformPipelineStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
+			EsbMessagePipelineExecutionPipelineStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
+			DetectDuplicatesStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
+			EsbMessageAuditPipelineStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
+			EsbMessagePublishPipelineStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
+			EsbMessageServiceEndpointPipelineStep.DesignModeEsbConfigSelector = new EsbConfigSelectorDelegate(() => { return config; });
 
-        }
+		}
         #endregion
     }
 }

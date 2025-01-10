@@ -28,7 +28,7 @@
   <ServiceName>RouteByAction</ServiceName>
   <ServiceGroup>General</ServiceGroup>
   <Binding>WSHttp</Binding>
-  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>

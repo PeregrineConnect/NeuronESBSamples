@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>38</Version>
-  <EnvironmentName>SoapHeaders_Converted</EnvironmentName>
-  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
+  <Version>42</Version>
+  <EnvironmentName>SoapHeaders</EnvironmentName>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>SoapHeaders</ApplicationName>
   <ApplicationId>e7114448-f8f0-4be4-bb8d-fb4aa07c1189</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
     <Additions />
     <Revisions>
@@ -15,11 +16,13 @@
     </Revisions>
     <Deletions />
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-07-09T12:46:39.171497Z</LastModifiedDate>
+    <LastModifiedDate>2025-01-10T05:24:18.3408302Z</LastModifiedDate>
     <Comments>Edited pipeline named 'RouteBySoapHeader' in *", Edited publisher named 'NorthstarPubByHeader' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -54,8 +57,7 @@
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

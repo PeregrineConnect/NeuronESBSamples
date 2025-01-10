@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<EsbAvailabilityGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0"?>
+<EsbAvailabilityGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>58d0c1bc-0a94-4ee4-a513-b16177c3c443</Id>
   <Version>317b6b36-9364-48c6-8b18-34ebc01d2c19</Version>
   <BusinessFlows />
-  <ProcessFlows />
   <Description>Peregrine Scheduler</Description>
   <Name>Peregrine Scheduler</Name>
   <IsSystemObject>true</IsSystemObject>
@@ -12,8 +11,6 @@
   <Category>General</Category>
   <RunAs />
   <IsEnabled>false</IsEnabled>
-  <IsLegacyHost>false</IsLegacyHost>
-  <IsTopicHost>false</IsTopicHost>
   <DeploymentGroups>
     <EsbAvailabilityGroupDeploymentGroupMapping>
       <DeploymentGroup>Dev</DeploymentGroup>

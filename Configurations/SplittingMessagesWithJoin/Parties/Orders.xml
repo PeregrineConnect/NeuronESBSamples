@@ -1,31 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0"?>
+<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>356a0b52-fc1c-46f2-916f-07846d4baa98</Id>
   <Version>11771c21-2385-4e73-a732-2e92cefc2764</Version>
-  <BusinessFlows />
-  <ProcessFlows />
-  <Description />
   <Name>Orders</Name>
+  <Description />
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
-  <IsPrivate>false</IsPrivate>
-  <Bindings />
+  <AllowMultipleInstances>true</AllowMultipleInstances>
+  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
   <SubscriberId>Orders</SubscriberId>
   <ClientGroup>General</ClientGroup>
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
+  <Anonymous>true</Anonymous>
   <Subscriptions>
     <Subscription>
       <TopicName>Orders</TopicName>
-      <TopicId />
       <CanRead>true</CanRead>
       <CanWrite>false</CanWrite>
       <MatchMessagePatterns />
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
   </Subscriptions>
-  <Anonymous>true</Anonymous>
-  <AllowMultipleInstances>true</AllowMultipleInstances>
   <LogActivity>false</LogActivity>
-  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <LogFile />
+  <LogSession>true</LogSession>
 </ESBSubscriber>

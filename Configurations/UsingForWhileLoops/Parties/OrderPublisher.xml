@@ -1,7 +1,7 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>15b1d311-2926-48f7-b5f2-12e65ac797d8</Id>
-  <Version>12a85262-25dd-45e5-895f-3170ff76578a</Version>
+  <Version>ef30959a-ae10-4fc5-9429-ce607382251f</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -24,10 +24,36 @@
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
   </Subscriptions>
-  <ACL />
   <Anonymous>true</Anonymous>
   <AllowMultipleInstances>true</AllowMultipleInstances>
-  <MessagePipelines />
+  <MessagePipelines>
+    <ClientPipelineItem>
+      <Id>c74d8ac7-6b1b-4fe8-93d6-9a78f95a46e1</Id>
+      <Version>b0b7a863-f03b-4bb3-bb61-5a44f71e8666</Version>
+      <BusinessFlows />
+      <ProcessFlows />
+      <Description />
+      <Name>For Loop</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>9aa2fe48-8c4a-41f7-a314-61c6c317760d</Id>
+        <Version>6bf5e462-38c0-4ed7-9998-494c6175972d</Version>
+        <BusinessFlows />
+        <ProcessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <SelectedTagList />
+          <AvailableForOther>false</AvailableForOther>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+  </MessagePipelines>
   <LogActivity>false</LogActivity>
-  <UseUniqueWmiCounterName>false</UseUniqueWmiCounterName>
+  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <IsWorkflowManager>false</IsWorkflowManager>
 </ESBSubscriber>

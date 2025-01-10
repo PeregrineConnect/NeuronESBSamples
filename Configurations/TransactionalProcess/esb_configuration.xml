@@ -1,25 +1,29 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>24</Version>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>27</Version>
   <EnvironmentName>TransactionalProcess</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>TransactionalProcess</ApplicationName>
   <ApplicationId>ec334fe4-fe57-4dbb-a606-8355cf4c6a5a</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
-      <string>Edit,Enterprise,topic,Orders</string>
+      <string>Edit,*,pipeline,DB Transactional</string>
+      <string>Edit,Enterprise,publisher,OrderStorer</string>
+      <string>Edit,*,pipeline,DB Non-Transactional</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:20:35.7571122Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedBy>Unknown</LastModifiedBy>
+    <LastModifiedDate>2025-01-09T13:51:53.6409048Z</LastModifiedDate>
+    <Comments>Edited pipeline named 'DB Transactional' in *", Edited publisher named 'OrderStorer' in Enterprise", Edited pipeline named 'DB Non-Transactional' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -42,6 +46,7 @@
           <Id>1a23c52d-fca3-4b51-850c-5913263e044d</Id>
           <Version />
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <Name>OrdersTestMessage</Name>
           <Group>General</Group>
@@ -70,13 +75,13 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

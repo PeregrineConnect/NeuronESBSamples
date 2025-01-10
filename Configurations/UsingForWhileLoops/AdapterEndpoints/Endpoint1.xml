@@ -13,7 +13,7 @@
   <FarmSingleInstance>false</FarmSingleInstance>
   <Enabled>true</Enabled>
   <Zone>Enterprise</Zone>
-  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
   <IncludeMetadata>false</IncludeMetadata>
   <AdapterName>Microsoft SharePoint</AdapterName>
   <AdapterAssembly>Neuron.NetX.Adapters.SharePoint.dll</AdapterAssembly>
@@ -65,7 +65,7 @@
   <AdapterBindings />
   <PartyId>OrderProcessor</PartyId>
   <RunAs />
-  <AdapterPolicy>Default</AdapterPolicy>
+  <AdapterPolicy>Default_Adapter</AdapterPolicy>
   <PoolSize>1</PoolSize>
   <ProcessingThreads>1</ProcessingThreads>
 </ESBEndpoint>

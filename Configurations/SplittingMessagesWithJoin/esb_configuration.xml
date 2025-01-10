@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Version>29</Version>
-  <EnvironmentName>SplittingMessagesWithJoin_Converted</EnvironmentName>
-  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
+  <EnvironmentName>SplittingMessagesWithJoin</EnvironmentName>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>SplittingMessagesWithJoin</ApplicationName>
   <ApplicationId>cea0f4a0-c575-43af-9cae-e8f904896e8e</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,*,pipeline,Split Orders - Code</string>
+      <string>Edit,Enterprise,publisher,OrderSplitter</string>
     </Revisions>
     <Deletions />
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-08-05T07:41:35.219944Z</LastModifiedDate>
-    <Comments>Edited pipeline named 'Split Orders - Code' in *"</Comments>
+    <LastModifiedDate>2025-01-09T09:27:41.5593534Z</LastModifiedDate>
+    <Comments>Edited publisher named 'OrderSplitter' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -76,8 +79,7 @@
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

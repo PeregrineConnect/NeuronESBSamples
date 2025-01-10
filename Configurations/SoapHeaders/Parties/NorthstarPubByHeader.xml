@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>02b1ebdf-c46a-4697-a51b-b1f1ca4b08d7</Id>
-  <Version>ec76b4e9-2649-4f80-8698-09fd36de42d5</Version>
+  <Version>0807ed92-7e82-4e87-bc76-13096bf6cd29</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -59,10 +59,14 @@
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
-        <Condition />
+        <Condition>
+          <SelectedTagList />
+          <AvailableForOther>false</AvailableForOther>
+        </Condition>
       </PipelineConditions>
     </ClientPipelineItem>
   </MessagePipelines>
   <LogActivity>false</LogActivity>
   <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <IsWorkflowManager>false</IsWorkflowManager>
 </ESBSubscriber>
