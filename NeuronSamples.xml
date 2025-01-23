@@ -57,7 +57,7 @@
          />
 
   <Sample tree     = "Adapters/Custom Adapters"
-          name     = "Backbone Adapter"
+          name     = "Backbone Name Adapter"
           desc     = "This sample is a Visual Studio Solution that contains the Backbone Adapter. The Backbone Adapter contains all the base functions and libraries that enable custom Backbone Adapter development. Developers using this can create rich Backbone Adapters that support the message exchange patterns exposed by many of the native Backbone Adapters, such as Publish, Subscribe, Request/Response and Solicit/Response mode adapters. A rich set of custom properties and meta data can be included for design time configuration within the Peregrine Design Studio when configuring an Adapter Endpoint."
           config   = ""
           folder   = "CustomAdapters\Backbone-Name-Adapter"
