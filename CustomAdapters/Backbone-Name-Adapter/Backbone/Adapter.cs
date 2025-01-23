@@ -56,7 +56,7 @@ namespace Neuron.NetX.Sample.Adapters
         #endregion
 
         #region private properties
-        private List<NameValuePair> MessageProperties = new List<NameValuePair>();    // reference to the Neuron ESB custom message properties populated by custom adapter
+        private List<NameValuePair> MessageProperties = new List<NameValuePair>();    // reference to the Backbone custom message properties populated by custom adapter
         private Thread _receiveThread;                                          // Receive thread used to start polling function to support default Pubish mode
         private int _pollFailCount = 0;                                         // Used to track errors generated to support failure mode error handling options during polling
         private bool _reportPollingErrors = true;                               // Determines whether or not to report the error during polling. used in conjunction with failure mode error handling options
@@ -157,9 +157,9 @@ namespace Neuron.NetX.Sample.Adapters
             // custom message properties should be collected and persisted and/or retreived from the message
             if (IncludeMetadata) MessageProperties.Add(new NameValuePair("Mode", this._adapterMode.ModeName));
 
-            // get a copy of the esb configuration.  Used primarily for custom error handling and for instantiating the Neuron Message 
+            // get a copy of the Backbone configuration.  Used primarily for custom error handling and for instantiating the Neuron Message 
             // Audit service used for publish mode exceptions.
-            RaiseAdapterInfo(ErrorLevel.Verbose, Configuration == null ? "ESB Configuration Is NULL" : "ESB Configuration returned");
+            RaiseAdapterInfo(ErrorLevel.Verbose, Configuration == null ? "Backbone Configuration Is NULL" : "Backbone Configuration returned");
 
             // call user defined method
             ConnectAdapter();
@@ -356,7 +356,7 @@ namespace Neuron.NetX.Sample.Adapters
             return sb.ToString();
         }
         /// <summary>
-        /// Returns the Neuron ESB specific error level for the adapterbase's RaiseAdapterError() call which is consistent with the 
+        /// Returns the Backbone specific error level for the adapterbase's RaiseAdapterError() call which is consistent with the 
         /// selected ErrorMode property of the adapter
         /// </summary>
         /// <returns></returns>

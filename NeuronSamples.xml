@@ -37,7 +37,7 @@
          />
   <Sample tree     = "Adapters"
           name     = "ODBC Adapter"
-          desc     = "There are two ways to integrate with databases in Neuron ESB.  The first way is to use the ODBC adapter included with Neuron ESB.  This supports polling, inserting,updating and querying any database using an ODBC Driver/DSN.  The second way to integrate with databases is to use any of the database process steps – ODBC, Store, Table Query and XML Query.  The later three steps are restricted to only Microsoft SQL Server.  The ODBC adapter can be used to integrate with any ODBC datasource.  This sample demonstrates how to integrate with Microsoft SQL Server using the ODBC adapter."
+          desc     = "There are two ways to integrate with databases in Backbone.  The first way is to use the ODBC adapter included with Backbone.  This supports polling, inserting,updating and querying any database using an ODBC Driver/DSN.  The second way to integrate with databases is to use any of the database process steps – ODBC, Store, Table Query and XML Query.  The later three steps are restricted to only Microsoft SQL Server.  The ODBC adapter can be used to integrate with any ODBC datasource.  This sample demonstrates how to integrate with Microsoft SQL Server using the ODBC adapter."
           config   = "OdbcAdapter"
           folder   = ""
           solution = ""
@@ -57,11 +57,11 @@
          />
 
   <Sample tree     = "Adapters/Custom Adapters"
-          name     = "Neuron ESB Adapter"
-          desc     = "This sample is a Visual Studio Solution that contains the Neuron ESB Adapter. The Neuron ESB Adapter contains all the base functions and libraries that enable custom Neuron ESB Adapter development. Developers using this can create rich Neuron ESB Adapters that support the message exchange patterns exposed by many of the native Neuron ESB Adapters, such as Publish, Subscribe, Request/Response and Solicit/Response mode adapters. A rich set of custom properties and meta data can be included for design time configuration within the Neuron ESB Explorer when configuring an Adapter Endpoint."
+          name     = "Backbone Adapter"
+          desc     = "This sample is a Visual Studio Solution that contains the Backbone Adapter. The Backbone Adapter contains all the base functions and libraries that enable custom Backbone Adapter development. Developers using this can create rich Backbone Adapters that support the message exchange patterns exposed by many of the native Backbone Adapters, such as Publish, Subscribe, Request/Response and Solicit/Response mode adapters. A rich set of custom properties and meta data can be included for design time configuration within the Peregrine Design Studio when configuring an Adapter Endpoint."
           config   = ""
-          folder   = "CustomAdapters\Neuron-Name-Adapter"
-          solution = "Neuron-Name-Adapter.sln"
+          folder   = "CustomAdapters\Backbone-Name-Adapter"
+          solution = "Backbone-Name-Adapter.sln"
           help     = "https://www.peregrineconnect.com/documentation-kb/adapter-framework/"
           setup    = "0"
           clients  = "0"
@@ -329,7 +329,7 @@
 
   <Sample tree     = "Processes"
           name     = "ODBC Process Step"
-          desc     = "There are two ways to integrate with databases in Neuron ESB.  The first way is to use the ODBC adapter included with Neuron ESB. This supports polling, inserting,updating and querying any database using an ODBC Driver/DSN.  The second way to integrate with databases is to use any of the database process steps – ODBC, Store, Table Query and XML Query.  The later three steps are restricted to only Microsoft SQL Server.  The ODBC process step can be used to integrate with any ODBC datasource.  This sample demonstrates how to integrate with Microsoft SQL Server using the ODBC process step."
+          desc     = "There are two ways to integrate with databases in Backbone.  The first way is to use the ODBC adapter included with Backbone. This supports polling, inserting,updating and querying any database using an ODBC Driver/DSN.  The second way to integrate with databases is to use any of the database process steps – ODBC, Store, Table Query and XML Query.  The later three steps are restricted to only Microsoft SQL Server.  The ODBC process step can be used to integrate with any ODBC datasource.  This sample demonstrates how to integrate with Microsoft SQL Server using the ODBC process step."
           config   = "OdbcProcessStep"
           folder   = "Processes"
           solution = ""
@@ -430,7 +430,7 @@
 
   <Sample tree     = "Scenarios/Chat"
           name     = "Chat"
-          desc     = "Neuron offers a distributable .NET Neuron ESB Client API that allow users to effectively “host” the Enterprise Service Bus (ESB) within their own .NET Applications, remote from the central Neuron ESB Server. The Neuron ESB Client API can communicate either with Topics via the central Neuron ESB Server, or directly to other hosted Neuron ESB clients. These hosted Neuron ESB Clients can be easily distributed across the network where Business Processes can be associated with them and executed within the environment they are hosted in.  This sample demonstrates how the Client API can be used to implement a chat application."
+          desc     = "Neuron offers a distributable .NET Backbone Client API that allow users to effectively “host” the Enterprise Service Bus (ESB) within their own .NET Applications, remote from the central Backbone Server. The Backbone Client API can communicate either with Topics via the central Backbone Server, or directly to other hosted Backbone clients. These hosted Backbone Clients can be easily distributed across the network where Business Processes can be associated with them and executed within the environment they are hosted in.  This sample demonstrates how the Client API can be used to implement a chat application."
           config   = "Chat"
           folder   = "Scenarios\Chat"
           solution = "Chat.sln"
@@ -441,7 +441,7 @@
 		  
   <Sample tree     = "Scenarios/COM Interop Sample"
           name     = "COM Interop to ESB using Excel"
-          desc     = "Neuron offers a distributable .NET Neuron ESB Client API that allow users to effectively “host” the Enterprise Service Bus (ESB) within their own .NET Applications, remote from the central Neuron ESB Server. The Neuron ESB Client API can communicate either with Topics via the central Neuron ESB Server, or directly to other hosted Neuron ESB clients. These hosted Neuron ESB Clients can be easily distributed across the network where Business Processes can be associated with them and executed within the environment they are hosted in.  Using .NET COM Interoperability features, the Neuron ESB Client API may be exposed as a COM library that can be used within scripting environments such as VBScript and WScript or within development environments like Microsoft Office VBA applications, PowerBuilder or Foxpro."
+          desc     = "Neuron offers a distributable .NET Backbone Client API that allow users to effectively “host” the Enterprise Service Bus (ESB) within their own .NET Applications, remote from the central Backbone Server. The Backbone Client API can communicate either with Topics via the central Backbone Server, or directly to other hosted Backbone clients. These hosted Backbone Clients can be easily distributed across the network where Business Processes can be associated with them and executed within the environment they are hosted in.  Using .NET COM Interoperability features, the Backbone Client API may be exposed as a COM library that can be used within scripting environments such as VBScript and WScript or within development environments like Microsoft Office VBA applications, PowerBuilder or Foxpro."
           config   = "NeuronCOMSample"
           folder   = "Scenarios\NeuronCOM"
           solution = "Neuron.Excel.Interop.sln"
@@ -463,7 +463,7 @@
 		  
    <Sample tree    = "Services"
           name     = "Using Service Routing Tables"
-          desc     = "Service Routing tables provide a very low latency way of implementing basic Neuron ESB scenarios of mocking, mapping, and routing services without the overhead of a Business Process. This sample demonstrates using Service Routing Tables in a variety of use cases."
+          desc     = "Service Routing tables provide a very low latency way of implementing basic Backbone scenarios of mocking, mapping, and routing services without the overhead of a Business Process. This sample demonstrates using Service Routing Tables in a variety of use cases."
           config   = "ServiceRoutingTablesSample"
           folder   = "Services\RoutingAndTracingWCF"
           solution = "RoutingAndTracingWCF.sln"
@@ -496,7 +496,7 @@
 
   <Sample tree     = "Scenarios/Custom Scheduled Job"
           name     = "Peregrine MS Custom Job Scheduling"
-          desc     = "The Peregrine Connect Management Suite Scheduler can schedule any job within an enterprise or even outside Neuron ESB. Using the Custom Job function, you can implement your solution with Visual Studio or any .NET language. The custom job defined when using the Peregrine Connect Management Suite can be configured, triggered, and monitored. This sample illustrates a how to implement the custom job functionality. In addition, it will demonstrate how to check log folders for specific log files containing keywords and emails. This sample can be used as a guide for any other functionality you choose to implement."
+          desc     = "The Peregrine Connect Management Suite Scheduler can schedule any job within an enterprise or even outside Backbone. Using the Custom Job function, you can implement your solution with Visual Studio or any .NET language. The custom job defined when using the Peregrine Connect Management Suite can be configured, triggered, and monitored. This sample illustrates a how to implement the custom job functionality. In addition, it will demonstrate how to check log folders for specific log files containing keywords and emails. This sample can be used as a guide for any other functionality you choose to implement."
           config   = ""
           folder   = "Scenarios\CustomLogMonitorJob"
           solution = "CustomLogMonitor.sln"
@@ -507,7 +507,7 @@
   
   <Sample tree     = "Scenarios/Scheduled Job"
           name     = "Peregrine MS Job Scheduling using Business Process"
-          desc     = "The Peregrine Connect Management Suite Scheduler sample will show you how to setup the Job Scheduler and run Business Process jobs hosted in Neuron ESB 3.7.5."
+          desc     = "The Peregrine Connect Management Suite Scheduler sample will show you how to setup the Job Scheduler and run Business Process jobs hosted in Backbone."
           config   = ""
           folder   = ""
           solution = ""
@@ -611,7 +611,7 @@
 
   <Sample tree   = "Services/Transports/BasicHttp"
           name     = "One-Way"
-          desc     = "The transport samples demonstrate using Neuron ESB Client Connectors and Service Connectors.  This sample demonstrates the use of the basicHttp binding with a one-way service call."
+          desc     = "The transport samples demonstrate using Backbone Client Connectors and Service Connectors.  This sample demonstrates the use of the basicHttp binding with a one-way service call."
           config   = "Transports_BasicHttp"
           folder   = "Services\Transports\BasicHttp\OneWayService"
           solution = "OneWayService.sln"
@@ -622,7 +622,7 @@
 		  
   <Sample tree   = "Services/Transports/BasicHttp"
           name     = "Request-Reply"
-          desc     = "The transport samples demonstrate using Neuron ESB Client Connectors and Service Connectors.  This sample demonstrates the use of the basicHttp binding with a request-reply service call."
+          desc     = "The transport samples demonstrate using Backbone Client Connectors and Service Connectors.  This sample demonstrates the use of the basicHttp binding with a request-reply service call."
           config   = "Transports_BasicHttp"
           folder   = "Services\Transports\BasicHttp\RequestReplyService"
           solution = "RequestReplyService.sln"
@@ -633,7 +633,7 @@
 		  
   <Sample tree   = "Services/Transports/NetMsmq"
           name     = "One-Way"
-          desc     = "The transport samples demonstrate using Neuron ESB Client Connectors and Service Connectors.  This sample demonstrates the use of the netMsmq binding with a one-way service call."
+          desc     = "The transport samples demonstrate using Backbone Client Connectors and Service Connectors.  This sample demonstrates the use of the netMsmq binding with a one-way service call."
           config   = "Transports_NetMsmq"
           folder   = "Services\Transports\NetMsmq\OneWayService"
           solution = "OneWayService.sln"
@@ -644,7 +644,7 @@
 		  
   <Sample tree   = "Services/Transports/NetTcp"
           name     = "One-Way"
-          desc     = "The transport samples demonstrate using Neuron ESB Client Connectors and Service Connectors.  This sample demonstrates the use of the netTcp binding with a one-way service call."
+          desc     = "The transport samples demonstrate using Backbone Client Connectors and Service Connectors.  This sample demonstrates the use of the netTcp binding with a one-way service call."
           config   = "Transports_NetTcp"
           folder   = "Services\Transports\NetTcp\OneWayService"
           solution = "OneWayService.sln"
@@ -655,7 +655,7 @@
 		  
   <Sample tree   = "Services/Transports/NetTcp"
           name     = "Request-Reply"
-          desc     = "The transport samples demonstrate using Neuron ESB Client Connectors and Service Connectors.  This sample demonstrates the use of the netTcp binding with a request-reply service call."
+          desc     = "The transport samples demonstrate using Backbone Client Connectors and Service Connectors.  This sample demonstrates the use of the netTcp binding with a request-reply service call."
           config   = "Transports_NetTcp"
           folder   = "Services\Transports\NetTcp\RequestReplyService"
           solution = "RequestReplyService.sln"
@@ -666,7 +666,7 @@
 		  
   <Sample tree     = "Services/Transports/WSHttp"
           name     = "One-Way"
-          desc     = "The transport samples demonstrate using Neuron ESB Client Connectors and Service Connectors.  This sample demonstrates the use of the wsHttp binding with a one-way service call."
+          desc     = "The transport samples demonstrate using Backbone Client Connectors and Service Connectors.  This sample demonstrates the use of the wsHttp binding with a one-way service call."
           config   = "Transports_WSHttp"
           folder   = "Services\Transports\WSHttp\OneWayService"
           solution = "OneWayService.sln"
@@ -677,7 +677,7 @@
 		  
   <Sample tree     = "Services/Transports/WSHttp"
           name     = "Request-Reply"
-          desc     = "The transport samples demonstrate using Neuron ESB Client Connectors and Service Connectors.  This sample demonstrates the use of the wsHttp binding with a request-reply service call."
+          desc     = "The transport samples demonstrate using Backbone Client Connectors and Service Connectors.  This sample demonstrates the use of the wsHttp binding with a request-reply service call."
           config   = "Transports_WSHttp"
           folder   = "Services\Transports\WSHttp\RequestReplyService"
           solution = "RequestReplyService.sln"
@@ -733,7 +733,7 @@
   
   <Sample tree     = "Workflows/Custom Activities"
           name     = "Developing a Custom Workflow Activity"
-          desc     = "This sample demonstrates how to create a custom workflow activity that generates lorem ipsum text.  To test, compile the solution, copy the assembly to the \Program Files\Neuron ESB v3\DEFAULT\Workflows folder and restart the Neuron Explorer."
+          desc     = "This sample demonstrates how to create a custom workflow activity that generates lorem ipsum text.  To test, compile the solution, copy the assembly to the \Program Files\Backbone\DEFAULT\Workflows folder and restart the Neuron Explorer."
           config   = ""
           folder   = "Workflows\SampleDataActivityLibrary"
           solution = "SampleDataActivityLibrary.sln"
@@ -744,7 +744,7 @@
 
   <Sample tree     = "Workflows/Microsoft WF Samples"
           name     = "Importing a Microsoft Workflow Sample"
-          desc     = "This sample demonstrates how to import the Switch activity that ships with the Microsoft samples into Neuron ESB Explorer.  This sample contains only documentation and requires that you install the Windows Workflow (WF) Samples from the Microsoft site."
+          desc     = "This sample demonstrates how to import the Switch activity that ships with the Microsoft samples into Peregrine Design Studio.  This sample contains only documentation and requires that you install the Windows Workflow (WF) Samples from the Microsoft site."
           config   = ""
           folder   = "Workflows"
           solution = ""

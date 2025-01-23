@@ -9,7 +9,7 @@ using System.ServiceModel;
 namespace Neuron.NetX.Sample.Adapters
 {
     /// <summary>
-    /// Sample type converter demonstrates how to access the Neuron ESB Configuration at design time to show a list of 
+    /// Sample type converter demonstrates how to access the Backbone Configuration at design time to show a list of 
     /// entities for user selection within the adapter's property grid. The CertificateConverter() class returns a list of 
     /// server certificates stored in the currently loaded configuration within the Neuron Explorer. 
     /// </summary>
@@ -52,9 +52,9 @@ namespace Neuron.NetX.Sample.Adapters
             }
             catch (EndpointNotFoundException)
             {
-                //MessageBox.Show( string.Format(CultureInfo.InvariantCulture,"Exception occurred while retrieveing the list of Server Certificates from the \r\nNeuron ESB Server. Please confirm that the Neuron ESB service \r\nis started."), string.Format(CultureInfo.InvariantCulture,"Adapter Property Configuration Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+				//MessageBox.Show( string.Format(CultureInfo.InvariantCulture,"Exception occurred while retrieveing the list of Server Certificates from the \r\nBackbone Server. Please confirm that the Backbone service \r\nis started."), string.Format(CultureInfo.InvariantCulture,"Adapter Property Configuration Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                AdapterErrorComponent.AddToErrorComponent(context.Container, string.Format(CultureInfo.InvariantCulture, "Exception occurred while retrieveing the list of Server Certificates from the \r\nNeuron ESB Server. Please confirm that the Neuron ESB service \r\nis started."), string.Format(CultureInfo.InvariantCulture, "Adapter Property Configuration Error"));
+				AdapterErrorComponent.AddToErrorComponent(context.Container, string.Format(CultureInfo.InvariantCulture, "Exception occurred while retrieveing the list of Server Certificates from the \r\nBackbone Server. Please confirm that the Backbone service \r\nis started."), string.Format(CultureInfo.InvariantCulture, "Adapter Property Configuration Error"));
 
 
             }
