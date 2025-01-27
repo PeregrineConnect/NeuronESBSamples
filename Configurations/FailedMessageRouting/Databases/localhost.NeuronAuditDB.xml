@@ -53,7 +53,7 @@
   <DbContainerHostPort>1433</DbContainerHostPort>
   <DbContainerHostname />
   <CatalogName>NeuronAuditDB</CatalogName>
-  <ConnectionString>10dc3vgWBmJ+wt1TDJcaGWyA1gwTbkZAarpoEBdPhGQJ2Ls9wnl2djoc/eqBBiW21iO3M9L0+pHR2EBydkhMqFKCHBOZrtDC2Z+39zAMLW8=</ConnectionString>
+  <ConnectionString>10dc3vgWBmJ+wt1TDJcaGWyA1gwTbkZAarpoEBdPhGQJ2Ls9wnl2djoc/eqBBiW21iO3M9L0+pHR2EBydkhMqIqalsu/OcqC7G4eHeAwvFew5OjjBz8sLC2K9uhQWwUw3oSrA4lNxIavulNLa723jQ==</ConnectionString>
   <Zone>(All Zones)</Zone>
   <DatabaseType>SQLServer</DatabaseType>
 </ESBDatabase>

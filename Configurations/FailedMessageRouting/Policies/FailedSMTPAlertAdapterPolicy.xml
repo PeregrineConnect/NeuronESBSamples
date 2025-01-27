@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ESBAdapterPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ESBPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>89d5d118-57d6-41e7-b14e-3820c354a6fb</Id>
   <Version>2ec6ae71-3418-4445-b09b-6f883aa407c6</Version>
   <BusinessFlows />
@@ -9,16 +9,19 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
-  <RetryCount>1</RetryCount>
-  <RetryInterval>1</RetryInterval>
   <OnErrorAuditToDatabase>false</OnErrorAuditToDatabase>
   <OnErrorAuditToFile>true</OnErrorAuditToFile>
   <OnErrorRepublishMessage>false</OnErrorRepublishMessage>
-  <OnErrorRollback>false</OnErrorRollback>
   <RepublishTopic />
+  <OnErrorRollback>false</OnErrorRollback>
   <AlwaysAvailable>true</AlwaysAvailable>
-  <StartAndStopAdapterAccordingToAvailability>true</StartAndStopAdapterAccordingToAvailability>
-  <RollbackMessageExpirationSeconds>300</RollbackMessageExpirationSeconds>
-  <RollbackDelaySeconds>1</RollbackDelaySeconds>
+  <RetryCount>1</RetryCount>
+  <RetryInterval>1</RetryInterval>
   <AuditDirectoryLocation />
-</ESBAdapterPolicy>
+  <StartAndStopAdapterAccordingToAvailability>true</StartAndStopAdapterAccordingToAvailability>
+  <RequestReplyTimeout>60</RequestReplyTimeout>
+  <DoNotApplyPolicyIfFaultContract>false</DoNotApplyPolicyIfFaultContract>
+  <InlcudeAsExceptions>false</InlcudeAsExceptions>
+  <HttpStatusCodes />
+  <CustomHttpStatusCodes />
+</ESBPolicy>

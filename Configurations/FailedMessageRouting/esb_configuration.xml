@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>54</Version>
+  <Version>55</Version>
   <EnvironmentName>FailedMessageRouting</EnvironmentName>
-  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>FailedMessageRouting</ApplicationName>
   <ApplicationId>34290250-7469-4a1d-a1d6-f93297c73c0c</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
-    <Additions>
-      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
-    </Additions>
+    <Additions />
     <Revisions>
-      <string>Edit,Enterprise,topic,FailedMessages</string>
-      <string>Edit,Enterprise,topic,TestTopic</string>
-      <string>Edit,*,pipeline,Force Message Failure</string>
-      <string>Edit,Enterprise,publisher,TestTopicPublisher</string>
-      <string>Edit,*,pipeline,InboundFailuresSplitBatch</string>
-      <string>Edit,Enterprise,publisher,FailedMessagePublisher</string>
+      <string>Edit,Enterprise,deployment group,Dev</string>
+      <string>Edit,*,variable,NeuronAuditDatabaseConnectionString</string>
     </Revisions>
     <Deletions />
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-07-25T12:55:36.8136221Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedDate>2025-01-27T12:39:27.699333Z</LastModifiedDate>
+    <Comments>Edited deployment group named 'Dev' in Enterprise", Edited variable named 'NeuronAuditDatabaseConnectionString' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -83,8 +80,7 @@
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

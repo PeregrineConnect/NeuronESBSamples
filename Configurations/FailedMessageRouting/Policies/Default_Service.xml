@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ESBServicePolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ESBPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>4c78e2c0-c1f7-4322-bfd6-c59777d93509</Id>
   <Version>4139e609-5d2e-4aba-86bd-d86f341ab4dc</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description>Default service policy</Description>
-  <Name>Default</Name>
+  <Name>Default_Service</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
@@ -15,14 +15,12 @@
   <RepublishTopic />
   <OnErrorRollback>false</OnErrorRollback>
   <AlwaysAvailable>true</AlwaysAvailable>
-  <RequestReplyTimeout>60</RequestReplyTimeout>
-  <DoNotApplyPolicyIfFaultContract>false</DoNotApplyPolicyIfFaultContract>
   <RetryCount>1</RetryCount>
   <RetryInterval>1</RetryInterval>
-  <RollbackDelaySeconds>1</RollbackDelaySeconds>
-  <RollbackMessageExpirationSeconds>300</RollbackMessageExpirationSeconds>
-  <InlcudeAsExceptions>false</InlcudeAsExceptions>
   <StartAndStopAdapterAccordingToAvailability>true</StartAndStopAdapterAccordingToAvailability>
+  <RequestReplyTimeout>60</RequestReplyTimeout>
+  <DoNotApplyPolicyIfFaultContract>false</DoNotApplyPolicyIfFaultContract>
+  <InlcudeAsExceptions>false</InlcudeAsExceptions>
   <HttpStatusCodes />
   <CustomHttpStatusCodes />
-</ESBServicePolicy>
+</ESBPolicy>

@@ -15,7 +15,7 @@
         <string>NeuronAuditDatabaseConnectionString</string>
       </key>
       <value>
-        <string>/jQCGm999vBqXhQlvNwW+Rizab0SjkAupTtjMJxiv51A6u568FTIktJuRY0Gm3ym1vs44szQX5+W2o5g/W6dhv9I5rFpJtkb5cfYn+WLy4EdCBryEtddsw2FH5ZdEI2YvZK5Vi+86i2FC+CZfJTlPfCibcRYRViIGwOnrJpcbk/wT3v8oMnby9JVBGI3Ooog</string>
+        <string>/jQCGm999vBqXhQlvNwW+R3Fp7wk+UK+H2IoKWtyjcOBhykn9E7/8CA7yyXVbM3CZ8xf1WP8nbL6fE6zFLV20jl0MVdSIyHXomCMBVexKwc81kBs86rNcTo5sY7+8QkoVFQa1FTzFrnhqc8JP8d8d00bt4e6IfVZaq/PhirtpN+glWpaDJ5G4N6XEXzdGy6/4NAEjtyfKavdw++Z4TwIesDP8xHC2nnGMv1LXhMxY9JPp4XkqOOPLT7Agk4LiHvVnYWUMvyC9uUki80clRQGOwEsOjFQp1bpThNf6ALsA1E=</string>
       </value>
     </item>
     <item>
@@ -47,7 +47,7 @@
         <string>NeuronAuditDatabaseOdbcConnectionString</string>
       </key>
       <value>
-        <string>MpJPf9GxhvdAMQyAPeZPPn7Ua2xv2jBEH3ZU1esq+gi0oxtT50cqgBc1AxWvO57tK+LsRQcRQcDvkWabfqD4/3Cf3SqEpt1PQgd9mJcM9jErqmhdSbDuHsvIIvyuCS3HSbRQxjkFA6Y2ki9qWLQ51Eu1VEipoiWL1UP4gc646NxphIMP5PLv/gHq34SMR3FwZo2EpTGolzQ+9u6jTevgj7FmpqptybUXO88P5703TDwJiclw63r9Mk/PIK9FNSKX</string>
+        <string>MpJPf9GxhvdAMQyAPeZPPopdGg4KIvwoMugw5c7UPSuX5tLfwjpmmOnPsL2GhPhUzRdR4bpZqfUL1LdSHjYrdq5IfHOIY0caTlZkPLIwODtOq09e0B19aZP2KcFrrF/V39KlhmNs+rRH+029/3UkeO9fUZ2keDAfAyLM2aQLEdE0D45DI6pi5WmELbni6Qw31kOMYRAUpl5A+4QorAQ0tMxvUPll6rMS9pTgDxpSMCqjjazDWkNcttPiY76tMCp4</string>
       </value>
     </item>
   </NeuronEnvironmentVariables>
