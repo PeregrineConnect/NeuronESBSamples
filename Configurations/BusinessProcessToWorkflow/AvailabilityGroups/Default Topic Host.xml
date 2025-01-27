@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EsbAvailabilityGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>241193f7-7f18-4642-a2fe-0e1ce9274db6</Id>
-  <Version>0fffb861-9690-46d1-9231-d71310c5bf8a</Version>
+  <Version>1d744767-2f38-4712-a61a-14d4baa2b56c</Version>
   <BusinessFlows />
   <ProcessFlows />
-  <Description>Neuron ESB Default Host for Topics</Description>
-  <Name>Neuron ESB Default Topic Host</Name>
+  <Description>Default Host for Topics</Description>
+  <Name>Default Topic Host</Name>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
   <IsScheduler>false</IsScheduler>

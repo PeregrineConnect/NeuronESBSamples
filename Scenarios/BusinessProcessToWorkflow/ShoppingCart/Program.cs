@@ -123,7 +123,7 @@ namespace ShoppingCart
             }
             else if (input == ConsoleKey.D2)
             {
-                _publisher = new Publisher();
+                _publisher = new Publisher("OrdersPublisher");
                 SendMessage();
             }
             else

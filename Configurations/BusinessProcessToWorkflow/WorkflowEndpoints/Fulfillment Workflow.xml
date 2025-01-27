@@ -1,14 +1,15 @@
-<?xml version="1.0"?>
-<EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<EsbWorkflowHost xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>a44206ba-5e4a-4f64-9315-ac069fff9618</Id>
   <Version>fc74d19e-840a-4bac-8232-e8bed2ee2ba6</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>Fulfillment Workflow</Name>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
   <Bindings />
-  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
   <Category>General</Category>
   <Conditions>
     <Action>false</Action>
@@ -58,4 +59,5 @@
   <SubscriberId>OrdersSubscriber</SubscriberId>
   <Topic>Orders.Request</Topic>
   <WorkflowDefinitionId>Fulfillment Workflow</WorkflowDefinitionId>
+  <UseWorkflowManagerParty>false</UseWorkflowManagerParty>
 </EsbWorkflowHost>

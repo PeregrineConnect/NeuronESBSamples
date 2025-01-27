@@ -1,17 +1,17 @@
-<?xml version="1.0"?>
-<EsbAvailabilityGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<EsbAvailabilityGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>4c2dd1ad-17fc-42a6-915b-05e52ae34eea</Id>
-  <Version>8b31264e-65fd-481c-8cb2-3b6eafcc2c5e</Version>
+  <Version>a9154466-8928-4788-b07c-6850ea459010</Version>
   <BusinessFlows />
-  <Description>Neuron ESB Default Host for Endpoints</Description>
-  <Name>Neuron ESB Default Host</Name>
+  <ProcessFlows />
+  <Description>Default Host for Endpoints</Description>
+  <Name>Default Endpoint Host</Name>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
   <IsScheduler>false</IsScheduler>
   <Category>General</Category>
   <RunAs />
   <IsEnabled>true</IsEnabled>
-  <RunInDocker>false</RunInDocker>
   <IsLegacyHost>false</IsLegacyHost>
   <IsTopicHost>false</IsTopicHost>
   <DeploymentGroups>
@@ -24,6 +24,8 @@
           <RetryCount>0</RetryCount>
           <RetryInterval>0</RetryInterval>
           <IsEnabled>true</IsEnabled>
+          <AllocatedCores>0</AllocatedCores>
+          <AllocatedMemory>0</AllocatedMemory>
         </DeploymentServer>
       </Servers>
     </EsbAvailabilityGroupDeploymentGroupMapping>
