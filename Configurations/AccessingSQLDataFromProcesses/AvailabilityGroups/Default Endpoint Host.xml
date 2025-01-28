@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EsbAvailabilityGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>78f71652-bfc7-41ce-9233-faf282c1d8f4</Id>
-  <Version>e61fc9f1-79d9-4ac0-a90c-0c21f1d6abc8</Version>
+  <Id>67825f3a-6c84-4d34-adc7-5f16ed05df38</Id>
+  <Version>a21013ca-c12c-46c5-ad9e-087fa83d491c</Version>
   <BusinessFlows />
   <ProcessFlows />
-  <Description>Neuron ESB Default Host for Topics</Description>
-  <Name>Neuron ESB Default Topic Host</Name>
+  <Description>Default Host for Endpoints</Description>
+  <Name>Default Endpoint Host</Name>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
   <IsScheduler>false</IsScheduler>
@@ -13,7 +13,7 @@
   <RunAs />
   <IsEnabled>true</IsEnabled>
   <IsLegacyHost>false</IsLegacyHost>
-  <IsTopicHost>true</IsTopicHost>
+  <IsTopicHost>false</IsTopicHost>
   <DeploymentGroups>
     <EsbAvailabilityGroupDeploymentGroupMapping>
       <DeploymentGroup>Dev</DeploymentGroup>
