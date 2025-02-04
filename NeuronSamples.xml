@@ -381,7 +381,7 @@
           setup    = "0"
           clients  = "0"
           />
-		
+		  
   <Sample tree     = "Processes"
           name     = "Using For and While Loops"
           desc     = "This sample demonstrates how you can use For, For-Each, While and Break process steps to execute looping logic in your processes."
@@ -439,7 +439,7 @@
           clients  = "0"
           />
 		  
-  <Sample tree     = "Scenarios/COM Interop Sample"
+  <!-- <Sample tree     = "Scenarios/COM Interop Sample"
           name     = "COM Interop to ESB using Excel"
           desc     = "Neuron offers a distributable .NET Backbone Client API that allow users to effectively “host” the Enterprise Service Bus (ESB) within their own .NET Applications, remote from the central Backbone Server. The Backbone Client API can communicate either with Topics via the central Backbone Server, or directly to other hosted Backbone clients. These hosted Backbone Clients can be easily distributed across the network where Business Processes can be associated with them and executed within the environment they are hosted in.  Using .NET COM Interoperability features, the Backbone Client API may be exposed as a COM library that can be used within scripting environments such as VBScript and WScript or within development environments like Microsoft Office VBA applications, PowerBuilder or Foxpro."
           config   = "NeuronCOMSample"
@@ -448,7 +448,7 @@
           help     = "https://www.peregrineconnect.com/documentation-kb/neuron-com-interoperability/"
           setup    = "1"
           clients  = "1"
-          />
+          /> -->
 
   <Sample tree     = "Services"
           name     = "Exposing a WSDL in a Client Connector"
@@ -631,7 +631,7 @@
           clients  = "0"
           />
 		  
-  <Sample tree   = "Services/Transports/NetMsmq"
+  <!-- <Sample tree   = "Services/Transports/NetMsmq"
           name     = "One-Way"
           desc     = "The transport samples demonstrate using Backbone Client Connectors and Service Connectors.  This sample demonstrates the use of the netMsmq binding with a one-way service call."
           config   = "Transports_NetMsmq"
@@ -640,7 +640,7 @@
           help     = "https://www.peregrineconnect.com/documentation-kb/transport-samples/"
           setup    = "0"
           clients  = "0"
-          />
+          /> -->
 		  
   <Sample tree   = "Services/Transports/NetTcp"
           name     = "One-Way"
