@@ -3,6 +3,7 @@ using System.Transactions;
 using System;
 using System.Globalization;
 using Neuron.NetX.Adapters;
+using Neuron.NetX.Esb.Adapters;
 using Neuron.NetX;
 
 /// <summary>
@@ -23,6 +24,7 @@ namespace Neuron.NetX.Sample.Adapters
     /// Adapter.cs file would also have to be changed to ensure that both class names are identical since they are both marked
     /// as partial classes.
     /// </summary>
+    [AdapterConnector(EConnectorCategory.CustomConnectors, "Name Adapter", "Name Adapter " + "Connector")]
     public partial class NameAdapter
     {
         #region Constants and types
@@ -44,8 +46,6 @@ namespace Neuron.NetX.Sample.Adapters
         /// The _adapterName constant defines a "user friendly name" that is used to in the Adapter Registration screen within the 
         /// Peregrine Design Studio. Its the name listed in the drop down adapter list when registrating an adapter. 
         /// </summary>
-        private const string MetadataPrefix = "prefix";
-        private const string AdapterName = "Name Adapter";
         #endregion
 
         /// <summary>
@@ -235,7 +235,7 @@ namespace Neuron.NetX.Sample.Adapters
         ///     .[NameOfProperty].[Description of property]
         /// These properties will be displayed in the Set Properties Process Step as well.
         /// </remarks>
-        public NameAdapter()
+        public NameAdapter() : base("Name Adapter", "prefix")
         {
             AdapterModes = new AdapterMode[]
             { 
@@ -250,20 +250,20 @@ namespace Neuron.NetX.Sample.Adapters
 
             ESBAdapterCapabilities caps = new ESBAdapterCapabilities();
             caps.AdapterName = AdapterName;
-            caps.Prefix = MetadataPrefix;
+            caps.Prefix = base.AdapterPrefix;
 
 
             // SAMPLE: Sample context properties that will be exposed within Neuron. These can be viewed within the Set Properties Process Step 
             // **************************************************************
             caps.MetadataFieldInfo =
-                MetadataPrefix + ".Server:Name of FTP Server data is sent to or retreived from," +
-                MetadataPrefix + ".Port:FTP Server port," +
-                MetadataPrefix + ".Address:FTP Server address," +
-                MetadataPrefix + ".Username:User name for FTP Server," +
-                MetadataPrefix + ".Folder: Name of Ftp folder which file was retrieved," +
-                MetadataPrefix + ".Filename:Name of file received from, or sent to FTP Server," +
-                MetadataPrefix + ".Length: Lengeth of the file in bytes," + 
-                MetadataPrefix + ".Mode:Represents the configured Adapter Mode for the endpoint";
+                base.AdapterPrefix + ".Server:Name of FTP Server data is sent to or retreived from," +
+                base.AdapterPrefix + ".Port:FTP Server port," +
+                base.AdapterPrefix + ".Address:FTP Server address," +
+                base.AdapterPrefix + ".Username:User name for FTP Server," +
+                base.AdapterPrefix + ".Folder: Name of Ftp folder which file was retrieved," +
+                base.AdapterPrefix + ".Filename:Name of file received from, or sent to FTP Server," +
+                base.AdapterPrefix + ".Length: Lengeth of the file in bytes," + 
+                base.AdapterPrefix + ".Mode:Represents the configured Adapter Mode for the endpoint";
 
             // **************************************************************
             Capabilities = caps;
@@ -398,7 +398,7 @@ namespace Neuron.NetX.Sample.Adapters
             //message = CreateEsbMessage(new byte[1],MessageProperties,MetadataPrefix,PublishTopic);
 
             // OR
-            message = CreateEsbMessage("<xml>some data</xml>",MessageProperties,MetadataPrefix,PublishTopic);
+            message = CreateEsbMessage("<xml>some data</xml>",MessageProperties,base.AdapterPrefix,PublishTopic);
 
             // Once a message is received, publish to bus and await a reply
             ESBMessage reply = PublishEsbMessage(message, 60);
@@ -429,7 +429,7 @@ namespace Neuron.NetX.Sample.Adapters
             try
             {
                 // do work here
-                PublishReplyMessage(message, "some kind of response from previous query to back end system of choice",MessageProperties,MetadataPrefix);
+                PublishReplyMessage(message, "some kind of response from previous query to back end system of choice",MessageProperties,base.AdapterPrefix);
 
             }
             catch (Exception ex)
@@ -438,7 +438,7 @@ namespace Neuron.NetX.Sample.Adapters
                 /// and send that reply messsage back to the caller.  Otherwise, if the developer wants to simply report
                 /// the error and have the client timeout, have the adapter policy execute retries,etc then this 
                 /// Try/Catch should be commented out.
-                PublishReplyFromException(message, ex,MessageProperties,MetadataPrefix);
+                PublishReplyFromException(message, ex,MessageProperties,base.AdapterPrefix);
             }
         }
 
@@ -464,7 +464,7 @@ namespace Neuron.NetX.Sample.Adapters
                 //message = CreateEsbMessage(new byte[1], MessageProperties, MetadataPrefix, PublishTopic);
 
                 // OR
-                message = CreateEsbMessage("<xml>some data</xml>", MessageProperties, MetadataPrefix, PublishTopic);
+                message = CreateEsbMessage("<xml>some data</xml>", MessageProperties, base.AdapterPrefix, PublishTopic);
 
                 // PUBLISH ESB MESSAG TO BUS
                 PublishEsbMessage(message);

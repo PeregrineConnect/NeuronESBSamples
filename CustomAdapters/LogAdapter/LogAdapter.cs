@@ -8,6 +8,7 @@
 
 using Neuron.NetX;
 using Neuron.NetX.Adapters;
+using Neuron.NetX.Esb.Adapters;
 using System.ComponentModel;
 using System.Transactions;
 
@@ -29,6 +30,7 @@ namespace Neuron.NetX.Sample.Adapters
     /// Adapter.cs file would also have to be changed to ensure that both class names are identical since they are both marked
     /// as partial classes.
     /// </summary>
+    [AdapterConnector(EConnectorCategory.CustomConnectors, "Log Adapter", "Log Adapter " + "Connector")]
     public partial class LogAdapter
     {
         #region Constants and types
@@ -50,8 +52,6 @@ namespace Neuron.NetX.Sample.Adapters
         /// The _adapterName constant defines a "user friendly name" that is used to in the Adapter Registration screen within the 
         /// Neuron ESB Explorer. Its the name listed in the drop down adapter list when registrating an adapter. 
         /// </summary>
-        private const string MetadataPrefix = "log";
-        private const string AdapterName = "Log Adapter";
         #endregion
 
         /// <summary>
@@ -91,7 +91,7 @@ namespace Neuron.NetX.Sample.Adapters
         ///     .[NameOfProperty].[Description of property]
         /// These properties will be displayed in the Set Properties Process Step as well.
         /// </remarks>
-        public LogAdapter()
+        public LogAdapter() : base("Log Adapter", "log")
         {
             AdapterModes = new AdapterMode[]
             { 
@@ -102,13 +102,13 @@ namespace Neuron.NetX.Sample.Adapters
 
             ESBAdapterCapabilities caps = new ESBAdapterCapabilities();
             caps.AdapterName = AdapterName;
-            caps.Prefix = MetadataPrefix;
+            caps.Prefix = AdapterPrefix;
 
 
             // SAMPLE: Sample context properties that will be exposed within Neuron. These can be viewed within the Set Properties Process Step 
             // **************************************************************
             caps.MetadataFieldInfo =
-                MetadataPrefix + ".ErrorLevel:Error level messages will be written to the log";
+                AdapterPrefix + ".ErrorLevel:Error level messages will be written to the log";
 
             // **************************************************************
             Capabilities = caps;

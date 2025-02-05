@@ -12,7 +12,7 @@ namespace Neuron.NetX.Sample.Adapters
     /// base class.
     /// </summary>
     [TypeConverter(typeof(PropertiesTypeConverter))]
-    public partial class LogAdapter : ESBAdapterBase
+    public partial class LogAdapter : ESBCustomAdapterBase
     {
 
         #region Adapter Mode Enumeration and Classes
