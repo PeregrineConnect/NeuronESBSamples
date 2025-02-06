@@ -28,7 +28,7 @@
   <ServiceName>RESTClientConnector</ServiceName>
   <ServiceGroup>General</ServiceGroup>
   <Binding>REST</Binding>
-  <AvailabilityGroupId>Backbone Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>

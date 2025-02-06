@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EsbAvailabilityGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>1938740a-afe5-444a-a063-06c869414b1c</Id>
-  <Version>679f48f2-852b-4e6b-91cf-3ef751056a0d</Version>
+  <Id>fb222e83-8c22-4a82-bf5f-54cbac2bdbd2</Id>
+  <Version>eb5374aa-4309-4a40-8aa2-1473256b60d7</Version>
   <BusinessFlows />
   <ProcessFlows />
-  <Description>Backbone Default Host for Topics</Description>
-  <Name>Backbone Default Topic Host</Name>
+  <Description>Default Host for Topics</Description>
+  <Name>Default Topic Host</Name>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
   <IsScheduler>false</IsScheduler>

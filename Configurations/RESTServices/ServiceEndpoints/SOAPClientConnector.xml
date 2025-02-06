@@ -28,7 +28,7 @@
   <ServiceName>SOAPClientConnector</ServiceName>
   <ServiceGroup>General</ServiceGroup>
   <Binding>BasicHttp</Binding>
-  <AvailabilityGroupId>Backbone Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>

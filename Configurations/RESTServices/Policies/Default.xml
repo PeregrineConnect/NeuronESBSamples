@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>a9d824e6-2cbf-4a94-b863-be8834726b35</Id>
-  <Version>08e778fe-39da-48d9-99de-f1e1abc6d0bc</Version>
+  <Id>812922ac-0e50-4425-aa04-0243f74467c9</Id>
+  <Version>f80c5d84-bddc-414a-a46f-e015c6e63f89</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description>Default policy</Description>

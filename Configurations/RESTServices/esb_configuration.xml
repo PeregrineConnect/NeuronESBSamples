@@ -11,12 +11,13 @@
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,Enterprise,adapter endpoint,ImageFileSubscriberEndpoint</string>
+      <string>Edit,*,pipeline,REST to SQL</string>
+      <string>Edit,Enterprise,service endpoint,RESTtoSQLClientConnector</string>
     </Revisions>
     <Deletions />
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-01-01T13:07:31.6571758Z</LastModifiedDate>
-    <Comments>Edited adapter endpoint named 'ImageFileSubscriberEndpoint' in Enterprise"</Comments>
+    <LastModifiedDate>2025-02-06T05:33:29.9334245Z</LastModifiedDate>
+    <Comments>Edited pipeline named 'REST to SQL' in *", Edited service endpoint named 'RESTtoSQLClientConnector' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />

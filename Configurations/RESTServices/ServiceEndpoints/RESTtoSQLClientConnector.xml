@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>ad0b2551-836c-44b3-9b83-6505689017b3</Id>
-  <Version>615e5444-9909-43a9-93c0-219d869bc5c3</Version>
+  <Version>c60b55b7-abf0-4a59-9cba-1df8160d0ccb</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -28,7 +28,7 @@
   <ServiceName>RESTtoSQLClientConnector</ServiceName>
   <ServiceGroup>General</ServiceGroup>
   <Binding>REST</Binding>
-  <AvailabilityGroupId>Backbone Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
