@@ -25,8 +25,8 @@
     <Company>Peregrine Connect, LLC</Company>
     <Product>Chat</Product>
     <Copyright>Copyright © Peregrine Connect 2008</Copyright>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <FileVersion>3.6.0.814</FileVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <FileVersion>4.0.0.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Neuron.NetX">

@@ -9,7 +9,7 @@ namespace Neuron.Esb.Samples
     {
         static void Main(string[] args)
         {
-
+			Console.WriteLine("Press <ENTER> to submit the request to Neuron");
             Console.ReadLine();
             Utility.PipelineByWebService();
             Console.ReadLine();
@@ -29,9 +29,12 @@ namespace Neuron.Esb.Samples
         {
             XmlReader xmlReader = null;
             Message reqMsg = null;
-            
-            // Sending a request/response to a client connector
-            using (var chan = new ChannelFactory<IRequestChannel>(new WSHttpBinding(),
+
+            var wshttpBinding = new WSHttpBinding();
+			wshttpBinding.Security.Mode = SecurityMode.None;
+
+			// Sending a request/response to a client connector
+			using (var chan = new ChannelFactory<IRequestChannel>(wshttpBinding,
                                                     new EndpointAddress("http://localhost:9001")))
             {
                 var proxy = chan.CreateChannel();

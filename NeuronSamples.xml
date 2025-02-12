@@ -228,7 +228,7 @@
         name     = "Scatter Gather"
         desc     = "This sample demonstrates using Neuron to resolve a common scatter-gather application integration problem.  The Scatter Gather pattern is manifested when a requester sends an asynchronous request to a number of providers, which send their replies asynchronously to the requester. A common use for this pattern is when a request for quote is received, and that request must be broadcast out to N number of providers for bid. Each provider will (or may) reply to the request with their respective bid.  From there the replies are aggregated and the highest bidder may win."
         config   = "ScatterGatherProcessSample"
-        folder   = "Scenarios\ScatterGatherPattern"
+        folder   = "Patterns\ScatterGatherPattern"
         solution = "ScatterGatherSolution.sln"
         help     = "https://www.peregrineconnect.com/documentation-kb/scatter-gather-pattern/"
         setup    = "1"
