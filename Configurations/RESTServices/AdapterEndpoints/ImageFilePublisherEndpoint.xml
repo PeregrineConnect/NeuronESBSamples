@@ -53,7 +53,7 @@
   <Properties>
     <NameValuePair>
       <Name>Folder</Name>
-      <Value>C:\Program Files\Neudesic\Neuron ESB v3\Samples\Services\RESTServices\ImageREST\In</Value>
+      <Value>C:\Program Files\Peregrine\Design Studio\Samples\v1.0.0.0\Services\RESTServices\ImageREST\In</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>FileType</Name>
