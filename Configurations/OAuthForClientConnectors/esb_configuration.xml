@@ -1,29 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>44</Version>
-  <EnvironmentName>OAuthForClientConnectors_Converted</EnvironmentName>
-  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
+  <Version>45</Version>
+  <EnvironmentName>OAuthForClientConnectors</EnvironmentName>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>OAuthForClientConnectors</ApplicationName>
   <ApplicationId>3161653d-bab2-4aea-b96a-4d6f4179e418</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
     <Additions>
-      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Endpoint Host</string>
     </Additions>
     <Revisions>
       <string>Edit,Enterprise,topic,Playa</string>
-      <string>Edit,*,pipeline,OAuthSecuredProcess</string>
       <string>Edit,Enterprise,service endpoint,ClientConnectorOAuth</string>
       <string>Edit,Enterprise,service endpoint,ClientConnectorOAuthAzure</string>
+      <string>Edit,*,policy,Default</string>
     </Revisions>
-    <Deletions />
+    <Deletions>
+      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+    </Deletions>
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-07-25T10:02:52.442604Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedDate>2025-03-04T05:36:31.442036Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Playa' in Enterprise", Edited service endpoint named 'ClientConnectorOAuth' in Enterprise", Edited service endpoint named 'ClientConnectorOAuthAzure' in Enterprise", Edited policy named 'Default' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -58,8 +65,7 @@
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

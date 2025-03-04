@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>53</Version>
+  <Version>54</Version>
   <EnvironmentName>OdbcAdapter</EnvironmentName>
-  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>OdbcAdapter</ApplicationName>
   <ApplicationId>ddc6ea94-ee62-4289-bb9b-b723b2e186dc</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
     <Additions>
-      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Endpoint Host</string>
     </Additions>
     <Revisions>
       <string>Edit,Enterprise,topic,Orders</string>
-      <string>Edit,*,pipeline,Exception Handling</string>
-      <string>Edit,*,pipeline,Insert Orders</string>
-      <string>Edit,*,pipeline,Query - Stored Proc</string>
-      <string>Edit,*,pipeline,Query - Text</string>
-      <string>Edit,Enterprise,publisher,OrderPublisher</string>
+      <string>Edit,Enterprise,adapter endpoint,ODBCOrderInserts</string>
+      <string>Edit,Enterprise,adapter endpoint,ODBCOrderQueries</string>
+      <string>Edit,*,policy,Default</string>
     </Revisions>
-    <Deletions />
+    <Deletions>
+      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+    </Deletions>
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-07-25T12:42:53.1204366Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedDate>2025-03-04T05:14:51.7049978Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Orders' in Enterprise", Edited adapter endpoint named 'ODBCOrderInserts' in Enterprise", Edited adapter endpoint named 'ODBCOrderQueries' in Enterprise", Edited policy named 'Default' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -200,8 +205,7 @@
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>31</Version>
+  <Version>32</Version>
   <EnvironmentName>CorrelatedJoinWorkflow</EnvironmentName>
   <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
   <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
@@ -10,22 +10,19 @@
   <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
     <Additions>
-      <string>Add,*,endpoint host,Backbone Default Topic Host</string>
-      <string>Add,*,endpoint host,Backbone Default Host</string>
+      <string>Add,*,endpoint host,Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Endpoint Host</string>
     </Additions>
     <Revisions>
       <string>Edit,Enterprise,topic,Orders</string>
-      <string>Edit,*,workflow definition,Join Orders</string>
-      <string>Edit,*,workflow endpoint,OrdersEndpoint</string>
-      <string>Edit,Enterprise,deployment group,Dev</string>
     </Revisions>
     <Deletions>
-      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
-      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+      <string>delete,*,endpoint host,Backbone Default Topic Host</string>
+      <string>delete,*,endpoint host,Backbone Default Host</string>
     </Deletions>
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-12-27T13:36:25.689888Z</LastModifiedDate>
-    <Comments>Added a endpoint host named 'Backbone Default Topic Host' to *", Added a endpoint host named 'Backbone Default Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Orders' in Enterprise", Edited workflow definition named 'Join Orders' in *", Edited workflow endpoint named 'OrdersEndpoint' in *", Edited deployment group named 'Dev' in Enterprise"</Comments>
+    <LastModifiedDate>2025-03-04T05:51:31.2242825Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Backbone Default Topic Host' from *", Deleted the endpoint host named 'Backbone Default Host' from *", Edited topic named 'Orders' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />

@@ -1,18 +1,22 @@
-<?xml version="1.0"?>
-<ESBDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>f7038a5c-fc6a-49f1-a782-99db996f2b56</Id>
   <Version>d5ff0159-d7d1-49ec-af07-112cd7072d53</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>localhost.NeuronESB</Name>
   <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
   <Bindings />
   <Accounts>
     <Id>b5f60464-a9b7-41fa-baeb-c3e42389679b</Id>
     <Version>711a171b-cee8-4a78-aae3-551d89514dcb</Version>
     <BusinessFlows />
+    <ProcessFlows />
     <Description />
     <IsSystemObject>false</IsSystemObject>
+    <IsPrivate>false</IsPrivate>
     <AccessCheckType>Unknown</AccessCheckType>
     <AccessCheckItems>
       <ESBAccessCheckItem>
@@ -23,8 +27,10 @@
           <Id>042aa1c8-cc57-41a8-9a07-8d5f9d537d7f</Id>
           <Version>06a4f941-cbcf-4caf-8d92-967dda9ad850</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
           <Type>None</Type>
           <AccessCheckType>Unknown</AccessCheckType>
           <SID>S-1-5-18</SID>
@@ -36,8 +42,13 @@
       </ESBAccessCheckItem>
     </AccessCheckItems>
   </Accounts>
+  <UseNeuronDbImage>false</UseNeuronDbImage>
+  <BypassChecks>false</BypassChecks>
+  <UseAlternateSettings>false</UseAlternateSettings>
+  <DbContainerHostPort>1433</DbContainerHostPort>
+  <DbContainerHostname />
   <CatalogName>NeuronESB</CatalogName>
-  <ConnectionString>10dc3vgWBmJ+wt1TDJcaGWyA1gwTbkZAarpoEBdPhGS2OtDSmSPuXHoRTLsFTvGG8eE/eD3G8W/nPHXCRDvtXvZIPAQYWM0IPzkHOhBSslg=</ConnectionString>
+  <ConnectionString>10dc3vgWBmJ+wt1TDJcaGWyA1gwTbkZAarpoEBdPhGS2OtDSmSPuXHoRTLsFTvGG8eE/eD3G8W/nPHXCRDvtXvi/Gam4d9TI7XD5hDRiE64KHKB4a/a4PSkSs/gdF6FUxFblWuC6kEoVZp79rpsiFQ==</ConnectionString>
   <Zone>(All Zones)</Zone>
   <DatabaseType>SQLServer</DatabaseType>
 </ESBDatabase>

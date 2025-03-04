@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBTopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>5b9e231d-34c5-4fc5-8715-aa0d44674288</Id>
   <Version>a0fab8e4-1147-40fc-a72d-4d40edbc7c57</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description>Request-reply inqurieis</Description>
   <Name>Inquiries</Name>
   <Group>General</Group>
@@ -13,18 +14,22 @@
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
+      <Id>04fce23f-40f0-4090-9793-75cd171045a6</Id>
       <Name>Inquiries.RequestReply</Name>
       <Description />
     </Subtopic>
     <Subtopic>
+      <Id>b3cced1b-6ab3-47ea-8e81-058724af70bb</Id>
       <Name>Inquiries.basicHttpBinding</Name>
       <Description />
     </Subtopic>
     <Subtopic>
+      <Id>a7e846bc-ac45-455b-94d2-029977e33003</Id>
       <Name>Inquiries.wsHttpBinding</Name>
       <Description />
     </Subtopic>
     <Subtopic>
+      <Id>54afaadf-993b-4515-8216-6e584ca63b58</Id>
       <Name>Inquiries.netTcpBinding</Name>
       <Description />
     </Subtopic>
@@ -132,4 +137,6 @@
   <Encrypted>false</Encrypted>
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
+  <IsWorkflowManager>false</IsWorkflowManager>
+  <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

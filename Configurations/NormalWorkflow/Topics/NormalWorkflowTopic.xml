@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBTopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>c5ec0323-dd03-4f41-a203-bd16be0f7e52</Id>
   <Version>382453d8-e7ca-442c-81aa-7bec46e8b831</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>NormalWorkflowTopic</Name>
   <Group>General</Group>
@@ -114,4 +115,6 @@
   <Encrypted>false</Encrypted>
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
+  <IsWorkflowManager>false</IsWorkflowManager>
+  <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

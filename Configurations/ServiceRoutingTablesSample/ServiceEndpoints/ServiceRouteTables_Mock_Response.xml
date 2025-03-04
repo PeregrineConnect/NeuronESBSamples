@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>abfc9dd7-6e8e-4951-ac22-6eb537047bcb</Id>
   <Version>c10a7590-6fac-4659-8758-15716ef011e2</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description>This connector is an example that returns a mock test response without ever calling the service at the other end.  Simply invoke the client connector with browser URL or Postman GET request to test.</Description>
   <Name>ServiceRouteTables_Mock_Response</Name>
   <Group>General</Group>
@@ -21,15 +22,17 @@
     <Port>0</Port>
     <BypassLocalAddress>false</BypassLocalAddress>
   </ProxySettings>
+  <DebugInfo />
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
   <ServiceName>ServiceRouteTables_Mock_Response</ServiceName>
   <ServiceGroup>General</ServiceGroup>
   <Binding>REST</Binding>
-  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <ProcessMultipartMessages>false</ProcessMultipartMessages>
   <TransactionType>None</TransactionType>
   <MaxMessageSize>1000000</MaxMessageSize>
   <ReliableMessaging>false</ReliableMessaging>
@@ -76,7 +79,7 @@
   <ServiceSubscriberId />
   <ReuseServiceConnection>true</ReuseServiceConnection>
   <ServerCertName />
-  <ServicePolicy>Default</ServicePolicy>
+  <ServicePolicy>Default_Service</ServicePolicy>
   <FailoverAddresses />
   <FarmSingleInstance>false</FarmSingleInstance>
   <ProcessList />

@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>32b579e8-79d1-4698-96e2-f61a170255ff</Id>
   <Version>eebf1b9f-b66b-465a-a082-de4621f2d1ea</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>localhost.NeuronESBDefault</Name>
   <IsSystemObject>false</IsSystemObject>
@@ -12,6 +13,7 @@
     <Id>79f0e96c-35cc-4cc5-bcda-60b94bfa9153</Id>
     <Version>296447de-d1a0-43d1-81f9-213e9bd024d7</Version>
     <BusinessFlows />
+    <ProcessFlows />
     <Description />
     <IsSystemObject>false</IsSystemObject>
     <IsPrivate>false</IsPrivate>
@@ -25,6 +27,7 @@
           <Id>635da3fb-2f69-4ec4-b3af-ec2078bd02b0</Id>
           <Version>8e96e2af-3f10-4fb4-b8dd-4b3cad74ba40</Version>
           <BusinessFlows />
+          <ProcessFlows />
           <Description />
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
@@ -46,7 +49,7 @@
   <DbContainerHostname />
   <ContainerConnectionString>Data Source=,0;Initial Catalog=NeuronESBDefault;Integrated Security=True</ContainerConnectionString>
   <CatalogName>NeuronESBDefault</CatalogName>
-  <ConnectionString>10dc3vgWBmJ+wt1TDJcaGWyA1gwTbkZAarpoEBdPhGQYPDRz3IloqjwvlAYHSmsbH/cVfK6tg+Me1hA/SDHI3OectAvadtTILKljZLNEKeM=</ConnectionString>
+  <ConnectionString>10dc3vgWBmJ+wt1TDJcaGWyA1gwTbkZAarpoEBdPhGQYPDRz3IloqjwvlAYHSmsbH/cVfK6tg+Me1hA/SDHI3Anu6P7Zs5HNhUgvnMMF4CmqwKOLIxoBFKPy7uY3GiVrHUAqveBbDomyBmNTl8gBNA==</ConnectionString>
   <Zone>(All Zones)</Zone>
   <DatabaseType>SQLServer</DatabaseType>
 </ESBDatabase>

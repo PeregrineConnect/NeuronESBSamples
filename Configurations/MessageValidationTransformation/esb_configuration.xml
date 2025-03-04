@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>27</Version>
+  <Version>28</Version>
   <EnvironmentName>MessageValidationTransformation</EnvironmentName>
-  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>MessageValidationTransformation</ApplicationName>
   <ApplicationId>0a60a8d1-d217-404d-90f1-e5f4f0532a9e</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,*,endpoint host,Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Endpoint Host</string>
+    </Additions>
     <Revisions>
-      <string>Edit,*,pipeline,Validate Book Message - Code</string>
-      <string>Edit,*,pipeline,Validate Book Message</string>
+      <string>Edit,Enterprise,topic,Books</string>
+      <string>Edit,*,policy,Default</string>
     </Revisions>
-    <Deletions />
+    <Deletions>
+      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+    </Deletions>
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-07-30T11:32:24.8334546Z</LastModifiedDate>
-    <Comments>Edited pipeline named 'Validate Book Message - Code' in *", Edited pipeline named 'Validate Book Message' in *"</Comments>
+    <LastModifiedDate>2025-03-04T05:23:12.9246517Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Books' in Enterprise", Edited policy named 'Default' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -127,8 +136,7 @@
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

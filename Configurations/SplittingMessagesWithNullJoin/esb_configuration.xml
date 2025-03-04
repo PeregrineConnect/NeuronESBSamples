@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>27</Version>
-  <EnvironmentName>SplittingMessagesWithNullJoin_Converted</EnvironmentName>
-  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
+  <Version>28</Version>
+  <EnvironmentName>SplittingMessageswithNullJoin</EnvironmentName>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>SplittingMessagesWithNullJoin</ApplicationName>
   <ApplicationId>1d436c8f-2198-40dc-8014-615442d61a28</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
     <Additions>
-      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Endpoint Host</string>
     </Additions>
     <Revisions>
       <string>Edit,Enterprise,topic,Orders</string>
-      <string>Edit,*,pipeline,Split Orders - Null Join</string>
-      <string>Edit,Enterprise,publisher,OrderSplitter</string>
+      <string>Edit,*,policy,Default</string>
     </Revisions>
-    <Deletions />
+    <Deletions>
+      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+    </Deletions>
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-08-05T09:02:12.7717083Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedDate>2025-03-04T05:25:33.7818498Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Orders' in Enterprise", Edited policy named 'Default' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -80,8 +86,7 @@
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

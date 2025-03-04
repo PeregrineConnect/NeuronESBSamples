@@ -1,19 +1,19 @@
 ﻿{
-  "AtlasMapping" : {
-    "jsonType" : "io.atlasmap.v2.AtlasMapping",
+  "dataMapperMapping" : {
+    "$type" : "Peregrine.DataMapper.Model.DataMapperMapping, Peregrine.DataMapper.Model",
     "dataSource" : [ {
-      "jsonType" : "io.atlasmap.json.v2.JsonDataSource",
+      "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonDataSource, Peregrine.DataMapper.JsonModule",
       "id" : "OrderSchema-JSON SCHEMA",
       "name" : "OrderSchema-JSON SCHEMA",
       "description" : "Source document OrderSchema-JSON SCHEMA type: JSON",
-      "uri" : "atlas:json:OrderSchema-JSON SCHEMA",
+      "uri" : "datamapper:json:OrderSchema-JSON SCHEMA",
       "dataSourceType" : "SOURCE"
     }, {
-      "jsonType" : "io.atlasmap.xml.v2.XmlDataSource",
+      "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlDataSource, Peregrine.DataMapper.XmlModule",
       "id" : "OrderQuoteSchema_PlaceOrder-XSD",
       "name" : "OrderQuoteSchema_PlaceOrder-XSD",
       "description" : "Target document OrderQuoteSchema_PlaceOrder-XSD type: XSD",
-      "uri" : "atlas:xml:OrderQuoteSchema_PlaceOrder-XSD",
+      "uri" : "datamapper:xml:OrderQuoteSchema_PlaceOrder-XSD",
       "dataSourceType" : "TARGET",
       "xmlNamespaces" : {
         "xmlNamespace" : [ {
@@ -24,9 +24,9 @@
     } ],
     "mappings" : {
       "mapping" : [ {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "OrderSchema-JSON SCHEMA",
           "path" : "/product",
           "fieldType" : "STRING",
@@ -34,7 +34,7 @@
           "userCreated" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.v2.PropertyField",
+          "$type" : "Peregrine.DataMapper.Model.PropertyField, Peregrine.DataMapper.Model",
           "value" : "",
           "docId" : "DOC.Properties.361662",
           "path" : "/Order.Product",
@@ -45,9 +45,9 @@
         "id" : "mapping.382605",
         "pageNumber" : 0
       }, {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "OrderSchema-JSON SCHEMA",
           "path" : "/amount",
           "fieldType" : "NUMBER",
@@ -55,7 +55,7 @@
           "userCreated" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "OrderQuoteSchema_PlaceOrder-XSD",
           "path" : "/tns:PlaceOrder/tns:order/tns:Amount",
           "fieldType" : "DOUBLE",
@@ -65,9 +65,9 @@
         "id" : "mapping.112314",
         "pageNumber" : 0
       }, {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "OrderSchema-JSON SCHEMA",
           "path" : "/city",
           "fieldType" : "STRING",
@@ -75,7 +75,7 @@
           "userCreated" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "OrderQuoteSchema_PlaceOrder-XSD",
           "path" : "/tns:PlaceOrder/tns:order/tns:City",
           "fieldType" : "STRING",
@@ -85,9 +85,9 @@
         "id" : "mapping.297943",
         "pageNumber" : 0
       }, {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "OrderSchema-JSON SCHEMA",
           "path" : "/customerName",
           "fieldType" : "STRING",
@@ -95,7 +95,7 @@
           "userCreated" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "OrderQuoteSchema_PlaceOrder-XSD",
           "path" : "/tns:PlaceOrder/tns:order/tns:CustomerName",
           "fieldType" : "STRING",
@@ -105,9 +105,9 @@
         "id" : "mapping.773741",
         "pageNumber" : 0
       }, {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "OrderSchema-JSON SCHEMA",
           "path" : "/orderDate",
           "fieldType" : "STRING",
@@ -115,7 +115,7 @@
           "userCreated" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "OrderQuoteSchema_PlaceOrder-XSD",
           "path" : "/tns:PlaceOrder/tns:order/tns:OrderDate",
           "fieldType" : "DATE_TIME",
@@ -125,9 +125,9 @@
         "id" : "mapping.481077",
         "pageNumber" : 0
       }, {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "OrderSchema-JSON SCHEMA",
           "path" : "/orderNumber",
           "fieldType" : "BIG_INTEGER",
@@ -135,7 +135,7 @@
           "userCreated" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "OrderQuoteSchema_PlaceOrder-XSD",
           "path" : "/tns:PlaceOrder/tns:order/tns:OrderNumber",
           "fieldType" : "LONG",
@@ -145,9 +145,9 @@
         "id" : "mapping.760786",
         "pageNumber" : 0
       }, {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "OrderSchema-JSON SCHEMA",
           "path" : "/price",
           "fieldType" : "NUMBER",
@@ -155,7 +155,7 @@
           "userCreated" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "OrderQuoteSchema_PlaceOrder-XSD",
           "path" : "/tns:PlaceOrder/tns:order/tns:Price",
           "fieldType" : "DECIMAL",
@@ -165,9 +165,9 @@
         "id" : "mapping.124917",
         "pageNumber" : 0
       }, {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "OrderSchema-JSON SCHEMA",
           "path" : "/product",
           "fieldType" : "STRING",
@@ -175,7 +175,7 @@
           "userCreated" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "OrderQuoteSchema_PlaceOrder-XSD",
           "path" : "/tns:PlaceOrder/tns:order/tns:Product",
           "fieldType" : "STRING",
@@ -185,9 +185,9 @@
         "id" : "mapping.657799",
         "pageNumber" : 0
       }, {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "OrderSchema-JSON SCHEMA",
           "path" : "/quantity",
           "fieldType" : "BIG_INTEGER",
@@ -195,7 +195,7 @@
           "userCreated" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "OrderQuoteSchema_PlaceOrder-XSD",
           "path" : "/tns:PlaceOrder/tns:order/tns:Quantity",
           "fieldType" : "LONG",
@@ -205,9 +205,9 @@
         "id" : "mapping.226205",
         "pageNumber" : 0
       }, {
-        "jsonType" : "io.atlasmap.v2.Mapping",
+        "$type" : "Peregrine.DataMapper.Model.Mapping, Peregrine.DataMapper.Model",
         "inputField" : [ {
-          "jsonType" : "io.atlasmap.json.v2.JsonField",
+          "$type" : "Peregrine.DataMapper.JsonModule.Model.JsonField, Peregrine.DataMapper.JsonModule",
           "docId" : "OrderSchema-JSON SCHEMA",
           "path" : "/shipping",
           "fieldType" : "NUMBER",
@@ -215,7 +215,7 @@
           "userCreated" : false
         } ],
         "outputField" : [ {
-          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "$type" : "Peregrine.DataMapper.XmlModule.Model.XmlField, Peregrine.DataMapper.XmlModule",
           "docId" : "OrderQuoteSchema_PlaceOrder-XSD",
           "path" : "/tns:PlaceOrder/tns:order/tns:Shipping",
           "fieldType" : "DOUBLE",

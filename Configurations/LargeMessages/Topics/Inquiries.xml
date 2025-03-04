@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBTopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>64a924ba-b915-44ae-858d-2175b638e51b</Id>
   <Version>62f12dd3-9922-4151-86dd-5374dc72c99a</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description>Request-reply inqurieis</Description>
   <Name>Inquiries</Name>
   <Group>General</Group>
@@ -114,4 +115,6 @@
   <Encrypted>false</Encrypted>
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
+  <IsWorkflowManager>false</IsWorkflowManager>
+  <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

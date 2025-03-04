@@ -132,5 +132,6 @@
   <Encrypted>false</Encrypted>
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
-  <AvailabilityGroupId>Backbone Default Topic Host</AvailabilityGroupId>
+  <IsWorkflowManager>false</IsWorkflowManager>
+  <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

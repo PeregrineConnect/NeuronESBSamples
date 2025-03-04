@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>47</Version>
+  <Version>48</Version>
   <EnvironmentName>WsdlClientConnector</EnvironmentName>
-  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>WsdlClientConnector</ApplicationName>
   <ApplicationId>e60b4306-f124-4a1c-b9e4-7a49a6ce5a34</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,*,endpoint host,Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Endpoint Host</string>
+    </Additions>
     <Revisions>
+      <string>Edit,Enterprise,topic,Payments</string>
       <string>Edit,Enterprise,service endpoint,PaymentClientConnector</string>
+      <string>Edit,Enterprise,service endpoint,PaymentServiceConnector</string>
+      <string>Edit,*,policy,Default</string>
     </Revisions>
-    <Deletions />
+    <Deletions>
+      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+    </Deletions>
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-07-25T13:53:04.2175815Z</LastModifiedDate>
-    <Comments>Edited service endpoint named 'PaymentClientConnector' in Enterprise"</Comments>
+    <LastModifiedDate>2025-03-04T05:29:48.3608064Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Payments' in Enterprise", Edited service endpoint named 'PaymentClientConnector' in Enterprise", Edited service endpoint named 'PaymentServiceConnector' in Enterprise", Edited policy named 'Default' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -76,8 +88,7 @@
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

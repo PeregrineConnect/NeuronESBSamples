@@ -13,7 +13,7 @@
   <FarmSingleInstance>false</FarmSingleInstance>
   <Enabled>true</Enabled>
   <Zone>Enterprise</Zone>
-  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
   <IncludeMetadata>true</IncludeMetadata>
   <AdapterName>POP3</AdapterName>
   <AdapterAssembly>Neuron.NetX.Adapters.POP3Adapter.dll</AdapterAssembly>

@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>69ac4f19-adc9-46b3-9565-ba9bff658001</Id>
   <Version>2d812136-369f-4c0b-85b0-d4eceb5b2a68</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>One-Way Client Connector</Name>
   <Group />
@@ -21,15 +22,17 @@
     <Port>0</Port>
     <BypassLocalAddress>false</BypassLocalAddress>
   </ProxySettings>
+  <DebugInfo />
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
   <ServiceName>One-Way Client Connector</ServiceName>
   <ServiceGroup />
   <Binding>BasicHttp</Binding>
-  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <ProcessMultipartMessages>false</ProcessMultipartMessages>
   <TransactionType>None</TransactionType>
   <MaxMessageSize>1000000</MaxMessageSize>
   <ReliableMessaging>false</ReliableMessaging>
@@ -77,7 +80,7 @@
   <ServiceSubscriberId />
   <ReuseServiceConnection>true</ReuseServiceConnection>
   <ServerCertName />
-  <ServicePolicy>Default</ServicePolicy>
+  <ServicePolicy>Default_Service</ServicePolicy>
   <FailoverAddresses />
   <FarmSingleInstance>false</FarmSingleInstance>
   <ProcessList />

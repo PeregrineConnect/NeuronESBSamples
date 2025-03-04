@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
-<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>881a7991-7d88-4a4f-9f41-873974575330</Id>
   <Version>5a2ffa1f-178c-4dd7-9f7d-ba3e4d00c897</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description>This connector is an example that is SOAP connector relaying to the backend SOAP service without any mediation.
 Use XML in SOAPRequest_GetOrders_Parameters to test with Postman.  Testing SOAP Services with Postman.  https://learning.postman.com/docs/sending-requests/supported-api-frameworks/making-soap-requests/</Description>
   <Name>ServiceRouteTables_SOAP_SOAP_Passthru</Name>
@@ -22,15 +23,17 @@ Use XML in SOAPRequest_GetOrders_Parameters to test with Postman.  Testing SOAP 
     <Port>0</Port>
     <BypassLocalAddress>false</BypassLocalAddress>
   </ProxySettings>
+  <DebugInfo />
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
   <ServiceName>ServiceRouteTables_SOAP_SOAP_Passthru</ServiceName>
   <ServiceGroup>General</ServiceGroup>
   <Binding>BasicHttp</Binding>
-  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
   <Behavior />
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <ProcessMultipartMessages>false</ProcessMultipartMessages>
   <TransactionType>None</TransactionType>
   <MaxMessageSize>1000000</MaxMessageSize>
   <ReliableMessaging>false</ReliableMessaging>
@@ -77,7 +80,7 @@ Use XML in SOAPRequest_GetOrders_Parameters to test with Postman.  Testing SOAP 
   <ServiceSubscriberId />
   <ReuseServiceConnection>true</ReuseServiceConnection>
   <ServerCertName />
-  <ServicePolicy>Default</ServicePolicy>
+  <ServicePolicy>Default_Service</ServicePolicy>
   <FailoverAddresses />
   <FarmSingleInstance>false</FarmSingleInstance>
   <ProcessList />

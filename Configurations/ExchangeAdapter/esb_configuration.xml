@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>74</Version>
+  <Version>75</Version>
   <EnvironmentName>ExchangeAdapter</EnvironmentName>
-  <NeuronBuildVersion>1.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>1.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>ExchangeAdapter</ApplicationName>
   <ApplicationId>433751fc-34b0-42a1-bf1e-f24a5adaafb0</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
     <Additions>
-      <string>Add,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Endpoint Host</string>
     </Additions>
     <Revisions>
       <string>Edit,Enterprise,topic,Email</string>
-      <string>Edit,*,pipeline,Exception Handling</string>
-      <string>Edit,*,pipeline,Process Email</string>
-      <string>Edit,Enterprise,publisher,EmailPublisher</string>
+      <string>Edit,Enterprise,adapter endpoint,ExchangeEndpoint</string>
+      <string>Edit,Enterprise,adapter endpoint,FileOutEndpoint</string>
+      <string>Edit,Enterprise,adapter endpoint,POP3Endpoint</string>
+      <string>Edit,*,policy,Default</string>
     </Revisions>
-    <Deletions />
+    <Deletions>
+      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
+      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+    </Deletions>
     <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2024-07-25T12:16:06.7171739Z</LastModifiedDate>
-    <Comments />
+    <LastModifiedDate>2025-03-04T05:13:59.4389855Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Email' in Enterprise", Edited adapter endpoint named 'ExchangeEndpoint' in Enterprise", Edited adapter endpoint named 'FileOutEndpoint' in Enterprise", Edited adapter endpoint named 'POP3Endpoint' in Enterprise", Edited policy named 'Default' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -58,8 +66,7 @@
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />
