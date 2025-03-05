@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBEndpoint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>f2871e3b-5112-415e-a260-7d4276280345</Id>
-  <Version>b1ad6f8c-3a4c-494c-81b5-1a99e60346b7</Version>
+  <Version>c9545f20-ef2c-4e78-9fff-ef534924c899</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -13,7 +13,7 @@
   <FarmSingleInstance>false</FarmSingleInstance>
   <Enabled>true</Enabled>
   <Zone>Enterprise</Zone>
-  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
+  <AvailabilityGroupId />
   <IncludeMetadata>true</IncludeMetadata>
   <AdapterName>ODBC</AdapterName>
   <AdapterAssembly>Neuron.NetX.Adapters.OdbcAdapter.dll</AdapterAssembly>
@@ -27,11 +27,11 @@
   <Properties>
     <NameValuePair>
       <Name>ConnectionString</Name>
-      <Value>xE/biIVF7zyviBIgr/fVpcoE8TKKn+zP3uWyjYNc2nSzwduXqOSIpBQFWJYP3AHnbyGb3laWgE4odIfAsT0maL7d9VHd2H+Ie3n/SH1ZmL/SbjgtbAkGNkec6UL3+r74</Value>
+      <Value>xE/biIVF7zyviBIgr/fVpWszBrwdSnvfr9Zl7vYwLYKyA1C7eT7kEl6Fwl3GYdY+3pWEC7ddt6dZpyKCJJKtJ0KsX5pc2w7S5oL25qFHWpo=</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>VerifyConnect</Name>
-      <Value>False</Value>
+      <Value>false</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>Transactional</Name>
@@ -55,15 +55,15 @@
     </NameValuePair>
     <NameValuePair>
       <Name>EnforceTypedParams</Name>
-      <Value>True</Value>
+      <Value>true</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>SqlEnabled</Name>
-      <Value>True</Value>
+      <Value>true</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>SqlCheckingEnabled</Name>
-      <Value>True</Value>
+      <Value>true</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>SendTopic</Name>
@@ -180,6 +180,10 @@
     <NameValuePair>
       <Name>BatchSize</Name>
       <Value>-1</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>ShowAdvance</Name>
+      <Value>false</Value>
     </NameValuePair>
   </Properties>
   <AdapterBindings />

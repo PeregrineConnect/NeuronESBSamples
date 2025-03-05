@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBEndpoint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>0932e1ba-e9f9-4600-b3a4-c05b7c747b9f</Id>
-  <Version>dd25d82f-5892-42aa-9ee1-e73741943d2a</Version>
+  <Version>3c654810-938c-4c4c-b356-0b8ea2a1d04e</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -13,7 +13,7 @@
   <FarmSingleInstance>false</FarmSingleInstance>
   <Enabled>true</Enabled>
   <Zone>Enterprise</Zone>
-  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
+  <AvailabilityGroupId />
   <IncludeMetadata>true</IncludeMetadata>
   <AdapterName>ODBC</AdapterName>
   <AdapterAssembly>Neuron.NetX.Adapters.OdbcAdapter.dll</AdapterAssembly>
@@ -27,11 +27,11 @@
   <Properties>
     <NameValuePair>
       <Name>ConnectionString</Name>
-      <Value>xE/biIVF7zyviBIgr/fVpcoE8TKKn+zP3uWyjYNc2nSzwduXqOSIpBQFWJYP3AHnbyGb3laWgE4odIfAsT0maL7d9VHd2H+Ie3n/SH1ZmL/SbjgtbAkGNkec6UL3+r74</Value>
+      <Value>xE/biIVF7zyviBIgr/fVpWszBrwdSnvfr9Zl7vYwLYKyA1C7eT7kEl6Fwl3GYdY+3pWEC7ddt6dZpyKCJJKtJ0KsX5pc2w7S5oL25qFHWpo=</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>VerifyConnect</Name>
-      <Value>False</Value>
+      <Value>false</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>Transactional</Name>
@@ -55,15 +55,15 @@
     </NameValuePair>
     <NameValuePair>
       <Name>EnforceTypedParams</Name>
-      <Value>True</Value>
+      <Value>true</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>SqlEnabled</Name>
-      <Value>True</Value>
+      <Value>true</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>SqlCheckingEnabled</Name>
-      <Value>True</Value>
+      <Value>true</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>SendTopic</Name>
@@ -163,7 +163,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>QueryGenerateSchema</Name>
-      <Value>False</Value>
+      <Value>false</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>QueryLimitRows</Name>
@@ -171,7 +171,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>UseDataAdapterQuery</Name>
-      <Value>True</Value>
+      <Value>true</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>DataReaderBehaviorQuery</Name>
@@ -180,6 +180,14 @@
     <NameValuePair>
       <Name>BatchSize</Name>
       <Value>-1</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>ShowAdvance</Name>
+      <Value>false</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>QueryRowCollectionName</Name>
+      <Value />
     </NameValuePair>
   </Properties>
   <AdapterBindings />
