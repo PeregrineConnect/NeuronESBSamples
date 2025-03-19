@@ -1,8 +1,10 @@
 USE [master]
 GO
 CREATE DATABASE [MessageData]
+/*
 GO
 EXEC dbo.sp_dbcmptlevel @dbname=N'MessageData', @new_cmptlevel=90
+*/
 GO
 IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
 begin
