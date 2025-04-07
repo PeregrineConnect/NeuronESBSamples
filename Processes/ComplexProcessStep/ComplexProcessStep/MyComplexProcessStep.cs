@@ -16,9 +16,9 @@ namespace ComplexProcessStep
         /// <summary>
         /// Used by the UI Element class to control what Image is used to represent the custom process step within the "Process Steps" UI panel to the right of the Process Designer of the Neuron ESB Explorer
         /// </summary>
-        public static System.Drawing.Bitmap StepBitMap { get {return Resource1.ComplexProcessStep_MyComplexProcessStep;} }
+        public static System.Drawing.Bitmap StepBitMap { get { return Resource1.ComplexProcessStep_MyComplexProcessStep; } }
     }
- 
+
     /// <summary>
     /// The Display name is the name listed under the "Process Steps" UI panel to the right of the Process Designer of the Neuron ESB Explorer
     /// The Description is the mouse over text that pops up when the process step is selected in the "Process Steps" UI panel
@@ -32,7 +32,7 @@ namespace ComplexProcessStep
     [Description("Sample process step with a custom UI")]
     [DisplayName(Globals.StepName)]
     [ProcessStep(typeof(MyComplexProcessStep), typeof(Resource1), "name", "description", "ComplexProcessStep_MyComplexProcessStep", "",
-    Path = "Custom Process Steps")]
+    Path = "Custom Process Activities")]
     public class MyComplexProcessStep : CustomPipelineStep
     {
         [Category("Default")]

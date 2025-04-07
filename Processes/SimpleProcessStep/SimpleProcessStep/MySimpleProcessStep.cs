@@ -9,8 +9,8 @@ using Neuron.NetX;
 namespace SimpleProcessStep
 {
     [DisplayName("My Simple Process Step")]
-    [ProcessStep(typeof(MySimpleProcessStep), typeof(Resource1), "name", "description", "Image1","",
-    Path = "Custom Process Steps")]
+    [ProcessStep(typeof(MySimpleProcessStep), typeof(Resource1), "name", "description", "Image1", "",
+    Path = "Custom Process Activities")]
     public class MySimpleProcessStep : CustomPipelineStep
     {
         [DataMember]
@@ -34,7 +34,7 @@ namespace SimpleProcessStep
         public String MyProperty4 { get; set; }
 
         String MyPrivateProperty { get; set; }
-        
+
         int _myProperty5 = 3;
         [DefaultValue(3)]
         public int MyProperty5 { get { return _myProperty5; } set { _myProperty5 = value; } }
@@ -51,7 +51,7 @@ namespace SimpleProcessStep
         [TypeConverter(typeof(MyProperty8TypeConverter))]
         public String MyProperty8 { get; set; }
 
-      //  [Editor(typeof(System.Windows.Forms.Design.FileNameEditor), typeof(System.Drawing.Design.UITypeEditor))]
+        //  [Editor(typeof(System.Windows.Forms.Design.FileNameEditor), typeof(System.Drawing.Design.UITypeEditor))]
         public String MyProperty9 { get; set; }
 
         /// <summary>
@@ -67,7 +67,7 @@ namespace SimpleProcessStep
         {
             System.IO.File.WriteAllText(@"C:\simpleprocessstep.txt", ("MySimpleProcessStep called. Value of MyProperty1 = " + MyProperty1));
             context.Instance.TraceInformation("MyCustomProcessStep called. Value of MyProperty1 = " + MyProperty1);
-            
+
         }
     }
 
@@ -90,7 +90,7 @@ namespace SimpleProcessStep
         {
             return false;
         }
-                   
+
     }
 
 }
