@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>6c57a3c0-395b-41ad-a8e2-95d99b1b8548</Id>
-  <Version>d712446d-835e-46f7-a676-8b6790087022</Version>
+  <Version>5d71e9aa-4163-4ae7-9dbc-0120845aab68</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <Topic />
   <Pattern>1</Pattern>
@@ -94,6 +95,7 @@
       <Name>JSON Converter</Name>
       <IsSystemObject>false</IsSystemObject>
       <IsPrivate>false</IsPrivate>
+      <IsInvalid>false</IsInvalid>
       <ApplyOnPublish>true</ApplyOnPublish>
       <ApplyOnReceive>false</ApplyOnReceive>
       <PipelineConditions>
@@ -104,6 +106,7 @@
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
+        <IsInvalid>false</IsInvalid>
         <Condition>
           <SelectedTagList />
           <AvailableForOther>false</AvailableForOther>
@@ -111,6 +114,7 @@
       </PipelineConditions>
     </ClientPipelineItem>
   </ProcessList>
+  <WorkflowList />
   <ProcessMode>BusinessProcess</ProcessMode>
   <ServiceRoutes />
   <ServiceProcessMode>true</ServiceProcessMode>

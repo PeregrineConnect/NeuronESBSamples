@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>262</Version>
+  <Version>263</Version>
   <EnvironmentName>RESTServices</EnvironmentName>
   <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
   <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
   <ApplicationName>RESTServices</ApplicationName>
+  <ApplicationDisplayName>RESTServices</ApplicationDisplayName>
   <ApplicationId>5961f73d-745d-44cf-9cb6-0d774d3936f4</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,Enterprise,adapter endpoint,CreateCustomerEndpoint</string>
-      <string>Edit,Enterprise,adapter endpoint,DeleteCustomerEndpoint</string>
-      <string>Edit,Enterprise,adapter endpoint,ReadCustomerEndpoint</string>
+      <string>Edit,*,pipeline,JSON Converter</string>
+      <string>Edit,Enterprise,service endpoint,JSONClientConnector</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-03-05T10:33:49.8937647Z</LastModifiedDate>
-    <Comments>Edited adapter endpoint named 'CreateCustomerEndpoint' in Enterprise", Edited adapter endpoint named 'DeleteCustomerEndpoint' in Enterprise", Edited adapter endpoint named 'ReadCustomerEndpoint' in Enterprise"</Comments>
+    <LastModifiedBy>DESKTOP-KHDEJI9\LENOVO</LastModifiedBy>
+    <LastModifiedDate>2025-06-30T09:41:57.3536Z</LastModifiedDate>
+    <Comments>Edited pipeline named 'JSON Converter' in *", Edited service endpoint named 'JSONClientConnector' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
@@ -50,6 +50,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <ValidateWithService>false</ValidateWithService>
           <Storing>false</Storing>
           <ShortName>SerializationSchema</ShortName>
@@ -77,6 +78,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <ValidateWithService>false</ValidateWithService>
           <Storing>false</Storing>
           <ShortName>CustomerServiceSchemas</ShortName>
@@ -107,6 +109,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -129,6 +132,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -151,6 +155,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -173,6 +178,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -198,6 +204,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <JsonVersion />
           <SourceUri />
@@ -222,6 +229,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <JsonVersion />
           <SourceUri />
@@ -246,6 +254,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <JsonVersion />
           <SourceUri />
@@ -270,6 +279,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <JsonVersion />
           <SourceUri />
@@ -294,6 +304,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <JsonVersion />
           <SourceUri />
@@ -318,6 +329,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <JsonVersion />
           <SourceUri />
@@ -345,6 +357,7 @@
           <Group />
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -370,6 +383,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <SourceType>JSON</SourceType>
           <TargetType>XML</TargetType>
@@ -394,6 +408,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <SourceType>XML</SourceType>
           <TargetType>JSON</TargetType>
@@ -418,6 +433,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <SourceType>XML</SourceType>
           <TargetType>JSON</TargetType>
@@ -442,6 +458,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <SourceType>XML</SourceType>
           <TargetType>JSON</TargetType>
@@ -466,6 +483,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <SourceType>XML</SourceType>
           <TargetType>JSON</TargetType>
@@ -490,6 +508,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <SourceType>JSON</SourceType>
           <TargetType>XML</TargetType>
@@ -514,6 +533,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <SourceType>JSON</SourceType>
           <TargetType>XML</TargetType>
@@ -538,6 +558,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <SourceType>JSON</SourceType>
           <TargetType>XML</TargetType>
@@ -562,6 +583,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <SourceType>JSON</SourceType>
           <TargetType>XML</TargetType>
@@ -586,6 +608,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <SourceType>XML</SourceType>
           <TargetType>JSON</TargetType>
@@ -610,6 +633,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <SourceType>XML</SourceType>
           <TargetType>JSON</TargetType>
