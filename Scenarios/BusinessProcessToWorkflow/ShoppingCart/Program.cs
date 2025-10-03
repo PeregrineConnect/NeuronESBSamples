@@ -185,6 +185,9 @@ namespace ShoppingCart
                     Console.WriteLine("Publisher:\t\t" + response.Header.SourceId);
                     Console.WriteLine("Message Body:\t\t" + response.Text);
 
+                    // disconnecting old party.
+                    _publisher.Dispose();
+
                     _subscriber = new Subscriber("OrdersPublisher");
 
                     InitializeOnReceive();

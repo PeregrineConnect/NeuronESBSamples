@@ -23,27 +23,30 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="DotNext" Version="5.11.0" />
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.Abstractions" Version="2.1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Connections.Abstractions" Version="2.1.3.0" />
-    <PackageReference Include="CoreWCF.NetFramingBase" Version="1.5.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Core" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Connections.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="9.0.7" />
     <PackageReference Include="System.Data.OleDb" Version="8.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
-	  <PackageReference Include="System.Security.Permissions" Version="8.0.0" />
-	  <PackageReference Include="System.ServiceModel.Primitives" Version="8.0.0" />
-    <PackageReference Include="System.ServiceModel.Http" Version="8.0.0" />
+	<PackageReference Include="System.Security.Permissions" Version="8.0.0" />
+	<PackageReference Include="System.ServiceModel.Primitives" Version="8.1.2" />
+    <PackageReference Include="System.ServiceModel.Http" Version="8.1.2" />
     <PackageReference Include="System.ServiceModel.Duplex" Version="6.0.0" />
-    <PackageReference Include="System.ServiceModel.NetTcp" Version="8.0.0" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="8.1.2" />
     <PackageReference Include="System.ServiceModel.Security" Version="6.0.0" />
-    <PackageReference Include="System.ServiceModel.Federation" Version="8.0.0" />
+    <PackageReference Include="System.ServiceModel.Federation" Version="8.1.2" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.7" />
+    <PackageReference Include="CoreWCF.Primitives" Version="1.7.2" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.13.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Neuron.Metabase.Admin">
@@ -64,6 +67,12 @@
     <Reference Include="CoreWCF.ConfigurationManager">
       <HintPath>..\..\..\..\..\CoreWCF.ConfigurationManager.dll</HintPath>
     </Reference>
+    <Reference Include="CoreWCF.NetFramingBase">
+        <HintPath>..\..\..\..\..\CoreWCF.NetFramingBase.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreWCF.Primitives">
+        <HintPath>..\..\..\..\..\CoreWCF.Primitives.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Extensions.Options">
       <HintPath>..\..\..\..\..\Microsoft.Extensions.Options.dll</HintPath>
     </Reference>
@@ -73,8 +82,26 @@
     <Reference Include="CoreWCF.Http">
       <HintPath>..\..\..\..\..\CoreWCF.Http.dll</HintPath>
     </Reference>
+    <Reference Include="CoreWCF.NetTcp">
+      <HintPath>..\..\..\..\..\CoreWCF.NetTcp.dll</HintPath>
+    </Reference>
     <Reference Include="Neuron.NetX.Channels.Amqp">
       <HintPath>..\..\..\..\..\Neuron.NetX.Channels.Amqp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+        <HintPath>..\..\..\..\..\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives">
+        <HintPath>..\..\..\..\..\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+        <HintPath>..\..\..\..\..\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+        <HintPath>..\..\..\..\..\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+        <HintPath>..\..\..\..\..\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

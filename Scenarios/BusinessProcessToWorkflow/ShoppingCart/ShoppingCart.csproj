@@ -23,7 +23,8 @@
 		</EmbeddedResource>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.7" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.7" />
 		<PackageReference Include="System.Data.OleDb" Version="8.0.0" />
 	</ItemGroup>
 	<ItemGroup>
@@ -48,9 +49,66 @@
 		<Reference Include="System.CodeDom">
 			<HintPath>..\..\..\..\..\System.CodeDom.dll</HintPath>
 		</Reference>
+        <Reference Include="Microsoft.Extensions.Caching.Memory">
+			<HintPath>..\..\..\..\..\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+		</Reference>
 		<Reference Include="System.Security.Permissions">
 		  <HintPath>..\..\..\..\..\System.Security.Permissions.dll</HintPath>
 		</Reference>
+        <Reference Include="System.Configuration.ConfigurationManager">
+			<HintPath>..\..\..\..\..\System.Configuration.ConfigurationManager.dll</HintPath>
+		</Reference>
+        <Reference Include="Microsoft.Extensions.Hosting.Abstractions">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Caching.Abstractions">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Diagnostics.Abstractions">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Diagnostics.Abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Configuration.Binder">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Configuration">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Configuration.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Configuration.EnvironmentVariables">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Configuration.EnvironmentVariables.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Primitives">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Primitives.dll</HintPath>
+        </Reference> 
+        <Reference Include="Microsoft.Extensions.Logging">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Logging.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Options">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Options.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.DependencyInjection">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Data.SqlClient">
+            <HintPath>..\..\..\..\..\Microsoft.Data.SqlClient.dll</HintPath>
+        </Reference> 
+        <Reference Include="System.ComponentModel.Composition">
+            <HintPath>..\..\..\..\..\System.ComponentModel.Composition.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Diagnostics.DiagnosticSource">
+            <HintPath>..\..\..\..\..\System.Diagnostics.DiagnosticSource.dll</HintPath>
+        </Reference>
+	</ItemGroup>
+    <ItemGroup>
+		<None Include="App.config" />
 	</ItemGroup>
 	<ItemGroup>
 		<Content Update="appsettings.json">

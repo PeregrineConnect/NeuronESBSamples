@@ -24,6 +24,33 @@
 		<Reference Include="Neuron.Pipelines.Activities2">
 		  <HintPath>..\..\..\..\..\Neuron.Pipelines.Activities2.dll</HintPath>
 		</Reference>
+        <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Configuration.Binder">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Configuration">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Configuration.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Configuration.EnvironmentVariables">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Configuration.EnvironmentVariables.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Primitives">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Logging">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Logging.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Options">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.Options.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+            <HintPath>..\..\..\..\..\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+        </Reference>
 	</ItemGroup>
 
 </Project>
