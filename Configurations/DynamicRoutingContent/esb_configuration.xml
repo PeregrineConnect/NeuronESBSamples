@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>33</Version>
+  <Version>36</Version>
   <EnvironmentName>DynamicRoutingContent</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.660</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.660</DesignerBuildVersion>
   <ApplicationName>DynamicRoutingContent</ApplicationName>
+  <ApplicationDisplayName>DynamicRoutingContent</ApplicationDisplayName>
   <ApplicationId>7a2f686c-15df-40be-9d10-7b4f89697306</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
-    <Additions>
-      <string>Add,*,endpoint host,Default Topic Host</string>
-      <string>Add,*,endpoint host,Default Endpoint Host</string>
-    </Additions>
+    <Additions />
     <Revisions>
       <string>Edit,Enterprise,topic,Contacts</string>
-      <string>Edit,*,policy,Default</string>
-      <string>Edit,*,pipeline,Dynamic Topic Routing - Content</string>
-      <string>Edit,Enterprise,publisher,ContactsPublisher</string>
     </Revisions>
-    <Deletions>
-      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
-      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
-    </Deletions>
-    <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-01-28T07:27:33.635004Z</LastModifiedDate>
-    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Contacts' in Enterprise", Edited policy named 'Default' in *", Edited pipeline named 'Dynamic Topic Routing - Content' in *", Edited publisher named 'ContactsPublisher' in Enterprise"</Comments>
+    <Deletions />
+    <LastModifiedBy>TEJASPC\tejas</LastModifiedBy>
+    <LastModifiedDate>2026-02-07T07:52:14.1114914Z</LastModifiedDate>
+    <Comments>Edited topic named 'Contacts' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
@@ -59,6 +51,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -81,6 +74,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />

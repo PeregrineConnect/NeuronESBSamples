@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>62</Version>
+  <Version>55</Version>
   <EnvironmentName>ScatterGatherProcessSample</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.660</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.660</DesignerBuildVersion>
   <ApplicationName>ScatterGatherProcessSample</ApplicationName>
+  <ApplicationDisplayName>ScatterGatherProcessSample</ApplicationDisplayName>
   <ApplicationId>20abd4f4-9893-4f36-9424-041414908c37</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
@@ -15,8 +16,8 @@
       <string>Edit,Enterprise,service endpoint,ContosoQuoteService</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-01-08T11:16:18.8054854Z</LastModifiedDate>
+    <LastModifiedBy>TEJASPC\tejas</LastModifiedBy>
+    <LastModifiedDate>2026-02-09T10:59:44.5151975Z</LastModifiedDate>
     <Comments>Edited pipeline named 'Scatter Gather' in *", Edited service endpoint named 'ContosoQuoteService' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
@@ -51,6 +52,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -73,6 +75,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -95,6 +98,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -117,6 +121,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -145,6 +150,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <Xslt />
           <TestInput />
@@ -167,6 +173,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <Xslt />
           <TestInput />

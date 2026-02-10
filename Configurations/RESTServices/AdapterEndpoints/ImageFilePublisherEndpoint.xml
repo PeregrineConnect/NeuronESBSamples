@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBEndpoint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>8c87a6a6-841f-4589-8c64-2d50a369c802</Id>
-  <Version>63312793-bcfe-4803-b1c5-2a09f35123ac</Version>
+  <Version>586d1226-d9ac-4b28-af4d-246e574662f1</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <FarmSingleInstance>false</FarmSingleInstance>
   <Enabled>true</Enabled>
@@ -20,18 +21,19 @@
   <AdapterMessageDirection>DatagramReceiver</AdapterMessageDirection>
   <AdapterClass>Neuron.NetX.Adapters.FileAdapter</AdapterClass>
   <AdapterMode>Publish</AdapterMode>
-  <ProcessMode>true</ProcessMode>
+  <ProcessMode>false</ProcessMode>
   <ClientProcessMode>BusinessProcess</ClientProcessMode>
   <ProcessList>
     <ClientPipelineItem>
       <Id>968c2850-bc89-4aa5-854c-c58aefda8ffc</Id>
-      <Version>0738921a-7136-431b-9ea4-f4b73c5cd1d8</Version>
+      <Version>31e0c9f1-274d-4446-ad2d-57e504ce4911</Version>
       <BusinessFlows />
       <ProcessFlows />
       <Description />
       <Name>Send Image to REST API</Name>
       <IsSystemObject>false</IsSystemObject>
       <IsPrivate>false</IsPrivate>
+      <IsInvalid>false</IsInvalid>
       <ApplyOnPublish>true</ApplyOnPublish>
       <ApplyOnReceive>false</ApplyOnReceive>
       <PipelineConditions>
@@ -42,6 +44,7 @@
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
+        <IsInvalid>false</IsInvalid>
         <Condition>
           <SelectedTagList />
           <AvailableForOther>false</AvailableForOther>
@@ -49,6 +52,7 @@
       </PipelineConditions>
     </ClientPipelineItem>
   </ProcessList>
+  <WorkflowList />
   <ServiceRateEnable>false</ServiceRateEnable>
   <Properties>
     <NameValuePair>
@@ -64,156 +68,8 @@
       <Value>FolderEvents</Value>
     </NameValuePair>
     <NameValuePair>
-      <Name>PollingInterval</Name>
-      <Value>60</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>FileRetrievalMethod</Name>
-      <Value>FileExtension</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>FileNamesToRetrieve</Name>
-      <Value />
-    </NameValuePair>
-    <NameValuePair>
-      <Name>FileSortByField</Name>
-      <Value>None</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>FileSortOrderField</Name>
-      <Value>Ascending</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>FileAgeFilter</Name>
-      <Value>00:00:00</Value>
-    </NameValuePair>
-    <NameValuePair>
       <Name>SendTopic</Name>
       <Value>Image</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>RemoveBOM</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>SuppressFailedExtensions</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>ProcessZeroBytes</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>MetadataOnly</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>ArchiveOnGet</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>ArchiveFolder</Name>
-      <Value />
-    </NameValuePair>
-    <NameValuePair>
-      <Name>ArchiveOverWrite</Name>
-      <Value>True</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>ArchiveCreateSubfolders</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>RecursiveGet</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>OverrideEncoding</Name>
-      <Value>Default</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>ErrorMode</Name>
-      <Value>Error</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>ErrorHandling</Name>
-      <Value>StopPollingOnError</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>CreateFolderPath</Name>
-      <Value>True</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>FileEncoding</Name>
-      <Value>Default</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>FileWriteOption</Name>
-      <Value>Create</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>DisableWriteThruCache</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryFileRetrievalMethod</Name>
-      <Value>FileExtension</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryFileNamesToRetrieve</Name>
-      <Value />
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryFileSortByField</Name>
-      <Value>None</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryFileSortOrderField</Name>
-      <Value>Ascending</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryFileAgeFilter</Name>
-      <Value>00:00:00</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryRemoveBOM</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QuerySuppressFailedExtensions</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryProcessZeroBytes</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryMetadataOnly</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryArchiveOnGet</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryArchiveFolder</Name>
-      <Value />
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryArchiveOverWrite</Name>
-      <Value>True</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryArchiveCreateSubfolders</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryRecursiveGet</Name>
-      <Value>False</Value>
-    </NameValuePair>
-    <NameValuePair>
-      <Name>QueryOverrideEncoding</Name>
-      <Value>Default</Value>
     </NameValuePair>
   </Properties>
   <AdapterBindings />

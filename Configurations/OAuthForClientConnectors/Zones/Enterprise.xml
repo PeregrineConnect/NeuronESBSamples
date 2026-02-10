@@ -8,6 +8,7 @@
   <Name>Enterprise</Name>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Location />
   <Enabled>true</Enabled>
   <Channels>
@@ -181,7 +182,7 @@
           </NameValuePair>
           <NameValuePair>
             <Name>ServicePort</Name>
-            <Value>50010</Value>
+            <Value>60210</Value>
           </NameValuePair>
           <NameValuePair>
             <Name>AllowOutputBatching</Name>
@@ -440,14 +441,14 @@
       <ChannelName>amqp/rabbitmq</ChannelName>
     </ESBChannelDescription>
   </Channels>
-  <BootstrapServicePort>50000</BootstrapServicePort>
+  <BootstrapServicePort>60000</BootstrapServicePort>
   <ManagementServicePort>50002</ManagementServicePort>
   <ControlServicePort>50004</ControlServicePort>
-  <CacheServiceBasePort>53200</CacheServiceBasePort>
+  <CacheServiceBasePort>60200</CacheServiceBasePort>
   <EndpointHostServicePort>51004</EndpointHostServicePort>
   <SwaggerSelfHostBasePort>51003</SwaggerSelfHostBasePort>
-  <TcpPublishingStartPort>50010</TcpPublishingStartPort>
-  <TcpPublishingEndPort>50100</TcpPublishingEndPort>
+  <TcpPublishingStartPort>60210</TcpPublishingStartPort>
+  <TcpPublishingEndPort>60300</TcpPublishingEndPort>
   <Clustered>false</Clustered>
   <QueueServer>DESKTOP-6V9K70R</QueueServer>
   <ActiveDeploymentGroup />

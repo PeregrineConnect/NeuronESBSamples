@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>812922ac-0e50-4425-aa04-0243f74467c9</Id>
-  <Version>f80c5d84-bddc-414a-a46f-e015c6e63f89</Version>
+  <Id>4655b743-f856-4aa9-99c0-d33a070a448d</Id>
+  <Version>927edef5-cc1b-4c6d-91ac-3154c0808bf9</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description>Default policy</Description>
@@ -9,7 +9,8 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
-  <OnErrorAuditToDatabase>true</OnErrorAuditToDatabase>
+  <IsInvalid>false</IsInvalid>
+  <OnErrorAuditToDatabase>false</OnErrorAuditToDatabase>
   <OnErrorAuditToFile>false</OnErrorAuditToFile>
   <OnErrorRepublishMessage>false</OnErrorRepublishMessage>
   <RepublishTopic />

@@ -9,17 +9,18 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Enabled>true</Enabled>
   <TopicGroup>General</TopicGroup>
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
-      <Id>62f47117-c40e-483a-9a5f-bdfeaa17211a</Id>
+      <Id>44da9eef-ae3b-4f7c-8c3b-8401b35e071d</Id>
       <Name>FtpTopic.Out</Name>
       <Description />
     </Subtopic>
     <Subtopic>
-      <Id>9acd1784-6d44-4023-a3c9-62983b339bc3</Id>
+      <Id>3c8a897f-c3dc-4abd-a9e8-8696d40b613d</Id>
       <Name>FtpTopic.In</Name>
       <Description />
     </Subtopic>
@@ -128,5 +129,6 @@
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
   <IsWorkflowManager>false</IsWorkflowManager>
+  <CreateTopics>true</CreateTopics>
   <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

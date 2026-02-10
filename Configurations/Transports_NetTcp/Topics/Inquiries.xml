@@ -9,27 +9,28 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Enabled>true</Enabled>
   <TopicGroup>General</TopicGroup>
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
-      <Id>0f4c53a2-e9f8-43c6-af5e-ed178df07b8c</Id>
+      <Id>649a893c-6644-4fb2-824f-434b5ece595c</Id>
       <Name>Inquiries.RequestReply</Name>
       <Description />
     </Subtopic>
     <Subtopic>
-      <Id>8ebae7bf-2aa2-4c9f-87a6-219e4fc8edbb</Id>
+      <Id>2244936a-4dec-480c-9b4a-d611392630a5</Id>
       <Name>Inquiries.basicHttpBinding</Name>
       <Description />
     </Subtopic>
     <Subtopic>
-      <Id>11c4605d-2dd3-4230-9b0e-50740dd77b22</Id>
+      <Id>5aa43850-1ea6-453e-a3d3-29d674f644d6</Id>
       <Name>Inquiries.wsHttpBinding</Name>
       <Description />
     </Subtopic>
     <Subtopic>
-      <Id>100fe239-88e4-4e10-b343-8d20d9d35b43</Id>
+      <Id>b64b396b-3277-4e68-a756-dbc354048f4d</Id>
       <Name>Inquiries.netTcpBinding</Name>
       <Description />
     </Subtopic>
@@ -59,7 +60,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>ServicePort</Name>
-      <Value>50013</Value>
+      <Value>60210</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>AllowOutputBatching</Name>
@@ -138,5 +139,6 @@
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
   <IsWorkflowManager>false</IsWorkflowManager>
+  <CreateTopics>true</CreateTopics>
   <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

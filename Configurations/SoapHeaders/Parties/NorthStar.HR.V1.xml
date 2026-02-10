@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>161c7c1b-93da-4a15-8ed6-0d38d026544f</Id>
-  <Version>659dbebe-4f42-4f44-9710-a17c5c459c53</Version>
+  <Version>04e631eb-909f-4270-9791-fcd1e6f5e2fc</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <SubscriberId>NorthStar.HR.V1</SubscriberId>
   <ClientGroup>General</ClientGroup>
@@ -16,6 +17,7 @@
   <Enabled>true</Enabled>
   <Subscriptions>
     <Subscription>
+      <ForWorkflowEndpointExecution>false</ForWorkflowEndpointExecution>
       <TopicName>NorthStar.HR.V1</TopicName>
       <TopicId />
       <CanRead>true</CanRead>
@@ -35,6 +37,7 @@
       <Name>InsertCustomSoapHeader</Name>
       <IsSystemObject>false</IsSystemObject>
       <IsPrivate>false</IsPrivate>
+      <IsInvalid>false</IsInvalid>
       <ApplyOnPublish>false</ApplyOnPublish>
       <ApplyOnReceive>true</ApplyOnReceive>
       <PipelineConditions>
@@ -45,10 +48,15 @@
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
-        <Condition />
+        <IsInvalid>false</IsInvalid>
+        <Condition>
+          <SelectedTagList />
+          <AvailableForOther>false</AvailableForOther>
+        </Condition>
       </PipelineConditions>
     </ClientPipelineItem>
   </MessagePipelines>
   <LogActivity>false</LogActivity>
   <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <IsWorkflowManager>false</IsWorkflowManager>
 </ESBSubscriber>

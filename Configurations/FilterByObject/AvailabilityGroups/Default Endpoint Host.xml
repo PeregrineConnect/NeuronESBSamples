@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EsbAvailabilityGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>305fb312-66a9-4906-9474-2d7f15f4c931</Id>
-  <Version>9cde2888-bb9d-4df1-846e-9321ab52e1fb</Version>
+  <Version>08ccf461-87df-468c-8a21-c0909cf37fa4</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description>Default Host for Endpoints</Description>
   <Name>Default Endpoint Host</Name>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <IsScheduler>false</IsScheduler>
   <Category />
   <RunAs />

@@ -1,21 +1,25 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>596c03e6-7e04-47ff-a8b6-8163a9583d72</Id>
   <Version>c582e090-c91b-4b6d-8195-ddfd814cf405</Version>
-  <Name>ContactReceiverXPathCustomer</Name>
+  <BusinessFlows />
+  <ProcessFlows />
   <Description />
+  <Name>ContactReceiverXPathCustomer</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
-  <AllowMultipleInstances>true</AllowMultipleInstances>
-  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
+  <Bindings />
   <SubscriberId>ContactReceiverXPathCustomer</SubscriberId>
   <ClientGroup>General</ClientGroup>
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
-  <Anonymous>true</Anonymous>
   <Subscriptions>
     <Subscription>
+      <ForWorkflowEndpointExecution>false</ForWorkflowEndpointExecution>
       <TopicName>Contacts.*</TopicName>
+      <TopicId />
       <CanRead>true</CanRead>
       <CanWrite>false</CanWrite>
       <Condition>
@@ -30,11 +34,16 @@
             <LogicalOperator>End</LogicalOperator>
           </ConditionElement>
         </Conditions>
+        <Name>Condition2</Name>
+        <SelectedTagList />
+        <AvailableForOther>false</AvailableForOther>
       </Condition>
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
   </Subscriptions>
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
   <LogActivity>false</LogActivity>
-  <LogFile />
-  <LogSession>true</LogSession>
+  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <IsWorkflowManager>false</IsWorkflowManager>
 </ESBSubscriber>

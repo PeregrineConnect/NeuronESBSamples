@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>263</Version>
+  <Version>259</Version>
   <EnvironmentName>RESTServices</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.660</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.660</DesignerBuildVersion>
   <ApplicationName>RESTServices</ApplicationName>
   <ApplicationDisplayName>RESTServices</ApplicationDisplayName>
   <ApplicationId>5961f73d-745d-44cf-9cb6-0d774d3936f4</ApplicationId>
@@ -12,13 +12,12 @@
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,*,pipeline,JSON Converter</string>
-      <string>Edit,Enterprise,service endpoint,JSONClientConnector</string>
+      <string>Edit,Enterprise,adapter endpoint,ImageFilePublisherEndpoint</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy>DESKTOP-KHDEJI9\LENOVO</LastModifiedBy>
-    <LastModifiedDate>2025-06-30T09:41:57.3536Z</LastModifiedDate>
-    <Comments>Edited pipeline named 'JSON Converter' in *", Edited service endpoint named 'JSONClientConnector' in Enterprise"</Comments>
+    <LastModifiedBy>TEJASPC\tejas</LastModifiedBy>
+    <LastModifiedDate>2026-02-07T07:33:49.4195522Z</LastModifiedDate>
+    <Comments>Edited adapter endpoint named 'ImageFilePublisherEndpoint' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />

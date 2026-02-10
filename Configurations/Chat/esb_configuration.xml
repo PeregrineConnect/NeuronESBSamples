@@ -2,9 +2,10 @@
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Version>30</Version>
   <EnvironmentName>Chat</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.648</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.648</DesignerBuildVersion>
   <ApplicationName>Chat</ApplicationName>
+  <ApplicationDisplayName>Chat</ApplicationDisplayName>
   <ApplicationId>11c1e252-0abf-4723-b791-ae7454abc00a</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
@@ -15,14 +16,17 @@
     </Additions>
     <Revisions>
       <string>Edit,Enterprise,topic,Chat</string>
+      <string>Edit,*,Policy,Default_Service</string>
+      <string>Edit,*,Policy,Default_Adapter</string>
     </Revisions>
     <Deletions>
-      <string>delete,*,endpoint host,Backbone Default Topic Host</string>
-      <string>delete,*,endpoint host,Backbone Default Host</string>
+      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+      <string>Delete,*,Adapter Policy,Default.xml</string>
+      <string>Delete,*,Service Policy,Default.xml</string>
     </Deletions>
-    <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-03-04T05:27:15.7199293Z</LastModifiedDate>
-    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Backbone Default Topic Host' from *", Deleted the endpoint host named 'Backbone Default Host' from *", Edited topic named 'Chat' in Enterprise"</Comments>
+    <LastModifiedBy>DESKTOP-HR5RFGS\ADMIN</LastModifiedBy>
+    <LastModifiedDate>2026-01-28T02:01:26.5477246Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Deleted the Adapter Policy named 'Default.xml' from *", Deleted the Service Policy named 'Default.xml' from *", Edited topic named 'Chat' in Enterprise", Edited Policy named 'Default_Service' in *", Edited Policy named 'Default_Adapter' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />

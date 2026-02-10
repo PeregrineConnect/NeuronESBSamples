@@ -9,6 +9,7 @@
   <Group />
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <FarmSingleInstance>false</FarmSingleInstance>
   <Enabled>true</Enabled>
@@ -23,6 +24,7 @@
   <ProcessMode>false</ProcessMode>
   <ClientProcessMode>Messaging</ClientProcessMode>
   <ProcessList />
+  <WorkflowList />
   <ServiceRateEnable>false</ServiceRateEnable>
   <Properties>
     <NameValuePair>
@@ -70,7 +72,7 @@
       <Value>10</Value>
     </NameValuePair>
     <NameValuePair>
-      <Name>OdbcCommandType</Name>
+      <Name>CommandType</Name>
       <Value>StoredProcedure</Value>
     </NameValuePair>
     <NameValuePair>

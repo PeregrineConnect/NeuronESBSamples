@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>95ba2efb-ad0e-4d1a-9652-361c2d9271a6</Id>
-  <Version>b1255315-106c-4925-859d-463be06ca873</Version>
+  <Version>3ea34d52-cb19-48b0-ad2a-265050a2f5ae</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <SubscriberId>OrderStorer</SubscriberId>
   <ClientGroup>General</ClientGroup>
@@ -16,6 +17,7 @@
   <Enabled>true</Enabled>
   <Subscriptions>
     <Subscription>
+      <ForWorkflowEndpointExecution>false</ForWorkflowEndpointExecution>
       <TopicName>Orders</TopicName>
       <TopicId />
       <CanRead>false</CanRead>
@@ -35,6 +37,7 @@
       <Name>DB Transactional</Name>
       <IsSystemObject>false</IsSystemObject>
       <IsPrivate>false</IsPrivate>
+      <IsInvalid>false</IsInvalid>
       <ApplyOnPublish>true</ApplyOnPublish>
       <ApplyOnReceive>false</ApplyOnReceive>
       <PipelineConditions>
@@ -45,6 +48,7 @@
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
+        <IsInvalid>false</IsInvalid>
         <Condition>
           <SelectedTagList />
           <AvailableForOther>false</AvailableForOther>

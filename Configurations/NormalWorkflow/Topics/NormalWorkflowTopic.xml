@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Enabled>true</Enabled>
   <TopicGroup>General</TopicGroup>
   <Zone>Enterprise</Zone>
@@ -37,7 +38,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>ServicePort</Name>
-      <Value>50010</Value>
+      <Value>60210</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>AllowOutputBatching</Name>
@@ -116,5 +117,6 @@
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
   <IsWorkflowManager>false</IsWorkflowManager>
+  <CreateTopics>true</CreateTopics>
   <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

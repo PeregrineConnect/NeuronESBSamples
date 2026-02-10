@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>48</Version>
+  <Version>47</Version>
   <EnvironmentName>WsdlClientConnector</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.648</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.648</DesignerBuildVersion>
   <ApplicationName>WsdlClientConnector</ApplicationName>
+  <ApplicationDisplayName>WsdlClientConnector</ApplicationDisplayName>
   <ApplicationId>e60b4306-f124-4a1c-b9e4-7a49a6ce5a34</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
@@ -17,15 +18,17 @@
       <string>Edit,Enterprise,topic,Payments</string>
       <string>Edit,Enterprise,service endpoint,PaymentClientConnector</string>
       <string>Edit,Enterprise,service endpoint,PaymentServiceConnector</string>
-      <string>Edit,*,policy,Default</string>
+      <string>Edit,*,Policy,Default_Service</string>
+      <string>Edit,*,Policy,Default_Adapter</string>
     </Revisions>
     <Deletions>
-      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
       <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+      <string>Delete,*,Adapter Policy,Default.xml</string>
+      <string>Delete,*,Service Policy,Default.xml</string>
     </Deletions>
-    <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-03-04T05:29:48.3608064Z</LastModifiedDate>
-    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Payments' in Enterprise", Edited service endpoint named 'PaymentClientConnector' in Enterprise", Edited service endpoint named 'PaymentServiceConnector' in Enterprise", Edited policy named 'Default' in *"</Comments>
+    <LastModifiedBy>DESKTOP-DACOO68\Tushar</LastModifiedBy>
+    <LastModifiedDate>2026-01-27T13:56:49.0434072Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Deleted the Adapter Policy named 'Default.xml' from *", Deleted the Service Policy named 'Default.xml' from *", Edited topic named 'Payments' in Enterprise", Edited service endpoint named 'PaymentClientConnector' in Enterprise", Edited service endpoint named 'PaymentServiceConnector' in Enterprise", Edited Policy named 'Default_Service' in *", Edited Policy named 'Default_Adapter' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
@@ -63,6 +66,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />

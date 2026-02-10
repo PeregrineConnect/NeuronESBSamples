@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>5b2f6870-f409-4643-86d4-21c408f69e61</Id>
-  <Version>e9f6e9b2-4577-48f0-9d33-16110bdbf2cc</Version>
+  <Version>ad09fb4d-f011-4839-a952-eec81dff02fa</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <SubscriberId>TestSubscriber</SubscriberId>
   <ClientGroup>General</ClientGroup>
@@ -16,6 +17,7 @@
   <Enabled>true</Enabled>
   <Subscriptions>
     <Subscription>
+      <ForWorkflowEndpointExecution>false</ForWorkflowEndpointExecution>
       <TopicName>FtpTopic.In</TopicName>
       <TopicId />
       <CanRead>true</CanRead>
@@ -35,6 +37,7 @@
       <Name>Set File Filename</Name>
       <IsSystemObject>false</IsSystemObject>
       <IsPrivate>false</IsPrivate>
+      <IsInvalid>false</IsInvalid>
       <ApplyOnPublish>false</ApplyOnPublish>
       <ApplyOnReceive>true</ApplyOnReceive>
       <PipelineConditions>
@@ -45,10 +48,15 @@
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
-        <Condition />
+        <IsInvalid>false</IsInvalid>
+        <Condition>
+          <SelectedTagList />
+          <AvailableForOther>false</AvailableForOther>
+        </Condition>
       </PipelineConditions>
     </ClientPipelineItem>
   </MessagePipelines>
   <LogActivity>false</LogActivity>
   <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <IsWorkflowManager>false</IsWorkflowManager>
 </ESBSubscriber>

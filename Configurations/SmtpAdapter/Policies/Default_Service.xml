@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ESBPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>9cf7e992-305b-459f-acf0-6ad989a9edcd</Id>
+  <Version>4fcb1e7d-2d7a-4bd8-95d9-e6991d57cae1</Version>
+  <BusinessFlows />
+  <ProcessFlows />
+  <Description>Default service policy</Description>
+  <Name>Default_Service</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
+  <OnErrorAuditToDatabase>false</OnErrorAuditToDatabase>
+  <OnErrorAuditToFile>false</OnErrorAuditToFile>
+  <OnErrorRepublishMessage>false</OnErrorRepublishMessage>
+  <RepublishTopic />
+  <OnErrorRollback>false</OnErrorRollback>
+  <AlwaysAvailable>true</AlwaysAvailable>
+  <RetryCount>1</RetryCount>
+  <RetryInterval>1</RetryInterval>
+  <StartAndStopAdapterAccordingToAvailability>true</StartAndStopAdapterAccordingToAvailability>
+  <RequestReplyTimeout>60</RequestReplyTimeout>
+  <DoNotApplyPolicyIfFaultContract>false</DoNotApplyPolicyIfFaultContract>
+  <InlcudeAsExceptions>false</InlcudeAsExceptions>
+  <HttpStatusCodes />
+  <CustomHttpStatusCodes />
+</ESBPolicy>

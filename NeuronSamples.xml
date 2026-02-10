@@ -14,16 +14,16 @@
           clients  = "0"
          />
 
-  <!-- <Sample tree     = "Adapters" -->
-        <!-- name       = "Dynamics CRM XRM Adapter" -->
-        <!-- desc       = "This sample demonstrates using the Dynamics CRM XRM Adapter to perform operations on CRM entities, such as create, delete, change the state of an entity and perform a Fetch XML query." -->
-        <!-- config     = "DynamicsCrm2013SubscriptionAdapter" -->
-        <!-- folder     = "" -->
-        <!-- solution   = "" -->
-        <!-- help       = "https://www.peregrineconnect.com/documentation-kb/integrating-with-microsoft-crm/" -->
-        <!-- setup      = "0" -->
-        <!-- clients    = "1" -->
-         <!-- /> -->
+  <Sample tree     = "Adapters"
+        name       = "Dynamics CRM XRM Adapter"
+        desc       = "This sample demonstrates using the Dynamics CRM XRM Adapter to perform operations on CRM entities, such as create, delete, change the state of an entity and perform a Fetch XML query."
+        config     = "DynamicsCrm2013SubscriptionAdapter"
+        folder     = ""
+        solution   = ""
+        help       = "https://www.peregrineconnect.com/documentation-kb/integrating-with-microsoft-crm/"
+        setup      = "0"
+        clients    = "1"
+         />
 
   <Sample tree     = "Adapters"
           name     = "FTP Adapter"

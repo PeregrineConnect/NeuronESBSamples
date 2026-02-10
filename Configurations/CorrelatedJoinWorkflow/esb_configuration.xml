@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>32</Version>
+  <Version>23</Version>
   <EnvironmentName>CorrelatedJoinWorkflow</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.648</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.648</DesignerBuildVersion>
   <ApplicationName>CorrelatedJoinWorkflow</ApplicationName>
+  <ApplicationDisplayName>CorrelatedJoinWorkflow</ApplicationDisplayName>
   <ApplicationId>db3bfde5-5be3-4009-ae7f-784b4b039839</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
@@ -15,14 +16,24 @@
     </Additions>
     <Revisions>
       <string>Edit,Enterprise,topic,Orders</string>
+      <string>Edit,*,Policy,Default_Service</string>
+      <string>Edit,*,Policy,Default_Adapter</string>
+      <string>Edit,*,pipeline,Split Orders</string>
+      <string>Edit,Enterprise,publisher,OrderSplitter</string>
+      <string>Edit,Dev,deployment group,Dev</string>
+      <string>Edit,*,workflow definition,Join Orders</string>
+      <string>Edit,(All Zones),database,localhost.BackboneDB</string>
     </Revisions>
     <Deletions>
-      <string>delete,*,endpoint host,Backbone Default Topic Host</string>
-      <string>delete,*,endpoint host,Backbone Default Host</string>
+      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+      <string>Delete,*,Adapter Policy,Default.xml</string>
+      <string>Delete,*,Service Policy,Default.xml</string>
+      <string>Remove,(All Zones),database,localhost.NeuronESB</string>
+      <string>Remove,(All Zones),database,localhost.</string>
     </Deletions>
-    <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-03-04T05:51:31.2242825Z</LastModifiedDate>
-    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Backbone Default Topic Host' from *", Deleted the endpoint host named 'Backbone Default Host' from *", Edited topic named 'Orders' in Enterprise"</Comments>
+    <LastModifiedBy>DESKTOP-HR5RFGS\ADMIN</LastModifiedBy>
+    <LastModifiedDate>2026-01-28T09:31:31.5730891Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Deleted the Adapter Policy named 'Default.xml' from *", Deleted the Service Policy named 'Default.xml' from *", Edited topic named 'Orders' in Enterprise", Edited Policy named 'Default_Service' in *", Edited Policy named 'Default_Adapter' in *", Edited pipeline named 'Split Orders' in *", Edited publisher named 'OrderSplitter' in Enterprise", Edited deployment group named 'Dev' in Dev", Edited workflow definition named 'Join Orders' in *", Edited database named 'localhost.BackboneDB' in (All Zones)"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
@@ -56,6 +67,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -78,6 +90,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -100,6 +113,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />

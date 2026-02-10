@@ -9,6 +9,7 @@
   <Group />
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <RequestReplyActionPairs>
     <item>
@@ -121,6 +122,7 @@
   <FailoverAddresses />
   <FarmSingleInstance>false</FarmSingleInstance>
   <ProcessList />
+  <WorkflowList />
   <ProcessMode>PassThru</ProcessMode>
   <ServiceRoutes>SOAPServiceRoutingTable</ServiceRoutes>
   <ServiceProcessMode>true</ServiceProcessMode>

@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <NeuronEnvironmentVariables />
   <RunInDocker>false</RunInDocker>
   <WindowsVersion>Server2019</WindowsVersion>
@@ -100,7 +101,7 @@
   <DevelopmentDefault>false</DevelopmentDefault>
   <EncryptUnicode>true</EncryptUnicode>
   <ServerTopology>0</ServerTopology>
-  <StateDatabase>localhost.NeuronESB</StateDatabase>
+  <StateDatabase>localhost.BackboneDB</StateDatabase>
   <Units>
     <ESBDeploymentUnit>
       <MachineName>localhost</MachineName>

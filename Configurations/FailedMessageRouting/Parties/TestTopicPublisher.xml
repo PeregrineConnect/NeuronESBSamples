@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>b193e477-ebf8-49f9-b4a8-7e3dc579e247</Id>
-  <Version>1f086faf-8f76-4011-a567-89773c032833</Version>
+  <Version>fd364e67-8ff0-4301-9f90-d99c3e2d64ed</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <SubscriberId>TestTopicPublisher</SubscriberId>
   <ClientGroup>General</ClientGroup>
@@ -16,6 +17,7 @@
   <Enabled>true</Enabled>
   <Subscriptions>
     <Subscription>
+      <ForWorkflowEndpointExecution>false</ForWorkflowEndpointExecution>
       <TopicName>TestTopic</TopicName>
       <TopicId />
       <CanRead>false</CanRead>
@@ -35,6 +37,7 @@
       <Name>Force Message Failure</Name>
       <IsSystemObject>false</IsSystemObject>
       <IsPrivate>false</IsPrivate>
+      <IsInvalid>false</IsInvalid>
       <ApplyOnPublish>true</ApplyOnPublish>
       <ApplyOnReceive>false</ApplyOnReceive>
       <PipelineConditions>
@@ -45,6 +48,7 @@
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
+        <IsInvalid>false</IsInvalid>
         <Condition>
           <SelectedTagList />
           <AvailableForOther>false</AvailableForOther>

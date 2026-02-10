@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>54</Version>
+  <Version>53</Version>
   <EnvironmentName>OdbcAdapter</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.648</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.648</DesignerBuildVersion>
   <ApplicationName>OdbcAdapter</ApplicationName>
+  <ApplicationDisplayName>OdbcAdapter</ApplicationDisplayName>
   <ApplicationId>ddc6ea94-ee62-4289-bb9b-b723b2e186dc</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
@@ -17,15 +18,22 @@
       <string>Edit,Enterprise,topic,Orders</string>
       <string>Edit,Enterprise,adapter endpoint,ODBCOrderInserts</string>
       <string>Edit,Enterprise,adapter endpoint,ODBCOrderQueries</string>
-      <string>Edit,*,policy,Default</string>
+      <string>Edit,*,Policy,Default_Service</string>
+      <string>Edit,*,Policy,Default_Adapter</string>
+      <string>Edit,*,pipeline,Exception Handling</string>
+      <string>Edit,*,pipeline,Insert Orders</string>
+      <string>Edit,*,pipeline,Query - Stored Proc</string>
+      <string>Edit,*,pipeline,Query - Text</string>
+      <string>Edit,Enterprise,publisher,OrderPublisher</string>
     </Revisions>
     <Deletions>
-      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
       <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+      <string>Delete,*,Adapter Policy,Default.xml</string>
+      <string>Delete,*,Service Policy,Default.xml</string>
     </Deletions>
-    <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-03-04T05:14:51.7049978Z</LastModifiedDate>
-    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Orders' in Enterprise", Edited adapter endpoint named 'ODBCOrderInserts' in Enterprise", Edited adapter endpoint named 'ODBCOrderQueries' in Enterprise", Edited policy named 'Default' in *"</Comments>
+    <LastModifiedBy>DESKTOP-DACOO68\Tushar</LastModifiedBy>
+    <LastModifiedDate>2026-01-28T06:10:50.3582244Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Deleted the Adapter Policy named 'Default.xml' from *", Deleted the Service Policy named 'Default.xml' from *", Edited topic named 'Orders' in Enterprise", Edited adapter endpoint named 'ODBCOrderInserts' in Enterprise", Edited adapter endpoint named 'ODBCOrderQueries' in Enterprise", Edited Policy named 'Default_Service' in *", Edited Policy named 'Default_Adapter' in *", Edited pipeline named 'Exception Handling' in *", Edited pipeline named 'Insert Orders' in *", Edited pipeline named 'Query - Stored Proc' in *", Edited pipeline named 'Query - Text' in *", Edited publisher named 'OrderPublisher' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
@@ -57,6 +65,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <ValidateWithService>false</ValidateWithService>
           <Storing>false</Storing>
           <ShortName>InsertOrder</ShortName>
@@ -87,6 +96,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -109,6 +119,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -131,6 +142,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -153,6 +165,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />
@@ -181,6 +194,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <Xslt />
           <TestInput />

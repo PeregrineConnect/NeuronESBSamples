@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>02b1ebdf-c46a-4697-a51b-b1f1ca4b08d7</Id>
-  <Version>0807ed92-7e82-4e87-bc76-13096bf6cd29</Version>
+  <Version>a6b5f868-6ede-4a5c-9c17-fceeedf9c2c8</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <SubscriberId>NorthstarPubByHeader</SubscriberId>
   <ClientGroup>General</ClientGroup>
@@ -16,6 +17,7 @@
   <Enabled>true</Enabled>
   <Subscriptions>
     <Subscription>
+      <ForWorkflowEndpointExecution>false</ForWorkflowEndpointExecution>
       <TopicName>NorthStar.HR</TopicName>
       <TopicId />
       <CanRead>false</CanRead>
@@ -23,6 +25,7 @@
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
     <Subscription>
+      <ForWorkflowEndpointExecution>false</ForWorkflowEndpointExecution>
       <TopicName>NorthStar.HR.V1</TopicName>
       <TopicId />
       <CanRead>false</CanRead>
@@ -30,6 +33,7 @@
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
     <Subscription>
+      <ForWorkflowEndpointExecution>false</ForWorkflowEndpointExecution>
       <TopicName>NorthStar.HR.V2</TopicName>
       <TopicId />
       <CanRead>false</CanRead>
@@ -49,6 +53,7 @@
       <Name>RouteBySoapHeader</Name>
       <IsSystemObject>false</IsSystemObject>
       <IsPrivate>false</IsPrivate>
+      <IsInvalid>false</IsInvalid>
       <ApplyOnPublish>true</ApplyOnPublish>
       <ApplyOnReceive>false</ApplyOnReceive>
       <PipelineConditions>
@@ -59,6 +64,7 @@
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
+        <IsInvalid>false</IsInvalid>
         <Condition>
           <SelectedTagList />
           <AvailableForOther>false</AvailableForOther>

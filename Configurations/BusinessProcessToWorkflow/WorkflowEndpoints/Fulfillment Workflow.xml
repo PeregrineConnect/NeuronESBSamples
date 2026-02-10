@@ -8,6 +8,7 @@
   <Name>Fulfillment Workflow</Name>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
   <Category>General</Category>
@@ -60,4 +61,5 @@
   <Topic>Orders.Request</Topic>
   <WorkflowDefinitionId>Fulfillment Workflow</WorkflowDefinitionId>
   <UseWorkflowManagerParty>false</UseWorkflowManagerParty>
+  <HostedInEndpoint>false</HostedInEndpoint>
 </EsbWorkflowHost>

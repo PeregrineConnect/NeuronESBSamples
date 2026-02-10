@@ -9,32 +9,33 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Enabled>true</Enabled>
   <TopicGroup>General</TopicGroup>
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
-      <Id>e53713e0-f4b7-4882-a4f5-83d4dd1796aa</Id>
+      <Id>7b5fecce-d213-4eb1-8479-b7bdf051b8f7</Id>
       <Name>Contacts.New</Name>
       <Description>New Contacts</Description>
     </Subtopic>
     <Subtopic>
-      <Id>1c96f649-020c-4d91-9146-0558c2e2eeef</Id>
+      <Id>1d9821a3-2721-460d-b615-938e1fdfcb10</Id>
       <Name>Contacts.Updated</Name>
       <Description>Updated Contacts</Description>
     </Subtopic>
     <Subtopic>
-      <Id>0b726a35-7fec-4a77-b36e-faf86e44b4c8</Id>
+      <Id>154127f7-5fe1-42ad-be95-4597974bc880</Id>
       <Name>Contacts.Customer</Name>
       <Description>Customer contacts</Description>
     </Subtopic>
     <Subtopic>
-      <Id>a354726f-bac1-4daf-a3ad-20697ad834f2</Id>
+      <Id>f884fddf-3d4a-4d38-8ce9-16273b2ca1ff</Id>
       <Name>Contacts.Personal</Name>
       <Description>Personal contacts</Description>
     </Subtopic>
     <Subtopic>
-      <Id>7d92a8cb-e419-4be2-ba06-3e5449dda5b4</Id>
+      <Id>23ff4592-b368-4feb-a75d-504cad2716ed</Id>
       <Name>Contacts.Vendor</Name>
       <Description>Vendor contacts</Description>
     </Subtopic>
@@ -145,5 +146,6 @@
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
   <IsWorkflowManager>false</IsWorkflowManager>
+  <CreateTopics>true</CreateTopics>
   <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

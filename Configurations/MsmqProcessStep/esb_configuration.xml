@@ -1,24 +1,39 @@
-<?xml version="1.0"?>
-<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>36</Version>
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>38</Version>
   <EnvironmentName>MsmqProcessStep</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.632</NeuronBuildVersion>
+  <NeuronBuildVersion>4.0.0.648</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.648</DesignerBuildVersion>
   <ApplicationName>MsmqProcessStep</ApplicationName>
+  <ApplicationDisplayName>MsmqProcessStep</ApplicationDisplayName>
   <ApplicationId>4b2bf6c9-f134-4f8a-8fe7-ba47f8f8a90a</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
+  <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,*,endpoint host,Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Endpoint Host</string>
+    </Additions>
     <Revisions>
-      <string>Edit,Enterprise,Zone,Enterprise,TCP Transport Binding Property 'MaxConcurrentCalls'</string>
+      <string>Edit,*,Policy,Default_Service</string>
+      <string>Edit,*,Policy,Default_Adapter</string>
+      <string>Edit,*,pipeline,Exception Handling</string>
+      <string>Edit,*,pipeline,MSMQ Process</string>
+      <string>Edit,*,pipeline,MSMQ Send Only</string>
     </Revisions>
-    <Deletions />
-    <LastModifiedBy />
-    <LastModifiedDate>2023-03-29T14:14:52.3010334Z</LastModifiedDate>
-    <Comments />
+    <Deletions>
+      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+      <string>Delete,*,Adapter Policy,Default.xml</string>
+      <string>Delete,*,Service Policy,Default.xml</string>
+    </Deletions>
+    <LastModifiedBy>DESKTOP-DACOO68\Tushar</LastModifiedBy>
+    <LastModifiedDate>2026-01-28T06:14:44.6902951Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Deleted the Adapter Policy named 'Default.xml' from *", Deleted the Service Policy named 'Default.xml' from *", Edited Policy named 'Default_Service' in *", Edited Policy named 'Default_Adapter' in *", Edited pipeline named 'Exception Handling' in *", Edited pipeline named 'MSMQ Process' in *", Edited pipeline named 'MSMQ Send Only' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
-  <DataMapperPort>8585</DataMapperPort>
+  <FragmentFolders />
+  <WorkflowFolders />
   <InstanceName />
   <Zones />
   <Topics />
@@ -47,13 +62,13 @@
   <Workflows />
   <Applications />
   <BusinessFlows />
+  <ProcessFlows />
   <Bindings />
   <ServiceRoutingTables />
   <Behaviors />
   <Adapters />
   <Credentials />
-  <ServicePolicies />
-  <AdapterPolicies />
+  <Policies />
   <Endpoints />
   <AccessControlLists />
   <Administrators />

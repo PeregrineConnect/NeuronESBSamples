@@ -1,12 +1,15 @@
-<?xml version="1.0"?>
-<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>61c065de-d620-4736-ae06-fc7955b11ea3</Id>
   <Version>8814fe20-7818-4560-a4d9-1bf6b4bac5de</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>OneWayService</Name>
   <Group />
   <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <RequestReplyActionPairs />
   <Pattern>0</Pattern>
@@ -18,14 +21,16 @@
     <Port>0</Port>
     <BypassLocalAddress>false</BypassLocalAddress>
   </ProxySettings>
-  <Enabled>true</Enabled>
+  <DebugInfo />
   <Zone>Enterprise</Zone>
+  <Enabled>true</Enabled>
   <ServiceName>OneWayService</ServiceName>
-  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
   <ServiceGroup />
   <Binding>NetMsmq</Binding>
+  <AvailabilityGroupId>Default Endpoint Host</AvailabilityGroupId>
   <KeepAlive>true</KeepAlive>
   <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <ProcessMultipartMessages>false</ProcessMultipartMessages>
   <TransactionType>None</TransactionType>
   <MaxMessageSize>100000000</MaxMessageSize>
   <ReliableMessaging>false</ReliableMessaging>
@@ -49,6 +54,7 @@
   <ServiceType>Business</ServiceType>
   <ClientCredentialtype>Certificate</ClientCredentialtype>
   <Impersonation>false</Impersonation>
+  <RelayAccessToken>true</RelayAccessToken>
   <ClientConnectorId>8915f825-659a-4562-a5e1-172156257e35</ClientConnectorId>
   <ClientUrl />
   <RouteClientTraffic>false</RouteClientTraffic>
@@ -70,6 +76,13 @@
   <ServiceTopic>Notifications</ServiceTopic>
   <ServiceSubscriberId>NotificationReceiver</ServiceSubscriberId>
   <ReuseServiceConnection>true</ReuseServiceConnection>
-  <ServicePolicy>Default</ServicePolicy>
+  <ServicePolicy>Default_Service</ServicePolicy>
   <FarmSingleInstance>false</FarmSingleInstance>
+  <ProcessList />
+  <WorkflowList />
+  <ProcessMode>Messaging</ProcessMode>
+  <ServiceRoutes />
+  <ServiceProcessMode>false</ServiceProcessMode>
+  <ServiceServiceRateEnable>false</ServiceServiceRateEnable>
+  <ClientServiceRateEnable>false</ClientServiceRateEnable>
 </ESBService>

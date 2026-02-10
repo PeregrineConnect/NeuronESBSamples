@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>91b3be8b-678f-4c08-834c-fcd8dddf49a1</Id>
-  <Version>8f22d35a-41bb-4ef1-88aa-3e7e2a40b2f4</Version>
+  <Version>e11ddb12-c73f-44cd-b783-35d6958b485b</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <Topic />
   <Pattern>1</Pattern>
@@ -94,6 +95,7 @@
       <Name>Save Received Image</Name>
       <IsSystemObject>false</IsSystemObject>
       <IsPrivate>false</IsPrivate>
+      <IsInvalid>false</IsInvalid>
       <ApplyOnPublish>true</ApplyOnPublish>
       <ApplyOnReceive>false</ApplyOnReceive>
       <PipelineConditions>
@@ -104,6 +106,7 @@
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
+        <IsInvalid>false</IsInvalid>
         <Condition>
           <SelectedTagList />
           <AvailableForOther>false</AvailableForOther>
@@ -111,6 +114,7 @@
       </PipelineConditions>
     </ClientPipelineItem>
   </ProcessList>
+  <WorkflowList />
   <ProcessMode>BusinessProcess</ProcessMode>
   <ServiceRoutes />
   <ServiceProcessMode>false</ServiceProcessMode>

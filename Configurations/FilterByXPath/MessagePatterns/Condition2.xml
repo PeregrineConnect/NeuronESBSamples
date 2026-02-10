@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ESBMessagePattern xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>14e64208-69f8-41f9-9a6f-365d9081c036</Id>
+  <Version>0a975ff1-6efd-49cb-91df-45f2b86946ce</Version>
+  <BusinessFlows />
+  <ProcessFlows />
+  <Description />
+  <Name>Condition2</Name>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
+  <Condition>
+    <Conditions>
+      <ConditionElement>
+        <PrefixOperator>None</PrefixOperator>
+        <Expression1>Body</Expression1>
+        <NotOperator>false</NotOperator>
+        <RelationalOperator>MatchesXPath</RelationalOperator>
+        <Expression2>//cust:Customer</Expression2>
+        <SuffixOperator>None</SuffixOperator>
+        <LogicalOperator>End</LogicalOperator>
+      </ConditionElement>
+    </Conditions>
+    <SelectedTagList />
+    <AvailableForOther>false</AvailableForOther>
+  </Condition>
+</ESBMessagePattern>

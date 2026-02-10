@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ServiceRoutingTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0"?>
+<ServiceRoutingTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>eb47f1a7-a130-4f21-b5b5-f44d38d63682</Id>
   <Version>032b1c0e-4ce1-41f3-9579-acffee2dc5c6</Version>
   <BusinessFlows />
-  <ProcessFlows />
   <Description />
   <Name>SoapToRestServiceRoutingTable</Name>
   <Group>General</Group>
@@ -18,12 +17,10 @@
         <URI>/</URI>
         <Body />
         <BodyType>Raw</BodyType>
-        <BodyFormat>XML</BodyFormat>
         <DeleteMessageBody>false</DeleteMessageBody>
         <DeleteResponseBody>false</DeleteResponseBody>
         <Parameters />
         <Headers />
-        <AdapterEndpointProperties />
         <BodyProperties />
         <TestBody />
         <TestEnabled>FALSE</TestEnabled>
@@ -41,7 +38,6 @@
         <Id>03ef75c8-fc90-428c-a232-b0000323ad61</Id>
         <Version>359d9496-21d6-4e67-8440-16d41d1d7c91</Version>
         <BusinessFlows />
-        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
@@ -68,12 +64,10 @@
         <URI>/</URI>
         <Body />
         <BodyType>Raw</BodyType>
-        <BodyFormat>XML</BodyFormat>
         <DeleteMessageBody>true</DeleteMessageBody>
         <DeleteResponseBody>false</DeleteResponseBody>
         <Parameters />
         <Headers />
-        <AdapterEndpointProperties />
         <BodyProperties />
         <TestBody />
         <TestEnabled>FALSE</TestEnabled>
@@ -91,7 +85,6 @@
         <Id>03ef75c8-fc90-428c-a232-b0000323ad61</Id>
         <Version>359d9496-21d6-4e67-8440-16d41d1d7c91</Version>
         <BusinessFlows />
-        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
@@ -118,12 +111,10 @@
         <URI>/{#BodyXPath("/*[local-name()='GetCustomerByID' and namespace-uri()='http://Neuron.Samples']/*[local-name()='id' and namespace-uri()='http://Neuron.Samples']")}</URI>
         <Body />
         <BodyType>Raw</BodyType>
-        <BodyFormat>XML</BodyFormat>
         <DeleteMessageBody>true</DeleteMessageBody>
         <DeleteResponseBody>false</DeleteResponseBody>
         <Parameters />
         <Headers />
-        <AdapterEndpointProperties />
         <BodyProperties />
         <TestBody />
         <TestEnabled>FALSE</TestEnabled>
@@ -141,7 +132,6 @@
         <Id>03ef75c8-fc90-428c-a232-b0000323ad61</Id>
         <Version>359d9496-21d6-4e67-8440-16d41d1d7c91</Version>
         <BusinessFlows />
-        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
@@ -168,7 +158,6 @@
         <URI>/</URI>
         <Body />
         <BodyType>Raw</BodyType>
-        <BodyFormat>XML</BodyFormat>
         <DeleteMessageBody>true</DeleteMessageBody>
         <DeleteResponseBody>false</DeleteResponseBody>
         <Parameters>
@@ -183,7 +172,6 @@
             <Value>{#BodyXPath("/*[local-name()='GetCustomerByName' and namespace-uri()='http://Neuron.Samples']/*[local-name()='name' and namespace-uri()='http://Neuron.Samples']")}</Value>
           </HeaderDataElement>
         </Headers>
-        <AdapterEndpointProperties />
         <BodyProperties />
         <TestBody />
         <TestEnabled>FALSE</TestEnabled>
@@ -201,7 +189,6 @@
         <Id>03ef75c8-fc90-428c-a232-b0000323ad61</Id>
         <Version>359d9496-21d6-4e67-8440-16d41d1d7c91</Version>
         <BusinessFlows />
-        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>

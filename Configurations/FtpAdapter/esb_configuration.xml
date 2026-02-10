@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>37</Version>
+  <Version>36</Version>
   <EnvironmentName>FtpAdapter</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.648</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.648</DesignerBuildVersion>
   <ApplicationName>FtpAdapter</ApplicationName>
+  <ApplicationDisplayName>FtpAdapter</ApplicationDisplayName>
   <ApplicationId>9536965b-1c98-4574-8abe-1b9218712b1b</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
@@ -19,15 +20,21 @@
       <string>Edit,Enterprise,adapter endpoint,FileSendEndpoint</string>
       <string>Edit,Enterprise,adapter endpoint,FtpReceiveEndpoint</string>
       <string>Edit,Enterprise,adapter endpoint,FtpSendEndpoint</string>
-      <string>Edit,*,policy,Default</string>
+      <string>Edit,*,Policy,Default_Service</string>
+      <string>Edit,*,Policy,Default_Adapter</string>
+      <string>Edit,*,pipeline,Set File Filename</string>
+      <string>Edit,Enterprise,subscriber,TestSubscriber</string>
+      <string>Edit,*,pipeline,Set FTP Filename</string>
+      <string>Edit,Enterprise,subscriber,FtpSubscriber</string>
     </Revisions>
     <Deletions>
-      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
       <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+      <string>Delete,*,Adapter Policy,Default.xml</string>
+      <string>Delete,*,Service Policy,Default.xml</string>
     </Deletions>
-    <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-03-04T05:14:34.5153209Z</LastModifiedDate>
-    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'FtpTopic' in Enterprise", Edited adapter endpoint named 'FileReceiveEndpoint' in Enterprise", Edited adapter endpoint named 'FileSendEndpoint' in Enterprise", Edited adapter endpoint named 'FtpReceiveEndpoint' in Enterprise", Edited adapter endpoint named 'FtpSendEndpoint' in Enterprise", Edited policy named 'Default' in *"</Comments>
+    <LastModifiedBy>DESKTOP-HR5RFGS\ADMIN</LastModifiedBy>
+    <LastModifiedDate>2026-01-28T06:56:04.9737717Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Deleted the Adapter Policy named 'Default.xml' from *", Deleted the Service Policy named 'Default.xml' from *", Edited topic named 'FtpTopic' in Enterprise", Edited adapter endpoint named 'FileReceiveEndpoint' in Enterprise", Edited adapter endpoint named 'FileSendEndpoint' in Enterprise", Edited adapter endpoint named 'FtpReceiveEndpoint' in Enterprise", Edited adapter endpoint named 'FtpSendEndpoint' in Enterprise", Edited Policy named 'Default_Service' in *", Edited Policy named 'Default_Adapter' in *", Edited pipeline named 'Set File Filename' in *", Edited subscriber named 'TestSubscriber' in Enterprise", Edited pipeline named 'Set FTP Filename' in *", Edited subscriber named 'FtpSubscriber' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />

@@ -9,5 +9,6 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Mask>false</Mask>
 </NeuronVariable>

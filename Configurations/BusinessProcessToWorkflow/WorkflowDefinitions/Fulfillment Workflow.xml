@@ -8,31 +8,78 @@
   <Name>Fulfillment Workflow</Name>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Category>General</Category>
   <Path />
   <ReferencedAssemblies />
   <WorkflowType>BasicWorkflow</WorkflowType>
   <WorkflowXaml>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;Activity x:Class="Fulfillment_Workflow" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:nn="clr-namespace:Neuron.NetX;assembly=Neuron.NetX" xmlns:nna="clr-namespace:Neuron.NetX.Administration;assembly=Neuron.NetX" xmlns:nna1="clr-namespace:Neuron.NetX.Activities;assembly=Neuron.NetX.Activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+&lt;Activity x:Class="Fulfillment_Workflow" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:nn="clr-namespace:Neuron.NetX;assembly=Neuron.NetX" xmlns:nna="clr-namespace:Neuron.NetX.Administration;assembly=Neuron.NetX" xmlns:nna1="clr-namespace:Neuron.NetX.Activities;assembly=Neuron.NetX.Activities" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
   &lt;x:Members&gt;
     &lt;x:Property Name="message" Type="InArgument(nn:ESBMessage)" /&gt;
     &lt;x:Property Name="configuration" Type="InArgument(nna:ESBConfiguration)" /&gt;
     &lt;x:Property Name="environmentVariables" Type="InArgument(scg:IReadOnlyDictionary(x:String, x:String))" /&gt;
   &lt;/x:Members&gt;
   &lt;VisualBasic.Settings&gt;Assembly references and imported namespaces for internal implementation&lt;/VisualBasic.Settings&gt;
-  &lt;Sequence AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False"&gt;
-    &lt;Sequence.Variables&gt;
-      &lt;Variable x:TypeArguments="x:String" Name="correlationId" /&gt;
-      &lt;Variable x:TypeArguments="nn:ESBMessage" Name="fulfillmentResponse" /&gt;
-    &lt;/Sequence.Variables&gt;
-    &lt;nna1:CSharpCodeActivity AnnotationText="{x:Null}" ReferencedAssemblies="{x:Array Type=x:String}" BreakPointEnabled="False" Disable="False" DisplayName="Set Correlation Id" SourceCode="var document = new System.Xml.XmlDocument();&amp;#xD;&amp;#xA;document.LoadXml(message.Text);&amp;#xD;&amp;#xA;var orderId = document.DocumentElement.SelectSingleNode(&amp;quot;/Request/OrderId&amp;quot;).InnerText;&amp;#xD;&amp;#xA;var itemId = document.DocumentElement.SelectSingleNode(&amp;quot;/Request/ItemId&amp;quot;).InnerText;&amp;#xD;&amp;#xA;var uniqueId = orderId + &amp;quot;-&amp;quot; + itemId;&amp;#xD;&amp;#xA;message.SetProperty(&amp;quot;message&amp;quot;, &amp;quot;uniqueId&amp;quot;, uniqueId);" /&gt;
-    &lt;nna1:PublishMessage AnnotationText="{x:Null}" BreakPointEnabled="False" CorrelationID="[correlationId]" Disable="False" DisplayName="Send Message to Fulfillment" Message="[message]" Semantic="Multicast" Topic="Fulfillment.Request"&gt;
-      &lt;nna1:PublishMessage.CorrelationSet&gt;
-        &lt;nna1:CreateCorrelationSet AnnotationText="{x:Null}" Action="False" Binary="False" BodyType="False" BreakPointEnabled="False" CustomProperties="message.uniqueId" DestId="False" Disable="False" Duplicate="False" DuplicateId="False" Event="False" Expires="False" FaultTo="False" FaultType="False" From="False" HttpHeaders="[Nothing]" HttpQueryParameters="[Nothing]" Machine="False" ParentMessageId="False" Priority="False" RegularExpressions="[Nothing]" RelatesTo="False" ReplyTo="False" ReplyToMessageId="False" ReplyToPartyId="False" ReplyToSessionId="False" RequestHeadersToPreserve="False" Result="{x:Null}" RoutingSlip="False" Semantic="False" Session="False" Sid="False" SoapHeaders="[Nothing]" SourceId="False" TargetId="False" To="False" Topic="False" TrackingSequence="False" TransactionId="False" UserName="False" XPathExpressions="[Nothing]" /&gt;
-      &lt;/nna1:PublishMessage.CorrelationSet&gt;
-    &lt;/nna1:PublishMessage&gt;
-    &lt;nna1:ReceiveMessage AnnotationText="{x:Null}" BreakPointEnabled="False" CorrelationID="[correlationId]" Disable="False" DisplayName="Await Fulfillment Response" Result="[fulfillmentResponse]" Timeout="00:01:00" /&gt;
-    &lt;nna1:PublishMessage AnnotationText="{x:Null}" CorrelationSet="{x:Null}" BreakPointEnabled="False" CorrelationID="{x:Null}" Disable="False" DisplayName="Send Response to Shopping Cart" Message="[fulfillmentResponse]" Semantic="Multicast" Topic="Orders.Response" /&gt;
-  &lt;/Sequence&gt;
+  &lt;TryCatch AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="PeregrineGlobalException"&gt;
+    &lt;TryCatch.Try&gt;
+      &lt;Sequence AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False"&gt;
+        &lt;Sequence.Variables&gt;
+          &lt;Variable x:TypeArguments="x:String" Name="correlationId" /&gt;
+          &lt;Variable x:TypeArguments="nn:ESBMessage" Name="fulfillmentResponse" /&gt;
+        &lt;/Sequence.Variables&gt;
+        &lt;nna1:CSharpCodeActivity AnnotationText="{x:Null}" ReferencedAssemblies="{x:Array Type=x:String}" BreakPointEnabled="False" Disable="False" DisplayName="Set Correlation Id" IsInvalid="False" SourceCode="var document = new System.Xml.XmlDocument();&amp;#xD;&amp;#xA;document.LoadXml(message.Text);&amp;#xD;&amp;#xA;var orderId = document.DocumentElement.SelectSingleNode(&amp;quot;/Request/OrderId&amp;quot;).InnerText;&amp;#xD;&amp;#xA;var itemId = document.DocumentElement.SelectSingleNode(&amp;quot;/Request/ItemId&amp;quot;).InnerText;&amp;#xD;&amp;#xA;var uniqueId = orderId + &amp;quot;-&amp;quot; + itemId;&amp;#xD;&amp;#xA;message.SetProperty(&amp;quot;message&amp;quot;, &amp;quot;uniqueId&amp;quot;, uniqueId);" /&gt;
+        &lt;nna1:PublishMessage AnnotationText="{x:Null}" BreakPointEnabled="False" CorrelationID="[correlationId]" Disable="False" DisplayName="Send Message to Fulfillment" Message="[message]" Semantic="Multicast" Topic="Fulfillment.Request"&gt;
+          &lt;nna1:PublishMessage.CorrelationSet&gt;
+            &lt;nna1:CreateCorrelationSet AnnotationText="{x:Null}" Action="False" Binary="False" BodyType="False" BreakPointEnabled="False" CustomProperties="message.uniqueId" DestId="False" Disable="False" Duplicate="False" DuplicateId="False" Event="False" Expires="False" FaultTo="False" FaultType="False" From="False" Machine="False" ParentMessageId="False" Priority="False" RelatesTo="False" ReplyTo="False" ReplyToMessageId="False" ReplyToPartyId="False" ReplyToSessionId="False" RequestHeadersToPreserve="False" RoutingSlip="False" Semantic="False" Session="False" Sid="False" SourceId="False" TargetId="False" To="False" Topic="False" TrackingSequence="False" TransactionId="False" UserName="False"&gt;
+              &lt;nna1:CreateCorrelationSet.HttpHeaders&gt;
+                &lt;InArgument x:TypeArguments="x:String"&gt;
+                  &lt;Literal x:TypeArguments="x:String" AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Value="" /&gt;
+                &lt;/InArgument&gt;
+              &lt;/nna1:CreateCorrelationSet.HttpHeaders&gt;
+              &lt;nna1:CreateCorrelationSet.HttpQueryParameters&gt;
+                &lt;InArgument x:TypeArguments="x:String"&gt;
+                  &lt;Literal x:TypeArguments="x:String" AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Value="" /&gt;
+                &lt;/InArgument&gt;
+              &lt;/nna1:CreateCorrelationSet.HttpQueryParameters&gt;
+              &lt;nna1:CreateCorrelationSet.RegularExpressions&gt;
+                &lt;InArgument x:TypeArguments="x:String"&gt;
+                  &lt;Literal x:TypeArguments="x:String" AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Value="" /&gt;
+                &lt;/InArgument&gt;
+              &lt;/nna1:CreateCorrelationSet.RegularExpressions&gt;
+              &lt;nna1:CreateCorrelationSet.SoapHeaders&gt;
+                &lt;InArgument x:TypeArguments="x:String"&gt;
+                  &lt;Literal x:TypeArguments="x:String" AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Value="" /&gt;
+                &lt;/InArgument&gt;
+              &lt;/nna1:CreateCorrelationSet.SoapHeaders&gt;
+              &lt;nna1:CreateCorrelationSet.XPathExpressions&gt;
+                &lt;InArgument x:TypeArguments="x:String"&gt;
+                  &lt;Literal x:TypeArguments="x:String" AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Value="" /&gt;
+                &lt;/InArgument&gt;
+              &lt;/nna1:CreateCorrelationSet.XPathExpressions&gt;
+            &lt;/nna1:CreateCorrelationSet&gt;
+          &lt;/nna1:PublishMessage.CorrelationSet&gt;
+        &lt;/nna1:PublishMessage&gt;
+        &lt;nna1:ReceiveMessage AnnotationText="{x:Null}" BreakPointEnabled="False" CorrelationID="[correlationId]" Disable="False" DisplayName="Await Fulfillment Response" Result="[fulfillmentResponse]" Timeout="00:01:00" /&gt;
+        &lt;nna1:PublishMessage AnnotationText="{x:Null}" CorrelationID="{x:Null}" CorrelationSet="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="Send Response to Shopping Cart" Message="[fulfillmentResponse]" Semantic="Multicast" Topic="Orders.Response" /&gt;
+      &lt;/Sequence&gt;
+    &lt;/TryCatch.Try&gt;
+    &lt;TryCatch.Catches&gt;
+      &lt;Catch x:TypeArguments="s:Exception"&gt;
+        &lt;ActivityAction x:TypeArguments="s:Exception"&gt;
+          &lt;ActivityAction.Argument&gt;
+            &lt;DelegateInArgument x:TypeArguments="s:Exception" Name="CurrentException" /&gt;
+          &lt;/ActivityAction.Argument&gt;
+          &lt;nna1:AuditMessage AnnotationText="{x:Null}" Exception="{x:Null}" FailureDetail="{x:Null}" FailureType="{x:Null}" XPath="{x:Null}" Action="Failure" BreakPointEnabled="False" Disable="False" DisplayName="Audit" IncludeMessageBody="True" IncludeMessageProperties="True" Message="[message]" /&gt;
+        &lt;/ActivityAction&gt;
+      &lt;/Catch&gt;
+    &lt;/TryCatch.Catches&gt;
+    &lt;TryCatch.Finally&gt;
+      &lt;DynamicActivity AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Name="PeregrineGlobalExceptionFinallyHandler" /&gt;
+    &lt;/TryCatch.Finally&gt;
+  &lt;/TryCatch&gt;
 &lt;/Activity&gt;</WorkflowXaml>
+  <ExceptionStepAdded>StepAdded</ExceptionStepAdded>
+  <AuditStepAdded>StepAdded</AuditStepAdded>
+  <DisplayAudit>true</DisplayAudit>
 </EsbWorkflowDefinition>

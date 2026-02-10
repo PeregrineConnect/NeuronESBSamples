@@ -2,9 +2,10 @@
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Version>26</Version>
   <EnvironmentName>FilterByObject</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.648</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.648</DesignerBuildVersion>
   <ApplicationName>FilterByObject</ApplicationName>
+  <ApplicationDisplayName>FilterByObject</ApplicationDisplayName>
   <ApplicationId>36d2eb2a-06a3-4e18-b373-954af4c08c18</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
@@ -12,18 +13,26 @@
     <Additions>
       <string>Add,*,endpoint host,Default Topic Host</string>
       <string>Add,*,endpoint host,Default Endpoint Host</string>
+      <string>Add,*,message pattern,Condition1</string>
+      <string>Add,*,message pattern,Condition2</string>
+      <string>Add,*,message pattern,Condition3</string>
     </Additions>
     <Revisions>
       <string>Edit,Enterprise,topic,Contacts</string>
-      <string>Edit,*,policy,Default</string>
+      <string>Edit,*,Policy,Default_Service</string>
+      <string>Edit,*,Policy,Default_Adapter</string>
+      <string>Edit,Enterprise,subscriber,ContactReceiverObjectCustomer</string>
+      <string>Edit,Enterprise,subscriber,ContactReceiverObjectLead</string>
+      <string>Edit,Enterprise,subscriber,ContactReceiverObjectProspect</string>
     </Revisions>
     <Deletions>
-      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
       <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+      <string>Delete,*,Adapter Policy,Default.xml</string>
+      <string>Delete,*,Service Policy,Default.xml</string>
     </Deletions>
-    <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-03-04T05:16:06.4058781Z</LastModifiedDate>
-    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Contacts' in Enterprise", Edited policy named 'Default' in *"</Comments>
+    <LastModifiedBy>DESKTOP-HR5RFGS\ADMIN</LastModifiedBy>
+    <LastModifiedDate>2026-01-28T06:54:27.7291811Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Added a message pattern named 'Condition1' to *", Added a message pattern named 'Condition2' to *", Added a message pattern named 'Condition3' to *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Deleted the Adapter Policy named 'Default.xml' from *", Deleted the Service Policy named 'Default.xml' from *", Edited topic named 'Contacts' in Enterprise", Edited Policy named 'Default_Service' in *", Edited Policy named 'Default_Adapter' in *", Edited subscriber named 'ContactReceiverObjectCustomer' in Enterprise", Edited subscriber named 'ContactReceiverObjectLead' in Enterprise", Edited subscriber named 'ContactReceiverObjectProspect' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />
@@ -62,6 +71,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <Xslt />
           <TestInput />

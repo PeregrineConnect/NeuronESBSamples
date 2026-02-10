@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>15b1d311-2926-48f7-b5f2-12e65ac797d8</Id>
-  <Version>cb367009-611c-45ff-a979-82d7cc671f16</Version>
+  <Version>1d1a8c4c-5a68-4dca-952d-d91adf7de228</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <SubscriberId>OrderSplitter</SubscriberId>
   <ClientGroup>General</ClientGroup>
@@ -16,6 +17,7 @@
   <Enabled>true</Enabled>
   <Subscriptions>
     <Subscription>
+      <ForWorkflowEndpointExecution>false</ForWorkflowEndpointExecution>
       <TopicName>Orders</TopicName>
       <TopicId />
       <CanRead>false</CanRead>
@@ -24,6 +26,7 @@
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
     <Subscription>
+      <ForWorkflowEndpointExecution>false</ForWorkflowEndpointExecution>
       <TopicName>Orders.Processing</TopicName>
       <TopicId />
       <CanRead>false</CanRead>
@@ -36,24 +39,26 @@
   <AllowMultipleInstances>true</AllowMultipleInstances>
   <MessagePipelines>
     <ClientPipelineItem>
-      <Id>c74d8ac7-6b1b-4fe8-93d6-9a78f95a46e1</Id>
-      <Version>380ea740-e37a-4f00-8536-55c891efc7c6</Version>
+      <Id>0ee4adc6-32ae-4eb5-b129-dbb474fdf615</Id>
+      <Version>d124bc95-933e-41ef-8d92-ff0ae73bb3a3</Version>
       <BusinessFlows />
       <ProcessFlows />
       <Description />
-      <Name>Split Orders - Code</Name>
+      <Name>Split Orders - Wrapper</Name>
       <IsSystemObject>false</IsSystemObject>
       <IsPrivate>false</IsPrivate>
+      <IsInvalid>false</IsInvalid>
       <ApplyOnPublish>true</ApplyOnPublish>
       <ApplyOnReceive>false</ApplyOnReceive>
       <PipelineConditions>
-        <Id>26bceebe-a4ae-4ea1-873c-4b808ea75b08</Id>
-        <Version>c80d29e2-b6c9-450d-b4de-2ff338141843</Version>
+        <Id>ce308239-53e2-4b3b-bcab-45288ac73056</Id>
+        <Version>e9c70b1e-eb84-415f-a012-059eadbe648e</Version>
         <BusinessFlows />
         <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
+        <IsInvalid>false</IsInvalid>
         <Condition>
           <SelectedTagList />
           <AvailableForOther>false</AvailableForOther>

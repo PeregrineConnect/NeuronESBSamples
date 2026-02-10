@@ -9,22 +9,23 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Enabled>true</Enabled>
   <TopicGroup>General</TopicGroup>
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
-      <Id>02560e13-5b8d-490b-bec2-e319e746c7a4</Id>
+      <Id>8f1c58a4-9126-4a79-9a70-12e469f08379</Id>
       <Name>Orders.Processing</Name>
       <Description />
     </Subtopic>
     <Subtopic>
-      <Id>16592f26-f5f8-4258-8776-072ba22a5a6f</Id>
+      <Id>5d024b72-4915-4381-a5a2-3047f97bdb62</Id>
       <Name>Orders.Notify</Name>
       <Description />
     </Subtopic>
     <Subtopic>
-      <Id>95b51006-1930-4e80-ba3a-ea63c48d46ce</Id>
+      <Id>8fd1b1aa-8ff0-4ab6-bf62-31bd261e5588</Id>
       <Name>Orders.Logging</Name>
       <Description />
     </Subtopic>
@@ -54,7 +55,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>ServicePort</Name>
-      <Value>50013</Value>
+      <Value>60210</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>AllowOutputBatching</Name>
@@ -133,5 +134,6 @@
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
   <IsWorkflowManager>false</IsWorkflowManager>
+  <CreateTopics>true</CreateTopics>
   <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

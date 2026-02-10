@@ -9,32 +9,33 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Enabled>true</Enabled>
   <TopicGroup>General</TopicGroup>
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
-      <Id>4172f3d4-9569-446a-8ecc-eefeb1116475</Id>
+      <Id>bc438078-125d-45f3-8dc2-38cd262b5c50</Id>
       <Name>Contacts.New</Name>
       <Description>New Contacts</Description>
     </Subtopic>
     <Subtopic>
-      <Id>a8de880c-0149-4399-92da-a990624d5194</Id>
+      <Id>cecc2774-0f9e-4234-887f-f83fc1227833</Id>
       <Name>Contacts.Updated</Name>
       <Description>Updated Contacts</Description>
     </Subtopic>
     <Subtopic>
-      <Id>aa8c8c72-cdc5-4629-98f2-68a44c488b13</Id>
+      <Id>31548972-265f-49be-88f8-54e2c727db5d</Id>
       <Name>Contacts.Customer</Name>
       <Description>Customer contacts</Description>
     </Subtopic>
     <Subtopic>
-      <Id>82d9e67f-38e3-40f2-8e3f-914364618cf3</Id>
+      <Id>562662c1-8b56-4174-bcbb-cea3ca40113d</Id>
       <Name>Contacts.Personal</Name>
       <Description>Personal contacts</Description>
     </Subtopic>
     <Subtopic>
-      <Id>8e28f4ed-5b70-4539-8976-c89477b1cc37</Id>
+      <Id>cc245bce-4cf9-437f-9670-a4d19da0062f</Id>
       <Name>Contacts.Vendor</Name>
       <Description>Vendor contacts</Description>
     </Subtopic>
@@ -64,7 +65,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>ServicePort</Name>
-      <Value>50010</Value>
+      <Value>60210</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>AllowOutputBatching</Name>
@@ -145,5 +146,6 @@
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
   <IsWorkflowManager>false</IsWorkflowManager>
+  <CreateTopics>true</CreateTopics>
   <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

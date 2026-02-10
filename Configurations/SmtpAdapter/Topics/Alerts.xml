@@ -9,17 +9,18 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Enabled>true</Enabled>
   <TopicGroup>General</TopicGroup>
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
-      <Id>da6d40ff-add9-4d56-a393-1438bbf0e8f5</Id>
+      <Id>6f556dc5-527e-47d5-b653-6dc4dac44988</Id>
       <Name>Alerts.Dynamic</Name>
       <Description />
     </Subtopic>
     <Subtopic>
-      <Id>2725f422-7b31-4455-8128-f803c7f5c5d8</Id>
+      <Id>aa14fefa-25f1-4c89-8de4-a1033688f9aa</Id>
       <Name>Alerts.Static</Name>
       <Description />
     </Subtopic>
@@ -49,7 +50,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>ServicePort</Name>
-      <Value>50020</Value>
+      <Value>60210</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>AllowOutputBatching</Name>
@@ -128,5 +129,6 @@
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
   <IsWorkflowManager>false</IsWorkflowManager>
+  <CreateTopics>true</CreateTopics>
   <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

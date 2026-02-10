@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <OnErrorAuditToDatabase>false</OnErrorAuditToDatabase>
   <OnErrorAuditToFile>false</OnErrorAuditToFile>
   <OnErrorRepublishMessage>false</OnErrorRepublishMessage>

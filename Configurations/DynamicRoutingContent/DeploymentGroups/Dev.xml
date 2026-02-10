@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <NeuronEnvironmentVariables />
   <RunInDocker>false</RunInDocker>
   <WindowsVersion>Server2019</WindowsVersion>

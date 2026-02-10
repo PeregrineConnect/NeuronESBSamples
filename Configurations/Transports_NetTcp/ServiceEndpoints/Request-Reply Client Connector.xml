@@ -9,6 +9,7 @@
   <Group />
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <RequestReplyActionPairs>
     <item>
@@ -113,10 +114,11 @@
   <ServiceSubscriberId />
   <ReuseServiceConnection>true</ReuseServiceConnection>
   <ServerCertName />
-  <ServicePolicy>Default</ServicePolicy>
+  <ServicePolicy>Default_Service</ServicePolicy>
   <FailoverAddresses />
   <FarmSingleInstance>false</FarmSingleInstance>
   <ProcessList />
+  <WorkflowList />
   <ProcessMode>Messaging</ProcessMode>
   <ServiceRoutes />
   <ServiceProcessMode>true</ServiceProcessMode>

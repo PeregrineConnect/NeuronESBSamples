@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>45</Version>
+  <Version>44</Version>
   <EnvironmentName>OAuthForClientConnectors</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.648</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.648</DesignerBuildVersion>
   <ApplicationName>OAuthForClientConnectors</ApplicationName>
+  <ApplicationDisplayName>OAuthForClientConnectors</ApplicationDisplayName>
   <ApplicationId>3161653d-bab2-4aea-b96a-4d6f4179e418</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
-    <Additions>
-      <string>Add,*,endpoint host,Default Topic Host</string>
-      <string>Add,*,endpoint host,Default Endpoint Host</string>
-    </Additions>
+    <Additions />
     <Revisions>
-      <string>Edit,Enterprise,topic,Playa</string>
-      <string>Edit,Enterprise,service endpoint,ClientConnectorOAuth</string>
-      <string>Edit,Enterprise,service endpoint,ClientConnectorOAuthAzure</string>
-      <string>Edit,*,policy,Default</string>
+      <string>Edit,(All Zones),database,localhost.BackboneDB</string>
+      <string>Edit,Enterprise,deployment group,Dev</string>
     </Revisions>
     <Deletions>
-      <string>delete,*,endpoint host,Neuron ESB Default Topic Host</string>
-      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+      <string>Delete,(All Zones),database,localhost.NeuronESBSampleDB</string>
     </Deletions>
-    <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-03-04T05:36:31.442036Z</LastModifiedDate>
-    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Topic Host' from *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Edited topic named 'Playa' in Enterprise", Edited service endpoint named 'ClientConnectorOAuth' in Enterprise", Edited service endpoint named 'ClientConnectorOAuthAzure' in Enterprise", Edited policy named 'Default' in *"</Comments>
+    <LastModifiedBy>DESKTOP-DACOO68\Tushar</LastModifiedBy>
+    <LastModifiedDate>2026-01-28T09:14:11.9487137Z</LastModifiedDate>
+    <Comments>Deleted the database named 'localhost.NeuronESBSampleDB' from (All Zones)", Edited database named 'localhost.BackboneDB' in (All Zones)", Edited deployment group named 'Dev' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />

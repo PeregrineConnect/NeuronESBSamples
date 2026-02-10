@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EsbWorkflowDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>fc440009-8c4a-46a1-bb5a-64d82734b909</Id>
-  <Version>fe0961ba-4263-4abe-b62f-acfa3026c86a</Version>
+  <Version>a8e24875-203d-453c-804e-dddd27ef320b</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
   <Name>RequestDiscountWorkflow</Name>
+  <Group />
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Category>General</Category>
   <Path />
   <ReferencedAssemblies />
   <WorkflowType>RequestReplyWorkflow</WorkflowType>
   <WorkflowXaml>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;Activity x:Class="RequestDiscountWorkflow" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:nn="clr-namespace:Neuron.NetX;assembly=Neuron.NetX" xmlns:nna="clr-namespace:Neuron.NetX.Administration;assembly=Neuron.NetX" xmlns:nna1="clr-namespace:Neuron.NetX.Activities;assembly=Neuron.NetX.Activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+&lt;Activity x:Class="RequestDiscountWorkflow" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:nn="clr-namespace:Neuron.NetX;assembly=Neuron.NetX" xmlns:nna="clr-namespace:Neuron.NetX.Administration;assembly=Neuron.NetX" xmlns:nna1="clr-namespace:Neuron.NetX.Activities;assembly=Neuron.NetX.Activities" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
   &lt;x:Members&gt;
     &lt;x:Property Name="request" Type="InArgument(nn:ESBMessage)" /&gt;
     &lt;x:Property Name="reply" Type="OutArgument(nn:ESBMessage)" /&gt;
@@ -21,59 +23,80 @@
     &lt;x:Property Name="environmentVariables" Type="InArgument(scg:IReadOnlyDictionary(x:String, x:String))" /&gt;
   &lt;/x:Members&gt;
   &lt;VisualBasic.Settings&gt;Assembly references and imported namespaces for internal implementation&lt;/VisualBasic.Settings&gt;
-  &lt;Sequence AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False"&gt;
-    &lt;Sequence.Variables&gt;
-      &lt;Variable x:TypeArguments="x:String" Name="promoCode" /&gt;
-      &lt;Variable x:TypeArguments="x:Double" Name="discount" /&gt;
-    &lt;/Sequence.Variables&gt;
-    &lt;nna1:CSharpCodeActivity AnnotationText="{x:Null}" ReferencedAssemblies="{x:Array Type=x:String}" BreakPointEnabled="False" Disable="False" DisplayName="Parse Request Message" SourceCode="promoCode = request.Text.ToUpper();" /&gt;
-    &lt;WriteLine AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Text="[&amp;quot;Promo Code: &amp;quot; + promoCode]" TextWriter="{x:Null}" /&gt;
-    &lt;Switch x:TypeArguments="x:String" AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Expression="[promoCode]"&gt;
-      &lt;Switch.Default&gt;
-        &lt;Assign AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False"&gt;
+  &lt;TryCatch AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="PeregrineGlobalException"&gt;
+    &lt;TryCatch.Try&gt;
+      &lt;Sequence AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="Sequence"&gt;
+        &lt;Sequence.Variables&gt;
+          &lt;Variable x:TypeArguments="x:String" Name="promoCode" /&gt;
+          &lt;Variable x:TypeArguments="x:Double" Name="discount" /&gt;
+        &lt;/Sequence.Variables&gt;
+        &lt;nna1:CSharpCodeActivity AnnotationText="{x:Null}" ReferencedAssemblies="{x:Array Type=x:String}" BreakPointEnabled="False" Disable="False" DisplayName="Parse Request Message" IsInvalid="False" SourceCode="promoCode = request.Text.ToUpper();" /&gt;
+        &lt;WriteLine AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="WriteLine" Text="[&amp;quot;Promo Code: &amp;quot; + promoCode]" /&gt;
+        &lt;Switch x:TypeArguments="x:String" AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="Switch&amp;lt;String&amp;gt;" Expression="[promoCode]"&gt;
+          &lt;Switch.Default&gt;
+            &lt;Assign AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="Assign"&gt;
+              &lt;Assign.To&gt;
+                &lt;OutArgument x:TypeArguments="x:Double"&gt;[discount]&lt;/OutArgument&gt;
+              &lt;/Assign.To&gt;
+              &lt;Assign.Value&gt;
+                &lt;InArgument x:TypeArguments="x:Double"&gt;[0.0R]&lt;/InArgument&gt;
+              &lt;/Assign.Value&gt;
+            &lt;/Assign&gt;
+          &lt;/Switch.Default&gt;
+          &lt;Assign AnnotationText="{x:Null}" x:Key="GOLD" BreakPointEnabled="False" Disable="False" DisplayName="Assign"&gt;
+            &lt;Assign.To&gt;
+              &lt;OutArgument x:TypeArguments="x:Double"&gt;[discount]&lt;/OutArgument&gt;
+            &lt;/Assign.To&gt;
+            &lt;Assign.Value&gt;
+              &lt;InArgument x:TypeArguments="x:Double"&gt;[20.0R]&lt;/InArgument&gt;
+            &lt;/Assign.Value&gt;
+          &lt;/Assign&gt;
+          &lt;Assign AnnotationText="{x:Null}" x:Key="SILVER" BreakPointEnabled="False" Disable="False" DisplayName="Assign"&gt;
+            &lt;Assign.To&gt;
+              &lt;OutArgument x:TypeArguments="x:Double"&gt;[discount]&lt;/OutArgument&gt;
+            &lt;/Assign.To&gt;
+            &lt;Assign.Value&gt;
+              &lt;InArgument x:TypeArguments="x:Double"&gt;[15.0R]&lt;/InArgument&gt;
+            &lt;/Assign.Value&gt;
+          &lt;/Assign&gt;
+          &lt;Assign AnnotationText="{x:Null}" x:Key="BRONZE" BreakPointEnabled="False" Disable="False" DisplayName="Assign"&gt;
+            &lt;Assign.To&gt;
+              &lt;OutArgument x:TypeArguments="x:Double"&gt;[discount]&lt;/OutArgument&gt;
+            &lt;/Assign.To&gt;
+            &lt;Assign.Value&gt;
+              &lt;InArgument x:TypeArguments="x:Double"&gt;[10.0R]&lt;/InArgument&gt;
+            &lt;/Assign.Value&gt;
+          &lt;/Assign&gt;
+        &lt;/Switch&gt;
+        &lt;nna1:CreateReplyMessage AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="CreateReplyMessage" RequestMessage="[request]" Result="[reply]" /&gt;
+        &lt;Assign AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="Assign"&gt;
           &lt;Assign.To&gt;
-            &lt;OutArgument x:TypeArguments="x:Double"&gt;[discount]&lt;/OutArgument&gt;
+            &lt;OutArgument x:TypeArguments="x:String"&gt;[reply.Text]&lt;/OutArgument&gt;
           &lt;/Assign.To&gt;
           &lt;Assign.Value&gt;
-            &lt;InArgument x:TypeArguments="x:Double"&gt;[0.0R]&lt;/InArgument&gt;
+            &lt;InArgument x:TypeArguments="x:String"&gt;[discount.ToString()]&lt;/InArgument&gt;
           &lt;/Assign.Value&gt;
         &lt;/Assign&gt;
-      &lt;/Switch.Default&gt;
-      &lt;Assign AnnotationText="{x:Null}" x:Key="GOLD" BreakPointEnabled="False" Disable="False"&gt;
-        &lt;Assign.To&gt;
-          &lt;OutArgument x:TypeArguments="x:Double"&gt;[discount]&lt;/OutArgument&gt;
-        &lt;/Assign.To&gt;
-        &lt;Assign.Value&gt;
-          &lt;InArgument x:TypeArguments="x:Double"&gt;[20.0R]&lt;/InArgument&gt;
-        &lt;/Assign.Value&gt;
-      &lt;/Assign&gt;
-      &lt;Assign AnnotationText="{x:Null}" x:Key="SILVER" BreakPointEnabled="False" Disable="False"&gt;
-        &lt;Assign.To&gt;
-          &lt;OutArgument x:TypeArguments="x:Double"&gt;[discount]&lt;/OutArgument&gt;
-        &lt;/Assign.To&gt;
-        &lt;Assign.Value&gt;
-          &lt;InArgument x:TypeArguments="x:Double"&gt;[15.0R]&lt;/InArgument&gt;
-        &lt;/Assign.Value&gt;
-      &lt;/Assign&gt;
-      &lt;Assign AnnotationText="{x:Null}" x:Key="BRONZE" BreakPointEnabled="False" Disable="False"&gt;
-        &lt;Assign.To&gt;
-          &lt;OutArgument x:TypeArguments="x:Double"&gt;[discount]&lt;/OutArgument&gt;
-        &lt;/Assign.To&gt;
-        &lt;Assign.Value&gt;
-          &lt;InArgument x:TypeArguments="x:Double"&gt;[10.0R]&lt;/InArgument&gt;
-        &lt;/Assign.Value&gt;
-      &lt;/Assign&gt;
-    &lt;/Switch&gt;
-    &lt;nna1:CreateReplyMessage AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" RequestMessage="[request]" Result="[reply]" /&gt;
-    &lt;Assign AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False"&gt;
-      &lt;Assign.To&gt;
-        &lt;OutArgument x:TypeArguments="x:String"&gt;[reply.Text]&lt;/OutArgument&gt;
-      &lt;/Assign.To&gt;
-      &lt;Assign.Value&gt;
-        &lt;InArgument x:TypeArguments="x:String"&gt;[discount.ToString()]&lt;/InArgument&gt;
-      &lt;/Assign.Value&gt;
-    &lt;/Assign&gt;
-    &lt;WriteLine AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Text="[&amp;quot;Discount: &amp;quot; + discount.ToString()]" TextWriter="{x:Null}" /&gt;
-  &lt;/Sequence&gt;
+        &lt;WriteLine AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="WriteLine" Text="[&amp;quot;Discount: &amp;quot; + discount.ToString()]" /&gt;
+      &lt;/Sequence&gt;
+    &lt;/TryCatch.Try&gt;
+    &lt;TryCatch.Catches&gt;
+      &lt;Catch x:TypeArguments="s:Exception"&gt;
+        &lt;ActivityAction x:TypeArguments="s:Exception"&gt;
+          &lt;ActivityAction.Argument&gt;
+            &lt;DelegateInArgument x:TypeArguments="s:Exception" Name="CurrentException" /&gt;
+          &lt;/ActivityAction.Argument&gt;
+          &lt;nna1:AuditMessage AnnotationText="{x:Null}" Exception="{x:Null}" FailureDetail="{x:Null}" FailureType="{x:Null}" XPath="{x:Null}" Action="Failure" BreakPointEnabled="False" Disable="False" DisplayName="Audit" IncludeMessageBody="True" IncludeMessageProperties="True" Message="[request]" /&gt;
+        &lt;/ActivityAction&gt;
+      &lt;/Catch&gt;
+    &lt;/TryCatch.Catches&gt;
+    &lt;TryCatch.Finally&gt;
+      &lt;DynamicActivity AnnotationText="{x:Null}" Name="{x:Null}" BreakPointEnabled="False" Disable="False" /&gt;
+    &lt;/TryCatch.Finally&gt;
+  &lt;/TryCatch&gt;
 &lt;/Activity&gt;</WorkflowXaml>
+  <ActivityBreakpoint />
+  <ExceptionStepAdded>StepAdded</ExceptionStepAdded>
+  <AuditStepAdded>StepAdded</AuditStepAdded>
+  <DisplayAudit>true</DisplayAudit>
 </EsbWorkflowDefinition>

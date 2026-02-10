@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <Topic />
   <Pattern>1</Pattern>
@@ -75,6 +76,7 @@
   <EnableCors>false</EnableCors>
   <ClientCertName />
   <ACL />
+  <ExternalMetadataLocation />
   <AccessUrl />
   <RouteServiceTraffic>false</RouteServiceTraffic>
   <RestoreHeaders>true</RestoreHeaders>
@@ -82,10 +84,12 @@
   <ServiceTopic />
   <ServiceSubscriberId />
   <ReuseServiceConnection>true</ReuseServiceConnection>
-  <ServicePolicy>Default</ServicePolicy>
+  <ServerCertName />
+  <ServicePolicy>Default_Service</ServicePolicy>
   <FailoverAddresses />
   <FarmSingleInstance>false</FarmSingleInstance>
   <ProcessList />
+  <WorkflowList />
   <ProcessMode>Messaging</ProcessMode>
   <ServiceRoutes />
   <ServiceProcessMode>false</ServiceProcessMode>

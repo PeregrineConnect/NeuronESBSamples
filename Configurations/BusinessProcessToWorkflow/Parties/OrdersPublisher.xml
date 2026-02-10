@@ -1,13 +1,15 @@
-<?xml version="1.0"?>
-<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>e7654fa1-0747-4b1b-986b-9d725f8db9f2</Id>
-  <Version>fc05a11d-c411-4db3-83d2-0cf431ba0f24</Version>
+  <Version>72d2f213-59db-4ea5-9a91-d8be3281f570</Version>
   <BusinessFlows />
+  <ProcessFlows />
   <Description />
   <Name>OrdersPublisher</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <SubscriberId>OrdersPublisher</SubscriberId>
   <ClientGroup>General</ClientGroup>
@@ -15,13 +17,17 @@
   <Enabled>true</Enabled>
   <Subscriptions>
     <Subscription>
+      <ForWorkflowEndpointExecution>false</ForWorkflowEndpointExecution>
       <TopicName>Orders.Request</TopicName>
+      <TopicId />
       <CanRead>false</CanRead>
       <CanWrite>true</CanWrite>
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
     <Subscription>
+      <ForWorkflowEndpointExecution>false</ForWorkflowEndpointExecution>
       <TopicName>Orders.Response</TopicName>
+      <TopicId />
       <CanRead>true</CanRead>
       <CanWrite>false</CanWrite>
       <SubscriptionType>Topic</SubscriptionType>
@@ -35,23 +41,31 @@
       <Id>91f27194-76dd-493c-9143-431dd81be629</Id>
       <Version>1e4564b8-21ed-48ac-9b68-94a4be262d94</Version>
       <BusinessFlows />
+      <ProcessFlows />
       <Description />
       <Name>Process Order</Name>
       <IsSystemObject>false</IsSystemObject>
       <IsPrivate>false</IsPrivate>
+      <IsInvalid>false</IsInvalid>
       <ApplyOnPublish>true</ApplyOnPublish>
       <ApplyOnReceive>false</ApplyOnReceive>
       <PipelineConditions>
         <Id>83b0bc8b-081b-4891-9858-4eb015314f79</Id>
         <Version>c3e6fa55-6d71-4c4e-87d2-e176b8137aa2</Version>
         <BusinessFlows />
+        <ProcessFlows />
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
-        <Condition />
+        <IsInvalid>false</IsInvalid>
+        <Condition>
+          <SelectedTagList />
+          <AvailableForOther>false</AvailableForOther>
+        </Condition>
       </PipelineConditions>
     </ClientPipelineItem>
   </MessagePipelines>
   <LogActivity>false</LogActivity>
   <UseUniqueWmiCounterName>false</UseUniqueWmiCounterName>
+  <IsWorkflowManager>false</IsWorkflowManager>
 </ESBSubscriber>

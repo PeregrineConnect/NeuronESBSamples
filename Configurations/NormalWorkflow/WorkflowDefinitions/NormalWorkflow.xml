@@ -8,25 +8,46 @@
   <Name>NormalWorkflow</Name>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Category>General</Category>
   <Path />
   <ReferencedAssemblies />
   <WorkflowType>BasicWorkflow</WorkflowType>
   <WorkflowXaml>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;Activity x:Class="NormalWorkflow" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:nn="clr-namespace:Neuron.NetX;assembly=Neuron.NetX" xmlns:nna="clr-namespace:Neuron.NetX.Administration;assembly=Neuron.NetX" xmlns:nna1="clr-namespace:Neuron.NetX.Activities;assembly=Neuron.NetX.Activities" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+&lt;Activity x:Class="NormalWorkflow" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:nn="clr-namespace:Neuron.NetX;assembly=Neuron.NetX" xmlns:nna="clr-namespace:Neuron.NetX.Administration;assembly=Neuron.NetX" xmlns:nna1="clr-namespace:Neuron.NetX.Activities;assembly=Neuron.NetX.Activities" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
   &lt;x:Members&gt;
     &lt;x:Property Name="message" Type="InArgument(nn:ESBMessage)" /&gt;
     &lt;x:Property Name="configuration" Type="InArgument(nna:ESBConfiguration)" /&gt;
     &lt;x:Property Name="environmentVariables" Type="InArgument(scg:IReadOnlyDictionary(x:String, x:String))" /&gt;
   &lt;/x:Members&gt;
   &lt;VisualBasic.Settings&gt;Assembly references and imported namespaces for internal implementation&lt;/VisualBasic.Settings&gt;
-  &lt;Sequence AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False"&gt;
-    &lt;Sequence.Variables&gt;
-      &lt;Variable x:TypeArguments="s:Guid" Name="workflowInstanceId" /&gt;
-    &lt;/Sequence.Variables&gt;
-    &lt;WriteLine AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Text="[&amp;quot;Text: &amp;quot; + message.Text]" TextWriter="{x:Null}" /&gt;
-    &lt;nna1:GetWorkflowInstanceId AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Result="[workflowInstanceId]" /&gt;
-    &lt;WriteLine AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Text="[&amp;quot;Workflow Instance ID: &amp;quot; + workflowInstanceId.ToString()]" TextWriter="{x:Null}" /&gt;
-  &lt;/Sequence&gt;
+  &lt;TryCatch AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" DisplayName="PeregrineGlobalException"&gt;
+    &lt;TryCatch.Try&gt;
+      &lt;Sequence AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False"&gt;
+        &lt;Sequence.Variables&gt;
+          &lt;Variable x:TypeArguments="s:Guid" Name="workflowInstanceId" /&gt;
+        &lt;/Sequence.Variables&gt;
+        &lt;WriteLine AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Text="[&amp;quot;Text: &amp;quot; + message.Text]" /&gt;
+        &lt;nna1:GetWorkflowInstanceId AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Result="[workflowInstanceId]" /&gt;
+        &lt;WriteLine AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Text="[&amp;quot;Workflow Instance ID: &amp;quot; + workflowInstanceId.ToString()]" /&gt;
+      &lt;/Sequence&gt;
+    &lt;/TryCatch.Try&gt;
+    &lt;TryCatch.Catches&gt;
+      &lt;Catch x:TypeArguments="s:Exception"&gt;
+        &lt;ActivityAction x:TypeArguments="s:Exception"&gt;
+          &lt;ActivityAction.Argument&gt;
+            &lt;DelegateInArgument x:TypeArguments="s:Exception" Name="CurrentException" /&gt;
+          &lt;/ActivityAction.Argument&gt;
+          &lt;nna1:AuditMessage AnnotationText="{x:Null}" Exception="{x:Null}" FailureDetail="{x:Null}" FailureType="{x:Null}" XPath="{x:Null}" Action="Failure" BreakPointEnabled="False" Disable="False" DisplayName="Audit" IncludeMessageBody="True" IncludeMessageProperties="True" Message="[message]" /&gt;
+        &lt;/ActivityAction&gt;
+      &lt;/Catch&gt;
+    &lt;/TryCatch.Catches&gt;
+    &lt;TryCatch.Finally&gt;
+      &lt;DynamicActivity AnnotationText="{x:Null}" BreakPointEnabled="False" Disable="False" Name="PeregrineGlobalExceptionFinallyHandler" /&gt;
+    &lt;/TryCatch.Finally&gt;
+  &lt;/TryCatch&gt;
 &lt;/Activity&gt;</WorkflowXaml>
+  <ExceptionStepAdded>StepAdded</ExceptionStepAdded>
+  <AuditStepAdded>StepAdded</AuditStepAdded>
+  <DisplayAudit>true</DisplayAudit>
 </EsbWorkflowDefinition>

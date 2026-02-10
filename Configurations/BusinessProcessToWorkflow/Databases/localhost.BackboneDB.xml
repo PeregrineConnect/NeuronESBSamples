@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ESBDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>d60b94d8-89ef-4177-9d27-907824fab000</Id>
+  <Version>5ded5da0-1067-473f-a13d-6281afd00c1a</Version>
+  <BusinessFlows />
+  <ProcessFlows />
+  <Description />
+  <Name>localhost.BackboneDB</Name>
+  <Group />
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
+  <Bindings />
+  <UseNeuronDbImage>false</UseNeuronDbImage>
+  <BypassChecks>false</BypassChecks>
+  <UseAlternateSettings>false</UseAlternateSettings>
+  <DbContainerHostPort>0</DbContainerHostPort>
+  <DbContainerHostname />
+  <ContainerConnectionString>Data Source=localhost;Initial Catalog=BackboneDB;Integrated Security=True;Trust Server Certificate=True</ContainerConnectionString>
+  <CatalogName>BackboneDB</CatalogName>
+  <ConnectionString>10dc3vgWBmJ+wt1TDJcaGWyA1gwTbkZAarpoEBdPhGS86suMOWtN9g4aIR14AoxCaXPbjnSAMGXhDDlmvxAG9LwEbTDRYKuv9Uw2z4/zKQzpDGhINFsxK3P9RtQwUdsm5jNwsunu1Sn1CFbfgRH9yA==</ConnectionString>
+  <Zone>(All Zones)</Zone>
+  <DatabaseType>SQLServer</DatabaseType>
+</ESBDatabase>

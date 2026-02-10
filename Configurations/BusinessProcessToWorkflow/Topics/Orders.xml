@@ -9,17 +9,18 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Enabled>true</Enabled>
   <TopicGroup>General</TopicGroup>
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
-      <Id>aeb65c69-c68f-48bb-bd88-d4be04fe34ee</Id>
+      <Id>e3ff447c-83a5-4d1d-9b13-5f3df27e0a24</Id>
       <Name>Orders.Request</Name>
       <Description />
     </Subtopic>
     <Subtopic>
-      <Id>0a9399fc-3c7c-4115-b2b5-a761e2acf36a</Id>
+      <Id>1c3d04ba-64e2-4af7-8c76-79563d6808f3</Id>
       <Name>Orders.Response</Name>
       <Description />
     </Subtopic>
@@ -128,5 +129,6 @@
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
   <IsWorkflowManager>false</IsWorkflowManager>
+  <CreateTopics>true</CreateTopics>
   <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

@@ -2,19 +2,36 @@
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Version>30</Version>
   <EnvironmentName>Transports_BasicHttp</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
+  <NeuronBuildVersion>4.0.0.648</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.648</DesignerBuildVersion>
   <ApplicationName>Transports_BasicHttp</ApplicationName>
+  <ApplicationDisplayName>Transports_BasicHttp</ApplicationDisplayName>
   <ApplicationId>1dac1ab5-482f-42f1-9192-963d7a043618</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
   <ChangeList>
-    <Additions />
-    <Revisions />
-    <Deletions />
-    <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-03-04T05:44:23.7695636Z</LastModifiedDate>
-    <Comments />
+    <Additions>
+      <string>Add,*,endpoint host,Default Topic Host</string>
+      <string>Add,*,endpoint host,Default Endpoint Host</string>
+    </Additions>
+    <Revisions>
+      <string>Edit,Enterprise,topic,Inquiries</string>
+      <string>Edit,Enterprise,topic,Notifications</string>
+      <string>Edit,Enterprise,service endpoint,One-Way Client Connector</string>
+      <string>Edit,Enterprise,service endpoint,One-Way Service Connector</string>
+      <string>Edit,Enterprise,service endpoint,Request-Reply Client Connector</string>
+      <string>Edit,Enterprise,service endpoint,Request-Reply Service Connector</string>
+      <string>Edit,*,Policy,Default_Service</string>
+      <string>Edit,*,Policy,Default_Adapter</string>
+    </Revisions>
+    <Deletions>
+      <string>delete,*,endpoint host,Neuron ESB Default Host</string>
+      <string>Delete,*,Adapter Policy,Default.xml</string>
+      <string>Delete,*,Service Policy,Default.xml</string>
+    </Deletions>
+    <LastModifiedBy>DESKTOP-DACOO68\Tushar</LastModifiedBy>
+    <LastModifiedDate>2026-01-27T14:00:36.2156708Z</LastModifiedDate>
+    <Comments>Added a endpoint host named 'Default Topic Host' to *", Added a endpoint host named 'Default Endpoint Host' to *", Deleted the endpoint host named 'Neuron ESB Default Host' from *", Deleted the Adapter Policy named 'Default.xml' from *", Deleted the Service Policy named 'Default.xml' from *", Edited topic named 'Inquiries' in Enterprise", Edited topic named 'Notifications' in Enterprise", Edited service endpoint named 'One-Way Client Connector' in Enterprise", Edited service endpoint named 'One-Way Service Connector' in Enterprise", Edited service endpoint named 'Request-Reply Client Connector' in Enterprise", Edited service endpoint named 'Request-Reply Service Connector' in Enterprise", Edited Policy named 'Default_Service' in *", Edited Policy named 'Default_Adapter' in *"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
   <ProcessFolders />

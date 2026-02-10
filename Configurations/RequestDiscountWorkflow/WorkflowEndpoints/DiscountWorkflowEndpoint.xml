@@ -1,10 +1,14 @@
-<?xml version="1.0"?>
-<EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="utf-8"?>
+<EsbWorkflowHost xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>ba0040c7-81b8-4fb3-b187-0c4ef00c59e1</Id>
   <Version>e76f04cb-5884-4ba7-b6c8-b7f5dec69fc8</Version>
-  <Name>DiscountWorkflowEndpoint</Name>
+  <BusinessFlows />
+  <ProcessFlows />
   <Description />
+  <Name>DiscountWorkflowEndpoint</Name>
   <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <AvailabilityGroupId>Discount Workflow Group</AvailabilityGroupId>
   <Conditions>
@@ -55,4 +59,6 @@
   <SubscriberId>DiscountSubscriber</SubscriberId>
   <Topic>Discount</Topic>
   <WorkflowDefinitionId>RequestDiscountWorkflow</WorkflowDefinitionId>
+  <UseWorkflowManagerParty>false</UseWorkflowManagerParty>
+  <HostedInEndpoint>false</HostedInEndpoint>
 </EsbWorkflowHost>

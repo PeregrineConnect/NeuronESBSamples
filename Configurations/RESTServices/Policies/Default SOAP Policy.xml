@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ESBPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>a65c39e9-21dc-4834-b5e2-12df38783e49</Id>
+  <Version>57ab6ec0-77e3-4a83-95cd-99224c628cf4</Version>
+  <BusinessFlows />
+  <ProcessFlows />
+  <Description>Default policy for calling SOAP Services.</Description>
+  <Name>Default SOAP Policy</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
+  <OnErrorAuditToDatabase>false</OnErrorAuditToDatabase>
+  <OnErrorAuditToFile>false</OnErrorAuditToFile>
+  <OnErrorRepublishMessage>false</OnErrorRepublishMessage>
+  <RepublishTopic />
+  <OnErrorRollback>false</OnErrorRollback>
+  <AlwaysAvailable>true</AlwaysAvailable>
+  <RetryCount>1</RetryCount>
+  <RetryInterval>1</RetryInterval>
+  <StartAndStopAdapterAccordingToAvailability>true</StartAndStopAdapterAccordingToAvailability>
+  <RequestReplyTimeout>60</RequestReplyTimeout>
+  <DoNotApplyPolicyIfFaultContract>true</DoNotApplyPolicyIfFaultContract>
+  <InlcudeAsExceptions>false</InlcudeAsExceptions>
+  <HttpStatusCodes>
+    <NeuronHttpStatusCode>
+      <HttpStatusCode>200</HttpStatusCode>
+      <Description>OK</Description>
+    </NeuronHttpStatusCode>
+    <NeuronHttpStatusCode>
+      <HttpStatusCode>201</HttpStatusCode>
+      <Description>Created</Description>
+    </NeuronHttpStatusCode>
+    <NeuronHttpStatusCode>
+      <HttpStatusCode>202</HttpStatusCode>
+      <Description>Accepted</Description>
+    </NeuronHttpStatusCode>
+    <NeuronHttpStatusCode>
+      <HttpStatusCode>203</HttpStatusCode>
+      <Description>Non-Authoritative Information (since HTTP/1.1)</Description>
+    </NeuronHttpStatusCode>
+    <NeuronHttpStatusCode>
+      <HttpStatusCode>204</HttpStatusCode>
+      <Description>No Content</Description>
+    </NeuronHttpStatusCode>
+    <NeuronHttpStatusCode>
+      <HttpStatusCode>205</HttpStatusCode>
+      <Description>Reset Content</Description>
+    </NeuronHttpStatusCode>
+    <NeuronHttpStatusCode>
+      <HttpStatusCode>206</HttpStatusCode>
+      <Description>Partial Content</Description>
+    </NeuronHttpStatusCode>
+    <NeuronHttpStatusCode>
+      <HttpStatusCode>207</HttpStatusCode>
+      <Description>Multi-Status (WebDAV; RFC 4918)</Description>
+    </NeuronHttpStatusCode>
+    <NeuronHttpStatusCode>
+      <HttpStatusCode>208</HttpStatusCode>
+      <Description>Already Reported (WebDAV; RFC 5842)</Description>
+    </NeuronHttpStatusCode>
+  </HttpStatusCodes>
+  <CustomHttpStatusCodes />
+</ESBPolicy>

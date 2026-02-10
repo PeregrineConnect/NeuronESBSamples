@@ -9,22 +9,23 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Enabled>true</Enabled>
   <TopicGroup>General</TopicGroup>
   <Zone>Enterprise</Zone>
   <Hierarchy>
     <Subtopic>
-      <Id>3576ee17-ba0d-4856-8135-54ba07873899</Id>
+      <Id>8d7a82ea-870f-42d1-9009-b0ec43c191b7</Id>
       <Name>NorthStar.HR</Name>
       <Description />
     </Subtopic>
     <Subtopic>
-      <Id>19a62e05-ac27-430c-b6fa-33256b40cbbd</Id>
+      <Id>fe6dcf66-4676-444f-98e3-3bbafbe9edea</Id>
       <Name>NorthStar.HR.V1</Name>
       <Description />
     </Subtopic>
     <Subtopic>
-      <Id>0962cb5a-e4cc-4846-8b6e-58b4d775f663</Id>
+      <Id>62c06c86-57f6-4d48-baf3-b8ebcee128f8</Id>
       <Name>NorthStar.HR.V2</Name>
       <Description />
     </Subtopic>
@@ -54,7 +55,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>ServicePort</Name>
-      <Value>50020</Value>
+      <Value>60210</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>AllowOutputBatching</Name>
@@ -133,5 +134,6 @@
   <EncryptionMethod>(None)</EncryptionMethod>
   <EncryptionCredentials />
   <IsWorkflowManager>false</IsWorkflowManager>
+  <CreateTopics>true</CreateTopics>
   <AvailabilityGroupId>Default Topic Host</AvailabilityGroupId>
 </ESBTopic>

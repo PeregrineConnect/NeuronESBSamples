@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>29</Version>
-  <EnvironmentName>SplittingMessagesWithJoin</EnvironmentName>
-  <NeuronBuildVersion>4.0.0.0</NeuronBuildVersion>
-  <DesignerBuildVersion>4.0.0.0</DesignerBuildVersion>
+  <Version>31</Version>
+  <EnvironmentName>SplittingMessageswithJoin</EnvironmentName>
+  <NeuronBuildVersion>4.0.0.659</NeuronBuildVersion>
+  <DesignerBuildVersion>4.0.0.659</DesignerBuildVersion>
   <ApplicationName>SplittingMessagesWithJoin</ApplicationName>
+  <ApplicationDisplayName>SplittingMessagesWithJoin</ApplicationDisplayName>
   <ApplicationId>cea0f4a0-c575-43af-9cae-e8f904896e8e</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
@@ -14,8 +15,8 @@
       <string>Edit,Enterprise,publisher,OrderSplitter</string>
     </Revisions>
     <Deletions />
-    <LastModifiedBy>Unknown</LastModifiedBy>
-    <LastModifiedDate>2025-01-09T09:27:41.5593534Z</LastModifiedDate>
+    <LastModifiedBy>TEJASPC\tejas</LastModifiedBy>
+    <LastModifiedDate>2026-02-06T05:47:09.0013986Z</LastModifiedDate>
     <Comments>Edited publisher named 'OrderSplitter' in Enterprise"</Comments>
   </ChangeList>
   <NeuronEnvironmentVariables />
@@ -50,6 +51,7 @@
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>
+          <IsInvalid>false</IsInvalid>
           <Storing>false</Storing>
           <XmlVersion />
           <SourceUri />

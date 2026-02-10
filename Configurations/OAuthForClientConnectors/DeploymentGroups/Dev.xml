@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBDeployment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>73854fe4-cf0e-4d04-a157-56b1024e9a47</Id>
-  <Version>939d70d9-8d44-4724-b6fc-73072da0fef2</Version>
+  <Version>a2aaed9a-01c7-49e8-9861-8f0267e5d3c8</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description>Run everything on local machine</Description>
@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <NeuronEnvironmentVariables />
   <RunInDocker>false</RunInDocker>
   <WindowsVersion>Server2019</WindowsVersion>
@@ -96,6 +97,7 @@
       <VHost>/</VHost>
       <Username>lzIgpTCanzN4LY3ehtMdu5069kryN6nf1ICSnZ1k9/M=</Username>
       <Password>9MhmFmMA6zRVPMIrF/UfEHlg07wUj+6yV30P16AfX+I=</Password>
+      <IsSSL>false</IsSSL>
     </AmqpConnectionProperties>
   </AmqpConnectionList>
   <SharedNat>false</SharedNat>
@@ -107,7 +109,7 @@
   <DevelopmentDefault>false</DevelopmentDefault>
   <EncryptUnicode>true</EncryptUnicode>
   <ServerTopology>0</ServerTopology>
-  <StateDatabase>localhost.NeuronESBSampleDB</StateDatabase>
+  <StateDatabase>localhost.BackboneDB</StateDatabase>
   <Units>
     <ESBDeploymentUnit>
       <MachineName>localhost</MachineName>

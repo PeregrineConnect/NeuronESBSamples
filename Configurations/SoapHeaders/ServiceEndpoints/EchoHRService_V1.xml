@@ -9,6 +9,7 @@
   <Group />
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <RequestReplyActionPairs />
   <Pattern>0</Pattern>
@@ -83,6 +84,7 @@
   <FailoverAddresses />
   <FarmSingleInstance>false</FarmSingleInstance>
   <ProcessList />
+  <WorkflowList />
   <ProcessMode>Messaging</ProcessMode>
   <ServiceRoutes />
   <ServiceProcessMode>false</ServiceProcessMode>

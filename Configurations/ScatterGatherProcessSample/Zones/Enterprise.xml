@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ESBZone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0"?>
+<ESBZone xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>c2549902-18ec-40c3-8aa8-02b190477fcf</Id>
   <Version>998d9ea2-7c02-4a95-ab18-54700a50ff75</Version>
   <BusinessFlows />
@@ -440,18 +440,18 @@
       <ChannelName>amqp/rabbitmq</ChannelName>
     </ESBChannelDescription>
   </Channels>
-  <BootstrapServicePort>50000</BootstrapServicePort>
-  <ManagementServicePort>50002</ManagementServicePort>
-  <ControlServicePort>50004</ControlServicePort>
-  <CacheServiceBasePort>50200</CacheServiceBasePort>
+  <BootstrapServicePort>60000</BootstrapServicePort>
+  <ManagementServicePort>60002</ManagementServicePort>
+  <ControlServicePort>60004</ControlServicePort>
+  <CacheServiceBasePort>60200</CacheServiceBasePort>
   <EndpointHostServicePort>51004</EndpointHostServicePort>
   <SwaggerSelfHostBasePort>51003</SwaggerSelfHostBasePort>
-  <TcpPublishingStartPort>50010</TcpPublishingStartPort>
-  <TcpPublishingEndPort>50100</TcpPublishingEndPort>
+  <TcpPublishingStartPort>60010</TcpPublishingStartPort>
+  <TcpPublishingEndPort>60100</TcpPublishingEndPort>
   <Clustered>false</Clustered>
   <ClusterDatabaseName />
   <QueueServer>DESKTOP-6V9K70R</QueueServer>
-  <ActiveDeploymentGroup>Dev</ActiveDeploymentGroup>
+  <ActiveDeploymentGroup />
   <ClientPollingIntervalSec>15</ClientPollingIntervalSec>
   <ClientReportingExpirationIntervalSec>60</ClientReportingExpirationIntervalSec>
   <ServicePollingIntervalSec>15</ServicePollingIntervalSec>
@@ -462,7 +462,6 @@
   <EnableWMINeuronEndpointCounters>false</EnableWMINeuronEndpointCounters>
   <BindingSettings>
     <ListenBacklog>256</ListenBacklog>
-    <MaxConcurrentCalls>2000</MaxConcurrentCalls>
   </BindingSettings>
   <ZoneName>Enterprise</ZoneName>
   <EnablePortSharing>false</EnablePortSharing>

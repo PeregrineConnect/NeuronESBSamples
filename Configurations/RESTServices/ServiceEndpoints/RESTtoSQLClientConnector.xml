@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ESBService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>ad0b2551-836c-44b3-9b83-6505689017b3</Id>
-  <Version>c60b55b7-abf0-4a59-9cba-1df8160d0ccb</Version>
+  <Version>323998ea-7c33-487e-bb47-6522d88bbd5d</Version>
   <BusinessFlows />
   <ProcessFlows />
   <Description />
@@ -9,6 +9,7 @@
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <Topic />
   <Pattern>1</Pattern>
@@ -94,6 +95,7 @@
       <Name>REST to SQL</Name>
       <IsSystemObject>false</IsSystemObject>
       <IsPrivate>false</IsPrivate>
+      <IsInvalid>false</IsInvalid>
       <ApplyOnPublish>true</ApplyOnPublish>
       <ApplyOnReceive>false</ApplyOnReceive>
       <PipelineConditions>
@@ -104,6 +106,7 @@
         <Description />
         <IsSystemObject>false</IsSystemObject>
         <IsPrivate>false</IsPrivate>
+        <IsInvalid>false</IsInvalid>
         <Condition>
           <SelectedTagList />
           <AvailableForOther>false</AvailableForOther>
@@ -111,6 +114,7 @@
       </PipelineConditions>
     </ClientPipelineItem>
   </ProcessList>
+  <WorkflowList />
   <ProcessMode>BusinessProcess</ProcessMode>
   <ServiceRoutes />
   <ServiceProcessMode>false</ServiceProcessMode>

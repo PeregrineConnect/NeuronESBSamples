@@ -10,6 +10,7 @@ Use XML in SOAPRequest_GetOrders_Parameters to test with Postman.  Testing SOAP 
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
   <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
   <Bindings />
   <Topic />
   <Pattern>1</Pattern>
@@ -84,6 +85,7 @@ Use XML in SOAPRequest_GetOrders_Parameters to test with Postman.  Testing SOAP 
   <FailoverAddresses />
   <FarmSingleInstance>false</FarmSingleInstance>
   <ProcessList />
+  <WorkflowList />
   <ProcessMode>PassThru</ProcessMode>
   <ServiceRoutes>Routing_Passthru</ServiceRoutes>
   <ServiceProcessMode>false</ServiceProcessMode>

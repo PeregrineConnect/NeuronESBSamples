@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ESBMessagePattern xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>94634cb0-7394-46a0-95e1-4faf4893846d</Id>
+  <Version>c2064886-e9d9-4beb-979e-aee827411279</Version>
+  <BusinessFlows />
+  <ProcessFlows />
+  <Description />
+  <Name>Condition3</Name>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <IsInvalid>false</IsInvalid>
+  <Condition>
+    <Conditions>
+      <ConditionElement>
+        <PrefixOperator>None</PrefixOperator>
+        <Expression1>Object</Expression1>
+        <NotOperator>false</NotOperator>
+        <RelationalOperator>TextEquals</RelationalOperator>
+        <Expression2>Prospect</Expression2>
+        <SuffixOperator>None</SuffixOperator>
+        <LogicalOperator>End</LogicalOperator>
+      </ConditionElement>
+    </Conditions>
+    <SelectedTagList />
+    <AvailableForOther>false</AvailableForOther>
+  </Condition>
+</ESBMessagePattern>

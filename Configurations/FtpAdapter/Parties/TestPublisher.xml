@@ -1,30 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ESBSubscriber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0"?>
+<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>6e90cc82-b797-4dc1-b008-97a2ca689f51</Id>
   <Version>a5b3bc46-ed10-49f3-b973-c83d311d95ce</Version>
-  <BusinessFlows />
-  <ProcessFlows />
-  <Description />
   <Name>TestPublisher</Name>
+  <Description />
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>
-  <IsPrivate>false</IsPrivate>
-  <Bindings />
+  <AllowMultipleInstances>true</AllowMultipleInstances>
+  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
   <SubscriberId>TestPublisher</SubscriberId>
   <ClientGroup>General</ClientGroup>
   <Zone>Enterprise</Zone>
   <Enabled>true</Enabled>
+  <Anonymous>true</Anonymous>
   <Subscriptions>
     <Subscription>
       <TopicName>FtpTopic.Out</TopicName>
-      <TopicId />
       <CanRead>false</CanRead>
       <CanWrite>true</CanWrite>
       <SubscriptionType>Topic</SubscriptionType>
     </Subscription>
   </Subscriptions>
-  <Anonymous>true</Anonymous>
-  <AllowMultipleInstances>true</AllowMultipleInstances>
   <LogActivity>false</LogActivity>
-  <UseUniqueWmiCounterName>true</UseUniqueWmiCounterName>
+  <LogFile />
+  <LogSession>true</LogSession>
 </ESBSubscriber>
