@@ -1,4 +1,5 @@
-﻿using Neuron.Internal;
+﻿using CoreWCF;
+using Neuron.Internal;
 using Neuron.NetX.Adapters;
 using Neuron.NetX.Administration;
 using Neuron.NetX.Internal;

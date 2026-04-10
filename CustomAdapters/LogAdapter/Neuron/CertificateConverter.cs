@@ -1,4 +1,5 @@
-﻿using Neuron.Internal;
+﻿using CoreWCF;
+using Neuron.Internal;
 using Neuron.NetX.Administration;
 using Neuron.NetX.Internal;
 using System.ComponentModel;
@@ -48,7 +49,7 @@ namespace Neuron.NetX.Adapters
                 return new StandardValuesCollection(list);
                    
             }
-            catch (System.ServiceModel.EndpointNotFoundException)
+            catch (EndpointNotFoundException)
             {
                     //MessageBox.Show( string.Format(CultureInfo.InvariantCulture,"Exception occurred while retrieveing the list of Server Certificates from the \r\nNeuron ESB Server. Please confirm that the Neuron ESB service \r\nis started."), string.Format(CultureInfo.InvariantCulture,"Adapter Property Configuration Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 

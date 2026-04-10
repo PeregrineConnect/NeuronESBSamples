@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <OutputType>Exe</OutputType>
     <RootNamespace>Neuron.Esb.Samples</RootNamespace>
     <PublishUrl>publish\</PublishUrl>
@@ -26,6 +26,7 @@
     <Copyright>Copyright © Microsoft 2010</Copyright>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <FileVersion>3.6.0.814</FileVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
     <Reference Update="System.Core">
@@ -56,12 +57,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
-    <PackageReference Include="System.ServiceModel.Primitives" Version="8.0.0" />
-    <PackageReference Include="System.ServiceModel.Http" Version="8.0.0" />
-    <PackageReference Include="System.ServiceModel.Duplex" Version="6.0.0" />
-    <PackageReference Include="System.ServiceModel.NetTcp" Version="8.0.0" />
-    <PackageReference Include="System.ServiceModel.Security" Version="6.0.0" />
-    <PackageReference Include="System.ServiceModel.Federation" Version="8.0.0" />
+    <PackageReference Include="System.ServiceModel.Federation" Version="10.0.652802" />
+    <PackageReference Include="CoreWCF.Primitives" Version="1.8.0" />
+    <PackageReference Include="CoreWCF.ConfigurationManager" Version="1.8.0" />
+    <PackageReference Include="CoreWCF.Http" Version="1.8.0" />
+    <PackageReference Include="CoreWCF.WebHttp" Version="1.8.0" />
+    <PackageReference Include="CoreWCF.NetTcp" Version="1.8.0" />
   </ItemGroup>
 </Project>

@@ -2,7 +2,7 @@
   <PropertyGroup>
     <RootNamespace>Neuron.EnterpriseServiceBus.Samples</RootNamespace>
     <AssemblyName>Receiver</AssemblyName>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <OutputType>Exe</OutputType>  
   </PropertyGroup>
 	<ItemGroup>
@@ -14,9 +14,6 @@
 		</Reference>
 		<Reference Include="Microsoft.Bcl.AsyncInterfaces">
 			<HintPath>..\..\..\..\..\..\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-		</Reference>
-		<Reference Include="System.Configuration.ConfigurationManager">
-			<HintPath>..\..\..\..\..\..\System.Configuration.ConfigurationManager.dll</HintPath>
 		</Reference>
         <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
             <HintPath>..\..\..\..\..\..\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
@@ -44,6 +41,9 @@
         </Reference>
         <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
             <HintPath>..\..\..\..\..\..\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.IdentityModel.Tokens.Saml">
+          <HintPath>..\..\..\..\..\..\Microsoft.IdentityModel.Tokens.Saml.dll</HintPath>
         </Reference>
 	</ItemGroup>
     <ItemGroup>
