@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Neuron.NetX.Samples
 {
-	[DisplayName("Sample Azure Authorization Code Grant OAuth Provider")]
+	[DisplayName("Azure Authorization Code Grant OAuth Provider")]
 	public class AzureAuthCodeGrantOAuthProvider : OAuthProvider
 	{
 		private string clientId;
@@ -154,7 +154,7 @@ namespace Neuron.NetX.Samples
 
 		public override string ProviderName
 		{
-			get { return "Sample Azure Authorization Code Grant OAuth Provider"; }
+			get { return "Azure Authorization Code Grant OAuth Provider"; }
 		}
 
 		public AzureAuthCodeGrantOAuth2Client(string authorizeUrl, string accessTokenUrl, string clientId, string clientSecret, string resource, string redirectUri, string grantType)

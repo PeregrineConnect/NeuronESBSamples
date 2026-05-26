@@ -7,7 +7,7 @@ using Neuron.NetX.Adapters;
 
 namespace Neuron.NetX.Samples
 {
-    [DisplayName("Sample Azure Client Credentials Grant OAuth Provider")]
+    [DisplayName("Azure Client Credentials Grant OAuth Provider")]
     public class AzureClientCredentialsOAuthProvider : OAuthProvider
     {
         private string clientId;
@@ -134,7 +134,7 @@ namespace Neuron.NetX.Samples
 
         public override string ProviderName
         {
-            get { return "Sample Azure Client Credentials Grant OAuth Provider"; }
+            get { return "Azure Client Credentials Grant OAuth Provider"; }
         }
 
         public AzureClientCredentialsGrantOAuth2Client(string authorizeUrl, string accessTokenUrl, string clientId, string clientSecret, string resource, string grantType)

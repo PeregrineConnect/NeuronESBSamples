@@ -9,7 +9,7 @@ using Neuron.NetX.Adapters;
 
 namespace Neuron.NetX.Samples
 {
-	[DisplayName("Sample Generic Client Credentials Grant OAuth Provider")]
+	[DisplayName("Generic Client Credentials Grant OAuth Provider")]
 	public class GenericClientCredentialsOAuthProvider : OAuthProvider
 	{
 		private string clientId;
@@ -128,7 +128,7 @@ namespace Neuron.NetX.Samples
 	{
 		public override string ProviderName
 		{
-			get { return "Sample Generic Client Credentials Grant OAuth Provider"; }
+			get { return "Generic Client Credentials Grant OAuth Provider"; }
 		}
 
 		public GenericClientCredentialsGrantOAuth2Client(string tokenUrl, string clientId, string clientSecret, string scope, string grantType)

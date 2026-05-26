@@ -8,7 +8,7 @@ using System;
 
 namespace Neuron.NetX.Samples
 {
-	[DisplayName("Sample Generic Authorization Code Grant OAuth Provider")]
+	[DisplayName("Generic Authorization Code Grant OAuth Provider")]
 	public class GenericAuthCodeGrantOAuthProvider : OAuthProvider
 	{
 		private string clientId;
@@ -154,7 +154,7 @@ namespace Neuron.NetX.Samples
 	{
 		public override string ProviderName
 		{
-			get { return "Sample Generic Authorization Code Grant OAuth Provider"; }
+			get { return "Generic Authorization Code Grant OAuth Provider"; }
 		}
 
 		public GenericAuthCodeGrantOAuth2Client(string authUri, string tokenUri, string redirectUri, string clientId, string clientSecret, string scope, string grantType)
