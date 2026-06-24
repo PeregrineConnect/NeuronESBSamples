@@ -111,25 +111,4 @@
   </Units>
   <Addresses />
   <Queues />
-  <AksSettings>
-    <RabbitTLS>false</RabbitTLS>
-    <IsClusterCreated xsi:nil="true" />
-    <CloudProvider>Local</CloudProvider>
-    <ResourceGroup>K8S-Neuron</ResourceGroup>
-    <CapacityGB>50</CapacityGB>
-    <LoadBalancerRange>192.168.52.0/28</LoadBalancerRange>
-    <IsBGP>false</IsBGP>
-    <ExtIngressPeregrineMS>false</ExtIngressPeregrineMS>
-    <IntIngressPeregrineMS>false</IntIngressPeregrineMS>
-    <TLSPeregrineMS>false</TLSPeregrineMS>
-    <LEPeregrineMS>false</LEPeregrineMS>
-    <LBPeregrineMS>false</LBPeregrineMS>
-    <LBPeregrineMSExternal>false</LBPeregrineMSExternal>
-    <ExtIngressElastic>false</ExtIngressElastic>
-    <IntIngressElastic>false</IntIngressElastic>
-    <TLSElastic>false</TLSElastic>
-    <LEElastic>false</LEElastic>
-    <LBElastic>false</LBElastic>
-    <LBElasticExternal>false</LBElasticExternal>
-  </AksSettings>
 </ESBDeployment>
