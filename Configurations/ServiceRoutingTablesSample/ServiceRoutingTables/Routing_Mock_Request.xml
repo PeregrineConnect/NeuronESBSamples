@@ -42,7 +42,7 @@
          &lt;per:City&gt;NewYork&lt;/per:City&gt;
   &lt;/per:PlaceOrder&gt;</Body>
         <BodyType>Raw</BodyType>
-        <DeleteMessageBody>false</DeleteMessageBody>
+        <DeleteMessageBody>true</DeleteMessageBody>
         <Parameters />
         <Headers>
           <HeaderDataElement>

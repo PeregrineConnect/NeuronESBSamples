@@ -4,8 +4,8 @@
   <EnvironmentName>ServiceRoutingTablesSample</EnvironmentName>
   <NeuronBuildVersion>4.0.0.648</NeuronBuildVersion>
   <DesignerBuildVersion>4.0.0.648</DesignerBuildVersion>
-  <ApplicationName>Features3_7_5</ApplicationName>
-  <ApplicationDisplayName>Features3_7_5</ApplicationDisplayName>
+  <ApplicationName>Using Service Routing Tables</ApplicationName>
+  <ApplicationDisplayName>Using Service Routing Tables</ApplicationDisplayName>
   <ApplicationId>0b524073-9bfd-4f7c-8a71-8c997ec7a924</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <DefaultEnvironment>Dev</DefaultEnvironment>
